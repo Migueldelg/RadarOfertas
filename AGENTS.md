@@ -9,14 +9,16 @@ Bot de scraping que:
 4. Evita duplicados mediante un JSON de tracking
 
 **Estructura de archivos:**
-- `amazon_ofertas_core.py` — funciones genéricas compartidas (scraping, Telegram, utilidades)
-- `amazon_bebe_ofertas.py` — configuración de bebé + wrappers + lógica principal
+- `shared/amazon_ofertas_core.py` — funciones genéricas compartidas (scraping, Telegram, utilidades)
+- `bebe/amazon_bebe_ofertas.py` — configuración de bebé + wrappers + lógica principal
+- `bebe/posted_bebe_deals.json` — estado anti-duplicados del canal bebé
+- `bebe/tests/` — 64 tests automatizados
 
 ---
 
 ## Constantes de Configuración Clave
 
-Todas en `amazon_bebe_ofertas.py`:
+Todas en `bebe/amazon_bebe_ofertas.py`:
 
 | Constante | Línea | Descripción |
 |-----------|-------|-------------|
@@ -36,7 +38,7 @@ Todas en `amazon_bebe_ofertas.py`:
 
 ### Añadir nueva categoría
 
-Editar `CATEGORIAS_BEBE` (línea ~52 en `amazon_bebe_ofertas.py`):
+Editar `CATEGORIAS_BEBE` (línea ~52 en `bebe/amazon_bebe_ofertas.py`):
 ```python
 {"nombre": "NombreVisible", "emoji": "🆕", "url": "/s?k=busqueda+amazon"}
 ```
@@ -126,7 +128,7 @@ Parámetro `umbral` en `titulos_similares()` del core (por defecto `0.5` = 50%).
 }
 ```
 
-### Archivo JSON (`posted_bebe_deals.json`)
+### Archivo JSON (`bebe/posted_bebe_deals.json`)
 ```json
 {
     "_ultimas_categorias": ["Juguetes", "Panales", "Chupetes", "Tronas"],
@@ -175,7 +177,7 @@ Parámetro `umbral` en `titulos_similares()` del core (por defecto `0.5` = 50%).
 
 ## Funciones Importantes
 
-### `amazon_bebe_ofertas.py` (wrappers de dominio)
+### `bebe/amazon_bebe_ofertas.py` (wrappers de dominio)
 
 | Función | Descripción | Línea |
 |---------|-------------|-------|
@@ -188,7 +190,7 @@ Parámetro `umbral` en `titulos_similares()` del core (por defecto `0.5` = 50%).
 | `save_posted_deals(deals_dict, ...)` | Wrapper: llama al core con `POSTED_BEBE_DEALS_FILE` | ~109 |
 | `buscar_y_publicar_ofertas()` | Lógica principal de selección y publicación | ~114 |
 
-### `amazon_ofertas_core.py` (funciones genéricas)
+### `shared/amazon_ofertas_core.py` (funciones genéricas)
 
 | Función | Descripción | Línea |
 |---------|-------------|-------|
@@ -208,7 +210,7 @@ Parámetro `umbral` en `titulos_similares()` del core (por defecto `0.5` = 50%).
 
 ## Selectores CSS (Amazon)
 
-Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_productos_busqueda()` del core:
+Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_productos_busqueda()` de `shared/amazon_ofertas_core.py`:
 
 | Elemento | Selector |
 |----------|----------|
@@ -238,10 +240,10 @@ Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_product
 
 ```bash
 # Ejecutar los 64 tests
-python3 -m pytest tests/ -v
+python3 -m pytest -v
 
 # Con cobertura
-python3 -m pytest tests/ --cov=amazon_bebe_ofertas --cov-report=term-missing
+python3 -m pytest --cov=bebe.amazon_bebe_ofertas --cov-report=term-missing
 
 # Instalar dependencias de desarrollo
 pip install -r requirements-dev.txt
@@ -262,7 +264,7 @@ Ejecutar con `--dev` publica en el canal de pruebas compartido y **no modifica `
 
 ```bash
 # Ejecutar en dev (requiere las vars DEV_* en el entorno)
-source .env && python3 amazon_bebe_ofertas.py --dev
+source .env && python3 bebe/amazon_bebe_ofertas.py --dev
 ```
 
 Las credenciales dev (`DEV_TELEGRAM_BOT_TOKEN`, `DEV_TELEGRAM_CHAT_ID`) están en `.env` y son las mismas que usa el proyecto `relases` para su canal de pruebas.
@@ -278,14 +280,14 @@ gh run watch                  # Seguir progreso en tiempo real
 gh run view --log-failed      # Ver logs si falla
 
 # Ejecutar localmente en producción
-source .env && python3 amazon_bebe_ofertas.py
+source .env && python3 bebe/amazon_bebe_ofertas.py
 
 # Ejecutar localmente en modo dev (no toca el JSON de prod)
-source .env && python3 amazon_bebe_ofertas.py --dev
+source .env && python3 bebe/amazon_bebe_ofertas.py --dev
 
 # Resetear todo el estado (vuelve a publicar desde cero)
-rm posted_bebe_deals.json
-git add posted_bebe_deals.json && git commit -m "chore: resetear estado" && git push
+rm bebe/posted_bebe_deals.json
+git add bebe/posted_bebe_deals.json && git commit -m "chore: resetear estado" && git push
 
 # Resetear solo el límite semanal de una categoría: editar JSON y borrar su entrada en _categorias_semanales
 # Resetear categorías/títulos recientes: editar JSON y borrar _ultimas_categorias / _ultimos_titulos

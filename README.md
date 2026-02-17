@@ -8,16 +8,16 @@ Corre en **GitHub Actions** sin necesidad de servidor propio.
 
 ## Canales activos
 
-| Canal | Script | Telegram | Workflow |
-|-------|--------|----------|----------|
-| 🍼 Ofertas de Bebé | `amazon_bebe_ofertas.py` | [@ofertasparaelbebe](https://t.me/ofertasparaelbebe) | Cada 30 min |
+| Canal | Carpeta | Telegram | Workflow |
+|-------|---------|----------|----------|
+| 🍼 Ofertas de Bebé | `bebe/` | [@ofertasparaelbebe](https://t.me/ofertasparaelbebe) | Cada 30 min |
 
 ## Próximos canales (en desarrollo)
 
-| Canal | Script |
-|-------|--------|
-| 🎮 Ofertas PlayStation | `amazon_ps_ofertas.py` |
-| 🟢 Ofertas Nintendo Switch | *(pendiente)* |
+| Canal | Carpeta |
+|-------|---------|
+| 🎮 Ofertas PlayStation | `ps/` *(pendiente)* |
+| 🟢 Ofertas Nintendo Switch | `switch/` *(pendiente)* |
 
 ---
 
@@ -42,17 +42,25 @@ Cada canal tiene su propio estado anti-duplicados (`posted_*.json`) y sus propio
 El proyecto se estructura en un **core genérico** y **scripts especializados** por canal:
 
 ```
-amazon_ofertas_core.py          ← Motor compartido: scraping, Telegram, utilidades
-        │
-        ├── amazon_bebe_ofertas.py      ← Canal bebé (categorías, marcas, credenciales)
-        ├── amazon_ps_ofertas.py        ← Canal PlayStation (en desarrollo)
-        └── amazon_switch_ofertas.py    ← Canal Switch (futuro)
+shared/
+└── amazon_ofertas_core.py      ← Motor compartido: scraping, Telegram, utilidades
+
+bebe/                           ← Canal bebé
+├── amazon_bebe_ofertas.py      ← Config + lógica del canal
+├── posted_bebe_deals.json      ← Estado anti-duplicados
+└── tests/
+
+ps/                             ← Canal PlayStation (futuro)
+└── amazon_ps_ofertas.py
+
+switch/                         ← Canal Nintendo Switch (futuro)
+└── ...
 ```
 
-Para **crear un nuevo canal** basta con un script que:
-1. Importe las utilidades del core
-2. Defina sus categorías, marcas prioritarias y credenciales de Telegram
-3. Tenga su propio workflow de GitHub Actions
+Para **crear un nuevo canal** basta con una carpeta que contenga:
+1. Un script que importe las utilidades del core
+2. Sus categorías, marcas prioritarias y credenciales de Telegram
+3. Su propio workflow de GitHub Actions
 
 ---
 
@@ -71,15 +79,18 @@ Cada canal aplica de forma independiente 4 filtros:
 
 ```
 OfertasDeBebe/
-├── amazon_ofertas_core.py          ← Motor genérico compartido
+├── shared/
+│   └── amazon_ofertas_core.py      ← Motor genérico compartido
 │
-├── amazon_bebe_ofertas.py          ← Canal bebé
-├── posted_bebe_deals.json          ← Estado anti-duplicados del canal bebé
+├── bebe/
+│   ├── amazon_bebe_ofertas.py      ← Canal bebé
+│   ├── posted_bebe_deals.json      ← Estado anti-duplicados del canal bebé
+│   └── tests/
+│       └── test_amazon_bebe_ofertas.py ← 64 tests automatizados
 │
 ├── requirements.txt                ← Dependencias Python (producción)
 ├── requirements-dev.txt            ← Dependencias de desarrollo (pytest)
-├── tests/
-│   └── test_amazon_bebe_ofertas.py ← 64 tests automatizados
+├── pytest.ini                      ← Config de pytest (testpaths, pythonpath)
 │
 ├── .github/workflows/
 │   └── ofertas.yml                 ← Workflow del canal bebé (cada 30 min)
@@ -139,17 +150,17 @@ export DEV_TELEGRAM_CHAT_ID=tu_chat_id_dev
 
 ```bash
 # Producción: publica en el canal real y actualiza el JSON de estado
-source .env && python3 amazon_bebe_ofertas.py
+source .env && python3 bebe/amazon_bebe_ofertas.py
 
 # Desarrollo: publica en el canal de pruebas; el JSON de prod no se toca
-source .env && python3 amazon_bebe_ofertas.py --dev
+source .env && python3 bebe/amazon_bebe_ofertas.py --dev
 ```
 
 ### 4. Ejecutar los tests (sin necesidad de credenciales)
 
 ```bash
 pip install -r requirements-dev.txt
-python3 -m pytest tests/ -v
+python3 -m pytest -v
 ```
 
 ---
@@ -167,8 +178,8 @@ python3 -m pytest tests/ -v
 ### Resetear el estado de un canal
 ```bash
 # El bot volverá a publicar desde cero
-echo "{}" > posted_bebe_deals.json
-git add posted_bebe_deals.json && git commit -m "chore: resetear estado" && git push
+echo "{}" > bebe/posted_bebe_deals.json
+git add bebe/posted_bebe_deals.json && git commit -m "chore: resetear estado" && git push
 ```
 
 ---

@@ -18,11 +18,13 @@ import sys
 from datetime import datetime, timedelta
 
 # --- Configuracion de Logging ---
-LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ofertas_bebe.log")
 
+def setup_logging(log_file):
+    """Configura logging con rotacion diaria y limpieza automatica de logs mayores a 5 dias.
 
-def setup_logging():
-    """Configura logging con rotacion diaria y limpieza automatica de logs mayores a 5 dias."""
+    Args:
+        log_file: Ruta absoluta al archivo de log (cada canal usa el suyo propio).
+    """
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
 
@@ -41,7 +43,7 @@ def setup_logging():
 
     # Handler de archivo con rotacion a medianoche, conserva 5 dias
     file_handler = logging.handlers.TimedRotatingFileHandler(
-        LOG_FILE,
+        log_file,
         when='midnight',
         backupCount=5,
         encoding='utf-8'

@@ -15,9 +15,10 @@ from unittest.mock import MagicMock, mock_open, patch
 import pytest
 
 # Importar el módulo sin ejecutar setup_logging ni abrir ficheros
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# bebe/tests/ → bebe/ → root
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-import amazon_bebe_ofertas as bot
+import bebe.amazon_bebe_ofertas as bot
 
 
 # ---------------------------------------------------------------------------

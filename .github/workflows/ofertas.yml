@@ -29,12 +29,12 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python amazon_bebe_ofertas.py
+        run: python bebe/amazon_bebe_ofertas.py
 
       - name: Guardar estado (commit del JSON)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add posted_bebe_deals.json
+          git add bebe/posted_bebe_deals.json
           git diff --staged --quiet || git commit -m "chore: actualizar estado de ofertas [skip ci]"
           git push

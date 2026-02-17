@@ -7,10 +7,14 @@ y publicarlas en Telegram
 import argparse
 import time
 import os
+import sys
 import logging
 from datetime import datetime, timedelta
 
-from amazon_ofertas_core import (
+# Add project root to path so shared/ is importable
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from shared.amazon_ofertas_core import (
     setup_logging,
     BASE_URL,
     PARTNER_TAG,
@@ -27,7 +31,8 @@ from amazon_ofertas_core import (
     save_posted_deals as _save_posted_deals_core,
 )
 
-setup_logging()
+_LOG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ofertas_bebe.log")
+setup_logging(_LOG_FILE)
 log = logging.getLogger(__name__)
 
 # --- Configuracion de Telegram ---
@@ -43,7 +48,7 @@ DEV_TELEGRAM_CHAT_ID = os.getenv('DEV_TELEGRAM_CHAT_ID')
 DEV_MODE = False
 
 # Archivo para guardar ofertas ya publicadas
-POSTED_BEBE_DEALS_FILE = "posted_bebe_deals.json"
+POSTED_BEBE_DEALS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "posted_bebe_deals.json")
 
 
 def _effective_token():

@@ -9,23 +9,41 @@
 ## Resumen Ejecutivo
 
 - **Qué:** Bot que busca las mejores ofertas de bebé en Amazon.es → publica en Telegram
-- **Dónde:** `amazon_ofertas_core.py` (funciones genéricas) + `amazon_bebe_ofertas.py` (config + lógica)
+- **Dónde:** `shared/amazon_ofertas_core.py` (funciones genéricas) + `bebe/amazon_bebe_ofertas.py` (config + lógica)
 - **Cuándo:** Una vez por ejecución (o cada 15 min en modo continuo)
 - **Cómo:** Busca 12 categorías → elige la mejor de cada → publica la mejor global
-- **Tests:** 64 tests en `tests/test_amazon_bebe_ofertas.py` → ejecutar con `python3 -m pytest tests/ -v`
+- **Tests:** 64 tests en `bebe/tests/test_amazon_bebe_ofertas.py` → ejecutar con `python3 -m pytest -v`
 
 ---
 
-## Constantes de Configuración (en `amazon_bebe_ofertas.py`)
+## Estructura de carpetas
+
+```
+shared/                         ← Motor compartido (genérico, reutilizable)
+└── amazon_ofertas_core.py
+
+bebe/                           ← Canal bebé (config + lógica + estado + tests)
+├── amazon_bebe_ofertas.py
+├── posted_bebe_deals.json
+└── tests/
+    └── test_amazon_bebe_ofertas.py
+
+ps/                             ← Canal futuro (mismo patrón)
+switch/                         ← Canal futuro (mismo patrón)
+```
+
+---
+
+## Constantes de Configuración (en `bebe/amazon_bebe_ofertas.py`)
 
 ```python
-CATEGORIAS_BEBE                    # Línea ~67 - Categorías a buscar
-CATEGORIAS_VERIFICAR_TITULOS       # Línea ~58 - Evitar títulos similares
-CATEGORIAS_LIMITE_SEMANAL          # Línea ~61 - Solo 1x por semana
-MARCAS_PRIORITARIAS                # Línea ~64 - Marcas en igualdad de descuento
+CATEGORIAS_BEBE                    # Línea ~70 - Categorías a buscar
+CATEGORIAS_VERIFICAR_TITULOS       # Línea ~61 - Evitar títulos similares
+CATEGORIAS_LIMITE_SEMANAL          # Línea ~64 - Solo 1x por semana
+MARCAS_PRIORITARIAS                # Línea ~67 - Marcas en igualdad de descuento
 TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID      # Línea ~35-36 - Credenciales producción (env vars / GitHub Secrets)
 DEV_TELEGRAM_BOT_TOKEN, DEV_TELEGRAM_CHAT_ID  # Línea ~39-40 - Credenciales dev (env vars / .env local)
-DEV_MODE                           # Línea ~43 - Flag de modo dev (activado via --dev)
+DEV_MODE                           # Línea ~46 - Flag de modo dev (activado via --dev)
 ```
 
 ---
@@ -66,12 +84,12 @@ De todas las mejores:
 El bot corre en **GitHub Actions** cada 30 minutos automáticamente.
 
 ```bash
-gh workflow run "Ofertas de Bebé"                        # Lanzar manualmente
-gh run watch                                             # Ver progreso
-source .env && python3 amazon_bebe_ofertas.py            # Ejecutar local (producción)
-source .env && python3 amazon_bebe_ofertas.py --dev      # Ejecutar local en modo dev (canal de pruebas, JSON intacto)
-source .env && python3 amazon_bebe_ofertas.py --continuo # Ejecutar en bucle cada 15 min
-python3 -m pytest tests/ -v                              # Ejecutar tests
+gh workflow run "Ofertas de Bebé"                             # Lanzar manualmente
+gh run watch                                                  # Ver progreso
+source .env && python3 bebe/amazon_bebe_ofertas.py            # Ejecutar local (producción)
+source .env && python3 bebe/amazon_bebe_ofertas.py --dev      # Ejecutar local en modo dev (canal de pruebas, JSON intacto)
+source .env && python3 bebe/amazon_bebe_ofertas.py --continuo # Ejecutar en bucle cada 15 min
+python3 -m pytest -v                                          # Ejecutar tests
 ```
 
 ---
@@ -80,13 +98,13 @@ python3 -m pytest tests/ -v                              # Ejecutar tests
 
 | Tarea | Ubicación |
 |-------|-----------|
-| Añadir categoría | `CATEGORIAS_BEBE` línea ~52 en `amazon_bebe_ofertas.py` |
-| Cambiar marcas prioritarias | `MARCAS_PRIORITARIAS` línea ~49 |
-| Activar límite semanal en categoría | `CATEGORIAS_LIMITE_SEMANAL` línea ~46 |
+| Añadir categoría | `CATEGORIAS_BEBE` línea ~70 en `bebe/amazon_bebe_ofertas.py` |
+| Cambiar marcas prioritarias | `MARCAS_PRIORITARIAS` línea ~67 |
+| Activar límite semanal en categoría | `CATEGORIAS_LIMITE_SEMANAL` línea ~64 |
 | Cambiar ventana anti-duplicados | `timedelta(hours=48)` en `load_posted_deals()` del core |
 | Cambiar frecuencia del schedule | `cron:` en `.github/workflows/ofertas.yml` |
-| Cambiar formato Telegram | Función `format_telegram_message()` en `amazon_ofertas_core.py` |
-| Cambiar selectores CSS | Función `extraer_productos_busqueda()` en `amazon_ofertas_core.py` |
+| Cambiar formato Telegram | Función `format_telegram_message()` en `shared/amazon_ofertas_core.py` |
+| Cambiar selectores CSS | Función `extraer_productos_busqueda()` en `shared/amazon_ofertas_core.py` |
 | Credenciales Telegram prod | GitHub Secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` |
 | Credenciales Telegram dev | `.env` local: `DEV_TELEGRAM_BOT_TOKEN`, `DEV_TELEGRAM_CHAT_ID` |
 
