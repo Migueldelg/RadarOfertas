@@ -18,6 +18,7 @@ Corre en **GitHub Actions** sin necesidad de servidor propio.
 |-------|---------|
 | 🎮 Ofertas PlayStation | `ps/` *(pendiente)* |
 | 🟢 Ofertas Nintendo Switch | `switch/` *(pendiente)* |
+| ✈️ Ofertas Viajes | `viajes/` *(pendiente)* |
 
 ---
 
