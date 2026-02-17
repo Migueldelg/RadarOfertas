@@ -135,18 +135,18 @@ tail -f ps/ofertas_ps.log
 
 ---
 
-## Fase 4 — Crear `.github/workflows/ofertas-ps.yml`
+## ✅ Fase 4 — Crear `.github/workflows/ofertas-ps.yml` — COMPLETADA
 
 Copia de `ofertas.yml` con:
-- `name: Ofertas PS4/PS5`
-- Secrets: `TELEGRAM_PS_BOT_TOKEN`, `TELEGRAM_PS_CHAT_ID`
-- `run: python amazon_ps_ofertas.py`
-- `git add posted_ps_deals.json`
-- Mensaje de commit: `"chore: actualizar estado ofertas PS [skip ci]"`
+- ✅ `name: Ofertas PS4/PS5`
+- ✅ Secrets: `TELEGRAM_PS_BOT_TOKEN`, `TELEGRAM_PS_CHAT_ID`
+- ✅ `run: python ps/amazon_ps_ofertas.py`
+- ✅ `git add ps/posted_ps_deals.json`
+- ✅ Mensaje de commit: `"chore: actualizar estado ofertas PS [skip ci]"`
 
-### Fix de concurrencia (aplicar en AMBOS workflows)
+### ✅ Fix de concurrencia (aplicado en AMBOS workflows)
 
-Cuando los dos workflows se ejecutan simultáneamente y ambos hacen push, el segundo fallará porque el remote ya avanzó. Solución en el step de commit:
+Cuando los dos workflows se ejecutan simultáneamente y ambos hacen push, el segundo fallará porque el remote ya avanzó. Solución implementada:
 
 ```yaml
 - name: Guardar estado (commit del JSON)
@@ -155,19 +155,26 @@ Cuando los dos workflows se ejecutan simultáneamente y ambos hacen push, el seg
     git config user.email "github-actions[bot]@users.noreply.github.com"
     git add posted_bebe_deals.json   # o posted_ps_deals.json según el workflow
     git diff --staged --quiet || git commit -m "chore: ..."
-    git pull --rebase origin main    # ← NUEVO: evita conflicto de push concurrente
+    git pull --rebase origin main    # ← Evita conflicto de push concurrente
     git push
 ```
 
+### Archivos creados/modificados
+
+- ✅ `.github/workflows/ofertas-ps.yml` - Nuevo workflow para PS4/PS5
+- ✅ `.github/workflows/ofertas.yml` - Actualizado con `git pull --rebase`
+
 ---
 
-## Fase 5 — Crear `posted_ps_deals.json` vacío
+## Fase 5 — Agregar Secrets en GitHub (MANUAL)
 
-```json
-{}
-```
+Acceder a: `https://github.com/Migueldelg/RadarOfertas/settings/secrets/actions`
 
-Será el archivo de estado inicial del canal PS.
+Agregar los siguientes secrets:
+- `TELEGRAM_PS_BOT_TOKEN` = `8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio`
+- `TELEGRAM_PS_CHAT_ID` = `-1001003885398555`
+
+Una vez agregados, el workflow `Ofertas PS4/PS5` se ejecutará automáticamente cada 30 minutos.
 
 ---
 
@@ -175,14 +182,15 @@ Será el archivo de estado inicial del canal PS.
 
 | Archivo | Acción | Estado |
 |---|---|---|
-| `amazon_ofertas_core.py` | CREAR | ✅ Hecho |
-| `amazon_bebe_ofertas.py` | MODIFICAR (importar desde core, mismo comportamiento) | ✅ Hecho |
+| `amazon_ofertas_core.py` | CREAR | ✅ Hecho (Fase 1) |
+| `amazon_bebe_ofertas.py` | MODIFICAR (importar desde core, mismo comportamiento) | ✅ Hecho (Fase 2) |
 | `amazon_ps_ofertas.py` | CREAR | ✅ Hecho (Fase 3) |
 | `ps/posted_ps_deals.json` | CREAR (vacío `{}`) | ✅ Hecho (Fase 3) |
 | `ps/tests/test_amazon_ps_ofertas.py` | CREAR (59 tests) | ✅ Hecho (Fase 3) |
 | `ps/README.md` | CREAR (documentación) | ✅ Hecho (Fase 3) |
-| `.github/workflows/ofertas-ps.yml` | CREAR | Pendiente (Fase 4) |
-| `.github/workflows/ofertas.yml` | MODIFICAR (añadir `git pull --rebase`) | Pendiente (Fase 4) |
+| `.github/workflows/ofertas-ps.yml` | CREAR | ✅ Hecho (Fase 4) |
+| `.github/workflows/ofertas.yml` | MODIFICAR (añadir `git pull --rebase`) | ✅ Hecho (Fase 4) |
+| **GitHub Secrets** | AGREGAR `TELEGRAM_PS_BOT_TOKEN`, `TELEGRAM_PS_CHAT_ID` | ⏳ Fase 5 (MANUAL) |
 
 ---
 
