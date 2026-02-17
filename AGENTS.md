@@ -8,18 +8,22 @@ Bot de scraping que:
 3. La publica en un canal de Telegram
 4. Evita duplicados mediante un JSON de tracking
 
-**Archivo principal único:** `amazon_bebe_ofertas.py`
+**Estructura de archivos:**
+- `amazon_ofertas_core.py` — funciones genéricas compartidas (scraping, Telegram, utilidades)
+- `amazon_bebe_ofertas.py` — configuración de bebé + wrappers + lógica principal
 
 ---
 
 ## Constantes de Configuración Clave
 
+Todas en `amazon_bebe_ofertas.py`:
+
 | Constante | Línea | Descripción |
 |-----------|-------|-------------|
-| `CATEGORIAS_BEBE` | ~62 | Lista de categorías a buscar |
-| `CATEGORIAS_VERIFICAR_TITULOS` | ~56 | Categorías donde se comparan títulos para evitar similares |
-| `CATEGORIAS_LIMITE_SEMANAL` | ~59 | Categorías que solo se publican una vez por semana (Tronas, Cámaras seguridad, Chupetes) |
-| `MARCAS_PRIORITARIAS` | ~65 | Marcas preferidas cuando hay igualdad de descuento |
+| `CATEGORIAS_BEBE` | ~52 | Lista de categorías a buscar |
+| `CATEGORIAS_VERIFICAR_TITULOS` | ~43 | Categorías donde se comparan títulos para evitar similares |
+| `CATEGORIAS_LIMITE_SEMANAL` | ~46 | Categorías que solo se publican una vez por semana (Tronas, Cámaras seguridad, Chupetes, Vajilla bebe) |
+| `MARCAS_PRIORITARIAS` | ~49 | Marcas preferidas cuando hay igualdad de descuento |
 
 ---
 
@@ -27,30 +31,30 @@ Bot de scraping que:
 
 ### Añadir nueva categoría
 
-Editar `CATEGORIAS_BEBE` (línea ~62):
+Editar `CATEGORIAS_BEBE` (línea ~52 en `amazon_bebe_ofertas.py`):
 ```python
 {"nombre": "NombreVisible", "emoji": "🆕", "url": "/s?k=busqueda+amazon"}
 ```
 
 ### Activar verificación de títulos en una categoría
 
-Editar `CATEGORIAS_VERIFICAR_TITULOS` (línea ~56):
+Editar `CATEGORIAS_VERIFICAR_TITULOS` (línea ~43):
 ```python
 CATEGORIAS_VERIFICAR_TITULOS = ["Chupetes", "Juguetes", "NuevaCategoria"]
 ```
 
 ### Activar límite semanal en una categoría
 
-Editar `CATEGORIAS_LIMITE_SEMANAL` (línea ~59):
+Editar `CATEGORIAS_LIMITE_SEMANAL` (línea ~46):
 ```python
-CATEGORIAS_LIMITE_SEMANAL = ["Tronas", "Camaras seguridad", "Chupetes"]
+CATEGORIAS_LIMITE_SEMANAL = ["Tronas", "Camaras seguridad", "Chupetes", "Vajilla bebe"]
 ```
 
 > Los nombres deben coincidir exactamente con el campo `nombre` en `CATEGORIAS_BEBE`.
 
 ### Añadir o modificar marcas prioritarias
 
-Editar `MARCAS_PRIORITARIAS` (línea ~65):
+Editar `MARCAS_PRIORITARIAS` (línea ~49):
 ```python
 MARCAS_PRIORITARIAS = ["dodot", "suavinex", "baby sebamed", "mustela", "waterwipes"]
 ```
@@ -63,15 +67,15 @@ Estas marcas se priorizan cuando hay **igualdad de descuento**. La búsqueda es 
 
 ### Cambiar ventana anti-duplicados de ASINs
 
-`timedelta(hours=48)` en `load_posted_deals()`.
+`timedelta(hours=48)` en `load_posted_deals()` del core.
 
 ### Modificar formato del mensaje de Telegram
 
-Función `format_telegram_message()`.
+Función `format_telegram_message()` en `amazon_ofertas_core.py`.
 
 ### Cambiar criterio de ordenación de ofertas
 
-En `buscar_y_publicar_ofertas()`:
+En `buscar_y_publicar_ofertas()` (línea ~99 en `amazon_bebe_ofertas.py`):
 ```python
 key=lambda x: (x['descuento'], obtener_prioridad_marca(x['titulo']), x['valoraciones'], x['ventas'])
 ```
@@ -86,7 +90,7 @@ Esto asegura que con igual descuento, se prefieren las marcas definidas en `MARC
 
 ### Ajustar umbral de similitud de títulos
 
-Parámetro `umbral` en `titulos_similares()` (por defecto `0.5` = 50%).
+Parámetro `umbral` en `titulos_similares()` del core (por defecto `0.5` = 50%).
 
 ---
 
@@ -124,7 +128,8 @@ Parámetro `umbral` en `titulos_similares()` (por defecto `0.5` = 50%).
     "_ultimos_titulos": ["Philips Avent Chupete ultra soft...", "Fisher-Price..."],
     "_categorias_semanales": {
         "Tronas": "2024-01-15T10:30:00",
-        "Camaras seguridad": "2024-01-10T08:00:00"
+        "Camaras seguridad": "2024-01-10T08:00:00",
+        "Vajilla bebe": "2024-01-12T09:00:00"
     },
     "B08XYZ123": "2024-01-15T10:30:00",
     "B07ABC456": "2024-01-14T18:45:00"
@@ -165,18 +170,38 @@ Parámetro `umbral` en `titulos_similares()` (por defecto `0.5` = 50%).
 
 ## Funciones Importantes
 
+### `amazon_bebe_ofertas.py` (wrappers de dominio)
+
 | Función | Descripción | Línea |
 |---------|-------------|-------|
-| `obtener_prioridad_marca()` | Detecta si un título contiene una marca prioritaria; retorna 1 (prioritaria) o 0 | ~189 |
-| `titulo_similar_a_recientes()` | Verifica similitud con últimos 4 títulos para evitar repeticiones | ~175 |
-| `titulos_similares()` | Compara dos títulos con umbral configurable (default 50%) | ~153 |
-| `normalizar_titulo()` | Extrae palabras clave de un título para comparación | ~138 |
+| `obtener_prioridad_marca(titulo)` | Wrapper: llama al core con `MARCAS_PRIORITARIAS` de bebé | ~72 |
+| `send_telegram_message(message)` | Wrapper: llama al core con token/chat_id de bebé | ~76 |
+| `send_telegram_photo(photo_url, caption)` | Wrapper: llama al core con token/chat_id de bebé | ~81 |
+| `load_posted_deals()` | Wrapper: llama al core con `POSTED_BEBE_DEALS_FILE` | ~86 |
+| `save_posted_deals(deals_dict, ...)` | Wrapper: llama al core con `POSTED_BEBE_DEALS_FILE` | ~94 |
+| `buscar_y_publicar_ofertas()` | Lógica principal de selección y publicación | ~99 |
+
+### `amazon_ofertas_core.py` (funciones genéricas)
+
+| Función | Descripción | Línea |
+|---------|-------------|-------|
+| `obtener_prioridad_marca(titulo, marcas)` | Detecta si un título contiene una marca de la lista; retorna 1 o 0 | ~179 |
+| `titulo_similar_a_recientes(titulo, lista)` | Verifica similitud con últimos 4 títulos | ~173 |
+| `titulos_similares(t1, t2, umbral)` | Compara dos títulos con umbral configurable (default 50%) | ~157 |
+| `normalizar_titulo(titulo)` | Extrae palabras clave de un título para comparación | ~141 |
+| `send_telegram_message(message, token, chat_id)` | Envía mensaje de texto a Telegram | ~192 |
+| `send_telegram_photo(photo_url, caption, token, chat_id)` | Envía foto a Telegram; fallback a texto | ~209 |
+| `format_telegram_message(producto, categoria)` | Formatea el mensaje HTML para Telegram | ~224 |
+| `obtener_pagina(url)` | HTTP GET con reintentos y delays anti-bot | ~247 |
+| `extraer_productos_busqueda(html)` | Parsea HTML de búsqueda de Amazon | ~267 |
+| `load_posted_deals(filepath)` | Carga historial desde JSON, filtra expirados (>48h) | ~80 |
+| `save_posted_deals(deals_dict, filepath, ...)` | Persiste historial en JSON | ~130 |
 
 ---
 
 ## Selectores CSS (Amazon)
 
-Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_productos_busqueda()`:
+Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_productos_busqueda()` del core:
 
 | Elemento | Selector |
 |----------|----------|
@@ -187,6 +212,8 @@ Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_product
 | Imagen | `img.s-image` |
 | Valoraciones | `.a-size-base.s-underline-text` |
 | Ventas | `.a-size-base.a-color-secondary` |
+
+> **Importante:** el orden de los spans de precio en el HTML importa. Amazon pone primero el precio actual (sin `data-a-strike`) y después el tachado (con `data-a-strike="true"`). El selector `.a-price .a-offscreen` coge el primero por eso.
 
 ---
 
@@ -199,6 +226,21 @@ Si Amazon cambia su HTML, estos son los selectores a revisar en `extraer_product
 5. **Rate limits:** Telegram limita mensajes por segundo; no modificar el flujo para publicar varios a la vez
 
 ---
+
+## Testing
+
+```bash
+# Ejecutar los 64 tests
+python3 -m pytest tests/ -v
+
+# Con cobertura
+python3 -m pytest tests/ --cov=amazon_bebe_ofertas --cov-report=term-missing
+
+# Instalar dependencias de desarrollo
+pip install -r requirements-dev.txt
+```
+
+Los tests cubren: funciones puras, I/O con mocks, parsing HTML y lógica de selección completa.
 
 ## Testing / Reseteo Manual
 
@@ -222,7 +264,6 @@ git add posted_bebe_deals.json && git commit -m "chore: resetear estado" && git 
 ## Dependencias
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt      # Producción (requests, beautifulsoup4)
+pip install -r requirements-dev.txt  # Desarrollo (pytest, pytest-cov)
 ```
-
-Sin base de datos, sin framework web, sin tests automatizados.
