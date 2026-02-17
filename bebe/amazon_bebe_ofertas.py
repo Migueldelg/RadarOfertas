@@ -410,7 +410,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.dev:
-        DEV_MODE = True
+        globals()['DEV_MODE'] = True
         log.info("CLI: DEV_MODE activado (canal de pruebas, JSON de prod intacto)")
 
     main(modo_continuo=args.continuo)
