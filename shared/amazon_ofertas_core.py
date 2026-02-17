@@ -263,7 +263,7 @@ def format_telegram_message(producto, categoria):
     titulo = html.escape(producto['titulo'])
     precio = producto['precio']
     precio_anterior = producto.get('precio_anterior')
-    url = producto['url']
+    url = html.escape(producto['url'])  # Escapar URL para HTML válido
     emoji = categoria.get('emoji', '🛍️')
     categoria_nombre = categoria.get('nombre', 'Bebe')
 
