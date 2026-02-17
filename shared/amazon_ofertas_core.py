@@ -236,8 +236,8 @@ def send_telegram_message(message, token, chat_id):
         log.info("Mensaje enviado a Telegram correctamente (solo texto)")
         return True
     except requests.exceptions.RequestException as e:
-        log.error("Error al enviar mensaje a Telegram: %s", e)
-        return False
+        log.critical("❌ ERROR CRÍTICO: No se pudo enviar mensaje a Telegram: %s", e)
+        raise  # Relanzar la excepción para que el workflow falle
 
 
 def send_telegram_photo(photo_url, caption, token, chat_id):
@@ -256,8 +256,12 @@ def send_telegram_photo(photo_url, caption, token, chat_id):
         log.info("Mensaje enviado a Telegram correctamente (con foto)")
         return True
     except requests.exceptions.RequestException as e:
-        log.warning("Error al enviar foto a Telegram (%s), reintentando solo con texto...", e)
-        return send_telegram_message(caption, token, chat_id)
+        log.warning("⚠️  Error al enviar foto a Telegram (%s), reintentando solo con texto...", e)
+        try:
+            return send_telegram_message(caption, token, chat_id)
+        except requests.exceptions.RequestException as e2:
+            log.critical("❌ ERROR CRÍTICO: Falló foto Y mensaje de texto. Error foto: %s | Error texto: %s", e, e2)
+            raise  # Relanzar para marcar el workflow como error
 
 
 def format_telegram_message(producto, categoria):
