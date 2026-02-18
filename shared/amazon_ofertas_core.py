@@ -81,9 +81,14 @@ session = requests.Session()
 log = logging.getLogger(__name__)
 
 
-def load_posted_deals(filepath):
+def load_posted_deals(filepath, horas_ventana=48):
     """
-    Carga las ofertas publicadas (ultimas 48h) desde un archivo JSON.
+    Carga las ofertas publicadas desde un archivo JSON, filtrando por ventana de tiempo.
+
+    Args:
+        filepath: Ruta al archivo JSON de ofertas publicadas
+        horas_ventana: Número de horas a considerar como "reciente" (default 48)
+
     Retorna tupla: (dict_ofertas, ultimas_categorias, ultimos_titulos, categorias_semanales)
     """
     if not os.path.exists(filepath):
@@ -117,12 +122,12 @@ def load_posted_deals(filepath):
     recent_deals = {}
     expired_count = 0
     now = datetime.now()
-    forty_eight_hours_ago = now - timedelta(hours=48)
+    cutoff_time = now - timedelta(hours=horas_ventana)
 
     for deal_id, timestamp_str in data.items():
         try:
             post_time = datetime.fromisoformat(timestamp_str)
-            if post_time > forty_eight_hours_ago:
+            if post_time > cutoff_time:
                 recent_deals[deal_id] = timestamp_str
             else:
                 expired_count += 1
@@ -130,8 +135,8 @@ def load_posted_deals(filepath):
             continue
 
     log.info(
-        "Historial cargado: %d ASINs en ventana de 48h (ignorados %d expirados)",
-        len(recent_deals), expired_count
+        "Historial cargado: %d ASINs en ventana de %dh (ignorados %d expirados)",
+        len(recent_deals), horas_ventana, expired_count
     )
     if ultimas_categorias:
         log.info("Ultimas categorias publicadas (anti-repeticion): %s", ", ".join(ultimas_categorias))

@@ -263,7 +263,7 @@ class TestLoadPostedDeals:
     def test_filtra_asins_expirados(self, tmp_path, monkeypatch):
         ahora = datetime.now()
         reciente = (ahora - timedelta(hours=24)).isoformat()
-        expirado = (ahora - timedelta(hours=72)).isoformat()
+        expirado = (ahora - timedelta(hours=120)).isoformat()  # Más de 96h para PS
         data = {
             'ASIN_RECIENTE': reciente,
             'ASIN_EXPIRADO': expirado,

@@ -106,10 +106,10 @@ def send_telegram_photo(photo_url, caption):
 
 def load_posted_deals():
     """
-    Carga las ofertas publicadas (ultimas 48h) desde un archivo JSON.
+    Carga las ofertas publicadas (ultimas 4 dias/96h) desde un archivo JSON.
     Retorna tupla: (dict_ofertas, ultimas_categorias, ultimos_titulos, categorias_semanales)
     """
-    return _load_posted_deals_core(POSTED_PS_DEALS_FILE)
+    return _load_posted_deals_core(POSTED_PS_DEALS_FILE, horas_ventana=96)
 
 
 def save_posted_deals(deals_dict, ultimas_categorias=None, ultimos_titulos=None, categorias_semanales=None):
