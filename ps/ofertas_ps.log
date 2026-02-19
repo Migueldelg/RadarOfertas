@@ -4323,3 +4323,92 @@
 19/02/2026 10:06:07 [INFO   ] ============================================================
 19/02/2026 10:06:07 [INFO   ] FIN - 1 oferta publicada en Telegram
 19/02/2026 10:06:07 [INFO   ] ============================================================
+19/02/2026 10:11:30 [INFO   ] ============================================================
+19/02/2026 10:11:30 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+19/02/2026 10:11:30 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 19/02/2026 10:11
+19/02/2026 10:11:30 [INFO   ] ============================================================
+19/02/2026 10:11:30 [INFO   ] Historial cargado: 21 ASINs en ventana de 96h (ignorados 0 expirados)
+19/02/2026 10:11:30 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4
+19/02/2026 10:11:30 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+19/02/2026 10:11:30 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 0 dias (18/02 18:08)
+19/02/2026 10:11:30 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4]
+19/02/2026 10:11:30 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+19/02/2026 10:11:30 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 18/02 18:08 (hace 0 días, faltan ~3 días)
+19/02/2026 10:11:30 [INFO   ] 
+19/02/2026 10:11:30 [INFO   ] --- Categoria: Juegos PS5 ---
+19/02/2026 10:11:33 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+19/02/2026 10:11:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+19/02/2026 10:11:35 [INFO   ]   Scraped: 20 productos (17 con oferta, 3 sin descuento)
+19/02/2026 10:11:35 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+19/02/2026 10:11:35 [DEBUG  ]     1. [B0DV9XSQX8] WWE 2K25 PS5 | 73% dto | 5 vals | 0 ventas
+19/02/2026 10:11:35 [DEBUG  ]     2. [B0FGK5M2BS] EA SPORTS FC 26 Standard Edition PS5 | Jeux vidéo  | 56% dto | 5 vals | 0 ventas
+19/02/2026 10:11:35 [DEBUG  ]     3. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 52% dto | 5 vals | 0 ventas
+19/02/2026 10:11:35 [DEBUG  ]     4. [B0FJXWB78M] Battlefield 6 Standard Edition PS5 | Videojuegos | | 44% dto | 5 vals | 0 ventas
+19/02/2026 10:11:35 [DEBUG  ]     5. [B0C74PQ6TX] The Crew Motorfest Limited Edition (Exclusivo Amaz | 33% dto | 5 vals | 0 ventas
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] WWE 2K25 PS5... (73% dto, ASIN: B0DV9XSQX8)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS5 | Jeux v... (56% dto, ASIN: B0FGK5M2BS)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] Teenage Mutant Ninja Turtles: Mutantes desenc... (52% dto, ASIN: B0CXDX9ZJ3)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] Battlefield 6 Standard Edition PS5 | Videojue... (44% dto, ASIN: B0FJXWB78M)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] The Crew Motorfest Limited Edition (Exclusivo... (33% dto, ASIN: B0C74PQ6TX)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS5]... (31% dto, ASIN: B09GSQGJ2F)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [ya publicado en <48h] Avatar: Frontiers of Pandora From the Ashes E... (30% dto, ASIN: B0FSD6JBSK)
+19/02/2026 10:11:35 [INFO   ]   DESCARTADO [titulo similar a reciente] F1 25 Standard Edition PS5 | Videojuegos | Ca... (28% dto)
+19/02/2026 10:11:35 [INFO   ]   ELEGIDO para categoria: Split Fiction PS5 | Videojuegos | Castellano... (28% dto, 5 valoraciones, ASIN: B0DQ5WMN4H)
+19/02/2026 10:11:35 [INFO   ] 
+19/02/2026 10:11:35 [INFO   ] --- Categoria: Juegos PS4 ---
+19/02/2026 10:11:39 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+19/02/2026 10:11:40 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+19/02/2026 10:11:40 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+19/02/2026 10:11:40 [DEBUG  ]     1. [B0FGK4FQR8] EA SPORTS FC 26 Standard Edition PS4 | Videojuegos | 56% dto | 4 vals | 0 ventas
+19/02/2026 10:11:40 [DEBUG  ]     2. [B0B6G74TF3] God of War Ragnarok PS4 | Videojuego Original de P | 54% dto | 0 vals | 0 ventas [MARCA PRIO]
+19/02/2026 10:11:40 [DEBUG  ]     3. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 47% dto | 4 vals | 0 ventas [MARCA PRIO]
+19/02/2026 10:11:40 [DEBUG  ]     4. [B08LBB79S4] Final Fantasy VIII Remastered | 40% dto | 4 vals | 0 ventas
+19/02/2026 10:11:40 [DEBUG  ]     5. [B0D98BDG3S] EA SPORTS FC 25 Standard Edition PS4 | Videojuegos | 37% dto | 4 vals | 0 ventas
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS4 | Videoj... (56% dto, ASIN: B0FGK4FQR8)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] God of War Ragnarok PS4 | Videojuego Original... (54% dto, ASIN: B0B6G74TF3)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (47% dto, ASIN: B09GSPDV8K)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Final Fantasy VIII Remastered... (40% dto, ASIN: B08LBB79S4)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 25 Standard Edition PS4 | Videoj... (37% dto, ASIN: B0D98BDG3S)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+19/02/2026 10:11:40 [INFO   ]   DESCARTADO [ya publicado en <48h] NEED FOR SPEED HOT PURSUIT REMASTERED... (35% dto, ASIN: B08KVFN4FJ)
+19/02/2026 10:11:40 [INFO   ]   ELEGIDO para categoria: Need for Speed Heat... (21% dto, 4 valoraciones, ASIN: B07WSXBN1D)
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Mandos PS5 ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Mandos PS4 ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Auriculares gaming ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Tarjetas PSN ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Accesorios PS5 ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Categoria: Accesorios PS4 ---
+19/02/2026 10:11:40 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+19/02/2026 10:11:40 [INFO   ]   1. [B0DQ5WMN4H] Split Fiction PS5 | Videojuegos | Castel... | 28% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+19/02/2026 10:11:40 [INFO   ]   2. [B07WSXBN1D] Need for Speed Heat... | 21% dto | cat: Juegos PS4 (videojuego) [cat. reciente]
+19/02/2026 10:11:40 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4], publicando la mejor disponible igualmente
+19/02/2026 10:11:40 [INFO   ] 
+19/02/2026 10:11:40 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+19/02/2026 10:11:40 [INFO   ]     Titulo:    Split Fiction PS5 | Videojuegos | Castellano
+19/02/2026 10:11:40 [INFO   ]     Categoria: Juegos PS5 | Descuento: 28%
+19/02/2026 10:11:40 [INFO   ]     Precio:    29,74 € (antes: 41,31 €)
+19/02/2026 10:11:40 [INFO   ]     ASIN:      B0DQ5WMN4H | Valoraciones: 5 | Ventas: 0
+19/02/2026 10:11:40 [INFO   ]     URL:       https://www.amazon.es/dp/B0DQ5WMN4H?tag=juegosenoferta-21
+19/02/2026 10:11:40 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/81YO7qCcpiL._AC_UL320_.jpg
+19/02/2026 10:11:40 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+19/02/2026 10:11:41 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1178
+19/02/2026 10:11:41 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+19/02/2026 10:11:41 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS5
+19/02/2026 10:11:41 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+19/02/2026 10:11:41 [INFO   ] 
+19/02/2026 10:11:41 [INFO   ] ============================================================
+19/02/2026 10:11:41 [INFO   ] FIN - 1 oferta publicada en Telegram
+19/02/2026 10:11:41 [INFO   ] ============================================================
