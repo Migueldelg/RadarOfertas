@@ -10,3 +10,9 @@ venv/
 .venv/
 
 # posted_bebe_deals.json NO está aquí — se versiona para persistir estado
+
+# Logs de ofertas — versionados para historial de auditoría
+!bebe/ofertas_bebe.log
+!bebe/ofertas_bebe.log.*
+!ps/ofertas_ps.log
+!ps/ofertas_ps.log.*
