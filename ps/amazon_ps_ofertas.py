@@ -69,6 +69,9 @@ CATEGORIAS_LIMITE_SEMANAL = []
 # Límite de 3 días para cualquier accesorio (solo una categoría de accesorios cada 3 días)
 LIMITE_ACCESORIOS_DIAS = 3
 
+# Límite global de 7 días entre publicaciones (videojuegos o accesorios)
+LIMITE_GLOBAL_DIAS = 7
+
 # Marcas prioritarias (se prefieren cuando hay igualdad de descuento)
 MARCAS_PRIORITARIAS = ["sony", "playstation", "nacon", "thrustmaster", "razer", "hyperx"]
 
@@ -166,6 +169,24 @@ def buscar_y_publicar_ofertas():
     now = datetime.now()
     una_semana = timedelta(days=7)
     tres_dias = timedelta(days=LIMITE_ACCESORIOS_DIAS)
+    siete_dias = timedelta(days=LIMITE_GLOBAL_DIAS)
+
+    # Verificar límite global de 7 días entre publicaciones
+    ultima_pub_global_str = categorias_semanales.get("_ultima_publicacion_global")
+    if ultima_pub_global_str:
+        try:
+            ultima_pub_global = datetime.fromisoformat(ultima_pub_global_str)
+            tiempo_transcurrido = now - ultima_pub_global
+            if tiempo_transcurrido < siete_dias:
+                dias_restantes = (siete_dias - tiempo_transcurrido).days + 1
+                log.info(
+                    "LÍMITE GLOBAL: última publicación el %s (hace %d días, faltan ~%d días). No se publica.",
+                    ultima_pub_global.strftime('%d/%m %H:%M'), tiempo_transcurrido.days, dias_restantes
+                )
+                log.info("=" * 60)
+                return 0
+        except (ValueError, TypeError):
+            pass
 
     # Verificar si se publicó un accesorio en los últimos 3 días
     accesorios_bloqueados = False
@@ -412,6 +433,10 @@ def buscar_y_publicar_ofertas():
         if categoria['tipo'] == 'accesorio':
             categorias_semanales["_accesorios_ultima_pub"] = datetime.now().isoformat()
             log.debug("Timestamp de límite de 3 días para accesorios actualizado")
+
+        # Guardar timestamp de última publicación global
+        categorias_semanales["_ultima_publicacion_global"] = datetime.now().isoformat()
+        log.debug("Timestamp de límite global de 7 días actualizado")
 
         ofertas_publicadas = 1
     else:

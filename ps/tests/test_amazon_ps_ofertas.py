@@ -821,3 +821,127 @@ class TestFormatTelegramMessageConVariantes:
         # Todos los precios presentes
         assert '60€' in mensaje
         assert '65€' in mensaje
+
+
+# ---------------------------------------------------------------------------
+# Límite global de 7 días entre publicaciones
+# ---------------------------------------------------------------------------
+
+class TestLimiteGlobalPS:
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.send_telegram_message')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_bloquea_si_publicacion_reciente(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
+        """Verifica que bloquea publicaciones si han pasado <7 días desde la última."""
+        ahora = datetime.now()
+        ultima_pub_hace_3_dias = (ahora - timedelta(days=3)).isoformat()
+        categorias_semanales = {"_ultima_publicacion_global": ultima_pub_hace_3_dias}
+        mock_load.return_value = ({}, [], [], categorias_semanales)
+        mock_pagina.return_value = _html_con_producto()
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+
+        resultado = bot.buscar_y_publicar_ofertas()
+
+        # No debe publicar porque no han pasado 7 días
+        assert resultado == 0
+        # No debe llamar a send_telegram_photo ni send_telegram_message
+        mock_foto.assert_not_called()
+        mock_msg.assert_not_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.send_telegram_message')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_permite_si_han_pasado_7_dias(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
+        """Verifica que permite publicaciones si han pasado >=7 días."""
+        ahora = datetime.now()
+        ultima_pub_hace_8_dias = (ahora - timedelta(days=8)).isoformat()
+        categorias_semanales = {"_ultima_publicacion_global": ultima_pub_hace_8_dias}
+        mock_load.return_value = ({}, [], [], categorias_semanales)
+        mock_pagina.return_value = _html_con_producto(
+            asin="B001_GAME",
+            titulo="Juego PS5 Elden Ring",
+            precio_anterior="59,99€",
+            precio_actual="35,99€"
+        )
+        mock_foto.return_value = True
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+
+        resultado = bot.buscar_y_publicar_ofertas()
+
+        # Debe publicar porque han pasado 8 días (>= 7)
+        assert resultado == 1
+        # Debe llamar a send_telegram_photo (porque hay imagen)
+        mock_foto.assert_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.send_telegram_message')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_permite_si_no_existe_timestamp(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
+        """Verifica que permite publicaciones si no existe _ultima_publicacion_global (primera vez)."""
+        categorias_semanales = {}  # Sin _ultima_publicacion_global
+        mock_load.return_value = ({}, [], [], categorias_semanales)
+        mock_pagina.return_value = _html_con_producto(
+            asin="B001_GAME",
+            titulo="Juego PS5 Elden Ring",
+            precio_anterior="59,99€",
+            precio_actual="35,99€"
+        )
+        mock_foto.return_value = True
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+
+        resultado = bot.buscar_y_publicar_ofertas()
+
+        # Debe publicar porque es la primera vez (no existe timestamp)
+        assert resultado == 1
+        # Debe llamar a send_telegram_photo (porque hay imagen)
+        mock_foto.assert_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.send_telegram_message')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_guarda_timestamp_al_publicar(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
+        """Verifica que se guarda _ultima_publicacion_global en JSON al publicar exitosamente."""
+        mock_load.return_value = ({}, [], [], {})
+        mock_pagina.return_value = _html_con_producto(
+            asin="B001_GAME",
+            titulo="Juego PS5 Elden Ring",
+            precio_anterior="59,99€",
+            precio_actual="35,99€"
+        )
+        mock_foto.return_value = True
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+
+        resultado = bot.buscar_y_publicar_ofertas()
+
+        # Debe publicar
+        assert resultado == 1
+
+        # Verificar que save_posted_deals fue llamado con categorias_semanales
+        # que contenga _ultima_publicacion_global
+        assert mock_save.called
+        call_args = mock_save.call_args
+        categorias_semanales_guardadas = call_args[0][3] if len(call_args[0]) > 3 else call_args.kwargs.get('categorias_semanales', {})
+        assert "_ultima_publicacion_global" in categorias_semanales_guardadas
+        # Verificar que el timestamp es reciente (hace menos de 10 segundos)
+        ts_guardado = datetime.fromisoformat(categorias_semanales_guardadas["_ultima_publicacion_global"])
+        assert (datetime.now() - ts_guardado).total_seconds() < 10
