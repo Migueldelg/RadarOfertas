@@ -4956,3 +4956,97 @@
 19/02/2026 17:29:32 [INFO   ] ============================================================
 19/02/2026 17:29:32 [INFO   ] FIN - 1 oferta publicada en Telegram
 19/02/2026 17:29:32 [INFO   ] ============================================================
+19/02/2026 18:29:32 [INFO   ] ============================================================
+19/02/2026 18:29:32 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+19/02/2026 18:29:32 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 19/02/2026 18:29
+19/02/2026 18:29:32 [INFO   ] ============================================================
+19/02/2026 18:29:32 [INFO   ] Historial cargado: 28 ASINs en ventana de 96h (ignorados 0 expirados)
+19/02/2026 18:29:32 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS4, Juegos PS4, Juegos PS5
+19/02/2026 18:29:32 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+19/02/2026 18:29:32 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 1 dias (18/02 18:08)
+19/02/2026 18:29:32 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS4, Juegos PS4, Juegos PS5]
+19/02/2026 18:29:32 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+19/02/2026 18:29:32 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 18/02 18:08 (hace 1 días, faltan ~2 días)
+19/02/2026 18:29:32 [INFO   ] 
+19/02/2026 18:29:32 [INFO   ] --- Categoria: Juegos PS5 ---
+19/02/2026 18:29:36 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+19/02/2026 18:29:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+19/02/2026 18:29:37 [INFO   ]   Scraped: 20 productos (16 con oferta, 4 sin descuento)
+19/02/2026 18:29:37 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+19/02/2026 18:29:37 [DEBUG  ]     1. [B0FGK5M2BS] EA SPORTS FC 26 Standard Edition PS5 | Jeux vidéo  | 56% dto | 5 vals | 0 ventas
+19/02/2026 18:29:37 [DEBUG  ]     2. [B0FCFZ7F2Q] Sonic Racing CrossWorlds -PS5 | 52% dto | 0 vals | 0 ventas
+19/02/2026 18:29:37 [DEBUG  ]     3. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 52% dto | 5 vals | 0 ventas
+19/02/2026 18:29:37 [DEBUG  ]     4. [B0FJXWB78M] Battlefield 6 Standard Edition PS5 | Videojuegos | | 44% dto | 5 vals | 0 ventas
+19/02/2026 18:29:37 [DEBUG  ]     5. [B0C74PQ6TX] The Crew Motorfest Limited Edition (Exclusivo Amaz | 33% dto | 5 vals | 0 ventas
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS5 | Jeux v... (56% dto, ASIN: B0FGK5M2BS)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Sonic Racing CrossWorlds -PS5... (52% dto, ASIN: B0FCFZ7F2Q)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Teenage Mutant Ninja Turtles: Mutantes desenc... (52% dto, ASIN: B0CXDX9ZJ3)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Battlefield 6 Standard Edition PS5 | Videojue... (44% dto, ASIN: B0FJXWB78M)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] The Crew Motorfest Limited Edition (Exclusivo... (33% dto, ASIN: B0C74PQ6TX)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Avatar: Frontiers of Pandora From the Ashes E... (30% dto, ASIN: B0FSD6JBSK)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Silent Hill f - Day One Edition - PS5... (30% dto, ASIN: B0F1G4KWH1)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] F1 25 Standard Edition PS5 | Videojuegos | Ca... (28% dto, ASIN: B0F24Y88V1)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Split Fiction PS5 | Videojuegos | Castellano... (28% dto, ASIN: B0DQ5WMN4H)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Clair Obscur: Expedition 33... (21% dto, ASIN: B0DLGNT4V3)
+19/02/2026 18:29:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Star Wars Outlaws Limited Edition (Exclusive ... (20% dto, ASIN: B0CZTKY8TC)
+19/02/2026 18:29:37 [INFO   ]   ELEGIDO para categoria: Assetto Corsa Competizione Standard Edition (... (19% dto, 5 valoraciones, ASIN: B0BH575B8K)
+19/02/2026 18:29:37 [INFO   ] 
+19/02/2026 18:29:37 [INFO   ] --- Categoria: Juegos PS4 ---
+19/02/2026 18:29:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+19/02/2026 18:29:42 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+19/02/2026 18:29:42 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+19/02/2026 18:29:42 [DEBUG  ]     1. [B0FGK4FQR8] EA SPORTS FC 26 Standard Edition PS4 | Videojuegos | 56% dto | 4 vals | 0 ventas
+19/02/2026 18:29:42 [DEBUG  ]     2. [B0B6G74TF3] God of War Ragnarok PS4 | Videojuego Original de P | 54% dto | 0 vals | 0 ventas [MARCA PRIO]
+19/02/2026 18:29:42 [DEBUG  ]     3. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 48% dto | 4 vals | 0 ventas [MARCA PRIO]
+19/02/2026 18:29:42 [DEBUG  ]     4. [B08LBB79S4] Final Fantasy VIII Remastered | 40% dto | 4 vals | 0 ventas
+19/02/2026 18:29:42 [DEBUG  ]     5. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS4 | Videoj... (56% dto, ASIN: B0FGK4FQR8)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] God of War Ragnarok PS4 | Videojuego Original... (54% dto, ASIN: B0B6G74TF3)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (48% dto, ASIN: B09GSPDV8K)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Final Fantasy VIII Remastered... (40% dto, ASIN: B08LBB79S4)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] NEED FOR SPEED HOT PURSUIT REMASTERED... (35% dto, ASIN: B08KVFN4FJ)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Need for Speed Heat... (21% dto, ASIN: B07WSXBN1D)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (20% dto, ASIN: B07PC3V9F2)
+19/02/2026 18:29:42 [INFO   ]   DESCARTADO [ya publicado en <48h] Resident Evil Revelations HD... (20% dto, ASIN: B073SCS51T)
+19/02/2026 18:29:42 [INFO   ]   ELEGIDO para categoria: Ghost Of Tsushima (PS4)... (15% dto, 4 valoraciones, ASIN: B08D46HFMY)
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Mandos PS5 ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Mandos PS4 ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Auriculares gaming ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Tarjetas PSN ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Accesorios PS5 ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Categoria: Accesorios PS4 ---
+19/02/2026 18:29:42 [INFO   ]   SALTADA por límite de 3 días para accesorios
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+19/02/2026 18:29:42 [INFO   ]   1. [B0BH575B8K] Assetto Corsa Competizione Standard Edit... | 19% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+19/02/2026 18:29:42 [INFO   ]   2. [B08D46HFMY] Ghost Of Tsushima (PS4)... | 15% dto | cat: Juegos PS4 (videojuego) [cat. reciente]
+19/02/2026 18:29:42 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS5, Juegos PS4, Juegos PS4, Juegos PS5], publicando la mejor disponible igualmente
+19/02/2026 18:29:42 [INFO   ] 
+19/02/2026 18:29:42 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+19/02/2026 18:29:42 [INFO   ]     Titulo:    Assetto Corsa Competizione Standard Edition (PS5)
+19/02/2026 18:29:42 [INFO   ]     Categoria: Juegos PS5 | Descuento: 19%
+19/02/2026 18:29:42 [INFO   ]     Precio:    14,87 € (antes: 18,32 €)
+19/02/2026 18:29:42 [INFO   ]     ASIN:      B0BH575B8K | Valoraciones: 5 | Ventas: 0
+19/02/2026 18:29:42 [INFO   ]     URL:       https://www.amazon.es/dp/B0BH575B8K?tag=juegosenoferta-21
+19/02/2026 18:29:42 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/81vIbib1OwL._AC_UL320_.jpg
+19/02/2026 18:29:42 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+19/02/2026 18:29:43 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1184
+19/02/2026 18:29:43 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+19/02/2026 18:29:43 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS4
+19/02/2026 18:29:43 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+19/02/2026 18:29:43 [INFO   ] 
+19/02/2026 18:29:43 [INFO   ] ============================================================
+19/02/2026 18:29:43 [INFO   ] FIN - 1 oferta publicada en Telegram
+19/02/2026 18:29:43 [INFO   ] ============================================================
