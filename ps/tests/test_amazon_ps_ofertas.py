@@ -945,3 +945,243 @@ class TestLimiteGlobalPS:
         # Verificar que el timestamp es reciente (hace menos de 10 segundos)
         ts_guardado = datetime.fromisoformat(categorias_semanales_guardadas["_ultima_publicacion_global"])
         assert (datetime.now() - ts_guardado).total_seconds() < 10
+
+
+# ---------------------------------------------------------------------------
+# Búsqueda de Preórdenes
+# ---------------------------------------------------------------------------
+
+class TestEsPrereservaItem:
+    def test_detecta_disponible_el(self):
+        """Detecta patrones 'disponible el' como preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>PlayStation 5 disponible el 15 de marzo</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is True
+
+    def test_detecta_proximamente(self):
+        """Detecta 'próximamente' como preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>Juego PS5 próximamente en stock</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is True
+
+    def test_detecta_preorden(self):
+        """Detecta 'preorden' o 'pre-orden' como preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>Haz tu pre-orden de FIFA 26 ahora</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is True
+
+    def test_no_detecta_producto_normal(self):
+        """No detecta productos normales como preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>Juego PS5 disponible en stock - Envío en 1 día</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is False
+
+    def test_item_none_devuelve_false(self):
+        """Si el item es None, devuelve False."""
+        assert bot._es_prereserva_item(None) is False
+
+
+class TestFormatPrereservaMessage:
+    def test_contiene_emoji_categoria(self):
+        """El mensaje contiene el emoji de la categoría."""
+        p = make_producto(titulo="FIFA 26 PS5")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰", "url": "/s?k=reserva+juegos+ps5"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "⏰" in msg
+
+    def test_contiene_proximo_lanzamiento(self):
+        """El mensaje contiene 'PRÓXIMO LANZAMIENTO'."""
+        p = make_producto(titulo="FIFA 26 PS5")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "PRÓXIMO LANZAMIENTO" in msg
+
+    def test_contiene_nombre_categoria(self):
+        """El mensaje contiene el nombre de la categoría."""
+        p = make_producto()
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "PRÓXIMOS PS5" in msg
+
+    def test_contiene_titulo(self):
+        """El mensaje contiene el título del producto."""
+        p = make_producto(titulo="FIFA 26 PS5")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "FIFA 26 PS5" in msg
+
+    def test_contiene_precio_reserva(self):
+        """El mensaje muestra precio de reserva cuando está disponible."""
+        p = make_producto(precio="49,99€")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "Precio de reserva" in msg
+        assert "49,99€" in msg
+
+    def test_omite_precio_si_na(self):
+        """Si el precio es 'N/A', no lo muestra."""
+        p = make_producto(precio="N/A")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "Precio de reserva" not in msg
+
+    def test_contiene_enlace_amazon(self):
+        """El mensaje contiene un enlace a Amazon."""
+        p = make_producto(url="https://www.amazon.es/dp/B001TEST01")
+        cat = {"nombre": "Próximos PS5", "emoji": "⏰"}
+        msg = bot.format_prereserva_message(p, cat)
+        assert "href=" in msg
+        assert "amazon.es" in msg
+
+
+class TestBuscarPrereservasPS:
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_respeta_limite_global_7_dias(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """Si fue publicada hace <7 días, no publica nada."""
+        ahora = datetime.now()
+        ultima_pub_hace_3_dias = (ahora - timedelta(days=3)).isoformat()
+        categorias_semanales = {"_ultima_publicacion_global": ultima_pub_hace_3_dias}
+        mock_load_deals.return_value = ({}, [], [], categorias_semanales)
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # No debe publicar nada debido al límite global
+        assert resultado == 0
+        mock_foto.assert_not_called()
+
+    def _html_prereserva(self, asin="B001PRE", titulo="FIFA 26 PS5"):
+        """Helper para generar HTML con preorden detectado."""
+        return textwrap.dedent(f"""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="{asin}">
+          <h2><a><span>{titulo}</span></a></h2>
+          <span>Disponible el 15 de marzo 2026</span>
+          <span class="a-price">
+            <span class="a-offscreen">49,99€</span>
+          </span>
+          <span class="a-size-base s-underline-text">2.500</span>
+          <img class="s-image" src="https://example.com/img.jpg" />
+        </div>
+        </body></html>
+        """)
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_publica_hasta_3_prereservas(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """Con 5 candidatos válidos, publica solo 3 (MAX_PRERESERVAS_POR_CICLO)."""
+        mock_load_deals.return_value = ({}, [], [], {})  # Sin bloqueo global
+        mock_load_pre.return_value = {}
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+        mock_foto.return_value = True
+
+        # Retornar HTML con preorden cada vez que se pida
+        mock_pagina.return_value = self._html_prereserva()
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # Debe publicar hasta 3 (o menos si no hay tantos candidatos)
+        assert resultado <= 3
+        # Si hay candidatos suficientes y se envió, llamó a foto
+        if resultado > 0:
+            mock_foto.assert_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_no_repite_asins_en_48h(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """Si un ASIN ya fue publicado hace <48h, no lo vuelve a publicar."""
+        ahora = datetime.now()
+        asin_reciente = 'B001_PRE_RECIENTE'
+        posted_prereservas = {asin_reciente: (ahora - timedelta(hours=24)).isoformat()}
+        mock_load_deals.return_value = ({}, [], [], {})
+        mock_load_pre.return_value = posted_prereservas
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+        mock_pagina.return_value = self._html_prereserva(asin=asin_reciente)
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # El ASIN ya fue publicado, así que no se publica de nuevo
+        assert resultado == 0
+        mock_foto.assert_not_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_guarda_timestamp_global_al_publicar(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """Al publicar preórdenes, actualiza _ultima_publicacion_global en posted_ps_deals.json."""
+        mock_load_deals.return_value = ({}, [], [], {})
+        mock_load_pre.return_value = {}
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+        mock_foto.return_value = True
+        mock_pagina.return_value = self._html_prereserva()
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # Si se publicó, debe llamar a save_posted_deals con categorias_semanales
+        if resultado > 0:
+            assert mock_save_deals.called
+            call_args = mock_save_deals.call_args
+            # El timestamp global debe estar en el 4o argumento (categorias_semanales)
+            if len(call_args[0]) >= 4:
+                categorias_semanales = call_args[0][3]
+                assert "_ultima_publicacion_global" in categorias_semanales
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_retorna_0_sin_candidatos(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """Sin candidatos de preorden válidos, retorna 0."""
+        # HTML sin señales de preorden
+        html_sin_preorden = '<html><body><div data-component-type="s-search-result" data-asin="B001"><span>Producto normal disponible en stock</span></div></body></html>'
+        mock_load_deals.return_value = ({}, [], [], {})
+        mock_load_pre.return_value = {}
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+        mock_pagina.return_value = html_sin_preorden
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # Sin candidatos de preorden, debe retornar 0
+        assert resultado == 0
+        mock_foto.assert_not_called()

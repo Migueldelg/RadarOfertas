@@ -26,6 +26,8 @@ Corre en **GitHub Actions** sin necesidad de servidor propio.
 
 ## ¿Cómo funciona?
 
+### Búsqueda de Ofertas
+
 ```
 1. Busca ofertas en Amazon en las categorías del canal
                           ↓
@@ -38,6 +40,22 @@ Corre en **GitHub Actions** sin necesidad de servidor propio.
 5. Publica en Telegram con links paralelos para cada variante:
    - PS5: 39,99€ → enlace Amazon PS5
    - PS4: 34,99€ → enlace Amazon PS4 (PS4)
+```
+
+### Búsqueda de Preórdenes (Canal PS — Nueva 🆕)
+
+```
+En paralelo, cada 30 min el canal PS ejecuta:
+
+1. Busca próximos lanzamientos en Amazon.es (PS4/PS5)
+                          ↓
+2. Detecta preórdenes por patrones: "próximamente", "disponible el", "preventa"
+                          ↓
+3. Ordena por popularidad (valoraciones + ventas)
+                          ↓
+4. Publica hasta 3 preórdenes por ciclo
+                          ↓
+5. Respeta límite global de 7 días (solo UNA publicación cada 7 días: oferta O preorden)
 ```
 
 **Sistema de Agrupamiento de Variantes:**
@@ -104,11 +122,13 @@ RadarOfertas/
 │       └── test_amazon_bebe_ofertas.py ← 84 tests automatizados (+ 20 tests de variantes)
 │
 ├── ps/
-│   ├── amazon_ps_ofertas.py        ← Canal PS4/PS5 (Fase 3 ✅)
-│   ├── posted_ps_deals.json        ← Estado anti-duplicados del canal PS
+│   ├── amazon_ps_ofertas.py        ← Canal PS4/PS5 (Fase 3 ✅) + Preórdenes (Nueva 🆕)
+│   ├── posted_ps_deals.json        ← Estado anti-duplicados del canal PS (ofertas)
+│   ├── posted_ps_prereservas.json  ← Estado anti-duplicados del canal PS (preórdenes) 🆕
+│   ├── PRERESERVAS_README.md       ← Documentación de preórdenes 🆕
 │   ├── README.md                   ← Documentación del canal PS
 │   └── tests/
-│       └── test_amazon_ps_ofertas.py ← 79 tests automatizados (+ 20 tests de variantes)
+│       └── test_amazon_ps_ofertas.py ← 100 tests (59 ofertas + 17 preórdenes + 24 variantes)
 │
 ├── requirements.txt                ← Dependencias Python (producción)
 ├── requirements-dev.txt            ← Dependencias de desarrollo (pytest)
@@ -217,13 +237,13 @@ source .env && python3 ps/amazon_ps_ofertas.py --continuo
 ```bash
 pip install -r requirements-dev.txt
 
-# Todos los tests (163 tests totales: 84 bebe + 79 PS)
+# Todos los tests (184 tests totales: 84 bebe + 100 PS)
 python3 -m pytest -v
 
 # Solo tests del canal bebé (84 tests: 64 originales + 20 de variantes)
 python3 -m pytest bebe/tests/ -v
 
-# Solo tests del canal PS (79 tests: 59 originales + 20 de variantes)
+# Solo tests del canal PS (100 tests: 59 ofertas + 17 preórdenes + 24 variantes)
 python3 -m pytest ps/tests/ -v
 
 # Con cobertura

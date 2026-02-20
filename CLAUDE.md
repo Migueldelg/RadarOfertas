@@ -15,10 +15,11 @@
 - **Categorías:** 12 (Pañales, Toallitas, Juguetes, etc.)
 - **Tests:** 64 tests
 
-### Canal 🎮 PS4/PS5 (en producción)
-- **Config:** `ps/amazon_ps_ofertas.py` — **Prioriza videojuegos sobre accesorios**
-- **Categorías:** 8 (Juegos PS5/PS4, Mandos, Accesorios)
-- **Tests:** 59 tests
+### Canal 🎮 PS4/PS5 (en producción + Preórdenes 🆕)
+- **Config:** `ps/amazon_ps_ofertas.py` — **Prioriza videojuegos sobre accesorios + Búsqueda de preórdenes**
+- **Categorías (Ofertas):** 8 (Juegos PS5/PS4, Mandos, Accesorios)
+- **Categorías (Preórdenes):** 2 (Próximos PS5, Próximos PS4) 🆕
+- **Tests:** 100 tests (59 ofertas + 17 preórdenes + 24 variantes)
 - **Workflow:** `.github/workflows/ofertas-ps.yml`
 
 ### Core Compartido
@@ -38,11 +39,13 @@ bebe/                           ← 🍼 Canal bebé (producción ✅)
 ├── README.md
 └── tests/ (64 tests)
 
-ps/                             ← 🎮 Canal PS4/PS5 (producción ✅)
-├── amazon_ps_ofertas.py        ← Prioriza videojuegos sobre accesorios
-├── posted_ps_deals.json
+ps/                             ← 🎮 Canal PS4/PS5 (producción ✅ + Preórdenes 🆕)
+├── amazon_ps_ofertas.py        ← Prioriza videojuegos sobre accesorios + Búsqueda de preórdenes
+├── posted_ps_deals.json        ← Estado anti-duplicados (ofertas)
+├── posted_ps_prereservas.json  ← Estado anti-duplicados (preórdenes) 🆕
 ├── README.md
-└── tests/ (59 tests)
+├── PRERESERVAS_README.md       ← Documentación de preórdenes 🆕
+└── tests/ (100 tests)
 
 .github/workflows/
 ├── ofertas.yml                 ← Bebé (cada 30 min)
@@ -68,12 +71,49 @@ DEV_MODE                           # Línea ~46 - Flag de modo dev (activado via
 
 ---
 
-## Sistema Anti-Repetición (4 Mecanismos)
+## Preórdenes - Canal PS (Nuevo 🆕)
 
-1. **Anti-ASIN (48h):** No repite el mismo producto en 48 horas
-2. **Anti-Categoría:** Evita las últimas 4 categorías (excepto Pañales/Toallitas)
-3. **Anti-Título Similar:** Para Chupetes/Juguetes, evita títulos con >50% palabras comunes
-4. **Límite Semanal:** Tronas/Cámaras/Chupetes/Vajilla bebe solo 1 vez por semana
+El canal PS incluye una **búsqueda paralela de preórdenes** ejecutada en el mismo ciclo de 30 min:
+
+### Constantes (en `ps/amazon_ps_ofertas.py`)
+```python
+CATEGORIAS_PRERESERVAS              # Línea ~106 - URLs de búsqueda (/s?k=juegos+ps5+proximamente)
+LIMITE_PRERESERVAS_HORAS = 48       # Ventana de deduplicación (separada de ofertas)
+MAX_PRERESERVAS_POR_CICLO = 3       # Máximo a publicar por ciclo
+```
+
+### Funciones Principales
+```python
+buscar_prereservas_ps()             # Función principal (línea ~178)
+_es_prereserva_item(item)           # Detección de preórdenes (línea ~145)
+format_prereserva_message()         # Formato Telegram (línea ~162)
+load_posted_prereservas()           # Cargar estado (línea ~140)
+save_posted_prereservas()           # Guardar estado (línea ~143)
+```
+
+### Coordinación con Ofertas
+- **Límite global de 7 días:** Ambas funciones comparten `_ultima_publicacion_global` en `posted_ps_deals.json`
+- **Si ofertas publican:** Preórdenes bloqueadas 7 días
+- **Si preórdenes publican:** Ofertas bloqueadas 7 días
+- **Persistencia separada:** Cada una tiene su propio JSON con ventana independiente
+
+### Cambios Comunes - Preórdenes
+| Tarea | Ubicación |
+|-------|-----------|
+| Ajustar URLs de búsqueda | `CATEGORIAS_PRERESERVAS` línea ~106 en `ps/amazon_ps_ofertas.py` |
+| Cambiar patrones de detección | `indicadores_preorden` en función `_es_prereserva_item()` línea ~145 |
+| Ver documentación completa | `ps/PRERESERVAS_README.md` |
+| Ejecutar tests de preórdenes | `python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestBuscarPrereservasPS -v` |
+
+---
+
+## Sistema Anti-Repetición (5 Mecanismos)
+
+1. **Anti-ASIN (48h):** No repite el mismo producto en 48 horas (ofertas)
+2. **Anti-ASIN Preórdenes (48h):** No repite preórdenes en 48 horas (ventana independiente) 🆕
+3. **Anti-Categoría:** Evita las últimas 4 categorías (excepto Pañales/Toallitas)
+4. **Anti-Título Similar:** Para Chupetes/Juguetes, evita títulos con >50% palabras comunes
+5. **Límite Global 7 días:** Ambas funciones (ofertas + preórdenes) respetan límite compartido
 
 ---
 
@@ -126,9 +166,14 @@ source .env && python3 ps/amazon_ps_ofertas.py --continuo     # Bucle cada 15 mi
 
 ### Tests
 ```bash
-python3 -m pytest -v                                          # Todos los tests
-python3 -m pytest bebe/tests/ -v                              # Solo bebé
-python3 -m pytest ps/tests/ -v                                # Solo PS
+python3 -m pytest -v                                          # Todos los tests (184 total)
+python3 -m pytest bebe/tests/ -v                              # Solo bebé (84 tests)
+python3 -m pytest ps/tests/ -v                                # Solo PS (100 tests)
+
+# Tests específicos de preórdenes
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestBuscarPrereservasPS -v
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestEsPrereservaItem -v
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestFormatPrereservaMessage -v
 ```
 
 ---

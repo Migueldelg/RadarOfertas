@@ -9,7 +9,9 @@ import time
 import os
 import sys
 import logging
+import html
 from datetime import datetime, timedelta
+from bs4 import BeautifulSoup
 
 # Add project root to path so shared/ is importable
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -51,6 +53,15 @@ DEV_MODE = False
 # Archivo para guardar ofertas ya publicadas
 POSTED_PS_DEALS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "posted_ps_deals.json")
 
+# Archivo para guardar preórdenes ya publicadas (ventana separada de 48h)
+POSTED_PS_PRERESERVAS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "posted_ps_prereservas.json")
+
+# Límite de 48 horas para no repetir el mismo preorden
+LIMITE_PRERESERVAS_HORAS = 48
+
+# Máximo de preórdenes a publicar por ciclo
+MAX_PRERESERVAS_POR_CICLO = 3
+
 
 def _effective_token():
     return DEV_TELEGRAM_PS_BOT_TOKEN if DEV_MODE and DEV_TELEGRAM_PS_BOT_TOKEN else TELEGRAM_PS_BOT_TOKEN
@@ -88,6 +99,14 @@ CATEGORIAS_PS = [
     {"nombre": "Accesorios PS4", "emoji": "⚙️", "url": "/s?k=accesorios+ps4", "tipo": "accesorio"},
 ]
 
+# Categorias de preórdenes (búsqueda semántica)
+# Nota: Las URLs buscan "próximos lanzamientos" y productos con señales de preorden
+# en el HTML (disponible el, próximamente, preventa, etc.)
+CATEGORIAS_PRERESERVAS = [
+    {"nombre": "Próximos PS5", "emoji": "⏰", "url": "/s?k=juegos+ps5+proximamente"},
+    {"nombre": "Próximos PS4", "emoji": "⏰", "url": "/s?k=juegos+ps4+proximamente"},
+]
+
 
 # --- Wrappers de funciones parametrizadas del core ---
 # Estas definiciones en el namespace del módulo permiten que los tests
@@ -118,6 +137,80 @@ def load_posted_deals():
 def save_posted_deals(deals_dict, ultimas_categorias=None, ultimos_titulos=None, categorias_semanales=None):
     """Guarda el diccionario de ofertas publicadas en un archivo JSON."""
     return _save_posted_deals_core(deals_dict, POSTED_PS_DEALS_FILE, ultimas_categorias, ultimos_titulos, categorias_semanales)
+
+
+def load_posted_prereservas():
+    """
+    Carga las preórdenes publicadas (ultimas 48h) desde un archivo JSON.
+    Retorna: dict de ASINs -> timestamps
+    """
+    return _load_posted_deals_core(POSTED_PS_PRERESERVAS_FILE, horas_ventana=LIMITE_PRERESERVAS_HORAS)[0]
+
+
+def save_posted_prereservas(deals_dict):
+    """Guarda el diccionario de preórdenes publicadas en un archivo JSON."""
+    return _save_posted_deals_core(deals_dict, POSTED_PS_PRERESERVAS_FILE)
+
+
+def _es_prereserva_item(item_html):
+    """
+    Detecta si un item de búsqueda de Amazon es un preorden o próximo lanzamiento.
+    Busca patrones de:
+    - Disponibilidad futura: "disponible el", "próximamente", "próxima semana"
+    - Preorden: "preventa", "pre-orden", "preorder", "reservar"
+    - Fechas futuras: referencias a meses (febrero, marzo, etc.) o años (2026, 2027)
+    """
+    try:
+        texto = item_html.get_text(strip=True).lower()
+    except (AttributeError, TypeError):
+        return False
+
+    # Indicadores de preorden/próximo lanzamiento
+    indicadores_preorden = [
+        'disponible el ',
+        'disponible a partir',
+        'próximamente',
+        'próxima',
+        'pronto disponible',
+        'preventa',
+        'pre-orden',
+        'preorden',
+        'preorder',
+        'reservar',
+        'reserva',
+        'en reserva',
+        'fecha de lanzamiento',
+        'lanzamiento',
+        'nuevo lanzamiento',
+    ]
+
+    # Si contiene indicador de preorden, es preorden
+    if any(ind in texto for ind in indicadores_preorden):
+        # Pero filtrar falsos positivos como "sin bono de reserva"
+        if 'sin bono' in texto or 'no recomendada' in texto:
+            # Aquí estamos en el título/descripción normal, probablemente falso positivo
+            # Solo aceptar si hay un indicador fuerte adicional
+            if not any(ind in texto for ind in ['disponible el', 'próximamente', 'pronto disponible', 'fecha de lanzamiento']):
+                return False
+        return True
+
+    return False
+
+
+def format_prereserva_message(producto, categoria):
+    """Formatea un preorden para enviarlo a Telegram."""
+    titulo = html.escape(producto['titulo'])
+    precio = producto['precio']
+    url = html.escape(producto['url'])
+    emoji = categoria.get('emoji', '⏰')
+    plataforma = categoria.get('nombre', '').upper()
+
+    message = f"{emoji} <b>PRÓXIMO LANZAMIENTO {plataforma}</b> {emoji}\n\n"
+    message += f"📦 <b>{titulo}</b>\n\n"
+    if precio and precio != "N/A":
+        message += f"💰 Precio de reserva: <b>{precio}</b>\n\n"
+    message += f'🛒 <a href="{url}">Reservar en Amazon</a>'
+    return message
 
 
 def buscar_y_publicar_ofertas():
@@ -457,6 +550,141 @@ def buscar_y_publicar_ofertas():
     return ofertas_publicadas
 
 
+def buscar_prereservas_ps():
+    """
+    Busca juegos en preorden para PS4/PS5 y publica hasta MAX_PRERESERVAS_POR_CICLO.
+    Respeta el límite global de 7 días compartido con las ofertas normales.
+    """
+    if not _effective_token() or not _effective_chat_id():
+        return 0
+
+    log.info("=" * 60)
+    log.info("INICIO BÚSQUEDA PRERESERVAS PS4/PS5")
+    log.info("=" * 60)
+
+    # Cargar estado de offers para verificar límite global de 7 días
+    if DEV_MODE:
+        posted_deals, _, _, categorias_semanales = {}, [], [], {}
+    else:
+        posted_deals, _, _, categorias_semanales = load_posted_deals()
+
+    # Verificar límite global de 7 días
+    now = datetime.now()
+    siete_dias = timedelta(days=LIMITE_GLOBAL_DIAS)
+    ultima_pub_global_str = categorias_semanales.get("_ultima_publicacion_global")
+    if ultima_pub_global_str:
+        try:
+            ultima_pub_global = datetime.fromisoformat(ultima_pub_global_str)
+            if now - ultima_pub_global < siete_dias:
+                dias_restantes = (siete_dias - (now - ultima_pub_global)).days + 1
+                log.info("LÍMITE GLOBAL activo (faltan ~%d días). Sin prereservas.", dias_restantes)
+                log.info("=" * 60)
+                return 0
+        except (ValueError, TypeError):
+            pass
+
+    # Cargar ASINs de prereservas publicadas (ventana 48h)
+    if DEV_MODE:
+        posted_prereservas = {}
+    else:
+        posted_prereservas = load_posted_prereservas()
+    posted_prereservas_asins = set(posted_prereservas.keys())
+
+    # Recopilar candidatos de todas las URLs de búsqueda de preórdenes
+    candidatos = []
+    for categoria in CATEGORIAS_PRERESERVAS:
+        url = BASE_URL + categoria['url']
+        log.info("Buscando preórdenes: %s", categoria['nombre'])
+        html_content = obtener_pagina(url)
+        if not html_content:
+            log.warning("  No se pudo obtener la página, saltando")
+            continue
+
+        soup = BeautifulSoup(html_content, 'html.parser')
+        items = soup.select('[data-component-type="s-search-result"]')
+
+        log.info("  Encontrados %d items, verificando si son preórdenes...", len(items))
+        items_descartados = 0
+        for item in items[:20]:
+            asin = item.get('data-asin', '')
+            if not asin or asin in posted_prereservas_asins:
+                continue
+            if not _es_prereserva_item(item):
+                items_descartados += 1
+                # DEBUG: mostrar texto del item para investigar por qué se descarta
+                texto_item = item.get_text(strip=True)[:100]
+                log.debug("    [DESCARTADO] ASIN %s: %s...", asin, texto_item)
+                continue
+
+            # Extraer datos básicos del producto del item individual
+            # Convertir el item BeautifulSoup a string para que extraer_productos_busqueda lo procese
+            productos = extraer_productos_busqueda(str(item))
+            if productos:
+                producto = productos[0]
+                candidatos.append({'producto': producto, 'categoria': categoria})
+                log.info("    [PREORDEN] %s (ASIN: %s)", producto['titulo'][:50], asin)
+
+        if items_descartados > 0:
+            log.info("  %d items descartados por no tener señales de preorden", items_descartados)
+
+    if not candidatos:
+        log.info("No hay candidatos de preórdenes en este ciclo")
+        log.info("=" * 60)
+        return 0
+
+    # Ordenar por popularidad (valoraciones + ventas como proxy)
+    candidatos.sort(
+        key=lambda x: (x['producto']['valoraciones'], x['producto']['ventas']),
+        reverse=True
+    )
+
+    log.info("")
+    log.info("--- Top candidatos de preórdenes (ordenados por popularidad) ---")
+    for i, entrada in enumerate(candidatos[:MAX_PRERESERVAS_POR_CICLO], 1):
+        p = entrada['producto']
+        log.info(
+            "  %d. %s... | %d vals | ASIN: %s",
+            i, p['titulo'][:40], p['valoraciones'], p['asin']
+        )
+
+    # Publicar hasta MAX_PRERESERVAS_POR_CICLO
+    publicadas = 0
+    nuevos_asins = {}
+    for entrada in candidatos[:MAX_PRERESERVAS_POR_CICLO]:
+        producto = entrada['producto']
+        categoria = entrada['categoria']
+        mensaje = format_prereserva_message(producto, categoria)
+
+        log.info("Publicando preorden: %s (ASIN: %s)", producto['titulo'][:50], producto['asin'])
+
+        if producto['imagen']:
+            exito = send_telegram_photo(producto['imagen'], mensaje)
+        else:
+            exito = send_telegram_message(mensaje)
+
+        if exito:
+            nuevos_asins[producto['asin']] = datetime.now().isoformat()
+            publicadas += 1
+
+    if publicadas > 0:
+        # Guardar ASINs de prereservas publicadas
+        posted_prereservas.update(nuevos_asins)
+        if not DEV_MODE:
+            save_posted_prereservas(posted_prereservas)
+
+        # Actualizar límite global de 7 días en posted_ps_deals.json
+        categorias_semanales["_ultima_publicacion_global"] = datetime.now().isoformat()
+        if not DEV_MODE:
+            save_posted_deals(posted_deals, None, None, categorias_semanales)
+
+    log.info("")
+    log.info("=" * 60)
+    log.info("FIN PRERESERVAS - %d publicadas", publicadas)
+    log.info("=" * 60)
+
+    return publicadas
+
+
 def main(modo_continuo=False):
     """
     Funcion principal.
@@ -468,6 +696,7 @@ def main(modo_continuo=False):
         while True:
             try:
                 buscar_y_publicar_ofertas()
+                buscar_prereservas_ps()
                 log.info("Proxima ejecucion en 15 minutos...")
                 log.info("-" * 60)
                 time.sleep(900)  # 15 minutos = 900 segundos
@@ -477,6 +706,7 @@ def main(modo_continuo=False):
     else:
         # Ejecutar una sola vez (ideal para cron)
         buscar_y_publicar_ofertas()
+        buscar_prereservas_ps()
 
 
 if __name__ == "__main__":

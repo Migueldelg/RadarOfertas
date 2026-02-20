@@ -6,22 +6,35 @@ Script para obtener las mejores ofertas de videojuegos y accesorios PS4/PS5 de A
 
 ```
 ps/
-├── amazon_ps_ofertas.py           ← Script principal
-├── posted_ps_deals.json           ← Estado anti-duplicados (actualizado automáticamente)
+├── amazon_ps_ofertas.py           ← Script principal (ofertas + preórdenes)
+├── posted_ps_deals.json           ← Estado anti-duplicados (ofertas)
+├── posted_ps_prereservas.json     ← Estado anti-duplicados (preórdenes) 🆕
 ├── ofertas_ps.log                 ← Logs de ejecución
 ├── README.md                      ← Este archivo
+├── PRERESERVAS_README.md          ← Documentación de preórdenes 🆕
 └── tests/
-    └── test_amazon_ps_ofertas.py  ← 59 tests automatizados
+    └── test_amazon_ps_ofertas.py  ← 100 tests automatizados (59 ofertas + 17 preórdenes + 24 variantes)
 ```
 
 ## Características
 
+### Búsqueda de Ofertas
 ✅ **Videojuegos priorizados** - Siempre publica juegos PS4/PS5 antes que accesorios
 ✅ **Agrupamiento de variantes** - Automáticamente agrupa PS4/PS5 en un solo mensaje con links paralelos
-✅ **Anti-duplicados 48h** - No repite el mismo ASIN en 48 horas (incluyendo variantes)
+✅ **Anti-duplicados 96h** - No repite el mismo ASIN en 96 horas (incluyendo variantes)
 ✅ **Anti-títulos similares** - Evita publicar juegos similares repetidamente
-✅ **Modo desarrollo** - Publica en canal de pruebas sin modificar el JSON
-✅ **Tests completos** - 79 tests que cubren toda la lógica incluyendo variantes
+✅ **Límite global 7 días** - Una publicación cada 7 días (oferta o preorden)
+
+### Búsqueda de Preórdenes 🆕
+✅ **Ejecución paralela** - Se ejecuta cada 30 min junto con ofertas
+✅ **Detección automática** - Identifica preórdenes por patrones HTML ("próximamente", "preventa", etc.)
+✅ **Hasta 3 por ciclo** - Publica máximo 3 preórdenes cuando están disponibles
+✅ **Anti-duplicados 48h** - Ventana independiente de ofertas (puede reciclar cada 2 días)
+✅ **Formato diferente** - Mensajes con ⏰ emoji, sin precios tachados, enlace "Reservar"
+
+### General
+✅ **Modo desarrollo** - Publica en canal de pruebas sin modificar los JSONs
+✅ **Tests completos** - 100 tests que cubren ofertas, preórdenes y variantes
 
 ## Configuración
 
@@ -67,11 +80,16 @@ source .env && python3 ps/amazon_ps_ofertas.py --continuo
 ### Tests
 
 ```bash
-# Ejecutar todos los tests
+# Ejecutar todos los tests (100 tests: 59 ofertas + 17 preórdenes + 24 variantes)
 python3 -m pytest ps/tests/ -v
 
 # Ver cobertura
 python3 -m pytest ps/tests/ --cov=ps.amazon_ps_ofertas --cov-report=term-missing
+
+# Solo tests de preórdenes
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestBuscarPrereservasPS -v
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestEsPrereservaItem -v
+python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestFormatPrereservaMessage -v
 
 # Ejecutar un test específico
 python3 -m pytest ps/tests/test_amazon_ps_ofertas.py::TestObtenerPrioridadMarca -v
@@ -128,6 +146,54 @@ Cuando se detectan variantes (ej: PS5 vs PS4), el mensaje muestra **múltiples l
 
 🛒 Ver en Amazon
 ```
+
+## Búsqueda de Preórdenes 🆕
+
+El canal PS incluye una búsqueda paralela de **próximos lanzamientos y preórdenes** que:
+
+- Se ejecuta **en el mismo ciclo** de 30 minutos
+- Busca en `/s?k=juegos+ps5+proximamente` y `/s?k=juegos+ps4+proximamente`
+- Detecta preórdenes por patrones HTML: "próximamente", "disponible el", "preventa", "preorder"
+- Publica **hasta 3 preórdenes** por ciclo (si están disponibles)
+- **No repite en 48 horas** (ventana independiente de ofertas)
+- **Respeta límite global de 7 días** (solo UNA publicación cada 7 días: oferta O preorden)
+
+### Formato de Preorden
+
+```
+⏰ PRÓXIMO LANZAMIENTO PRÓXIMOS PS5 ⏰
+
+📦 Metal Gear Solid Delta: Snake Eater
+
+💰 Precio de reserva: 69,99€
+
+🛒 Reservar en Amazon
+```
+
+**Características:**
+- ⏰ Emoji de reloj para identificar preórdenes
+- Sin precios tachados (no hay descuento conocido)
+- Botón "Reservar" en lugar de "Ver en Amazon"
+- Enlace directo a la página de reserva del producto
+
+### Archivo de Persistencia: `posted_ps_prereservas.json`
+
+Almacena los preórdenes publicados con una **ventana de 48 horas** (separada de las ofertas):
+
+```json
+{
+  "B0EXAMPLE01": "2026-02-20T09:15:30.123456",
+  "B0EXAMPLE02": "2026-02-20T09:16:45.654321"
+}
+```
+
+**Coordinación con ofertas:**
+- Ambos comparten el timestamp `_ultima_publicacion_global` en `posted_ps_deals.json`
+- Si ofertas publican → preórdenes bloqueadas 7 días
+- Si preórdenes publican → ofertas bloqueadas 7 días
+- Sistema automático sin locks manuales
+
+Para más detalles sobre debugging y ajustes, ver **`PRERESERVAS_README.md`**.
 
 ## Categorías
 
@@ -275,4 +341,13 @@ python3 -m pytest ps/tests/ -vv
 
 ---
 
-**Creado con ❤️ en Fase 3 del Plan PS**
+## Roadmap
+
+- ✅ **Fase 1:** Búsqueda de ofertas (videojuegos priorizados)
+- ✅ **Fase 2:** Agrupamiento de variantes (PS4 + PS5)
+- ✅ **Fase 3:** Límite global de 7 días entre publicaciones
+- ✅ **Fase 4:** Búsqueda paralela de preórdenes 🆕
+
+---
+
+**Creado con ❤️ en Fase 4 del Plan PS** (Preórdenes 🆕)
