@@ -264,22 +264,6 @@ def buscar_y_publicar_ofertas():
     tres_dias = timedelta(days=LIMITE_ACCESORIOS_DIAS)
     siete_dias = timedelta(days=LIMITE_GLOBAL_DIAS)
 
-    # Verificar límite global de 7 días entre publicaciones
-    ultima_pub_global_str = categorias_semanales.get("_ultima_publicacion_global")
-    if ultima_pub_global_str:
-        try:
-            ultima_pub_global = datetime.fromisoformat(ultima_pub_global_str)
-            tiempo_transcurrido = now - ultima_pub_global
-            if tiempo_transcurrido < siete_dias:
-                dias_restantes = (siete_dias - tiempo_transcurrido).days + 1
-                log.info(
-                    "LÍMITE GLOBAL: última publicación el %s (hace %d días, faltan ~%d días). No se publica.",
-                    ultima_pub_global.strftime('%d/%m %H:%M'), tiempo_transcurrido.days, dias_restantes
-                )
-                log.info("=" * 60)
-                return 0
-        except (ValueError, TypeError):
-            pass
 
     # Verificar si se publicó un accesorio en los últimos 3 días
     accesorios_bloqueados = False
@@ -527,10 +511,6 @@ def buscar_y_publicar_ofertas():
             categorias_semanales["_accesorios_ultima_pub"] = datetime.now().isoformat()
             log.debug("Timestamp de límite de 3 días para accesorios actualizado")
 
-        # Guardar timestamp de última publicación global
-        categorias_semanales["_ultima_publicacion_global"] = datetime.now().isoformat()
-        log.debug("Timestamp de límite global de 7 días actualizado")
-
         ofertas_publicadas = 1
     else:
         log.error("Fallo al enviar a Telegram, no se guarda el ASIN en el historial")
@@ -553,7 +533,7 @@ def buscar_y_publicar_ofertas():
 def buscar_prereservas_ps():
     """
     Busca juegos en preorden para PS4/PS5 y publica hasta MAX_PRERESERVAS_POR_CICLO.
-    Respeta el límite global de 7 días compartido con las ofertas normales.
+    Funciona de forma independiente de las ofertas normales (cada una con sus propios límites).
     """
     if not _effective_token() or not _effective_chat_id():
         return 0
@@ -562,26 +542,8 @@ def buscar_prereservas_ps():
     log.info("INICIO BÚSQUEDA PRERESERVAS PS4/PS5")
     log.info("=" * 60)
 
-    # Cargar estado de offers para verificar límite global de 7 días
-    if DEV_MODE:
-        posted_deals, _, _, categorias_semanales = {}, [], [], {}
-    else:
-        posted_deals, _, _, categorias_semanales = load_posted_deals()
-
-    # Verificar límite global de 7 días
+    # Preórdenes funcionan de forma independiente de las ofertas normales
     now = datetime.now()
-    siete_dias = timedelta(days=LIMITE_GLOBAL_DIAS)
-    ultima_pub_global_str = categorias_semanales.get("_ultima_publicacion_global")
-    if ultima_pub_global_str:
-        try:
-            ultima_pub_global = datetime.fromisoformat(ultima_pub_global_str)
-            if now - ultima_pub_global < siete_dias:
-                dias_restantes = (siete_dias - (now - ultima_pub_global)).days + 1
-                log.info("LÍMITE GLOBAL activo (faltan ~%d días). Sin prereservas.", dias_restantes)
-                log.info("=" * 60)
-                return 0
-        except (ValueError, TypeError):
-            pass
 
     # Cargar ASINs de prereservas publicadas (ventana 48h)
     if DEV_MODE:
@@ -671,11 +633,6 @@ def buscar_prereservas_ps():
         posted_prereservas.update(nuevos_asins)
         if not DEV_MODE:
             save_posted_prereservas(posted_prereservas)
-
-        # Actualizar límite global de 7 días en posted_ps_deals.json
-        categorias_semanales["_ultima_publicacion_global"] = datetime.now().isoformat()
-        if not DEV_MODE:
-            save_posted_deals(posted_deals, None, None, categorias_semanales)
 
     log.info("")
     log.info("=" * 60)

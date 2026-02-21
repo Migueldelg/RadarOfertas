@@ -91,11 +91,13 @@ load_posted_prereservas()           # Cargar estado (línea ~140)
 save_posted_prereservas()           # Guardar estado (línea ~143)
 ```
 
-### Coordinación con Ofertas
-- **Límite global de 7 días:** Ambas funciones comparten `_ultima_publicacion_global` en `posted_ps_deals.json`
-- **Si ofertas publican:** Preórdenes bloqueadas 7 días
-- **Si preórdenes publican:** Ofertas bloqueadas 7 días
-- **Persistencia separada:** Cada una tiene su propio JSON con ventana independiente
+### Independencia entre Ofertas y Preórdenes
+- **Flujos completamente desacoplados:** Ofertas y preórdenes funcionan de forma independiente
+- **Persistencia separada:** Cada una tiene su propio JSON con su propia ventana de deduplicación
+  - Ofertas: `posted_ps_deals.json` (ventana 96h)
+  - Preórdenes: `posted_ps_prereservas.json` (ventana 48h)
+- **Publicación simultánea permitida:** Ambas pueden publicarse en el mismo ciclo de 30 min
+- **Canal compartido:** Se publican en el mismo canal de Telegram, pero sin bloquearse mutuamente
 
 ### Cambios Comunes - Preórdenes
 | Tarea | Ubicación |
@@ -107,13 +109,12 @@ save_posted_prereservas()           # Guardar estado (línea ~143)
 
 ---
 
-## Sistema Anti-Repetición (5 Mecanismos)
+## Sistema Anti-Repetición (4 Mecanismos)
 
-1. **Anti-ASIN (48h):** No repite el mismo producto en 48 horas (ofertas)
+1. **Anti-ASIN Ofertas (96h):** No repite el mismo producto en 96 horas (en ofertas)
 2. **Anti-ASIN Preórdenes (48h):** No repite preórdenes en 48 horas (ventana independiente) 🆕
 3. **Anti-Categoría:** Evita las últimas 4 categorías (excepto Pañales/Toallitas)
 4. **Anti-Título Similar:** Para Chupetes/Juguetes, evita títulos con >50% palabras comunes
-5. **Límite Global 7 días:** Ambas funciones (ofertas + preórdenes) respetan límite compartido
 
 ---
 

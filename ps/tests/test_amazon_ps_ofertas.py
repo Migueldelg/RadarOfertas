@@ -836,22 +836,24 @@ class TestLimiteGlobalPS:
     @patch('ps.amazon_ps_ofertas.load_posted_deals')
     @patch('ps.amazon_ps_ofertas.save_posted_deals')
     def test_bloquea_si_publicacion_reciente(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
-        """Verifica que bloquea publicaciones si han pasado <7 días desde la última."""
+        """Ofertas y preórdenes son independientes: ofertas no están bloqueadas por preórdenes recientes."""
         ahora = datetime.now()
+        # Incluso si hay _ultima_publicacion_global reciente, las ofertas se publican
+        # (la coordinación entre ofertas y preórdenes fue removida)
         ultima_pub_hace_3_dias = (ahora - timedelta(days=3)).isoformat()
         categorias_semanales = {"_ultima_publicacion_global": ultima_pub_hace_3_dias}
         mock_load.return_value = ({}, [], [], categorias_semanales)
         mock_pagina.return_value = _html_con_producto()
+        mock_foto.return_value = True
         mock_token.return_value = 'fake_token'
         mock_chat_id.return_value = 'fake_chat_id'
 
         resultado = bot.buscar_y_publicar_ofertas()
 
-        # No debe publicar porque no han pasado 7 días
-        assert resultado == 0
-        # No debe llamar a send_telegram_photo ni send_telegram_message
-        mock_foto.assert_not_called()
-        mock_msg.assert_not_called()
+        # Debe publicar porque ofertas y preórdenes son independientes
+        assert resultado == 1
+        # Debe llamar a send_telegram_photo
+        mock_foto.assert_called()
 
     @patch('ps.amazon_ps_ofertas._effective_chat_id')
     @patch('ps.amazon_ps_ofertas._effective_token')
@@ -919,7 +921,7 @@ class TestLimiteGlobalPS:
     @patch('ps.amazon_ps_ofertas.load_posted_deals')
     @patch('ps.amazon_ps_ofertas.save_posted_deals')
     def test_guarda_timestamp_al_publicar(self, mock_save, mock_load, mock_pagina, mock_msg, mock_foto, mock_token, mock_chat_id):
-        """Verifica que se guarda _ultima_publicacion_global en JSON al publicar exitosamente."""
+        """Verifica que NO se guarda _ultima_publicacion_global (límite global removido)."""
         mock_load.return_value = ({}, [], [], {})
         mock_pagina.return_value = _html_con_producto(
             asin="B001_GAME",
@@ -936,15 +938,13 @@ class TestLimiteGlobalPS:
         # Debe publicar
         assert resultado == 1
 
-        # Verificar que save_posted_deals fue llamado con categorias_semanales
-        # que contenga _ultima_publicacion_global
+        # Verificar que save_posted_deals fue llamado
+        # pero sin _ultima_publicacion_global (ya que ofertas y preórdenes son independientes)
         assert mock_save.called
         call_args = mock_save.call_args
         categorias_semanales_guardadas = call_args[0][3] if len(call_args[0]) > 3 else call_args.kwargs.get('categorias_semanales', {})
-        assert "_ultima_publicacion_global" in categorias_semanales_guardadas
-        # Verificar que el timestamp es reciente (hace menos de 10 segundos)
-        ts_guardado = datetime.fromisoformat(categorias_semanales_guardadas["_ultima_publicacion_global"])
-        assert (datetime.now() - ts_guardado).total_seconds() < 10
+        # El timestamp global NO debe estar en categorias_semanales (fue removido)
+        assert "_ultima_publicacion_global" not in categorias_semanales_guardadas
 
 
 # ---------------------------------------------------------------------------
@@ -1052,19 +1052,24 @@ class TestBuscarPrereservasPS:
     @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
     @patch('ps.amazon_ps_ofertas.save_posted_deals')
     def test_respeta_limite_global_7_dias(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
-        """Si fue publicada hace <7 días, no publica nada."""
+        """Preórdenes son independientes de ofertas: no están bloqueadas por límite global."""
         ahora = datetime.now()
+        # Incluso si hay _ultima_publicacion_global reciente, las preórdenes se publican
+        # (la coordinación entre ofertas y preórdenes fue removida)
         ultima_pub_hace_3_dias = (ahora - timedelta(days=3)).isoformat()
         categorias_semanales = {"_ultima_publicacion_global": ultima_pub_hace_3_dias}
         mock_load_deals.return_value = ({}, [], [], categorias_semanales)
+        mock_load_pre.return_value = {}
         mock_token.return_value = 'fake_token'
         mock_chat_id.return_value = 'fake_chat_id'
+        mock_foto.return_value = True
+        mock_pagina.return_value = self._html_prereserva()
 
         resultado = bot.buscar_prereservas_ps()
 
-        # No debe publicar nada debido al límite global
-        assert resultado == 0
-        mock_foto.assert_not_called()
+        # Debe publicar porque preórdenes y ofertas son independientes
+        assert resultado > 0
+        mock_foto.assert_called()
 
     def _html_prereserva(self, asin="B001PRE", titulo="FIFA 26 PS5"):
         """Helper para generar HTML con preorden detectado."""
@@ -1143,7 +1148,7 @@ class TestBuscarPrereservasPS:
     @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
     @patch('ps.amazon_ps_ofertas.save_posted_deals')
     def test_guarda_timestamp_global_al_publicar(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
-        """Al publicar preórdenes, actualiza _ultima_publicacion_global en posted_ps_deals.json."""
+        """Al publicar preórdenes, NO actualiza _ultima_publicacion_global (límite global removido)."""
         mock_load_deals.return_value = ({}, [], [], {})
         mock_load_pre.return_value = {}
         mock_token.return_value = 'fake_token'
@@ -1153,14 +1158,13 @@ class TestBuscarPrereservasPS:
 
         resultado = bot.buscar_prereservas_ps()
 
-        # Si se publicó, debe llamar a save_posted_deals con categorias_semanales
+        # Preórdenes solo guardan en su propio JSON (posted_ps_prereservas.json)
+        # y NO actualizan el timestamp global en posted_ps_deals.json
         if resultado > 0:
-            assert mock_save_deals.called
-            call_args = mock_save_deals.call_args
-            # El timestamp global debe estar en el 4o argumento (categorias_semanales)
-            if len(call_args[0]) >= 4:
-                categorias_semanales = call_args[0][3]
-                assert "_ultima_publicacion_global" in categorias_semanales
+            # save_posted_prereservas debe ser llamado
+            assert mock_save_pre.called
+            # save_posted_deals NO debe ser llamado (preórdenes son independientes)
+            assert not mock_save_deals.called
 
     @patch('ps.amazon_ps_ofertas._effective_chat_id')
     @patch('ps.amazon_ps_ofertas._effective_token')
