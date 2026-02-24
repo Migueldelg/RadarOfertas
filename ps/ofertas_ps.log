@@ -14570,3 +14570,172 @@
 24/02/2026 17:35:02 [INFO   ]   4 items descartados por no tener señales de preorden
 24/02/2026 17:35:02 [INFO   ] No hay candidatos de preórdenes en este ciclo
 24/02/2026 17:35:02 [INFO   ] ============================================================
+24/02/2026 19:30:12 [INFO   ] ============================================================
+24/02/2026 19:30:12 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+24/02/2026 19:30:12 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 24/02/2026 19:30
+24/02/2026 19:30:12 [INFO   ] ============================================================
+24/02/2026 19:30:12 [INFO   ] Historial cargado: 36 ASINs en ventana de 96h (ignorados 0 expirados)
+24/02/2026 19:30:12 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+24/02/2026 19:30:12 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+24/02/2026 19:30:12 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 3 dias (21/02 19:01)
+24/02/2026 19:30:12 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 3 dias (20/02 23:52)
+24/02/2026 19:30:12 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+24/02/2026 19:30:12 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+24/02/2026 19:30:12 [INFO   ] 
+24/02/2026 19:30:12 [INFO   ] --- Categoria: Juegos PS5 ---
+24/02/2026 19:30:14 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+24/02/2026 19:30:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+24/02/2026 19:30:16 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+24/02/2026 19:30:16 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:16 [DEBUG  ]     1. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 56% dto | 5 vals | 0 ventas
+24/02/2026 19:30:16 [DEBUG  ]     2. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5 | 47% dto | 5 vals | 0 ventas
+24/02/2026 19:30:16 [DEBUG  ]     3. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 40% dto | 5 vals | 0 ventas
+24/02/2026 19:30:16 [DEBUG  ]     4. [B0F1G4KWH1] Silent Hill f - Day One Edition - PS5 | 38% dto | 5 vals | 0 ventas
+24/02/2026 19:30:16 [DEBUG  ]     5. [B0D6PFPTXH] Metal Gear Solid Delta Snake Eater D1 Edition - PS | 37% dto | 0 vals | 0 ventas
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Assassin's Creed Shadows Limited Edition (Exc... (56% dto, ASIN: B0D362WFCC)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Alan Wake 2 Deluxe Edition - PS5... (47% dto, ASIN: B0D669NGW7)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Teenage Mutant Ninja Turtles: Mutantes desenc... (40% dto, ASIN: B0CXDX9ZJ3)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Silent Hill f - Day One Edition - PS5... (38% dto, ASIN: B0F1G4KWH1)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Metal Gear Solid Delta Snake Eater D1 Edition... (37% dto, ASIN: B0D6PFPTXH)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] The Crew Motorfest Limited Edition (Exclusivo... (33% dto, ASIN: B0C74PQ6TX)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] ANNO 117 Pax Romana PS5... (30% dto, ASIN: B0FCDNJB22)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Avatar: Frontiers of Pandora From the Ashes E... (25% dto, ASIN: B0FSD6JBSK)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] A Quiet Place - The Road Ahead - PS5... (25% dto, ASIN: B0DCGGTZ99)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Clair Obscur: Expedition 33... (21% dto, ASIN: B0DLGNT4V3)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Minecraft - PS5... (17% dto, ASIN: B0DCPB9J7K)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] PlayStation 5-Ghost of Yotei - Edición Estánd... (13% dto, ASIN: B0F6D5BS17)
+24/02/2026 19:30:16 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS UFC 5 Standard Edition PS5 | Videoj... (10% dto, ASIN: B0CGHPFJPQ)
+24/02/2026 19:30:16 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+24/02/2026 19:30:16 [INFO   ] 
+24/02/2026 19:30:16 [INFO   ] --- Categoria: Juegos PS4 ---
+24/02/2026 19:30:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+24/02/2026 19:30:20 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+24/02/2026 19:30:20 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:20 [DEBUG  ]     1. [B0B6G74TF3] God of War Ragnarok PS4 | Videojuego Original de P | 54% dto | 0 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:20 [DEBUG  ]     2. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 47% dto | 4 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:20 [DEBUG  ]     3. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:20 [DEBUG  ]     4. [B07PC3V9F2] Hollow Knight | 34% dto | 4 vals | 0 ventas
+24/02/2026 19:30:20 [DEBUG  ]     5. [B08D46HFMY] Ghost Of Tsushima (PS4) | 12% dto | 4 vals | 0 ventas
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] God of War Ragnarok PS4 | Videojuego Original... (54% dto, ASIN: B0B6G74TF3)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (47% dto, ASIN: B09GSPDV8K)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (34% dto, ASIN: B07PC3V9F2)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Ghost Of Tsushima (PS4)... (12% dto, ASIN: B08D46HFMY)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Electronic Arts Star Wars Jedi: Survivor PS4 ... (10% dto, ASIN: B0DBLV5FS8)
+24/02/2026 19:30:20 [INFO   ]   DESCARTADO [ya publicado en <48h] WWE 2K25 PS4... (9% dto, ASIN: B0DV9W946R)
+24/02/2026 19:30:20 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+24/02/2026 19:30:20 [INFO   ] 
+24/02/2026 19:30:20 [INFO   ] --- Categoria: Mandos PS5 ---
+24/02/2026 19:30:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+24/02/2026 19:30:24 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+24/02/2026 19:30:24 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:24 [DEBUG  ]     1. [B08S3FMVV7] OIVO - Cargador para Mando PS5, 2H rápido Cargador | 12% dto | 0 vals | 200 ventas
+24/02/2026 19:30:24 [DEBUG  ]     2. [B0CJK1YPMC] Playstation 5 - Mando Inalámbrico DualSense Wirele | 10% dto | 5 vals | 600 ventas [MARCA PRIO]
+24/02/2026 19:30:24 [DEBUG  ]     3. [B0D31GP39Z] Sony DualSense V2 Noir, Bleu Bluetooth/USB Manette | 10% dto | 0 vals | 10 ventas [MARCA PRIO]
+24/02/2026 19:30:24 [DEBUG  ]     4. [B096SK949M] Sony Dualsense Wireless Controller PS5 - Black | 6% dto | 5 vals | 10 ventas [MARCA PRIO]
+24/02/2026 19:30:24 [DEBUG  ]     5. [B0D49NN1QX] Playstation Sony 5 - Mando inalámbrico DualSense + | 2% dto | 0 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:24 [INFO   ]   ELEGIDO para categoria: OIVO - Cargador para Mando PS5, 2H rápido Car... (12% dto, 0 valoraciones, ASIN: B08S3FMVV7)
+24/02/2026 19:30:24 [INFO   ] 
+24/02/2026 19:30:24 [INFO   ] --- Categoria: Mandos PS4 ---
+24/02/2026 19:30:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+24/02/2026 19:30:29 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+24/02/2026 19:30:29 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:29 [DEBUG  ]     1. [B0DK1NY4LW] AceGamer 2 Pack Mando Inalámbrico para PS4，Mando d | 10% dto | 0 vals | 200 ventas
+24/02/2026 19:30:29 [DEBUG  ]     2. [B01LBH9ILW] Dualshock 4 Wireless Controller - Jet Black - Play | 10% dto | 4 vals | 20 ventas [MARCA PRIO]
+24/02/2026 19:30:29 [DEBUG  ]     3. [B0GCCZP7TN] Pogriko Mando para PS4, Mando Inalámbrico con Luce | 9% dto | 4 vals | 100 ventas
+24/02/2026 19:30:29 [DEBUG  ]     4. [B08H5SC71G] Nacon Mando Compact PS4 oficial camuflaje gris | 7% dto | 4 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:29 [DEBUG  ]     5. [B07D28WVGG] Sony - Wireless Controller V2 Dualshock 4, Color J | 5% dto | 4 vals | 10 ventas [MARCA PRIO]
+24/02/2026 19:30:29 [INFO   ]   ELEGIDO para categoria: AceGamer 2 Pack Mando Inalámbrico para PS4，Ma... (10% dto, 0 valoraciones, ASIN: B0DK1NY4LW)
+24/02/2026 19:30:29 [INFO   ] 
+24/02/2026 19:30:29 [INFO   ] --- Categoria: Auriculares gaming ---
+24/02/2026 19:30:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+24/02/2026 19:30:34 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+24/02/2026 19:30:34 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:34 [DEBUG  ]     1. [B0FWCHV916] VK84 Cascos Gaming Inalambricos para Ps4, Ps5, PC, | 47% dto | 0 vals | 0 ventas
+24/02/2026 19:30:34 [DEBUG  ]     2. [B07G2D87BV] Auriculares Gaming Stereo Sony Oficial PS4 Bigben  | 33% dto | 0 vals | 50 ventas [MARCA PRIO]
+24/02/2026 19:30:34 [DEBUG  ]     3. [B0BX7375ZQ] GXTrust 498 Forta Cascos PS5 / PS4 Sostenibles, Li | 30% dto | 0 vals | 100 ventas [MARCA PRIO]
+24/02/2026 19:30:34 [DEBUG  ]     4. [B0D6NLHV8N] JBL Quantum 100M2 cascos circumaurales para gaming | 25% dto | 0 vals | 400 ventas
+24/02/2026 19:30:34 [DEBUG  ]     5. [B09J2F4Q75] BINNUNE BW01 Cascos Gaming Inalambricos, Auricular | 21% dto | 0 vals | 50 ventas
+24/02/2026 19:30:34 [INFO   ]   ELEGIDO para categoria: VK84 Cascos Gaming Inalambricos para Ps4, Ps5... (47% dto, 0 valoraciones, ASIN: B0FWCHV916)
+24/02/2026 19:30:34 [INFO   ] 
+24/02/2026 19:30:34 [INFO   ] --- Categoria: Tarjetas PSN ---
+24/02/2026 19:30:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+24/02/2026 19:30:38 [INFO   ]   Scraped: 19 productos (2 con oferta, 17 sin descuento)
+24/02/2026 19:30:38 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:38 [DEBUG  ]     1. [B0F1V5GXQY] Playstation GOW Hits + 10€ PlayStation Store Tarje | 13% dto | 0 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:38 [DEBUG  ]     2. [B0DXWDR4FK] Playstation 5 Pulse Explore + 20 Store Tarjeta Reg | 13% dto | 0 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:38 [INFO   ]   ELEGIDO para categoria: Playstation GOW Hits + 10€ PlayStation Store ... (13% dto, 0 valoraciones, ASIN: B0F1V5GXQY) [marca prioritaria]
+24/02/2026 19:30:38 [INFO   ] 
+24/02/2026 19:30:38 [INFO   ] --- Categoria: Accesorios PS5 ---
+24/02/2026 19:30:42 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+24/02/2026 19:30:43 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+24/02/2026 19:30:43 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:43 [DEBUG  ]     1. [B08LZGPPBH] Cargador Mando PS5 con EU-Adaptador, 2H Rápido Bas | 37% dto | 0 vals | 100 ventas
+24/02/2026 19:30:43 [DEBUG  ]     2. [B08S3FMVV7] OIVO - Cargador para Mando PS5, 2H rápido Cargador | 12% dto | 0 vals | 200 ventas
+24/02/2026 19:30:43 [DEBUG  ]     3. [B0CYSBWY9L] KDD Base Carga para Mando PS5 y PS5 Edge, Cargador | 11% dto | 0 vals | 100 ventas
+24/02/2026 19:30:43 [DEBUG  ]     4. [B0CJK1YPMC] Playstation 5 - Mando Inalámbrico DualSense Wirele | 10% dto | 5 vals | 600 ventas [MARCA PRIO]
+24/02/2026 19:30:43 [DEBUG  ]     5. [B09KLKJSQM] OIVO Soporte PS5/Slim/Pro Horizontal para Consola  | 9% dto | 0 vals | 100 ventas [MARCA PRIO]
+24/02/2026 19:30:43 [INFO   ]   ELEGIDO para categoria: Cargador Mando PS5 con EU-Adaptador, 2H Rápid... (37% dto, 0 valoraciones, ASIN: B08LZGPPBH)
+24/02/2026 19:30:43 [INFO   ] 
+24/02/2026 19:30:43 [INFO   ] --- Categoria: Accesorios PS4 ---
+24/02/2026 19:30:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+24/02/2026 19:30:47 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+24/02/2026 19:30:47 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+24/02/2026 19:30:47 [DEBUG  ]     1. [B075YBBQMM] OIVO - Cargador para Mando PS4, estación de Carga  | 9% dto | 0 vals | 100 ventas
+24/02/2026 19:30:47 [DEBUG  ]     2. [B079FPFV3X] OIVO Soporte para PS4 con Ventilador de refrigerac | 7% dto | 0 vals | 0 ventas [MARCA PRIO]
+24/02/2026 19:30:47 [DEBUG  ]     3. [B07YWYXPC1] OIVO Cargador Mando PS4, Estación de Rápida Carga  | 6% dto | 0 vals | 0 ventas
+24/02/2026 19:30:47 [DEBUG  ]     4. [B0BKW3BYFR] AceGamer Controlador Inalámbrico Para Ps4, Control | 5% dto | 4 vals | 400 ventas
+24/02/2026 19:30:47 [DEBUG  ]     5. [B09DPR2LZW] Cascos Gaming, Auriculares Gaming con Micrófono Ro | 5% dto | 0 vals | 400 ventas
+24/02/2026 19:30:47 [INFO   ]   ELEGIDO para categoria: OIVO - Cargador para Mando PS4, estación de C... (9% dto, 0 valoraciones, ASIN: B075YBBQMM)
+24/02/2026 19:30:47 [INFO   ] 
+24/02/2026 19:30:47 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+24/02/2026 19:30:47 [INFO   ]   1. [B0FWCHV916] VK84 Cascos Gaming Inalambricos para Ps4... | 47% dto | cat: Auriculares gaming (accesorio)
+24/02/2026 19:30:47 [INFO   ]   2. [B08LZGPPBH] Cargador Mando PS5 con EU-Adaptador, 2H ... | 37% dto | cat: Accesorios PS5 (accesorio)
+24/02/2026 19:30:47 [INFO   ]   3. [B0F1V5GXQY] Playstation GOW Hits + 10€ PlayStation S... | 13% dto | cat: Tarjetas PSN (accesorio) [marca prio]
+24/02/2026 19:30:47 [INFO   ]   4. [B08S3FMVV7] OIVO - Cargador para Mando PS5, 2H rápid... | 12% dto | cat: Mandos PS5 (accesorio)
+24/02/2026 19:30:47 [INFO   ]   5. [B0DK1NY4LW] AceGamer 2 Pack Mando Inalámbrico para P... | 10% dto | cat: Mandos PS4 (accesorio)
+24/02/2026 19:30:47 [INFO   ]   6. [B075YBBQMM] OIVO - Cargador para Mando PS4, estación... | 9% dto | cat: Accesorios PS4 (accesorio)
+24/02/2026 19:30:47 [INFO   ] 
+24/02/2026 19:30:47 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+24/02/2026 19:30:47 [INFO   ]     Titulo:    VK84 Cascos Gaming Inalambricos para Ps4, Ps5, PC, Mac, Switch, Auriculares Gaming con Micrófono con...
+24/02/2026 19:30:47 [INFO   ]     Categoria: Auriculares gaming | Descuento: 47%
+24/02/2026 19:30:47 [INFO   ]     Precio:    26,49 € (antes: 49,99 €)
+24/02/2026 19:30:47 [INFO   ]     ASIN:      B0FWCHV916 | Valoraciones: 0 | Ventas: 0
+24/02/2026 19:30:47 [INFO   ]     URL:       https://www.amazon.es/dp/B0FWCHV916?tag=juegosenoferta-21
+24/02/2026 19:30:47 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71TxBLQq56L._AC_UL320_.jpg
+24/02/2026 19:30:47 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+24/02/2026 19:30:48 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1253
+24/02/2026 19:30:48 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+24/02/2026 19:30:48 [DEBUG  ] Historial de categorias actualizado: Auriculares gaming, Juegos PS5, Juegos PS5, Juegos PS4
+24/02/2026 19:30:48 [DEBUG  ] Timestamp de límite de 3 días para accesorios actualizado
+24/02/2026 19:30:48 [INFO   ] 
+24/02/2026 19:30:48 [INFO   ] ============================================================
+24/02/2026 19:30:48 [INFO   ] FIN - 1 oferta publicada en Telegram
+24/02/2026 19:30:48 [INFO   ] ============================================================
+24/02/2026 19:30:48 [INFO   ] ============================================================
+24/02/2026 19:30:48 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+24/02/2026 19:30:48 [INFO   ] ============================================================
+24/02/2026 19:30:48 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+24/02/2026 19:30:48 [INFO   ] Buscando preórdenes: Próximos PS5
+24/02/2026 19:30:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+24/02/2026 19:30:51 [INFO   ]   Encontrados 9 items, verificando si son preórdenes...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B08SZ6GRX6: Control Ultimate Edition for PlayStation 54,64,6 de 5 estrellas(748)PlayStation 5Precio, página del ...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,74,7 d...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0BTPWSH4H: Street Fighter 6 Lentic. Ed. PS5 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0B482JZSR: Soul Hackers 2 Juego de PS5Calificación de la PEGI: No recomendada para menores de 16 años4,44,4 de ...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0BZQ4WC1J: Paperman: Adventure Delivered - PS5Calificación de la PEGI: No recomendada para menores de 3 años3,3...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,44,4 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+24/02/2026 19:30:51 [DEBUG  ]     [DESCARTADO] ASIN B0CYM4NMJR: Venom Estuche de transporte para consola PS5 Slim (PS5)4,44,4 de 5 estrellas(30)PlayStation 5Ver opc...
+24/02/2026 19:30:51 [INFO   ]   9 items descartados por no tener señales de preorden
+24/02/2026 19:30:51 [INFO   ] Buscando preórdenes: Próximos PS4
+24/02/2026 19:30:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+24/02/2026 19:30:55 [INFO   ]   Encontrados 4 items, verificando si son preórdenes...
+24/02/2026 19:30:55 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)10+ comprados el mes...
+24/02/2026 19:30:55 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+24/02/2026 19:30:55 [DEBUG  ]     [DESCARTADO] ASIN B08MBQ2J85: Call of Duty. Black Ops Cold WarCalificación de la PEGI: No recomendada para menores de 18 años4,34,...
+24/02/2026 19:30:55 [DEBUG  ]     [DESCARTADO] ASIN B097FM6WLH: Hades Playstation 44,44,4 de 5 estrellas(156)Playstation 4Ver opcionesOfertas destacadas no disponib...
+24/02/2026 19:30:55 [INFO   ]   4 items descartados por no tener señales de preorden
+24/02/2026 19:30:55 [INFO   ] No hay candidatos de preórdenes en este ciclo
+24/02/2026 19:30:55 [INFO   ] ============================================================
