@@ -20475,3 +20475,155 @@
 27/02/2026 19:10:00 [INFO   ]   2 items descartados por no tener señales de preorden
 27/02/2026 19:10:00 [INFO   ] No hay candidatos de preórdenes en este ciclo
 27/02/2026 19:10:00 [INFO   ] ============================================================
+27/02/2026 19:54:24 [INFO   ] ============================================================
+27/02/2026 19:54:24 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+27/02/2026 19:54:24 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 27/02/2026 19:54
+27/02/2026 19:54:24 [INFO   ] ============================================================
+27/02/2026 19:54:24 [INFO   ] Historial cargado: 34 ASINs en ventana de 96h (ignorados 4 expirados)
+27/02/2026 19:54:24 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5
+27/02/2026 19:54:24 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+27/02/2026 19:54:24 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 3 dias (24/02 19:30)
+27/02/2026 19:54:24 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 6 dias (20/02 23:52)
+27/02/2026 19:54:24 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5]
+27/02/2026 19:54:24 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+27/02/2026 19:54:24 [INFO   ] 
+27/02/2026 19:54:24 [INFO   ] --- Categoria: Juegos PS5 ---
+27/02/2026 19:54:27 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+27/02/2026 19:54:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+27/02/2026 19:54:28 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+27/02/2026 19:54:28 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:28 [DEBUG  ]     1. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 56% dto | 5 vals | 0 ventas
+27/02/2026 19:54:28 [DEBUG  ]     2. [B0C74PQ6TX] The Crew Motorfest Limited Edition (Exclusivo Amaz | 40% dto | 5 vals | 0 ventas
+27/02/2026 19:54:28 [DEBUG  ]     3. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 40% dto | 5 vals | 0 ventas
+27/02/2026 19:54:28 [DEBUG  ]     4. [B0F1G4KWH1] Silent Hill f - Day One Edition - PS5 | 38% dto | 5 vals | 0 ventas
+27/02/2026 19:54:28 [DEBUG  ]     5. [B0DW9KWLCW] Legacy of Kain: Soul Reaver 1 & 2 Remastered - PS5 | 37% dto | 5 vals | 0 ventas
+27/02/2026 19:54:28 [INFO   ]   ELEGIDO para categoria: Assassin's Creed Shadows Limited Edition (Exc... (56% dto, 5 valoraciones, ASIN: B0D362WFCC)
+27/02/2026 19:54:28 [INFO   ] 
+27/02/2026 19:54:28 [INFO   ] --- Categoria: Juegos PS4 ---
+27/02/2026 19:54:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+27/02/2026 19:54:33 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+27/02/2026 19:54:33 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:33 [DEBUG  ]     1. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 40% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:33 [DEBUG  ]     2. [B07PC3V9F2] Hollow Knight | 34% dto | 4 vals | 0 ventas
+27/02/2026 19:54:33 [DEBUG  ]     3. [B0FB46TLMZ] NBA Bounce - PS4 | 25% dto | 4 vals | 0 ventas
+27/02/2026 19:54:33 [DEBUG  ]     4. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 19% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:33 [DEBUG  ]     5. [B0DBLV5FS8] Electronic Arts Star Wars Jedi: Survivor PS4 | Vid | 10% dto | 4 vals | 0 ventas
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (40% dto, ASIN: B088218T8T)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (34% dto, ASIN: B07PC3V9F2)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA Bounce - PS4... (25% dto, ASIN: B0FB46TLMZ)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (19% dto, ASIN: B09GSPDV8K)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Electronic Arts Star Wars Jedi: Survivor PS4 ... (10% dto, ASIN: B0DBLV5FS8)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 25 Standard Edition PS4 | Videoj... (8% dto, ASIN: B0D98BDG3S)
+27/02/2026 19:54:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Metal Gear Solid V: the Definitive Experience... (5% dto, ASIN: B01LNS28NO)
+27/02/2026 19:54:33 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+27/02/2026 19:54:33 [INFO   ] 
+27/02/2026 19:54:33 [INFO   ] --- Categoria: Mandos PS5 ---
+27/02/2026 19:54:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+27/02/2026 19:54:38 [INFO   ]   Scraped: 20 productos (3 con oferta, 17 sin descuento)
+27/02/2026 19:54:38 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:38 [DEBUG  ]     1. [B0CBNBC34X] FRTEC - Dragon Ball Custom Kit Licencia Oficial, C | 24% dto | 0 vals | 0 ventas
+27/02/2026 19:54:38 [DEBUG  ]     2. [B0CJK1YPMC] Playstation 5 - Mando Inalámbrico DualSense Wirele | 10% dto | 5 vals | 600 ventas [MARCA PRIO]
+27/02/2026 19:54:38 [DEBUG  ]     3. [B0D49NN1QX] Playstation Sony 5 - Mando inalámbrico DualSense + | 2% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:38 [INFO   ]   ELEGIDO para categoria: FRTEC - Dragon Ball Custom Kit Licencia Ofici... (24% dto, 0 valoraciones, ASIN: B0CBNBC34X)
+27/02/2026 19:54:38 [INFO   ] 
+27/02/2026 19:54:38 [INFO   ] --- Categoria: Mandos PS4 ---
+27/02/2026 19:54:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+27/02/2026 19:54:42 [INFO   ]   Scraped: 20 productos (4 con oferta, 16 sin descuento)
+27/02/2026 19:54:42 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:42 [DEBUG  ]     1. [B07D3S4LHM] OSTENT 1000mAh 3.65V 3.7Wh Batería Recargable Li-I | 28% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:42 [DEBUG  ]     2. [B0746S4MHB] Nacon - Compact Mando con licencia Oficial Sony pa | 25% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:42 [DEBUG  ]     3. [B07K8C6HGT] OSTENT 1000mAh 3.65V 3.7Wh Recargable Li-Ion Bater | 24% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:42 [DEBUG  ]     4. [B077ZK2P8F] Snakebyte PS4 TWIN:CHARGE 4 - PlayStation 4 chargi | 6% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:42 [INFO   ]   ELEGIDO para categoria: OSTENT 1000mAh 3.65V 3.7Wh Batería Recargable... (28% dto, 0 valoraciones, ASIN: B07D3S4LHM) [marca prioritaria]
+27/02/2026 19:54:42 [INFO   ] 
+27/02/2026 19:54:42 [INFO   ] --- Categoria: Auriculares gaming ---
+27/02/2026 19:54:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+27/02/2026 19:54:46 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+27/02/2026 19:54:46 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:46 [DEBUG  ]     1. [B0B7X7PK9S] SteelSeries Arctis Nova 1 - Cascos Gaming Con Cabl | 36% dto | 0 vals | 50 ventas
+27/02/2026 19:54:46 [DEBUG  ]     2. [B0B7X8392G] SteelSeries Arctis Nova 1 - Cascos Gaming Con Cabl | 36% dto | 0 vals | 0 ventas
+27/02/2026 19:54:46 [DEBUG  ]     3. [B0B7X66NR5] SteelSeries Arctis Nova 1P - Cascos PS5 Con Cable  | 36% dto | 0 vals | 0 ventas
+27/02/2026 19:54:46 [DEBUG  ]     4. [B0BCFKG49M] HyperX Cloud Stinger 2 Core, Cascos gaming para PC | 20% dto | 0 vals | 100 ventas [MARCA PRIO]
+27/02/2026 19:54:46 [DEBUG  ]     5. [B07X2XVJWY] Sony - Auriculares Gaming Stereo, Color Blanco (PS | 9% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:46 [INFO   ]   ELEGIDO para categoria: SteelSeries Arctis Nova 1 - Cascos Gaming Con... (36% dto, 0 valoraciones, ASIN: B0B7X7PK9S)
+27/02/2026 19:54:46 [INFO   ] 
+27/02/2026 19:54:46 [INFO   ] --- Categoria: Tarjetas PSN ---
+27/02/2026 19:54:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+27/02/2026 19:54:49 [INFO   ]   Scraped: 19 productos (2 con oferta, 17 sin descuento)
+27/02/2026 19:54:49 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:49 [DEBUG  ]     1. [B0F1V5GXQY] Playstation GOW Hits + 10€ PlayStation Store Tarje | 13% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:49 [DEBUG  ]     2. [B0DXWDR4FK] Playstation 5 Pulse Explore + 20 Store Tarjeta Reg | 13% dto | 0 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:49 [INFO   ]   ELEGIDO para categoria: Playstation GOW Hits + 10€ PlayStation Store ... (13% dto, 0 valoraciones, ASIN: B0F1V5GXQY) [marca prioritaria]
+27/02/2026 19:54:49 [INFO   ] 
+27/02/2026 19:54:49 [INFO   ] --- Categoria: Accesorios PS5 ---
+27/02/2026 19:54:52 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+27/02/2026 19:54:54 [INFO   ]   Scraped: 20 productos (4 con oferta, 16 sin descuento)
+27/02/2026 19:54:54 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:54 [DEBUG  ]     1. [B091HJLGMQ] OIVO Soporte para PS5 y PS5 Slim con Cargador Mand | 21% dto | 0 vals | 0 ventas
+27/02/2026 19:54:54 [DEBUG  ]     2. [B0CWS8WKS5] PDP Mando Gaming Inalámbrico Riffmaster | 21% dto | 0 vals | 0 ventas
+27/02/2026 19:54:54 [DEBUG  ]     3. [B0CJK1YPMC] Playstation 5 - Mando Inalámbrico DualSense Wirele | 10% dto | 5 vals | 600 ventas [MARCA PRIO]
+27/02/2026 19:54:54 [DEBUG  ]     4. [B07X2XVJWY] Sony - Auriculares Gaming Stereo, Color Blanco (PS | 9% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:54 [INFO   ]   ELEGIDO para categoria: OIVO Soporte para PS5 y PS5 Slim con Cargador... (21% dto, 0 valoraciones, ASIN: B091HJLGMQ)
+27/02/2026 19:54:54 [INFO   ] 
+27/02/2026 19:54:54 [INFO   ] --- Categoria: Accesorios PS4 ---
+27/02/2026 19:54:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+27/02/2026 19:54:58 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+27/02/2026 19:54:58 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+27/02/2026 19:54:58 [DEBUG  ]     1. [B0B7X8392G] SteelSeries Arctis Nova 1 - Cascos Gaming Con Cabl | 36% dto | 0 vals | 0 ventas
+27/02/2026 19:54:58 [DEBUG  ]     2. [B09XBMJZMG] Monzlteck Soporte de Pared para PS4 Original (Mode | 16% dto | 0 vals | 0 ventas
+27/02/2026 19:54:58 [DEBUG  ]     3. [B07DPGMV5N] OSTENT Soporte Vertical del concentrador del USB d | 13% dto | 0 vals | 0 ventas
+27/02/2026 19:54:58 [DEBUG  ]     4. [B07X2XVJWY] Sony - Auriculares Gaming Stereo, Color Blanco (PS | 9% dto | 4 vals | 0 ventas [MARCA PRIO]
+27/02/2026 19:54:58 [DEBUG  ]     5. [B0FTZC8N2P] Mars Gaming MWH-RSXONE, Volante SimRacing, Zero De | 5% dto | 0 vals | 30 ventas
+27/02/2026 19:54:58 [INFO   ]   ELEGIDO para categoria: SteelSeries Arctis Nova 1 - Cascos Gaming Con... (36% dto, 0 valoraciones, ASIN: B0B7X8392G)
+27/02/2026 19:54:58 [INFO   ] Variantes detectadas: 'SteelSeries Arctis Nova 1 - Cascos Gamin' ↔ 'SteelSeries Arctis Nova 1 - Cascos Gamin'
+27/02/2026 19:54:58 [INFO   ] Grupo de variantes: representante 'SteelSeries Arctis Nova 1 - Cascos ' + 1 variante(s): SteelSeries Arctis Nova 1
+27/02/2026 19:54:58 [INFO   ] 
+27/02/2026 19:54:58 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+27/02/2026 19:54:58 [INFO   ]   1. [B0D362WFCC] Assassin's Creed Shadows Limited Edition... | 56% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+27/02/2026 19:54:58 [INFO   ]   2. [B0B7X7PK9S] SteelSeries Arctis Nova 1 - Cascos Gamin... | 36% dto | cat: Auriculares gaming (accesorio)
+27/02/2026 19:54:58 [INFO   ]   3. [B07D3S4LHM] OSTENT 1000mAh 3.65V 3.7Wh Batería Recar... | 28% dto | cat: Mandos PS4 (accesorio) [marca prio]
+27/02/2026 19:54:58 [INFO   ]   4. [B0CBNBC34X] FRTEC - Dragon Ball Custom Kit Licencia ... | 24% dto | cat: Mandos PS5 (accesorio)
+27/02/2026 19:54:58 [INFO   ]   5. [B091HJLGMQ] OIVO Soporte para PS5 y PS5 Slim con Car... | 21% dto | cat: Accesorios PS5 (accesorio)
+27/02/2026 19:54:58 [INFO   ]   6. [B0F1V5GXQY] Playstation GOW Hits + 10€ PlayStation S... | 13% dto | cat: Tarjetas PSN (accesorio) [marca prio]
+27/02/2026 19:54:58 [INFO   ] Anti-repeticion: la #1 global (Assassin's Creed Shadows Limited Ed) fue descartada porque su categoria 'Juegos PS5' aparece en las recientes [Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5]. Se elige la siguiente valida.
+27/02/2026 19:54:58 [INFO   ] 
+27/02/2026 19:54:58 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+27/02/2026 19:54:58 [INFO   ]     Titulo:    SteelSeries Arctis Nova 1 - Cascos Gaming Con Cable Multisistema - Controladores Hi-Fi - Audio espac...
+27/02/2026 19:54:58 [INFO   ]     Categoria: Auriculares gaming | Descuento: 36%
+27/02/2026 19:54:58 [INFO   ]     Precio:    37,18 € (antes: 57,84 €)
+27/02/2026 19:54:58 [INFO   ]     ASIN:      B0B7X7PK9S | Valoraciones: 0 | Ventas: 50
+27/02/2026 19:54:58 [INFO   ]     URL:       https://www.amazon.es/dp/B0B7X7PK9S?tag=juegosenoferta-21
+27/02/2026 19:54:58 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71G7cTO3-TL._AC_UL320_.jpg
+27/02/2026 19:54:58 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+27/02/2026 19:54:58 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1458
+27/02/2026 19:54:58 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+27/02/2026 19:54:58 [DEBUG  ] Historial de categorias actualizado: Auriculares gaming, Juegos PS4, Juegos PS5, Juegos PS5
+27/02/2026 19:54:58 [DEBUG  ] Timestamp de límite de 3 días para accesorios actualizado
+27/02/2026 19:54:58 [INFO   ] 
+27/02/2026 19:54:58 [INFO   ] ============================================================
+27/02/2026 19:54:58 [INFO   ] FIN - 1 oferta publicada en Telegram
+27/02/2026 19:54:58 [INFO   ] ============================================================
+27/02/2026 19:54:58 [INFO   ] ============================================================
+27/02/2026 19:54:58 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+27/02/2026 19:54:58 [INFO   ] ============================================================
+27/02/2026 19:54:58 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+27/02/2026 19:54:58 [INFO   ] Buscando preórdenes: Próximos PS5
+27/02/2026 19:55:01 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+27/02/2026 19:55:02 [INFO   ]   Encontrados 8 items, verificando si son preórdenes...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,74,7 d...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0BTPWSH4H: Street Fighter 6 Lentic. Ed. PS5 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,44,4 de 5 estrellas(1,4 mil)PlayStation 5Ver opcio...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0BZQ4WC1J: Paperman: Adventure Delivered - PS5Calificación de la PEGI: No recomendada para menores de 3 años3,3...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0FC1NMTN5: Razer BlackShark V3 Pro - Auriculares inalámbricos para PS5, micrófono de Banda Completa, Controlado...
+27/02/2026 19:55:02 [DEBUG  ]     [DESCARTADO] ASIN B0FDPJZQNY: Razer BlackShark V3 - Auriculares inalámbricos para Juegos para PS5: Controladores de 50 mm, micrófo...
+27/02/2026 19:55:02 [INFO   ]   8 items descartados por no tener señales de preorden
+27/02/2026 19:55:02 [INFO   ] Buscando preórdenes: Próximos PS4
+27/02/2026 19:55:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+27/02/2026 19:55:06 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+27/02/2026 19:55:06 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)10+ comprados el mes...
+27/02/2026 19:55:06 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+27/02/2026 19:55:06 [INFO   ]   2 items descartados por no tener señales de preorden
+27/02/2026 19:55:06 [INFO   ] No hay candidatos de preórdenes en este ciclo
+27/02/2026 19:55:06 [INFO   ] ============================================================
