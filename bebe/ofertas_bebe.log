@@ -37810,3 +37810,143 @@
 01/03/2026 15:23:07 [INFO   ] ============================================================
 01/03/2026 15:23:07 [INFO   ] FIN - 1 oferta publicada en Telegram
 01/03/2026 15:23:07 [INFO   ] ============================================================
+01/03/2026 16:26:49 [INFO   ] ============================================================
+01/03/2026 16:26:49 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+01/03/2026 16:26:49 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 01/03/2026 16:26
+01/03/2026 16:26:49 [INFO   ] ============================================================
+01/03/2026 16:26:49 [INFO   ] Historial cargado: 43 ASINs en ventana de 48h (ignorados 1 expirados)
+01/03/2026 16:26:49 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juguetes, Biberones, Panales, Alimentacion
+01/03/2026 16:26:49 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+01/03/2026 16:26:49 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 2 dias (27/02 12:57)
+01/03/2026 16:26:49 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 1 dias (27/02 16:40)
+01/03/2026 16:26:49 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 1 dias (27/02 20:27)
+01/03/2026 16:26:49 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 5 dias (24/02 13:04)
+01/03/2026 16:26:49 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juguetes, Biberones, Panales, Alimentacion]
+01/03/2026 16:26:49 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+01/03/2026 16:26:49 [INFO   ] 
+01/03/2026 16:26:49 [INFO   ] --- Categoria: Panales ---
+01/03/2026 16:26:52 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+01/03/2026 16:26:53 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+01/03/2026 16:26:54 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+01/03/2026 16:26:54 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:26:54 [DEBUG  ]     1. [B082N3CB8G] Dodot Toallitas Sensitive para Bebé, 15 Paquetes D | 30% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:54 [DEBUG  ]     2. [B0916SLRXT] Chelino Nature Pañal Infantil Talla 3 (4-10 kg), 2 | 26% dto | 0 vals | 200 ventas
+01/03/2026 16:26:54 [DEBUG  ]     3. [B092DLGCC7] Marca Amazon - Mama Bear Disney pañales ultrasecos | 20% dto | 0 vals | 30 ventas
+01/03/2026 16:26:54 [DEBUG  ]     4. [B092DPZ7G7] Marca Amazon - Mama Bear - Disney - 70 pañales bra | 17% dto | 0 vals | 200 ventas
+01/03/2026 16:26:54 [DEBUG  ]     5. [B084N3M28P] By Amazon Pañales ultra-secos - Talla 3 (4-9 kg),  | 15% dto | 0 vals | 100 ventas
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Toallitas Sensitive para Bebé, 15 Paque... (30% dto, ASIN: B082N3CB8G)
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Chelino Nature Pañal Infantil Talla 3 (4-10 k... (26% dto, ASIN: B0916SLRXT)
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Marca Amazon - Mama Bear Disney pañales ultra... (20% dto, ASIN: B092DLGCC7)
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Marca Amazon - Mama Bear - Disney - 70 pañale... (17% dto, ASIN: B092DPZ7G7)
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] By Amazon Pañales ultra-secos - Talla 3 (4-9 ... (15% dto, ASIN: B084N3M28P)
+01/03/2026 16:26:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Chelino Pañales infantiles Talla 5 (13-18kg),... (13% dto, ASIN: B00GY32MD0)
+01/03/2026 16:26:54 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+01/03/2026 16:26:54 [INFO   ] 
+01/03/2026 16:26:54 [INFO   ] --- Categoria: Toallitas ---
+01/03/2026 16:26:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+01/03/2026 16:26:58 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+01/03/2026 16:26:58 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:26:58 [DEBUG  ]     1. [B082N3CB8G] Dodot Toallitas Sensitive para Bebé, 15 Paquetes D | 30% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:58 [DEBUG  ]     2. [B0CQM6JWQV] Dodot Toallitas Aqua Pure para Bebé, 1.296 Toallit | 28% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:58 [DEBUG  ]     3. [B08ZMYG9RC] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 18% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:58 [DEBUG  ]     4. [B08MXSBRSB] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 17% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:58 [DEBUG  ]     5. [B08MXT5VDK] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 8% dto | 0 vals | 0 ventas [MARCA PRIO]
+01/03/2026 16:26:58 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Toallitas Sensitive para Bebé, 15 Paque... (30% dto, ASIN: B082N3CB8G)
+01/03/2026 16:26:58 [INFO   ]   ELEGIDO para categoria: Dodot Toallitas Aqua Pure para Bebé, 1.296 To... (28% dto, 0 valoraciones, ASIN: B0CQM6JWQV) [marca prioritaria]
+01/03/2026 16:26:58 [INFO   ] 
+01/03/2026 16:26:58 [INFO   ] --- Categoria: Cremas bebe ---
+01/03/2026 16:27:01 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+01/03/2026 16:27:02 [INFO   ]   Scraped: 20 productos (9 con oferta, 11 sin descuento)
+01/03/2026 16:27:02 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:27:02 [DEBUG  ]     1. [B005YNOXW4] BEPANTHOL POMADA PROTECTORA BEBÉ 100G | 38% dto | 0 vals | 0 ventas
+01/03/2026 16:27:02 [DEBUG  ]     2. [B0B5RVR9BL] Johnson's Baby Crema protectora para pañal, crema  | 34% dto | 0 vals | 600 ventas
+01/03/2026 16:27:02 [DEBUG  ]     3. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula, Calma y Protege | 18% dto | 0 vals | 4 ventas
+01/03/2026 16:27:02 [DEBUG  ]     4. [B0CJ2CQBG8] Weleda Crema Pañal de Caléndula (1x 75 ml) (9831EN | 18% dto | 0 vals | 0 ventas
+01/03/2026 16:27:02 [DEBUG  ]     5. [B0006PKBDU] bebe Crema de cuidado suave, 150 ml | 14% dto | 0 vals | 0 ventas
+01/03/2026 16:27:02 [INFO   ]   DESCARTADO [ya publicado en <48h] BEPANTHOL POMADA PROTECTORA BEBÉ 100G... (38% dto, ASIN: B005YNOXW4)
+01/03/2026 16:27:02 [INFO   ]   ELEGIDO para categoria: Johnson's Baby Crema protectora para pañal, c... (34% dto, 0 valoraciones, ASIN: B0B5RVR9BL)
+01/03/2026 16:27:02 [INFO   ] 
+01/03/2026 16:27:02 [INFO   ] --- Categoria: Leche en polvo ---
+01/03/2026 16:27:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+01/03/2026 16:27:06 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+01/03/2026 16:27:06 [INFO   ]   No hay productos con descuento en esta categoria
+01/03/2026 16:27:06 [INFO   ] 
+01/03/2026 16:27:06 [INFO   ] --- Categoria: Chupetes ---
+01/03/2026 16:27:06 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/02 16:40 (hace 1 dias, faltan ~6 dias)
+01/03/2026 16:27:06 [INFO   ] 
+01/03/2026 16:27:06 [INFO   ] --- Categoria: Biberones ---
+01/03/2026 16:27:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+01/03/2026 16:27:10 [INFO   ]   Scraped: 20 productos (11 con oferta, 9 sin descuento)
+01/03/2026 16:27:10 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:27:10 [DEBUG  ]     1. [B0CLRSBQ64] Set de biberones Perfect Match de NUK | +0-6 meses | 34% dto | 0 vals | 200 ventas
+01/03/2026 16:27:10 [DEBUG  ]     2. [B0BWFMQMV8] Philips Avent Biberón Natural Response: biberón pa | 33% dto | 0 vals | 500 ventas
+01/03/2026 16:27:10 [DEBUG  ]     3. [B0BWFLR1Z7] Philips Avent Set de regalo de biberones para reci | 25% dto | 0 vals | 30 ventas
+01/03/2026 16:27:10 [DEBUG  ]     4. [B09KCQNCFW] Suavinex, Biberón Anticólico + Chupete Zero Zero.  | 25% dto | 0 vals | 700 ventas [MARCA PRIO]
+01/03/2026 16:27:10 [DEBUG  ]     5. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 24% dto | 0 vals | 50 ventas
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Set de biberones Perfect Match de NUK | +0-6 ... (34% dto, ASIN: B0CLRSBQ64)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent Biberón Natural Response: biber... (33% dto, ASIN: B0BWFMQMV8)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent Set de regalo de biberones para... (25% dto, ASIN: B0BWFLR1Z7)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Suavinex, Biberón Anticólico + Chupete Zero Z... (25% dto, ASIN: B09KCQNCFW)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent Set de regalo de biberones para... (24% dto, ASIN: B0BWFLPZ5G)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent Natural Response, set de regalo... (20% dto, ASIN: B0D45P95D7)
+01/03/2026 16:27:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent, biberón Natural Response de 33... (19% dto, ASIN: B0DBZD9NFD)
+01/03/2026 16:27:10 [INFO   ]   ELEGIDO para categoria: Philips Avent Natural Response, set de regalo... (17% dto, 0 valoraciones, ASIN: B0D45P2BPW)
+01/03/2026 16:27:10 [INFO   ] 
+01/03/2026 16:27:10 [INFO   ] --- Categoria: Juguetes ---
+01/03/2026 16:27:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 302 None
+01/03/2026 16:27:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&i=aps HTTP/1.1" 200 None
+01/03/2026 16:27:15 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+01/03/2026 16:27:15 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:27:15 [DEBUG  ]     1. [B0D7PY72XZ] Fisher-Price Capibara Abracitos y jueguecitos Jugu | 35% dto | 0 vals | 0 ventas
+01/03/2026 16:27:15 [DEBUG  ]     2. [B07NWY23YB] Goula, Puzle magnético Animales Granja, Puzle de M | 34% dto | 0 vals | 200 ventas
+01/03/2026 16:27:15 [DEBUG  ]     3. [B0DLDNYMJZ] Fisher-Price Peluche de koala para llevar de paseo | 28% dto | 0 vals | 0 ventas
+01/03/2026 16:27:15 [DEBUG  ]     4. [B07N1JP56L] Fisher-Price Nutria Hora de Dormir - Peluche Music | 22% dto | 0 vals | 800 ventas
+01/03/2026 16:27:15 [DEBUG  ]     5. [B0DRJWY73C] VTech-Baby Reproductor Musical Graba Canta y Baila | 21% dto | 0 vals | 100 ventas
+01/03/2026 16:27:15 [INFO   ]   ELEGIDO para categoria: Fisher-Price Capibara Abracitos y jueguecitos... (35% dto, 0 valoraciones, ASIN: B0D7PY72XZ)
+01/03/2026 16:27:15 [INFO   ] 
+01/03/2026 16:27:15 [INFO   ] --- Categoria: Baneras ---
+01/03/2026 16:27:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+01/03/2026 16:27:19 [INFO   ]   Scraped: 20 productos (2 con oferta, 18 sin descuento)
+01/03/2026 16:27:19 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+01/03/2026 16:27:19 [DEBUG  ]     1. [B09MWGDVHK] Thermobaby Bañera de lujo gris Charme – De nacimie | 46% dto | 0 vals | 0 ventas
+01/03/2026 16:27:19 [DEBUG  ]     2. [B0BLZTGBNC] THERMOBABY – Pack de bañera para bebé VASCO 5 en 1 | 13% dto | 0 vals | 0 ventas
+01/03/2026 16:27:19 [INFO   ]   DESCARTADO [ya publicado en <48h] Thermobaby Bañera de lujo gris Charme – De na... (46% dto, ASIN: B09MWGDVHK)
+01/03/2026 16:27:19 [INFO   ]   DESCARTADO [ya publicado en <48h] THERMOBABY – Pack de bañera para bebé VASCO 5... (13% dto, ASIN: B0BLZTGBNC)
+01/03/2026 16:27:19 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+01/03/2026 16:27:19 [INFO   ] 
+01/03/2026 16:27:19 [INFO   ] --- Categoria: Camaras seguridad ---
+01/03/2026 16:27:19 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/02 12:57 (hace 2 dias, faltan ~5 dias)
+01/03/2026 16:27:19 [INFO   ] 
+01/03/2026 16:27:19 [INFO   ] --- Categoria: Alimentacion ---
+01/03/2026 16:27:22 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+01/03/2026 16:27:23 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+01/03/2026 16:27:23 [INFO   ]   No hay productos con descuento en esta categoria
+01/03/2026 16:27:23 [INFO   ] 
+01/03/2026 16:27:23 [INFO   ] --- Categoria: Tronas ---
+01/03/2026 16:27:23 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/02 20:27 (hace 1 dias, faltan ~6 dias)
+01/03/2026 16:27:23 [INFO   ] 
+01/03/2026 16:27:23 [INFO   ] --- Categoria: Vajilla bebe ---
+01/03/2026 16:27:23 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 24/02 13:04 (hace 5 dias, faltan ~2 dias)
+01/03/2026 16:27:23 [INFO   ] 
+01/03/2026 16:27:23 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+01/03/2026 16:27:23 [INFO   ]   1. [B0D7PY72XZ] Fisher-Price Capibara Abracitos y juegue... | 35% dto | cat: Juguetes [cat. reciente]
+01/03/2026 16:27:23 [INFO   ]   2. [B0B5RVR9BL] Johnson's Baby Crema protectora para pañ... | 34% dto | cat: Cremas bebe
+01/03/2026 16:27:23 [INFO   ]   3. [B0CQM6JWQV] Dodot Toallitas Aqua Pure para Bebé, 1.2... | 28% dto | cat: Toallitas [marca prio]
+01/03/2026 16:27:23 [INFO   ]   4. [B0D45P2BPW] Philips Avent Natural Response, set de r... | 17% dto | cat: Biberones [cat. reciente]
+01/03/2026 16:27:23 [INFO   ] Anti-repeticion: la #1 global (Fisher-Price Capibara Abracitos y j) fue descartada porque su categoria 'Juguetes' aparece en las recientes [Juguetes, Biberones, Panales, Alimentacion]. Se elige la siguiente valida.
+01/03/2026 16:27:23 [INFO   ] 
+01/03/2026 16:27:23 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+01/03/2026 16:27:23 [INFO   ]     Titulo:    Johnson's Baby Crema protectora para pañal, crema hidratante bebé que protege de las irritaciones, c...
+01/03/2026 16:27:23 [INFO   ]     Categoria: Cremas bebe | Descuento: 34%
+01/03/2026 16:27:23 [INFO   ]     Precio:    2,47 € (antes: 3,76 €)
+01/03/2026 16:27:23 [INFO   ]     ASIN:      B0B5RVR9BL | Valoraciones: 0 | Ventas: 600
+01/03/2026 16:27:23 [INFO   ]     URL:       https://www.amazon.es/dp/B0B5RVR9BL?tag=juegosenoferta-21
+01/03/2026 16:27:23 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/61FiH55vj5L._AC_UL320_.jpg
+01/03/2026 16:27:23 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+01/03/2026 16:27:24 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1236
+01/03/2026 16:27:24 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+01/03/2026 16:27:24 [DEBUG  ] Historial de categorias actualizado: Cremas bebe, Juguetes, Biberones, Panales
+01/03/2026 16:27:24 [INFO   ] 
+01/03/2026 16:27:24 [INFO   ] ============================================================
+01/03/2026 16:27:24 [INFO   ] FIN - 1 oferta publicada en Telegram
+01/03/2026 16:27:24 [INFO   ] ============================================================
