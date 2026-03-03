@@ -27894,3 +27894,110 @@
 03/03/2026 06:09:04 [INFO   ]   2 items descartados por no tener señales de preorden
 03/03/2026 06:09:04 [INFO   ] No hay candidatos de preórdenes en este ciclo
 03/03/2026 06:09:04 [INFO   ] ============================================================
+03/03/2026 07:25:45 [INFO   ] ============================================================
+03/03/2026 07:25:45 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+03/03/2026 07:25:45 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 03/03/2026 07:25
+03/03/2026 07:25:45 [INFO   ] ============================================================
+03/03/2026 07:25:45 [INFO   ] Historial cargado: 40 ASINs en ventana de 96h (ignorados 1 expirados)
+03/03/2026 07:25:45 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS4, Juegos PS5, Auriculares gaming
+03/03/2026 07:25:45 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+03/03/2026 07:25:45 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 0 dias (02/03 19:58)
+03/03/2026 07:25:45 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 10 dias (20/02 23:52)
+03/03/2026 07:25:45 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS4, Juegos PS5, Auriculares gaming]
+03/03/2026 07:25:45 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+03/03/2026 07:25:45 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 02/03 19:58 (hace 0 días, faltan ~3 días)
+03/03/2026 07:25:45 [INFO   ] 
+03/03/2026 07:25:45 [INFO   ] --- Categoria: Juegos PS5 ---
+03/03/2026 07:25:48 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+03/03/2026 07:25:49 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+03/03/2026 07:25:50 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+03/03/2026 07:25:50 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+03/03/2026 07:25:50 [DEBUG  ]     1. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 54% dto | 5 vals | 0 ventas
+03/03/2026 07:25:50 [DEBUG  ]     2. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 40% dto | 5 vals | 0 ventas
+03/03/2026 07:25:50 [DEBUG  ]     3. [B0F1G4KWH1] Silent Hill f - Day One Edition - PS5 | 38% dto | 5 vals | 0 ventas
+03/03/2026 07:25:50 [DEBUG  ]     4. [B0DW9KWLCW] Legacy of Kain: Soul Reaver 1 & 2 Remastered - PS5 | 37% dto | 5 vals | 0 ventas
+03/03/2026 07:25:50 [DEBUG  ]     5. [B0C74PQ6TX] The Crew Motorfest Limited Edition (Exclusivo Amaz | 33% dto | 5 vals | 0 ventas
+03/03/2026 07:25:50 [INFO   ]   DESCARTADO [ya publicado en <48h] Assassin's Creed Shadows Limited Edition (Exc... (54% dto, ASIN: B0D362WFCC)
+03/03/2026 07:25:50 [INFO   ]   DESCARTADO [ya publicado en <48h] Teenage Mutant Ninja Turtles: Mutantes desenc... (40% dto, ASIN: B0CXDX9ZJ3)
+03/03/2026 07:25:50 [INFO   ]   DESCARTADO [ya publicado en <48h] Silent Hill f - Day One Edition - PS5... (38% dto, ASIN: B0F1G4KWH1)
+03/03/2026 07:25:50 [INFO   ]   DESCARTADO [ya publicado en <48h] Legacy of Kain: Soul Reaver 1 & 2 Remastered ... (37% dto, ASIN: B0DW9KWLCW)
+03/03/2026 07:25:50 [INFO   ]   ELEGIDO para categoria: The Crew Motorfest Limited Edition (Exclusivo... (33% dto, 5 valoraciones, ASIN: B0C74PQ6TX)
+03/03/2026 07:25:50 [INFO   ] 
+03/03/2026 07:25:50 [INFO   ] --- Categoria: Juegos PS4 ---
+03/03/2026 07:25:53 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+03/03/2026 07:25:54 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+03/03/2026 07:25:54 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+03/03/2026 07:25:54 [DEBUG  ]     1. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 40% dto | 4 vals | 0 ventas [MARCA PRIO]
+03/03/2026 07:25:54 [DEBUG  ]     2. [B07PC3V9F2] Hollow Knight | 34% dto | 4 vals | 0 ventas
+03/03/2026 07:25:54 [DEBUG  ]     3. [B0FB46TLMZ] NBA Bounce - PS4 | 25% dto | 4 vals | 0 ventas
+03/03/2026 07:25:54 [DEBUG  ]     4. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 19% dto | 4 vals | 0 ventas [MARCA PRIO]
+03/03/2026 07:25:54 [DEBUG  ]     5. [B0DBLV5FS8] Electronic Arts Star Wars Jedi: Survivor PS4 | Vid | 10% dto | 4 vals | 0 ventas
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (40% dto, ASIN: B088218T8T)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (34% dto, ASIN: B07PC3V9F2)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA Bounce - PS4... (25% dto, ASIN: B0FB46TLMZ)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (19% dto, ASIN: B09GSPDV8K)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Electronic Arts Star Wars Jedi: Survivor PS4 ... (10% dto, ASIN: B0DBLV5FS8)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 25 Standard Edition PS4 | Videoj... (8% dto, ASIN: B0D98BDG3S)
+03/03/2026 07:25:54 [INFO   ]   DESCARTADO [ya publicado en <48h] Metal Gear Solid V: the Definitive Experience... (3% dto, ASIN: B01LNS28NO)
+03/03/2026 07:25:54 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Mandos PS5 ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Mandos PS4 ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Auriculares gaming ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Tarjetas PSN ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Accesorios PS5 ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Categoria: Accesorios PS4 ---
+03/03/2026 07:25:54 [INFO   ]   SALTADA por límite de 3 días para accesorios
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+03/03/2026 07:25:54 [INFO   ]   1. [B0C74PQ6TX] The Crew Motorfest Limited Edition (Excl... | 33% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+03/03/2026 07:25:54 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS4, Juegos PS4, Juegos PS5, Auriculares gaming], publicando la mejor disponible igualmente
+03/03/2026 07:25:54 [INFO   ] 
+03/03/2026 07:25:54 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+03/03/2026 07:25:54 [INFO   ]     Titulo:    The Crew Motorfest Limited Edition (Exclusivo Amazon) (PS5)
+03/03/2026 07:25:54 [INFO   ]     Categoria: Juegos PS5 | Descuento: 33%
+03/03/2026 07:25:54 [INFO   ]     Precio:    16,52 € (antes: 24,79 €)
+03/03/2026 07:25:54 [INFO   ]     ASIN:      B0C74PQ6TX | Valoraciones: 5 | Ventas: 0
+03/03/2026 07:25:54 [INFO   ]     URL:       https://www.amazon.es/dp/B0C74PQ6TX?tag=juegosenoferta-21
+03/03/2026 07:25:54 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/810n5fmlOrL._AC_UL320_.jpg
+03/03/2026 07:25:54 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+03/03/2026 07:25:55 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1196
+03/03/2026 07:25:55 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+03/03/2026 07:25:55 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS4, Juegos PS4, Juegos PS5
+03/03/2026 07:25:55 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+03/03/2026 07:25:55 [INFO   ] 
+03/03/2026 07:25:55 [INFO   ] ============================================================
+03/03/2026 07:25:55 [INFO   ] FIN - 1 oferta publicada en Telegram
+03/03/2026 07:25:55 [INFO   ] ============================================================
+03/03/2026 07:25:55 [INFO   ] ============================================================
+03/03/2026 07:25:55 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+03/03/2026 07:25:55 [INFO   ] ============================================================
+03/03/2026 07:25:55 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+03/03/2026 07:25:55 [INFO   ] Buscando preórdenes: Próximos PS5
+03/03/2026 07:25:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+03/03/2026 07:25:59 [INFO   ]   Encontrados 6 items, verificando si son preórdenes...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B0BTPWSH4H: Street Fighter 6 Lentic. Ed. PS5 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,44,4 de 5 estrellas(1,4 mil)PlayStation 5Ver opcio...
+03/03/2026 07:25:59 [DEBUG  ]     [DESCARTADO] ASIN B0BZQ4WC1J: Paperman: Adventure Delivered - PS5Calificación de la PEGI: No recomendada para menores de 3 años3,3...
+03/03/2026 07:25:59 [INFO   ]   6 items descartados por no tener señales de preorden
+03/03/2026 07:25:59 [INFO   ] Buscando preórdenes: Próximos PS4
+03/03/2026 07:26:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+03/03/2026 07:26:03 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+03/03/2026 07:26:03 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+03/03/2026 07:26:03 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+03/03/2026 07:26:03 [INFO   ]   2 items descartados por no tener señales de preorden
+03/03/2026 07:26:03 [INFO   ] No hay candidatos de preórdenes en este ciclo
+03/03/2026 07:26:03 [INFO   ] ============================================================
