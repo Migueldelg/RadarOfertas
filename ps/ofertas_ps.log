@@ -37364,3 +37364,115 @@
 07/03/2026 18:57:23 [INFO   ]   6 items descartados por no tener señales de preorden
 07/03/2026 18:57:23 [INFO   ] No hay candidatos de preórdenes en este ciclo
 07/03/2026 18:57:23 [INFO   ] ============================================================
+07/03/2026 19:44:10 [INFO   ] ============================================================
+07/03/2026 19:44:10 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+07/03/2026 19:44:10 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 07/03/2026 19:44
+07/03/2026 19:44:10 [INFO   ] ============================================================
+07/03/2026 19:44:10 [INFO   ] Historial cargado: 36 ASINs en ventana de 96h (ignorados 1 expirados)
+07/03/2026 19:44:10 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4
+07/03/2026 19:44:10 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+07/03/2026 19:44:10 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 1 dias (05/03 21:02)
+07/03/2026 19:44:10 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 14 dias (20/02 23:52)
+07/03/2026 19:44:10 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4]
+07/03/2026 19:44:10 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+07/03/2026 19:44:10 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 05/03 21:02 (hace 1 días, faltan ~2 días)
+07/03/2026 19:44:10 [INFO   ] 
+07/03/2026 19:44:10 [INFO   ] --- Categoria: Juegos PS5 ---
+07/03/2026 19:44:14 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+07/03/2026 19:44:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+07/03/2026 19:44:15 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 6s
+07/03/2026 19:44:24 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+07/03/2026 19:44:25 [INFO   ]   Scraped: 20 productos (17 con oferta, 3 sin descuento)
+07/03/2026 19:44:25 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/03/2026 19:44:25 [DEBUG  ]     1. [B0D6PFPTXH] Metal Gear Solid Delta Snake Eater D1 Edition - PS | 44% dto | 0 vals | 0 ventas
+07/03/2026 19:44:25 [DEBUG  ]     2. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5 | 42% dto | 5 vals | 0 ventas
+07/03/2026 19:44:25 [DEBUG  ]     3. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 41% dto | 5 vals | 0 ventas
+07/03/2026 19:44:25 [DEBUG  ]     4. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 40% dto | 5 vals | 0 ventas
+07/03/2026 19:44:25 [DEBUG  ]     5. [B0F1G4KWH1] Silent Hill f - Day One Edition - PS5 | 38% dto | 5 vals | 0 ventas
+07/03/2026 19:44:25 [INFO   ]   DESCARTADO [ya publicado en <48h] Metal Gear Solid Delta Snake Eater D1 Edition... (44% dto, ASIN: B0D6PFPTXH)
+07/03/2026 19:44:25 [INFO   ]   ELEGIDO para categoria: Alan Wake 2 Deluxe Edition - PS5... (42% dto, 5 valoraciones, ASIN: B0D669NGW7)
+07/03/2026 19:44:25 [INFO   ] 
+07/03/2026 19:44:25 [INFO   ] --- Categoria: Juegos PS4 ---
+07/03/2026 19:44:29 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+07/03/2026 19:44:30 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+07/03/2026 19:44:30 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/03/2026 19:44:30 [DEBUG  ]     1. [B0B6G74TF3] God of War Ragnarok PS4 | Videojuego Original de P | 51% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/03/2026 19:44:30 [DEBUG  ]     2. [B07L674L8R] Crash Team Racing Nitro-Fueled | 50% dto | 4 vals | 0 ventas
+07/03/2026 19:44:30 [DEBUG  ]     3. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 49% dto | 4 vals | 0 ventas [MARCA PRIO]
+07/03/2026 19:44:30 [DEBUG  ]     4. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+07/03/2026 19:44:30 [DEBUG  ]     5. [B07PC3V9F2] Hollow Knight | 34% dto | 4 vals | 0 ventas
+07/03/2026 19:44:30 [INFO   ]   ELEGIDO para categoria: God of War Ragnarok PS4 | Videojuego Original... (51% dto, 0 valoraciones, ASIN: B0B6G74TF3) [marca prioritaria]
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Mandos PS5 ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Mandos PS4 ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Auriculares gaming ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Tarjetas PSN ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Accesorios PS5 ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Categoria: Accesorios PS4 ---
+07/03/2026 19:44:30 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+07/03/2026 19:44:30 [INFO   ]   1. [B0B6G74TF3] God of War Ragnarok PS4 | Videojuego Ori... | 51% dto | cat: Juegos PS4 (videojuego) [marca prio] [cat. reciente]
+07/03/2026 19:44:30 [INFO   ]   2. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5... | 42% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+07/03/2026 19:44:30 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4], publicando la mejor disponible igualmente
+07/03/2026 19:44:30 [INFO   ] 
+07/03/2026 19:44:30 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+07/03/2026 19:44:30 [INFO   ]     Titulo:    God of War Ragnarok PS4 | Videojuego Original de Playstation Sony Entertainment, Configurable en Esp...
+07/03/2026 19:44:30 [INFO   ]     Categoria: Juegos PS4 | Descuento: 51%
+07/03/2026 19:44:30 [INFO   ]     Precio:    33,99 € (antes: 69,99 €)
+07/03/2026 19:44:30 [INFO   ]     ASIN:      B0B6G74TF3 | Valoraciones: 0 | Ventas: 0
+07/03/2026 19:44:30 [INFO   ]     URL:       https://www.amazon.es/dp/B0B6G74TF3?tag=juegosenoferta-21
+07/03/2026 19:44:30 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/81+n0dMTHGL._AC_UL320_.jpg
+07/03/2026 19:44:30 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+07/03/2026 19:44:31 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1241
+07/03/2026 19:44:31 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+07/03/2026 19:44:31 [DEBUG  ] Historial de categorias actualizado: Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5
+07/03/2026 19:44:31 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+07/03/2026 19:44:31 [INFO   ] 
+07/03/2026 19:44:31 [INFO   ] ============================================================
+07/03/2026 19:44:31 [INFO   ] FIN - 1 oferta publicada en Telegram
+07/03/2026 19:44:31 [INFO   ] ============================================================
+07/03/2026 19:44:31 [INFO   ] ============================================================
+07/03/2026 19:44:31 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+07/03/2026 19:44:31 [INFO   ] ============================================================
+07/03/2026 19:44:31 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+07/03/2026 19:44:31 [INFO   ] Buscando preórdenes: Próximos PS5
+07/03/2026 19:44:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+07/03/2026 19:44:35 [INFO   ]   Encontrados 14 items, verificando si son preórdenes...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B08SZ6GRX6: Control Ultimate Edition for PlayStation 54,64,6 de 5 estrellas(749)PlayStation 5Precio, página del ...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0B482JZSR: Soul Hackers 2 Juego de PS5Calificación de la PEGI: No recomendada para menores de 16 años4,44,4 de ...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0BTPWSH4H: Street Fighter 6 Lentic. Ed. PS5 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0BZQ4WC1J: Paperman: Adventure Delivered - PS5Calificación de la PEGI: No recomendada para menores de 3 años3,3...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,44,4 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,64,6 de 5 estrellas...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B084871D8H: Turtle Beach Auriculares para juegos Recon 70 Camo Green para Xbox Series X|S, Xbox One, PS5, PS4, N...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0CRQ9614T: Tira de luz para PS5 Slim4,04,0 de 5 estrellas(76)Precio, página del producto22,98 €22,98€Entrega GR...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5Q6YJ: Turtle Beach Recon 70 Blanco Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbo...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0DB7ZT341: PS5 and PS Portal Stand, Multi-functional PS5 Cooling Station and Controller Charger for PS5 Dualsen...
+07/03/2026 19:44:35 [DEBUG  ]     [DESCARTADO] ASIN B0CWS6V29J: Turtle Beach Recon 70 Consola Blanca PlayStation Auriculares Multiplataforma para Juegos for PS5, PS...
+07/03/2026 19:44:35 [INFO   ]   14 items descartados por no tener señales de preorden
+07/03/2026 19:44:35 [INFO   ] Buscando preórdenes: Próximos PS4
+07/03/2026 19:44:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+07/03/2026 19:44:38 [INFO   ]   Encontrados 6 items, verificando si son preórdenes...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B084871D8H: Turtle Beach Auriculares para juegos Recon 70 Camo Green para Xbox Series X|S, Xbox One, PS5, PS4, N...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,64,6 de 5 estrellas...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5Q6YJ: Turtle Beach Recon 70 Blanco Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbo...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B0CWS6V29J: Turtle Beach Recon 70 Consola Blanca PlayStation Auriculares Multiplataforma para Juegos for PS5, PS...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+07/03/2026 19:44:38 [DEBUG  ]     [DESCARTADO] ASIN B097FM6WLH: Hades Playstation 44,44,4 de 5 estrellas(156)Playstation 4Ver opcionesOfertas destacadas no disponib...
+07/03/2026 19:44:38 [INFO   ]   6 items descartados por no tener señales de preorden
+07/03/2026 19:44:38 [INFO   ] No hay candidatos de preórdenes en este ciclo
+07/03/2026 19:44:38 [INFO   ] ============================================================
