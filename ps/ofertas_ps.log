@@ -39111,3 +39111,116 @@
 08/03/2026 13:23:26 [INFO   ]   4 items descartados por no tener señales de preorden
 08/03/2026 13:23:26 [INFO   ] No hay candidatos de preórdenes en este ciclo
 08/03/2026 13:23:26 [INFO   ] ============================================================
+08/03/2026 13:56:12 [INFO   ] ============================================================
+08/03/2026 13:56:12 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+08/03/2026 13:56:12 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 08/03/2026 13:56
+08/03/2026 13:56:12 [INFO   ] ============================================================
+08/03/2026 13:56:12 [INFO   ] Historial cargado: 37 ASINs en ventana de 96h (ignorados 0 expirados)
+08/03/2026 13:56:12 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+08/03/2026 13:56:12 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+08/03/2026 13:56:12 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 2 dias (05/03 21:02)
+08/03/2026 13:56:12 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 15 dias (20/02 23:52)
+08/03/2026 13:56:12 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+08/03/2026 13:56:12 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+08/03/2026 13:56:12 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 05/03 21:02 (hace 2 días, faltan ~1 días)
+08/03/2026 13:56:12 [INFO   ] 
+08/03/2026 13:56:12 [INFO   ] --- Categoria: Juegos PS5 ---
+08/03/2026 13:56:15 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+08/03/2026 13:56:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+08/03/2026 13:56:16 [INFO   ]   Scraped: 20 productos (15 con oferta, 5 sin descuento)
+08/03/2026 13:56:16 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+08/03/2026 13:56:16 [DEBUG  ]     1. [B0D6PFPTXH] Metal Gear Solid Delta Snake Eater D1 Edition - PS | 44% dto | 0 vals | 0 ventas
+08/03/2026 13:56:16 [DEBUG  ]     2. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 41% dto | 5 vals | 0 ventas
+08/03/2026 13:56:16 [DEBUG  ]     3. [B0CXDX9ZJ3] Teenage Mutant Ninja Turtles: Mutantes desencadena | 40% dto | 5 vals | 0 ventas
+08/03/2026 13:56:16 [DEBUG  ]     4. [B0F8C77R1T] Mafia: The Old Country PS5 | 40% dto | 0 vals | 0 ventas
+08/03/2026 13:56:16 [DEBUG  ]     5. [B0DW9KWLCW] Legacy of Kain: Soul Reaver 1 & 2 Remastered - PS5 | 37% dto | 5 vals | 0 ventas
+08/03/2026 13:56:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Metal Gear Solid Delta Snake Eater D1 Edition... (44% dto, ASIN: B0D6PFPTXH)
+08/03/2026 13:56:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Assassin's Creed Shadows Limited Edition (Exc... (41% dto, ASIN: B0D362WFCC)
+08/03/2026 13:56:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Teenage Mutant Ninja Turtles: Mutantes desenc... (40% dto, ASIN: B0CXDX9ZJ3)
+08/03/2026 13:56:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Mafia: The Old Country PS5... (40% dto, ASIN: B0F8C77R1T)
+08/03/2026 13:56:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Legacy of Kain: Soul Reaver 1 & 2 Remastered ... (37% dto, ASIN: B0DW9KWLCW)
+08/03/2026 13:56:16 [INFO   ]   ELEGIDO para categoria: ANNO 117 Pax Romana PS5... (33% dto, 5 valoraciones, ASIN: B0FCDNJB22)
+08/03/2026 13:56:16 [INFO   ] 
+08/03/2026 13:56:16 [INFO   ] --- Categoria: Juegos PS4 ---
+08/03/2026 13:56:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+08/03/2026 13:56:20 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+08/03/2026 13:56:20 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+08/03/2026 13:56:20 [DEBUG  ]     1. [B0DZ32BRTK] PlayStation - Tony Hawk’s Pro Skater 3 + 4 - PS4 ( | 54% dto | 4 vals | 0 ventas [MARCA PRIO]
+08/03/2026 13:56:20 [DEBUG  ]     2. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+08/03/2026 13:56:20 [DEBUG  ]     3. [B08LLR3BX8] Five Nights at Freddy'S. Core Collection | 35% dto | 4 vals | 0 ventas
+08/03/2026 13:56:20 [DEBUG  ]     4. [B07PC3V9F2] Hollow Knight | 34% dto | 4 vals | 0 ventas
+08/03/2026 13:56:20 [DEBUG  ]     5. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 20% dto | 4 vals | 0 ventas [MARCA PRIO]
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] PlayStation - Tony Hawk’s Pro Skater 3 + 4 - ... (54% dto, ASIN: B0DZ32BRTK)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Five Nights at Freddy'S. Core Collection... (35% dto, ASIN: B08LLR3BX8)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (34% dto, ASIN: B07PC3V9F2)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (20% dto, ASIN: B09GSPDV8K)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Crash Team Racing Nitro-Fueled... (15% dto, ASIN: B07L674L8R)
+08/03/2026 13:56:20 [INFO   ]   DESCARTADO [ya publicado en <48h] Electronic Arts Star Wars Jedi: Survivor PS4 ... (10% dto, ASIN: B0DBLV5FS8)
+08/03/2026 13:56:20 [INFO   ]   Sin candidatos validos: todos descartados por duplicacion o similitud de titulo
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Mandos PS5 ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Mandos PS4 ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Auriculares gaming ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Tarjetas PSN ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Accesorios PS5 ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Categoria: Accesorios PS4 ---
+08/03/2026 13:56:20 [INFO   ]   SALTADA por límite de 3 días para accesorios
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+08/03/2026 13:56:20 [INFO   ]   1. [B0FCDNJB22] ANNO 117 Pax Romana PS5... | 33% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+08/03/2026 13:56:20 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5], publicando la mejor disponible igualmente
+08/03/2026 13:56:20 [INFO   ] 
+08/03/2026 13:56:20 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+08/03/2026 13:56:20 [INFO   ]     Titulo:    ANNO 117 Pax Romana PS5
+08/03/2026 13:56:20 [INFO   ]     Categoria: Juegos PS5 | Descuento: 33%
+08/03/2026 13:56:20 [INFO   ]     Precio:    33,05 € (antes: 49,58 €)
+08/03/2026 13:56:20 [INFO   ]     ASIN:      B0FCDNJB22 | Valoraciones: 5 | Ventas: 0
+08/03/2026 13:56:20 [INFO   ]     URL:       https://www.amazon.es/dp/B0FCDNJB22?tag=juegosenoferta-21
+08/03/2026 13:56:20 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/817ooBnaSpL._AC_UL320_.jpg
+08/03/2026 13:56:20 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+08/03/2026 13:56:21 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1157
+08/03/2026 13:56:21 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+08/03/2026 13:56:21 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS5, Juegos PS5, Juegos PS4
+08/03/2026 13:56:21 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+08/03/2026 13:56:21 [INFO   ] 
+08/03/2026 13:56:21 [INFO   ] ============================================================
+08/03/2026 13:56:21 [INFO   ] FIN - 1 oferta publicada en Telegram
+08/03/2026 13:56:21 [INFO   ] ============================================================
+08/03/2026 13:56:21 [INFO   ] ============================================================
+08/03/2026 13:56:21 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+08/03/2026 13:56:21 [INFO   ] ============================================================
+08/03/2026 13:56:21 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+08/03/2026 13:56:21 [INFO   ] Buscando preórdenes: Próximos PS5
+08/03/2026 13:56:24 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+08/03/2026 13:56:24 [INFO   ]   Encontrados 10 items, verificando si son preórdenes...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0BTPWSH4H: Street Fighter 6 Lentic. Ed. PS5 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,44,4 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,64,6 de 5 estrellas...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0BZQ4WC1J: Paperman: Adventure Delivered - PS5Calificación de la PEGI: No recomendada para menores de 3 años3,3...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0CRQ9614T: Tira de luz para PS5 Slim4,04,0 de 5 estrellas(76)Precio, página del producto22,98 €22,98€Añadir a l...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5Q6YJ: Turtle Beach Recon 70 Blanco Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbo...
+08/03/2026 13:56:24 [DEBUG  ]     [DESCARTADO] ASIN B0DB7ZT341: PS5 and PS Portal Stand, Multi-functional PS5 Cooling Station and Controller Charger for PS5 Dualsen...
+08/03/2026 13:56:24 [INFO   ]   10 items descartados por no tener señales de preorden
+08/03/2026 13:56:24 [INFO   ] Buscando preórdenes: Próximos PS4
+08/03/2026 13:56:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+08/03/2026 13:56:28 [INFO   ]   Encontrados 3 items, verificando si son preórdenes...
+08/03/2026 13:56:28 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,64,6 de 5 estrellas...
+08/03/2026 13:56:28 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+08/03/2026 13:56:28 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5Q6YJ: Turtle Beach Recon 70 Blanco Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbo...
+08/03/2026 13:56:28 [INFO   ]   3 items descartados por no tener señales de preorden
+08/03/2026 13:56:28 [INFO   ] No hay candidatos de preórdenes en este ciclo
+08/03/2026 13:56:28 [INFO   ] ============================================================
