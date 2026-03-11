@@ -511,7 +511,13 @@ def extraer_productos_busqueda(html_content):
             titulo = titulo_elem.get_text(strip=True) if titulo_elem else "Sin titulo"
 
             precio = "N/A"
-            precio_elem = item.select_one('.a-price:not([data-a-strike="true"]) .a-offscreen')
+            # data-a-color="base" es el precio real del buy-box de Amazon.
+            # Evitar data-a-color="secondary" (precio de marketplace, aparece primero en el DOM)
+            # y data-a-strike="true" (precio antiguo tachado).
+            precio_elem = (
+                item.select_one('.a-price[data-a-color="base"] .a-offscreen') or
+                item.select_one('.a-price:not([data-a-strike="true"]):not([data-a-color="secondary"]) .a-offscreen')
+            )
             if precio_elem:
                 precio = precio_elem.get_text(strip=True)
 

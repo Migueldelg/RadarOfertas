@@ -364,7 +364,7 @@ def _html_con_producto(
     <html><body>
     <div data-component-type="s-search-result" data-asin="{asin}">
       <h2><a><span>{titulo}</span></a></h2>
-      <span class="a-price">
+      <span class="a-price" data-a-color="base">
         <span class="a-offscreen">{precio_actual}</span>
       </span>
       <span class="a-price a-text-price" data-a-strike="true">
@@ -435,7 +435,7 @@ class TestExtraerProductosBusqueda:
           <span class="a-price a-text-price" data-a-strike="true">
             <span class="a-offscreen">19,99€</span>
           </span>
-          <span class="a-price">
+          <span class="a-price" data-a-color="base">
             <span class="a-offscreen">12,99€</span>
           </span>
         </div>
@@ -445,6 +445,30 @@ class TestExtraerProductosBusqueda:
         assert len(productos) >= 1
         assert productos[0]['precio'] == "12,99€"
         assert productos[0]['precio_anterior'] == "19,99€"
+
+    def test_ignora_precio_marketplace_secondary(self):
+        # Regresion: Amazon muestra primero el precio de marketplace (data-a-color="secondary")
+        # antes que el precio real del buy-box (data-a-color="base"). Debe cogerse el "base".
+        html_marketplace = textwrap.dedent("""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="B001MKT">
+          <h2><a><span>Pañales Dodot con precio marketplace</span></a></h2>
+          <span class="a-price" data-a-color="secondary">
+            <span class="a-offscreen">4,99€</span>
+          </span>
+          <span class="a-price" data-a-color="base">
+            <span class="a-offscreen">12,99€</span>
+          </span>
+          <span class="a-price a-text-price" data-a-strike="true">
+            <span class="a-offscreen">17,99€</span>
+          </span>
+        </div>
+        </body></html>
+        """)
+        productos = bot.extraer_productos_busqueda(html_marketplace)
+        assert len(productos) >= 1
+        assert productos[0]['precio'] == "12,99€", f"Se esperaba 12,99€ (base) pero se obtuvo {productos[0]['precio']}"
+        assert productos[0]['precio_anterior'] == "17,99€"
 
     def test_url_incluye_tag_afiliado(self):
         html = _html_con_producto(asin="B001TEST")

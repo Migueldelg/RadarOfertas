@@ -359,7 +359,7 @@ def _html_con_producto(
     <html><body>
     <div data-component-type="s-search-result" data-asin="{asin}">
       <h2><a><span>{titulo}</span></a></h2>
-      <span class="a-price">
+      <span class="a-price" data-a-color="base">
         <span class="a-offscreen">{precio_actual}</span>
       </span>
       <span class="a-price a-text-price" data-a-strike="true">
@@ -430,7 +430,7 @@ class TestExtraerProductosBusqueda:
           <span class="a-price a-text-price" data-a-strike="true">
             <span class="a-offscreen">59,99€</span>
           </span>
-          <span class="a-price">
+          <span class="a-price" data-a-color="base">
             <span class="a-offscreen">29,99€</span>
           </span>
         </div>
@@ -439,6 +439,30 @@ class TestExtraerProductosBusqueda:
         productos = bot.extraer_productos_busqueda(html_orden_invertido)
         assert len(productos) >= 1
         assert productos[0]['precio'] == "29,99€"
+        assert productos[0]['precio_anterior'] == "59,99€"
+
+    def test_ignora_precio_marketplace_secondary(self):
+        # Regresion: Amazon muestra primero el precio de marketplace (data-a-color="secondary")
+        # antes que el precio real del buy-box (data-a-color="base"). Debe cogerse el "base".
+        html_marketplace = textwrap.dedent("""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="B001MKT">
+          <h2><a><span>The Crew Motorfest Limited Edition PS5</span></a></h2>
+          <span class="a-price" data-a-color="secondary">
+            <span class="a-offscreen">14,87€</span>
+          </span>
+          <span class="a-price" data-a-color="base">
+            <span class="a-offscreen">24,79€</span>
+          </span>
+          <span class="a-price a-text-price" data-a-strike="true">
+            <span class="a-offscreen">59,99€</span>
+          </span>
+        </div>
+        </body></html>
+        """)
+        productos = bot.extraer_productos_busqueda(html_marketplace)
+        assert len(productos) >= 1
+        assert productos[0]['precio'] == "24,79€", f"Se esperaba 24,79€ (base) pero se obtuvo {productos[0]['precio']}"
         assert productos[0]['precio_anterior'] == "59,99€"
 
     def test_url_incluye_tag_afiliado(self):
