@@ -526,6 +526,20 @@ def extraer_productos_busqueda(html_content):
             if precio_anterior_elem:
                 precio_anterior = precio_anterior_elem.get_text(strip=True)
 
+            # Badge de descuento oficial de Amazon (fuente más fiable que calcular de dos precios).
+            # '.savingsPercentage' aparece en resultados con descuento real aplicado en el buy-box.
+            descuento_badge = 0
+            badge_elem = item.select_one('.savingsPercentage')
+            if badge_elem:
+                badge_text = badge_elem.get_text(strip=True)
+                m = re.search(r'(\d+)', badge_text)
+                if m:
+                    descuento_badge = int(m.group(1))
+
+            # Detectar si el precio requiere cupón (el precio real es mayor hasta que se activa).
+            # En ese caso no lo contamos como oferta directa para evitar precios engañosos.
+            es_cupon = bool(item.select_one('.s-coupon-unclipped, .s-coupon-clipped'))
+
             # Calcular descuento
             descuento = 0
             if precio_anterior and precio != "N/A":
@@ -536,6 +550,16 @@ def extraer_productos_busqueda(html_content):
                         descuento = ((precio_ant_num - precio_num) / precio_ant_num) * 100
                 except:
                     descuento = 0
+
+            # Si Amazon publica un badge de descuento, usarlo como fuente de verdad.
+            # Si solo hay precio tachado sin badge, el "descuento" puede ser el precio típico
+            # histórico (no una oferta real activa), por lo que se ignora.
+            if descuento_badge > 0:
+                descuento = float(descuento_badge)
+            elif not descuento_badge and precio_anterior:
+                # Sin badge oficial de Amazon → no es una oferta activa confirmada
+                precio_anterior = None
+                descuento = 0
 
             # Extraer numero de valoraciones
             valoraciones = 0
@@ -579,7 +603,7 @@ def extraer_productos_busqueda(html_content):
                 'ventas': ventas,
                 'imagen': imagen,
                 'url': url_afiliado,
-                'tiene_oferta': precio_anterior is not None
+                'tiene_oferta': precio_anterior is not None and not es_cupon
             })
 
         except Exception:
