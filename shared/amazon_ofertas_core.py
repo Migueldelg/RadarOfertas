@@ -511,7 +511,7 @@ def extraer_productos_busqueda(html_content):
             titulo = titulo_elem.get_text(strip=True) if titulo_elem else "Sin titulo"
 
             precio = "N/A"
-            precio_elem = item.select_one('.a-price .a-offscreen')
+            precio_elem = item.select_one('.a-price:not([data-a-strike="true"]) .a-offscreen')
             if precio_elem:
                 precio = precio_elem.get_text(strip=True)
 

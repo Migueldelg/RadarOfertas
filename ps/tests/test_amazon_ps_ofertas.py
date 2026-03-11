@@ -420,6 +420,27 @@ class TestExtraerProductosBusqueda:
         assert len(productos) >= 1
         assert productos[0]['tiene_oferta'] is False
 
+    def test_precio_correcto_cuando_tachado_aparece_primero_en_dom(self):
+        # Regresion: en Amazon, el precio tachado (antiguo) a veces aparece
+        # antes en el DOM que el precio actual. El selector debe ignorarlo.
+        html_orden_invertido = textwrap.dedent("""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="B001INV">
+          <h2><a><span>Juego PS5 con precio invertido</span></a></h2>
+          <span class="a-price a-text-price" data-a-strike="true">
+            <span class="a-offscreen">59,99€</span>
+          </span>
+          <span class="a-price">
+            <span class="a-offscreen">29,99€</span>
+          </span>
+        </div>
+        </body></html>
+        """)
+        productos = bot.extraer_productos_busqueda(html_orden_invertido)
+        assert len(productos) >= 1
+        assert productos[0]['precio'] == "29,99€"
+        assert productos[0]['precio_anterior'] == "59,99€"
+
     def test_url_incluye_tag_afiliado(self):
         html = _html_con_producto(asin="B001TEST")
         productos = bot.extraer_productos_busqueda(html)
