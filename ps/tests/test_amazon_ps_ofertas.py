@@ -349,22 +349,25 @@ def _html_con_producto(
     precio_anterior="49,99€",
     valoraciones="2.500",
     img_src="https://example.com/img.jpg",
+    descuento_badge=40,
 ):
     """Genera HTML mínimo con la estructura que espera el scraper de Amazon.
 
-    El orden importa: Amazon pone primero el precio actual (sin data-a-strike)
-    y luego el precio tachado (con data-a-strike="true").
+    Incluye el badge .savingsPercentage que Amazon muestra en ofertas reales.
+    Sin este badge, el scraper no considera el producto como oferta activa.
     """
+    badge_html = f'<span class="savingsPercentage">-{descuento_badge}%</span>' if descuento_badge else ''
     return textwrap.dedent(f"""
     <html><body>
     <div data-component-type="s-search-result" data-asin="{asin}">
       <h2><a><span>{titulo}</span></a></h2>
-      <span class="a-price">
+      <span class="a-price" data-a-color="base">
         <span class="a-offscreen">{precio_actual}</span>
       </span>
       <span class="a-price a-text-price" data-a-strike="true">
         <span class="a-offscreen">{precio_anterior}</span>
       </span>
+      {badge_html}
       <span class="a-size-base s-underline-text">{valoraciones}</span>
       <img class="s-image" src="{img_src}" />
     </div>
@@ -395,17 +398,23 @@ class TestExtraerProductosBusqueda:
         assert productos[0]['precio_anterior'] == "49,99€"
 
     def test_calcula_descuento(self):
-        html = _html_con_producto(precio_actual="25,00€", precio_anterior="50,00€")
+        html = _html_con_producto(precio_actual="25,00€", precio_anterior="50,00€", descuento_badge=50)
         productos = bot.extraer_productos_busqueda(html)
         assert abs(productos[0]['descuento'] - 50.0) < 0.1
 
-    def test_tiene_oferta_true_cuando_hay_precio_anterior(self):
-        html = _html_con_producto(precio_anterior="49,99€")
+    def test_tiene_oferta_true_cuando_hay_badge_y_precio_anterior(self):
+        html = _html_con_producto(precio_anterior="49,99€", descuento_badge=30)
         productos = bot.extraer_productos_busqueda(html)
         assert productos[0]['tiene_oferta'] is True
 
+    def test_tiene_oferta_false_sin_badge_aunque_haya_precio_anterior(self):
+        # Sin badge oficial de Amazon, el precio tachado puede ser "precio típico" histórico,
+        # no una oferta activa real. No debe publicarse.
+        html = _html_con_producto(precio_anterior="49,99€", descuento_badge=0)
+        productos = bot.extraer_productos_busqueda(html)
+        assert productos[0]['tiene_oferta'] is False
+
     def test_tiene_oferta_false_sin_precio_anterior(self):
-        # HTML sin precio anterior tachado
         html_sin_anterior = textwrap.dedent("""
         <html><body>
         <div data-component-type="s-search-result" data-asin="B001NOOFF">
@@ -420,6 +429,33 @@ class TestExtraerProductosBusqueda:
         assert len(productos) >= 1
         assert productos[0]['tiene_oferta'] is False
 
+    def test_tiene_oferta_false_con_cupon(self):
+        # Precios basados en cupón no son ofertas directas (requieren acción del usuario)
+        html_cupon = textwrap.dedent("""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="B001CUP">
+          <h2><a><span>Juego PS5 con cupón</span></a></h2>
+          <span class="a-price" data-a-color="base">
+            <span class="a-offscreen">29,99€</span>
+          </span>
+          <span class="a-price a-text-price" data-a-strike="true">
+            <span class="a-offscreen">49,99€</span>
+          </span>
+          <span class="savingsPercentage">-40%</span>
+          <span class="s-coupon-unclipped">Ahorra 5€ con un cupón</span>
+        </div>
+        </body></html>
+        """)
+        productos = bot.extraer_productos_busqueda(html_cupon)
+        assert len(productos) >= 1
+        assert productos[0]['tiene_oferta'] is False
+
+    def test_descuento_usa_badge_cuando_disponible(self):
+        # El badge de Amazon es la fuente de verdad para el descuento
+        html = _html_con_producto(precio_actual="29,99€", precio_anterior="49,99€", descuento_badge=40)
+        productos = bot.extraer_productos_busqueda(html)
+        assert productos[0]['descuento'] == 40.0
+
     def test_precio_correcto_cuando_tachado_aparece_primero_en_dom(self):
         # Regresion: en Amazon, el precio tachado (antiguo) a veces aparece
         # antes en el DOM que el precio actual. El selector debe ignorarlo.
@@ -430,15 +466,41 @@ class TestExtraerProductosBusqueda:
           <span class="a-price a-text-price" data-a-strike="true">
             <span class="a-offscreen">59,99€</span>
           </span>
-          <span class="a-price">
+          <span class="a-price" data-a-color="base">
             <span class="a-offscreen">29,99€</span>
           </span>
+          <span class="savingsPercentage">-50%</span>
         </div>
         </body></html>
         """)
         productos = bot.extraer_productos_busqueda(html_orden_invertido)
         assert len(productos) >= 1
         assert productos[0]['precio'] == "29,99€"
+        assert productos[0]['precio_anterior'] == "59,99€"
+
+    def test_ignora_precio_marketplace_secondary(self):
+        # Regresion: Amazon muestra primero el precio de marketplace (data-a-color="secondary")
+        # antes que el precio real del buy-box (data-a-color="base"). Debe cogerse el "base".
+        html_marketplace = textwrap.dedent("""
+        <html><body>
+        <div data-component-type="s-search-result" data-asin="B001MKT">
+          <h2><a><span>The Crew Motorfest Limited Edition PS5</span></a></h2>
+          <span class="a-price" data-a-color="secondary">
+            <span class="a-offscreen">14,87€</span>
+          </span>
+          <span class="a-price" data-a-color="base">
+            <span class="a-offscreen">24,79€</span>
+          </span>
+          <span class="a-price a-text-price" data-a-strike="true">
+            <span class="a-offscreen">59,99€</span>
+          </span>
+          <span class="savingsPercentage">-59%</span>
+        </div>
+        </body></html>
+        """)
+        productos = bot.extraer_productos_busqueda(html_marketplace)
+        assert len(productos) >= 1
+        assert productos[0]['precio'] == "24,79€", f"Se esperaba 24,79€ (base) pero se obtuvo {productos[0]['precio']}"
         assert productos[0]['precio_anterior'] == "59,99€"
 
     def test_url_incluye_tag_afiliado(self):
