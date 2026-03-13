@@ -652,8 +652,8 @@ def main(modo_continuo=False):
         log.info("Modo continuo activado - Ejecutando cada 15 minutos (Ctrl+C para detener)")
         while True:
             try:
-                buscar_y_publicar_ofertas()
                 buscar_prereservas_ps()
+                buscar_y_publicar_ofertas()
                 log.info("Proxima ejecucion en 15 minutos...")
                 log.info("-" * 60)
                 time.sleep(900)  # 15 minutos = 900 segundos
@@ -662,8 +662,9 @@ def main(modo_continuo=False):
                 break
     else:
         # Ejecutar una sola vez (ideal para cron)
-        buscar_y_publicar_ofertas()
+        # Las preórdenes se publican primero (mayor prioridad)
         buscar_prereservas_ps()
+        buscar_y_publicar_ofertas()
 
 
 if __name__ == "__main__":

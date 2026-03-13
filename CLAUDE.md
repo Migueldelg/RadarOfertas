@@ -16,7 +16,7 @@
 - **Tests:** 64 tests
 
 ### Canal 🎮 PS4/PS5 (en producción + Preórdenes 🆕)
-- **Config:** `ps/amazon_ps_ofertas.py` — **Prioriza videojuegos sobre accesorios + Búsqueda de preórdenes**
+- **Config:** `ps/amazon_ps_ofertas.py` — **Prioriza preórdenes > videojuegos > accesorios**
 - **Categorías (Ofertas):** 8 (Juegos PS5/PS4, Mandos, Accesorios)
 - **Categorías (Preórdenes):** 2 (Próximos PS5, Próximos PS4) 🆕
 - **Tests:** 100 tests (59 ofertas + 17 preórdenes + 24 variantes)
