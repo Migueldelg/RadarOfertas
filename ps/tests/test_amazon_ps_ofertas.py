@@ -1272,3 +1272,63 @@ class TestBuscarPrereservasPS:
         # Sin candidatos de preorden, debe retornar 0
         assert resultado == 0
         mock_foto.assert_not_called()
+
+    @patch('ps.amazon_ps_ofertas._effective_chat_id')
+    @patch('ps.amazon_ps_ofertas._effective_token')
+    @patch('ps.amazon_ps_ofertas.send_telegram_photo')
+    @patch('ps.amazon_ps_ofertas.obtener_pagina')
+    @patch('ps.amazon_ps_ofertas.load_posted_deals')
+    @patch('ps.amazon_ps_ofertas.load_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_prereservas')
+    @patch('ps.amazon_ps_ofertas.save_posted_deals')
+    def test_deduplica_asin_entre_busquedas(self, mock_save_deals, mock_save_pre, mock_load_pre, mock_load_deals, mock_pagina, mock_foto, mock_token, mock_chat_id):
+        """El mismo ASIN que aparece en varias URLs no se publica más de una vez."""
+        mock_load_deals.return_value = ({}, [], [], {})
+        mock_load_pre.return_value = {}
+        mock_token.return_value = 'fake_token'
+        mock_chat_id.return_value = 'fake_chat_id'
+        mock_foto.return_value = True
+        # Todas las categorías devuelven el mismo ASIN
+        mock_pagina.return_value = self._html_prereserva(asin='B001_DUPLICADO')
+
+        resultado = bot.buscar_prereservas_ps()
+
+        # Aunque hay 4 URLs de búsqueda, el ASIN duplicado solo se publica una vez
+        assert resultado == 1
+        assert mock_foto.call_count == 1
+
+
+class TestEsPrereservaItemNuevosIndicadores:
+    """Tests para los nuevos indicadores añadidos en _es_prereserva_item."""
+
+    def test_detecta_reservar_ahora(self):
+        """Detecta el botón 'Reservar ahora' como indicador de preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>FIFA 26 PS5 <button>Reservar ahora</button></div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is True
+
+    def test_detecta_pedir_por_adelantado(self):
+        """Detecta 'Pedir por adelantado' como indicador de preorden."""
+        from bs4 import BeautifulSoup
+        html = '<div>Gran Turismo 8 PS5 <a>Pedir por adelantado</a></div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is True
+
+    def test_no_detecta_reserva_natural(self):
+        """No detecta 'reserva natural' como indicador de preorden (falso positivo)."""
+        from bs4 import BeautifulSoup
+        html = '<div>Juego de la reserva natural de fauna silvestre</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is False
+
+    def test_no_detecta_sin_bono_reserva(self):
+        """No detecta 'sin bono de reserva' como indicador de preorden (falso positivo)."""
+        from bs4 import BeautifulSoup
+        html = '<div>Juego PS5 - Edición estándar sin bono de reserva</div>'
+        soup = BeautifulSoup(html, 'html.parser')
+        item = soup.find('div')
+        assert bot._es_prereserva_item(item) is False

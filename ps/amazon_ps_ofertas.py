@@ -99,12 +99,15 @@ CATEGORIAS_PS = [
     {"nombre": "Accesorios PS4", "emoji": "⚙️", "url": "/s?k=accesorios+ps4", "tipo": "accesorio"},
 ]
 
-# Categorias de preórdenes (búsqueda semántica)
-# Nota: Las URLs buscan "próximos lanzamientos" y productos con señales de preorden
-# en el HTML (disponible el, próximamente, preventa, etc.)
+# Categorias de preórdenes
+# Usamos términos reales de Amazon.es ("preventa", "reserva") que aparecen
+# en los listings y son más fiables que "proximamente" como término de búsqueda.
+# Se buscan 4 URLs para mayor cobertura; los ASINs duplicados se deduplicen después.
 CATEGORIAS_PRERESERVAS = [
-    {"nombre": "Próximos PS5", "emoji": "⏰", "url": "/s?k=juegos+ps5+proximamente"},
-    {"nombre": "Próximos PS4", "emoji": "⏰", "url": "/s?k=juegos+ps4+proximamente"},
+    {"nombre": "Preventa PS5", "emoji": "⏰", "url": "/s?k=juegos+ps5+preventa"},
+    {"nombre": "Preventa PS4", "emoji": "⏰", "url": "/s?k=juegos+ps4+preventa"},
+    {"nombre": "Reserva PS5",  "emoji": "⏰", "url": "/s?k=juegos+ps5+reserva"},
+    {"nombre": "Reserva PS4",  "emoji": "⏰", "url": "/s?k=juegos+ps4+reserva"},
 ]
 
 
@@ -166,32 +169,37 @@ def _es_prereserva_item(item_html):
         return False
 
     # Indicadores de preorden/próximo lanzamiento
-    indicadores_preorden = [
+    # Indicadores fuertes: inequívocamente indican preorden
+    indicadores_fuertes = [
         'disponible el ',
         'disponible a partir',
         'próximamente',
-        'próxima',
         'pronto disponible',
         'preventa',
         'pre-orden',
         'preorden',
         'preorder',
+        'reservar ahora',
+        'pedir por adelantado',
+        'fecha de lanzamiento',
+    ]
+
+    # Indicadores débiles: válidos salvo falsos positivos conocidos
+    indicadores_debiles = [
+        'próxima',
         'reservar',
         'reserva',
         'en reserva',
-        'fecha de lanzamiento',
-        'lanzamiento',
         'nuevo lanzamiento',
     ]
 
-    # Si contiene indicador de preorden, es preorden
-    if any(ind in texto for ind in indicadores_preorden):
-        # Pero filtrar falsos positivos como "sin bono de reserva"
-        if 'sin bono' in texto or 'no recomendada' in texto:
-            # Aquí estamos en el título/descripción normal, probablemente falso positivo
-            # Solo aceptar si hay un indicador fuerte adicional
-            if not any(ind in texto for ind in ['disponible el', 'próximamente', 'pronto disponible', 'fecha de lanzamiento']):
-                return False
+    if any(ind in texto for ind in indicadores_fuertes):
+        return True
+
+    if any(ind in texto for ind in indicadores_debiles):
+        # Filtrar falsos positivos: "sin bono de reserva", "reserva natural", etc.
+        if 'sin bono' in texto or 'no recomendada' in texto or 'reserva natural' in texto:
+            return False
         return True
 
     return False
@@ -593,6 +601,18 @@ def buscar_prereservas_ps():
         log.info("No hay candidatos de preórdenes en este ciclo")
         log.info("=" * 60)
         return 0
+
+    # Deduplicar por ASIN: el mismo juego puede aparecer en varias búsquedas
+    vistos = set()
+    candidatos_unicos = []
+    for c in candidatos:
+        asin = c['producto']['asin']
+        if asin not in vistos:
+            vistos.add(asin)
+            candidatos_unicos.append(c)
+    if len(candidatos_unicos) < len(candidatos):
+        log.info("  Deduplicados %d ASINs repetidos entre búsquedas", len(candidatos) - len(candidatos_unicos))
+    candidatos = candidatos_unicos
 
     # Ordenar por popularidad (valoraciones + ventas como proxy)
     candidatos.sort(
