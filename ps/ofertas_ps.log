@@ -644,3 +644,98 @@
 24/03/2026 11:26:53 [INFO   ] ============================================================
 24/03/2026 11:26:53 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 24/03/2026 11:26:53 [INFO   ] ============================================================
+24/03/2026 12:04:55 [INFO   ] ============================================================
+24/03/2026 12:04:55 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+24/03/2026 12:04:55 [INFO   ] ============================================================
+24/03/2026 12:04:55 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+24/03/2026 12:04:55 [INFO   ] Buscando preórdenes: Próximos PS5
+24/03/2026 12:04:58 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+24/03/2026 12:04:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 503 None
+24/03/2026 12:04:58 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5+proximamente - Reintentando en 7s
+24/03/2026 12:05:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+24/03/2026 12:05:10 [INFO   ]   Encontrados 3 items, verificando si son preórdenes...
+24/03/2026 12:05:10 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+24/03/2026 12:05:10 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+24/03/2026 12:05:10 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+24/03/2026 12:05:10 [INFO   ]   3 items descartados por no tener señales de preorden
+24/03/2026 12:05:10 [INFO   ] Buscando preórdenes: Próximos PS4
+24/03/2026 12:05:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 503 None
+24/03/2026 12:05:13 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4+proximamente - Reintentando en 7s
+24/03/2026 12:05:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 503 None
+24/03/2026 12:05:23 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4+proximamente - Reintentando en 11s
+24/03/2026 12:05:38 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 503 None
+24/03/2026 12:05:38 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4+proximamente | URL: https://www.amazon.es/s?k=juegos+ps4+proximamente
+24/03/2026 12:05:38 [WARNING]   No se pudo obtener la página, saltando
+24/03/2026 12:05:38 [INFO   ] No hay candidatos de preórdenes en este ciclo
+24/03/2026 12:05:38 [INFO   ] ============================================================
+24/03/2026 12:05:38 [INFO   ] ============================================================
+24/03/2026 12:05:38 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+24/03/2026 12:05:38 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 24/03/2026 12:05
+24/03/2026 12:05:38 [INFO   ] ============================================================
+24/03/2026 12:05:38 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+24/03/2026 12:05:38 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+24/03/2026 12:05:38 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+24/03/2026 12:05:38 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 15 dias (08/03 21:47)
+24/03/2026 12:05:38 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 31 dias (20/02 23:52)
+24/03/2026 12:05:38 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+24/03/2026 12:05:38 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+24/03/2026 12:05:38 [INFO   ] 
+24/03/2026 12:05:38 [INFO   ] --- Categoria: Juegos PS5 ---
+24/03/2026 12:05:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 12:05:41 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 9s
+24/03/2026 12:05:53 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 12:05:53 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 15s
+24/03/2026 12:06:11 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 12:06:11 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 | URL: https://www.amazon.es/s?k=juegos+ps5
+24/03/2026 12:06:11 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 12:06:11 [INFO   ] 
+24/03/2026 12:06:11 [INFO   ] --- Categoria: Juegos PS4 ---
+24/03/2026 12:06:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 503 None
+24/03/2026 12:06:15 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4 - Reintentando en 7s
+24/03/2026 12:06:26 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+24/03/2026 12:06:27 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:06:27 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:06:27 [INFO   ] 
+24/03/2026 12:06:27 [INFO   ] --- Categoria: Mandos PS5 ---
+24/03/2026 12:06:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 503 None
+24/03/2026 12:06:30 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualsense+ps5 - Reintentando en 9s
+24/03/2026 12:06:42 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 503 None
+24/03/2026 12:06:42 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualsense+ps5 - Reintentando en 19s
+24/03/2026 12:07:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+24/03/2026 12:07:06 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:07:06 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:07:06 [INFO   ] 
+24/03/2026 12:07:06 [INFO   ] --- Categoria: Mandos PS4 ---
+24/03/2026 12:07:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+24/03/2026 12:07:11 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:07:11 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:07:11 [INFO   ] 
+24/03/2026 12:07:11 [INFO   ] --- Categoria: Auriculares gaming ---
+24/03/2026 12:07:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 503 None
+24/03/2026 12:07:13 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=auriculares+gaming+ps4+ps5 - Reintentando en 9s
+24/03/2026 12:07:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+24/03/2026 12:07:26 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:07:26 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:07:26 [INFO   ] 
+24/03/2026 12:07:26 [INFO   ] --- Categoria: Tarjetas PSN ---
+24/03/2026 12:07:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 12:07:30 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation - Reintentando en 10s
+24/03/2026 12:07:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 12:07:44 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation - Reintentando en 19s
+24/03/2026 12:08:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 12:08:05 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation | URL: https://www.amazon.es/s?k=tarjeta+psn+playstation
+24/03/2026 12:08:05 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 12:08:05 [INFO   ] 
+24/03/2026 12:08:05 [INFO   ] --- Categoria: Accesorios PS5 ---
+24/03/2026 12:08:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+24/03/2026 12:08:10 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:08:10 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:08:10 [INFO   ] 
+24/03/2026 12:08:10 [INFO   ] --- Categoria: Accesorios PS4 ---
+24/03/2026 12:08:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+24/03/2026 12:08:15 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 12:08:15 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 12:08:15 [INFO   ] 
+24/03/2026 12:08:15 [INFO   ] ============================================================
+24/03/2026 12:08:15 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+24/03/2026 12:08:15 [INFO   ] ============================================================
