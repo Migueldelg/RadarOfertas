@@ -188,3 +188,109 @@
 24/03/2026 05:15:48 [INFO   ] ============================================================
 24/03/2026 05:15:48 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 24/03/2026 05:15:48 [INFO   ] ============================================================
+24/03/2026 06:39:19 [INFO   ] ============================================================
+24/03/2026 06:39:19 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+24/03/2026 06:39:19 [INFO   ] ============================================================
+24/03/2026 06:39:19 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+24/03/2026 06:39:19 [INFO   ] Buscando preórdenes: Próximos PS5
+24/03/2026 06:39:21 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+24/03/2026 06:39:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 503 None
+24/03/2026 06:39:21 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5+proximamente - Reintentando en 7s
+24/03/2026 06:39:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 503 None
+24/03/2026 06:39:31 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5+proximamente - Reintentando en 12s
+24/03/2026 06:39:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 503 None
+24/03/2026 06:39:45 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5+proximamente | URL: https://www.amazon.es/s?k=juegos+ps5+proximamente
+24/03/2026 06:39:45 [WARNING]   No se pudo obtener la página, saltando
+24/03/2026 06:39:45 [INFO   ] Buscando preórdenes: Próximos PS4
+24/03/2026 06:39:49 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 503 None
+24/03/2026 06:39:49 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4+proximamente - Reintentando en 9s
+24/03/2026 06:40:01 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+24/03/2026 06:40:01 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+24/03/2026 06:40:01 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+24/03/2026 06:40:01 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+24/03/2026 06:40:01 [INFO   ]   2 items descartados por no tener señales de preorden
+24/03/2026 06:40:01 [INFO   ] No hay candidatos de preórdenes en este ciclo
+24/03/2026 06:40:01 [INFO   ] ============================================================
+24/03/2026 06:40:01 [INFO   ] ============================================================
+24/03/2026 06:40:01 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+24/03/2026 06:40:01 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 24/03/2026 06:40
+24/03/2026 06:40:01 [INFO   ] ============================================================
+24/03/2026 06:40:01 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+24/03/2026 06:40:01 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+24/03/2026 06:40:01 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+24/03/2026 06:40:01 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 15 dias (08/03 21:47)
+24/03/2026 06:40:01 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 31 dias (20/02 23:52)
+24/03/2026 06:40:01 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+24/03/2026 06:40:01 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+24/03/2026 06:40:01 [INFO   ] 
+24/03/2026 06:40:01 [INFO   ] --- Categoria: Juegos PS5 ---
+24/03/2026 06:40:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 06:40:06 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 8s
+24/03/2026 06:40:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 06:40:18 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 18s
+24/03/2026 06:40:39 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+24/03/2026 06:40:39 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 | URL: https://www.amazon.es/s?k=juegos+ps5
+24/03/2026 06:40:39 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:40:39 [INFO   ] 
+24/03/2026 06:40:39 [INFO   ] --- Categoria: Juegos PS4 ---
+24/03/2026 06:40:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+24/03/2026 06:40:43 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/03/2026 06:40:43 [INFO   ]   No hay productos con descuento en esta categoria
+24/03/2026 06:40:43 [INFO   ] 
+24/03/2026 06:40:43 [INFO   ] --- Categoria: Mandos PS5 ---
+24/03/2026 06:40:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 503 None
+24/03/2026 06:40:47 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualsense+ps5 - Reintentando en 6s
+24/03/2026 06:40:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 503 None
+24/03/2026 06:40:56 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualsense+ps5 - Reintentando en 12s
+24/03/2026 06:41:11 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 503 None
+24/03/2026 06:41:11 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualsense+ps5 | URL: https://www.amazon.es/s?k=mando+dualsense+ps5
+24/03/2026 06:41:11 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:41:11 [INFO   ] 
+24/03/2026 06:41:11 [INFO   ] --- Categoria: Mandos PS4 ---
+24/03/2026 06:41:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 503 None
+24/03/2026 06:41:15 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualshock+ps4 - Reintentando en 7s
+24/03/2026 06:41:26 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 503 None
+24/03/2026 06:41:26 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualshock+ps4 - Reintentando en 11s
+24/03/2026 06:41:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 503 None
+24/03/2026 06:41:40 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=mando+dualshock+ps4 | URL: https://www.amazon.es/s?k=mando+dualshock+ps4
+24/03/2026 06:41:40 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:41:40 [INFO   ] 
+24/03/2026 06:41:40 [INFO   ] --- Categoria: Auriculares gaming ---
+24/03/2026 06:41:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 503 None
+24/03/2026 06:41:44 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=auriculares+gaming+ps4+ps5 - Reintentando en 9s
+24/03/2026 06:41:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 503 None
+24/03/2026 06:41:57 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=auriculares+gaming+ps4+ps5 - Reintentando en 16s
+24/03/2026 06:42:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 503 None
+24/03/2026 06:42:17 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=auriculares+gaming+ps4+ps5 | URL: https://www.amazon.es/s?k=auriculares+gaming+ps4+ps5
+24/03/2026 06:42:17 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:42:17 [INFO   ] 
+24/03/2026 06:42:17 [INFO   ] --- Categoria: Tarjetas PSN ---
+24/03/2026 06:42:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 06:42:19 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation - Reintentando en 10s
+24/03/2026 06:42:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 06:42:31 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation - Reintentando en 14s
+24/03/2026 06:42:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 503 None
+24/03/2026 06:42:48 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=tarjeta+psn+playstation | URL: https://www.amazon.es/s?k=tarjeta+psn+playstation
+24/03/2026 06:42:48 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:42:48 [INFO   ] 
+24/03/2026 06:42:48 [INFO   ] --- Categoria: Accesorios PS5 ---
+24/03/2026 06:42:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 503 None
+24/03/2026 06:42:51 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps5 - Reintentando en 6s
+24/03/2026 06:43:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 503 None
+24/03/2026 06:43:00 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps5 - Reintentando en 11s
+24/03/2026 06:43:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 503 None
+24/03/2026 06:43:15 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps5 | URL: https://www.amazon.es/s?k=accesorios+ps5
+24/03/2026 06:43:15 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:43:15 [INFO   ] 
+24/03/2026 06:43:15 [INFO   ] --- Categoria: Accesorios PS4 ---
+24/03/2026 06:43:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 503 None
+24/03/2026 06:43:17 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps4 - Reintentando en 6s
+24/03/2026 06:43:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 503 None
+24/03/2026 06:43:27 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps4 - Reintentando en 18s
+24/03/2026 06:43:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 503 None
+24/03/2026 06:43:48 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=accesorios+ps4 | URL: https://www.amazon.es/s?k=accesorios+ps4
+24/03/2026 06:43:48 [WARNING]   No se pudo obtener la pagina, saltando categoria
+24/03/2026 06:43:48 [INFO   ] 
+24/03/2026 06:43:48 [INFO   ] ============================================================
+24/03/2026 06:43:48 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+24/03/2026 06:43:48 [INFO   ] ============================================================
