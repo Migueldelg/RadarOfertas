@@ -6971,3 +6971,83 @@
 05/04/2026 11:53:30 [INFO   ] ============================================================
 05/04/2026 11:53:30 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 05/04/2026 11:53:30 [INFO   ] ============================================================
+05/04/2026 13:35:01 [INFO   ] ============================================================
+05/04/2026 13:35:01 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+05/04/2026 13:35:01 [INFO   ] ============================================================
+05/04/2026 13:35:01 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+05/04/2026 13:35:01 [INFO   ] Buscando preórdenes: Próximos PS5
+05/04/2026 13:35:03 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+05/04/2026 13:35:03 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+05/04/2026 13:35:04 [INFO   ]   Encontrados 6 items, verificando si son preórdenes...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,74,7 de 5 estrellas...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B0CWS6WV23: Turtle Beach Recon 70 Negro PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox Serie...
+05/04/2026 13:35:04 [DEBUG  ]     [DESCARTADO] ASIN B0BVL17YJV: +2Turtle Beach Recon 70 Lavanda PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox S...
+05/04/2026 13:35:04 [INFO   ]   6 items descartados por no tener señales de preorden
+05/04/2026 13:35:04 [INFO   ] Buscando preórdenes: Próximos PS4
+05/04/2026 13:35:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+05/04/2026 13:35:07 [INFO   ]   Encontrados 4 items, verificando si son preórdenes...
+05/04/2026 13:35:07 [DEBUG  ]     [DESCARTADO] ASIN B0CWS6WV23: Turtle Beach Recon 70 Negro PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox Serie...
+05/04/2026 13:35:07 [DEBUG  ]     [DESCARTADO] ASIN B0BVL17YJV: +2Turtle Beach Recon 70 Lavanda PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox S...
+05/04/2026 13:35:07 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+05/04/2026 13:35:07 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,74,7 de 5 estrellas...
+05/04/2026 13:35:07 [INFO   ]   4 items descartados por no tener señales de preorden
+05/04/2026 13:35:07 [INFO   ] No hay candidatos de preórdenes en este ciclo
+05/04/2026 13:35:07 [INFO   ] ============================================================
+05/04/2026 13:35:07 [INFO   ] ============================================================
+05/04/2026 13:35:07 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+05/04/2026 13:35:07 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 05/04/2026 13:35
+05/04/2026 13:35:07 [INFO   ] ============================================================
+05/04/2026 13:35:07 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+05/04/2026 13:35:07 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+05/04/2026 13:35:07 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+05/04/2026 13:35:07 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 27 dias (08/03 21:47)
+05/04/2026 13:35:07 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 43 dias (20/02 23:52)
+05/04/2026 13:35:07 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+05/04/2026 13:35:07 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+05/04/2026 13:35:07 [INFO   ] 
+05/04/2026 13:35:07 [INFO   ] --- Categoria: Juegos PS5 ---
+05/04/2026 13:35:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+05/04/2026 13:35:11 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:11 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:11 [INFO   ] 
+05/04/2026 13:35:11 [INFO   ] --- Categoria: Juegos PS4 ---
+05/04/2026 13:35:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+05/04/2026 13:35:14 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:14 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:14 [INFO   ] 
+05/04/2026 13:35:14 [INFO   ] --- Categoria: Mandos PS5 ---
+05/04/2026 13:35:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+05/04/2026 13:35:18 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:18 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:18 [INFO   ] 
+05/04/2026 13:35:18 [INFO   ] --- Categoria: Mandos PS4 ---
+05/04/2026 13:35:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+05/04/2026 13:35:22 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:22 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:22 [INFO   ] 
+05/04/2026 13:35:22 [INFO   ] --- Categoria: Auriculares gaming ---
+05/04/2026 13:35:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+05/04/2026 13:35:26 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:26 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:26 [INFO   ] 
+05/04/2026 13:35:26 [INFO   ] --- Categoria: Tarjetas PSN ---
+05/04/2026 13:35:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+05/04/2026 13:35:31 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:31 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:31 [INFO   ] 
+05/04/2026 13:35:31 [INFO   ] --- Categoria: Accesorios PS5 ---
+05/04/2026 13:35:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+05/04/2026 13:35:35 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:35 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:35 [INFO   ] 
+05/04/2026 13:35:35 [INFO   ] --- Categoria: Accesorios PS4 ---
+05/04/2026 13:35:39 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+05/04/2026 13:35:40 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+05/04/2026 13:35:40 [INFO   ]   No hay productos con descuento en esta categoria
+05/04/2026 13:35:40 [INFO   ] 
+05/04/2026 13:35:40 [INFO   ] ============================================================
+05/04/2026 13:35:40 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+05/04/2026 13:35:40 [INFO   ] ============================================================
