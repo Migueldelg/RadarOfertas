@@ -1669,3 +1669,78 @@
 08/04/2026 17:41:17 [INFO   ] ============================================================
 08/04/2026 17:41:17 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 08/04/2026 17:41:17 [INFO   ] ============================================================
+08/04/2026 19:46:31 [INFO   ] ============================================================
+08/04/2026 19:46:31 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+08/04/2026 19:46:31 [INFO   ] ============================================================
+08/04/2026 19:46:31 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+08/04/2026 19:46:31 [INFO   ] Buscando preórdenes: Próximos PS5
+08/04/2026 19:46:34 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+08/04/2026 19:46:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+08/04/2026 19:46:35 [INFO   ]   Encontrados 3 items, verificando si son preórdenes...
+08/04/2026 19:46:35 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+08/04/2026 19:46:35 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+08/04/2026 19:46:35 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+08/04/2026 19:46:35 [INFO   ]   3 items descartados por no tener señales de preorden
+08/04/2026 19:46:35 [INFO   ] Buscando preórdenes: Próximos PS4
+08/04/2026 19:46:38 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+08/04/2026 19:46:39 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+08/04/2026 19:46:39 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+08/04/2026 19:46:39 [DEBUG  ]     [DESCARTADO] ASIN B0BTPSL184: Street Fighter 6 Lentic. Ed. PS4 IT/ESPCalificación de la PEGI: No recomendada para menores de 12 añ...
+08/04/2026 19:46:39 [INFO   ]   2 items descartados por no tener señales de preorden
+08/04/2026 19:46:39 [INFO   ] No hay candidatos de preórdenes en este ciclo
+08/04/2026 19:46:39 [INFO   ] ============================================================
+08/04/2026 19:46:39 [INFO   ] ============================================================
+08/04/2026 19:46:39 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+08/04/2026 19:46:39 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 08/04/2026 19:46
+08/04/2026 19:46:39 [INFO   ] ============================================================
+08/04/2026 19:46:39 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+08/04/2026 19:46:39 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+08/04/2026 19:46:39 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+08/04/2026 19:46:39 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 30 dias (08/03 21:47)
+08/04/2026 19:46:39 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 46 dias (20/02 23:52)
+08/04/2026 19:46:39 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+08/04/2026 19:46:39 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+08/04/2026 19:46:39 [INFO   ] 
+08/04/2026 19:46:39 [INFO   ] --- Categoria: Juegos PS5 ---
+08/04/2026 19:46:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+08/04/2026 19:46:42 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:46:42 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:46:42 [INFO   ] 
+08/04/2026 19:46:42 [INFO   ] --- Categoria: Juegos PS4 ---
+08/04/2026 19:46:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+08/04/2026 19:46:46 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:46:46 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:46:46 [INFO   ] 
+08/04/2026 19:46:46 [INFO   ] --- Categoria: Mandos PS5 ---
+08/04/2026 19:46:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+08/04/2026 19:46:51 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:46:51 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:46:51 [INFO   ] 
+08/04/2026 19:46:51 [INFO   ] --- Categoria: Mandos PS4 ---
+08/04/2026 19:46:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+08/04/2026 19:46:55 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:46:55 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:46:55 [INFO   ] 
+08/04/2026 19:46:55 [INFO   ] --- Categoria: Auriculares gaming ---
+08/04/2026 19:46:59 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+08/04/2026 19:47:00 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:47:00 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:47:00 [INFO   ] 
+08/04/2026 19:47:00 [INFO   ] --- Categoria: Tarjetas PSN ---
+08/04/2026 19:47:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+08/04/2026 19:47:03 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:47:03 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:47:03 [INFO   ] 
+08/04/2026 19:47:03 [INFO   ] --- Categoria: Accesorios PS5 ---
+08/04/2026 19:47:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+08/04/2026 19:47:06 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:47:06 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:47:06 [INFO   ] 
+08/04/2026 19:47:06 [INFO   ] --- Categoria: Accesorios PS4 ---
+08/04/2026 19:47:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+08/04/2026 19:47:11 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+08/04/2026 19:47:11 [INFO   ]   No hay productos con descuento en esta categoria
+08/04/2026 19:47:11 [INFO   ] 
+08/04/2026 19:47:11 [INFO   ] ============================================================
+08/04/2026 19:47:11 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+08/04/2026 19:47:11 [INFO   ] ============================================================
