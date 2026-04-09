@@ -222,3 +222,71 @@
 09/04/2026 08:03:19 [INFO   ] ============================================================
 09/04/2026 08:03:19 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 09/04/2026 08:03:19 [INFO   ] ============================================================
+09/04/2026 09:50:01 [INFO   ] ============================================================
+09/04/2026 09:50:01 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+09/04/2026 09:50:01 [INFO   ] ============================================================
+09/04/2026 09:50:01 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+09/04/2026 09:50:01 [INFO   ] Buscando preórdenes: Próximos PS5
+09/04/2026 09:50:05 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+09/04/2026 09:50:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 1404
+09/04/2026 09:50:05 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+09/04/2026 09:50:05 [INFO   ] Buscando preórdenes: Próximos PS4
+09/04/2026 09:50:08 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 1408
+09/04/2026 09:50:08 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+09/04/2026 09:50:08 [INFO   ] No hay candidatos de preórdenes en este ciclo
+09/04/2026 09:50:08 [INFO   ] ============================================================
+09/04/2026 09:50:08 [INFO   ] ============================================================
+09/04/2026 09:50:08 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+09/04/2026 09:50:08 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 09/04/2026 09:50
+09/04/2026 09:50:08 [INFO   ] ============================================================
+09/04/2026 09:50:08 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+09/04/2026 09:50:08 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+09/04/2026 09:50:08 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+09/04/2026 09:50:08 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 31 dias (08/03 21:47)
+09/04/2026 09:50:08 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 47 dias (20/02 23:52)
+09/04/2026 09:50:08 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+09/04/2026 09:50:08 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+09/04/2026 09:50:08 [INFO   ] 
+09/04/2026 09:50:08 [INFO   ] --- Categoria: Juegos PS5 ---
+09/04/2026 09:50:11 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 1368
+09/04/2026 09:50:11 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:11 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:11 [INFO   ] 
+09/04/2026 09:50:11 [INFO   ] --- Categoria: Juegos PS4 ---
+09/04/2026 09:50:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 1368
+09/04/2026 09:50:14 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:14 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:14 [INFO   ] 
+09/04/2026 09:50:14 [INFO   ] --- Categoria: Mandos PS5 ---
+09/04/2026 09:50:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 1392
+09/04/2026 09:50:17 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:17 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:17 [INFO   ] 
+09/04/2026 09:50:17 [INFO   ] --- Categoria: Mandos PS4 ---
+09/04/2026 09:50:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 1395
+09/04/2026 09:50:19 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:19 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:19 [INFO   ] 
+09/04/2026 09:50:19 [INFO   ] --- Categoria: Auriculares gaming ---
+09/04/2026 09:50:22 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 1419
+09/04/2026 09:50:22 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:22 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:22 [INFO   ] 
+09/04/2026 09:50:22 [INFO   ] --- Categoria: Tarjetas PSN ---
+09/04/2026 09:50:26 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 1407
+09/04/2026 09:50:26 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:26 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:26 [INFO   ] 
+09/04/2026 09:50:26 [INFO   ] --- Categoria: Accesorios PS5 ---
+09/04/2026 09:50:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 1371
+09/04/2026 09:50:30 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:30 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:30 [INFO   ] 
+09/04/2026 09:50:30 [INFO   ] --- Categoria: Accesorios PS4 ---
+09/04/2026 09:50:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 1375
+09/04/2026 09:50:34 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+09/04/2026 09:50:34 [INFO   ]   No hay productos con descuento en esta categoria
+09/04/2026 09:50:34 [INFO   ] 
+09/04/2026 09:50:34 [INFO   ] ============================================================
+09/04/2026 09:50:34 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+09/04/2026 09:50:34 [INFO   ] ============================================================
