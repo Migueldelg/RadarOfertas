@@ -16262,3 +16262,76 @@
 24/04/2026 08:32:22 [INFO   ] ============================================================
 24/04/2026 08:32:22 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 24/04/2026 08:32:22 [INFO   ] ============================================================
+24/04/2026 10:50:30 [INFO   ] ============================================================
+24/04/2026 10:50:30 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+24/04/2026 10:50:30 [INFO   ] ============================================================
+24/04/2026 10:50:30 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+24/04/2026 10:50:30 [INFO   ] Buscando preórdenes: Próximos PS5
+24/04/2026 10:50:33 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+24/04/2026 10:50:33 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+24/04/2026 10:50:33 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+24/04/2026 10:50:33 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+24/04/2026 10:50:33 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+24/04/2026 10:50:33 [INFO   ]   2 items descartados por no tener señales de preorden
+24/04/2026 10:50:33 [INFO   ] Buscando preórdenes: Próximos PS4
+24/04/2026 10:50:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+24/04/2026 10:50:37 [INFO   ]   Encontrados 1 items, verificando si son preórdenes...
+24/04/2026 10:50:37 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+24/04/2026 10:50:37 [INFO   ]   1 items descartados por no tener señales de preorden
+24/04/2026 10:50:37 [INFO   ] No hay candidatos de preórdenes en este ciclo
+24/04/2026 10:50:37 [INFO   ] ============================================================
+24/04/2026 10:50:37 [INFO   ] ============================================================
+24/04/2026 10:50:37 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+24/04/2026 10:50:37 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 24/04/2026 10:50
+24/04/2026 10:50:37 [INFO   ] ============================================================
+24/04/2026 10:50:37 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+24/04/2026 10:50:37 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+24/04/2026 10:50:37 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+24/04/2026 10:50:37 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 46 dias (08/03 21:47)
+24/04/2026 10:50:37 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 62 dias (20/02 23:52)
+24/04/2026 10:50:37 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+24/04/2026 10:50:37 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+24/04/2026 10:50:37 [INFO   ] 
+24/04/2026 10:50:37 [INFO   ] --- Categoria: Juegos PS5 ---
+24/04/2026 10:50:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+24/04/2026 10:50:42 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:50:42 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:50:42 [INFO   ] 
+24/04/2026 10:50:42 [INFO   ] --- Categoria: Juegos PS4 ---
+24/04/2026 10:50:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+24/04/2026 10:50:46 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:50:46 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:50:46 [INFO   ] 
+24/04/2026 10:50:46 [INFO   ] --- Categoria: Mandos PS5 ---
+24/04/2026 10:50:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+24/04/2026 10:50:51 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:50:51 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:50:51 [INFO   ] 
+24/04/2026 10:50:51 [INFO   ] --- Categoria: Mandos PS4 ---
+24/04/2026 10:50:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+24/04/2026 10:50:55 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:50:55 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:50:55 [INFO   ] 
+24/04/2026 10:50:55 [INFO   ] --- Categoria: Auriculares gaming ---
+24/04/2026 10:50:59 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+24/04/2026 10:51:00 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:51:00 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:51:00 [INFO   ] 
+24/04/2026 10:51:00 [INFO   ] --- Categoria: Tarjetas PSN ---
+24/04/2026 10:51:03 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+24/04/2026 10:51:04 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:51:04 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:51:04 [INFO   ] 
+24/04/2026 10:51:04 [INFO   ] --- Categoria: Accesorios PS5 ---
+24/04/2026 10:51:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+24/04/2026 10:51:07 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:51:07 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:51:07 [INFO   ] 
+24/04/2026 10:51:08 [INFO   ] --- Categoria: Accesorios PS4 ---
+24/04/2026 10:51:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+24/04/2026 10:51:12 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+24/04/2026 10:51:12 [INFO   ]   No hay productos con descuento en esta categoria
+24/04/2026 10:51:12 [INFO   ] 
+24/04/2026 10:51:12 [INFO   ] ============================================================
+24/04/2026 10:51:12 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+24/04/2026 10:51:12 [INFO   ] ============================================================
