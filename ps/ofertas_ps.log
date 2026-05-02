@@ -24411,3 +24411,74 @@
 02/05/2026 22:06:50 [INFO   ] ============================================================
 02/05/2026 22:06:50 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 02/05/2026 22:06:50 [INFO   ] ============================================================
+02/05/2026 23:09:43 [INFO   ] ============================================================
+02/05/2026 23:09:43 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+02/05/2026 23:09:43 [INFO   ] ============================================================
+02/05/2026 23:09:43 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+02/05/2026 23:09:43 [INFO   ] Buscando preórdenes: Próximos PS5
+02/05/2026 23:09:47 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+02/05/2026 23:09:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+02/05/2026 23:09:48 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+02/05/2026 23:09:48 [INFO   ] Buscando preórdenes: Próximos PS4
+02/05/2026 23:09:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+02/05/2026 23:09:51 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+02/05/2026 23:09:51 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+02/05/2026 23:09:51 [DEBUG  ]     [DESCARTADO] ASIN B097FM6WLH: Hades Playstation 44,54,5 de 5 estrellas(158)Playstation 4Precio, página del producto43,72 €43,72€En...
+02/05/2026 23:09:51 [INFO   ]   2 items descartados por no tener señales de preorden
+02/05/2026 23:09:51 [INFO   ] No hay candidatos de preórdenes en este ciclo
+02/05/2026 23:09:51 [INFO   ] ============================================================
+02/05/2026 23:09:51 [INFO   ] ============================================================
+02/05/2026 23:09:51 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+02/05/2026 23:09:51 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 02/05/2026 23:09
+02/05/2026 23:09:51 [INFO   ] ============================================================
+02/05/2026 23:09:51 [INFO   ] Historial cargado: 0 ASINs en ventana de 96h (ignorados 34 expirados)
+02/05/2026 23:09:51 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5
+02/05/2026 23:09:51 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+02/05/2026 23:09:51 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 55 dias (08/03 21:47)
+02/05/2026 23:09:51 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 70 dias (20/02 23:52)
+02/05/2026 23:09:51 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS5, Juegos PS4, Juegos PS5]
+02/05/2026 23:09:51 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+02/05/2026 23:09:51 [INFO   ] 
+02/05/2026 23:09:51 [INFO   ] --- Categoria: Juegos PS5 ---
+02/05/2026 23:09:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+02/05/2026 23:09:55 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:09:55 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:09:55 [INFO   ] 
+02/05/2026 23:09:55 [INFO   ] --- Categoria: Juegos PS4 ---
+02/05/2026 23:09:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+02/05/2026 23:09:59 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:09:59 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:09:59 [INFO   ] 
+02/05/2026 23:09:59 [INFO   ] --- Categoria: Mandos PS5 ---
+02/05/2026 23:10:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualsense+ps5 HTTP/1.1" 200 None
+02/05/2026 23:10:03 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:03 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:03 [INFO   ] 
+02/05/2026 23:10:03 [INFO   ] --- Categoria: Mandos PS4 ---
+02/05/2026 23:10:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=mando+dualshock+ps4 HTTP/1.1" 200 None
+02/05/2026 23:10:08 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:08 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:08 [INFO   ] 
+02/05/2026 23:10:08 [INFO   ] --- Categoria: Auriculares gaming ---
+02/05/2026 23:10:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=auriculares+gaming+ps4+ps5 HTTP/1.1" 200 None
+02/05/2026 23:10:12 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:12 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:12 [INFO   ] 
+02/05/2026 23:10:12 [INFO   ] --- Categoria: Tarjetas PSN ---
+02/05/2026 23:10:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=tarjeta+psn+playstation HTTP/1.1" 200 None
+02/05/2026 23:10:15 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:15 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:15 [INFO   ] 
+02/05/2026 23:10:15 [INFO   ] --- Categoria: Accesorios PS5 ---
+02/05/2026 23:10:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps5 HTTP/1.1" 200 None
+02/05/2026 23:10:20 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:20 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:20 [INFO   ] 
+02/05/2026 23:10:20 [INFO   ] --- Categoria: Accesorios PS4 ---
+02/05/2026 23:10:24 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=accesorios+ps4 HTTP/1.1" 200 None
+02/05/2026 23:10:25 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+02/05/2026 23:10:25 [INFO   ]   No hay productos con descuento en esta categoria
+02/05/2026 23:10:25 [INFO   ] 
+02/05/2026 23:10:25 [INFO   ] ============================================================
+02/05/2026 23:10:25 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+02/05/2026 23:10:25 [INFO   ] ============================================================
