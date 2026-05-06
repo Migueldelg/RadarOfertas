@@ -353,8 +353,8 @@ def _html_con_producto(
 ):
     """Genera HTML mínimo con la estructura que espera el scraper de Amazon.
 
-    Incluye el badge .savingsPercentage que Amazon muestra en ofertas reales.
-    Sin este badge, el scraper no considera el producto como oferta activa.
+    Con badge .savingsPercentage se usa el porcentaje del badge como fuente de verdad.
+    Sin badge, se acepta como oferta si el descuento calculado entre precios es >= 5%.
     """
     badge_html = f'<span class="savingsPercentage">-{descuento_badge}%</span>' if descuento_badge else ''
     return textwrap.dedent(f"""
@@ -407,11 +407,19 @@ class TestExtraerProductosBusqueda:
         productos = bot.extraer_productos_busqueda(html)
         assert productos[0]['tiene_oferta'] is True
 
-    def test_tiene_oferta_false_sin_badge_aunque_haya_precio_anterior(self):
-        # Sin badge oficial de Amazon, el precio tachado puede ser "precio típico" histórico,
-        # no una oferta activa real. No debe publicarse.
-        html = _html_con_producto(precio_anterior="49,99€", descuento_badge=0)
+    def test_tiene_oferta_true_sin_badge_con_descuento_significativo(self):
+        # Sin badge, si el descuento calculado entre precios es >= 5%, se acepta como oferta.
+        # (Amazon puede haber cambiado el selector del badge)
+        html = _html_con_producto(precio_actual="29,99€", precio_anterior="49,99€", descuento_badge=0)
         productos = bot.extraer_productos_busqueda(html)
+        # descuento calculado ≈ 40% → >= 5% → tiene_oferta True
+        assert productos[0]['tiene_oferta'] is True
+
+    def test_tiene_oferta_false_sin_badge_con_descuento_minimo(self):
+        # Sin badge y descuento calculado < 5% (precio típico histórico, no oferta real).
+        html = _html_con_producto(precio_actual="48,50€", precio_anterior="49,99€", descuento_badge=0)
+        productos = bot.extraer_productos_busqueda(html)
+        # descuento calculado ≈ 3% → < 5% → tiene_oferta False
         assert productos[0]['tiene_oferta'] is False
 
     def test_tiene_oferta_false_sin_precio_anterior(self):

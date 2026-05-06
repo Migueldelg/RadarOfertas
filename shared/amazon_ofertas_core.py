@@ -526,38 +526,51 @@ def extraer_productos_busqueda(html_content):
             if precio_anterior_elem:
                 precio_anterior = precio_anterior_elem.get_text(strip=True)
 
-            # Badge de descuento oficial de Amazon (fuente más fiable que calcular de dos precios).
-            # '.savingsPercentage' aparece en resultados con descuento real aplicado en el buy-box.
+            # Badge de descuento oficial de Amazon. Intentamos varios selectores porque
+            # Amazon cambia ocasionalmente los nombres de clase en su HTML.
             descuento_badge = 0
-            badge_elem = item.select_one('.savingsPercentage')
-            if badge_elem:
-                badge_text = badge_elem.get_text(strip=True)
-                m = re.search(r'(\d+)', badge_text)
-                if m:
-                    descuento_badge = int(m.group(1))
+            BADGE_SELECTORS = [
+                '.savingsPercentage',           # selector histórico (hasta ~mar 2026)
+                '.a-badge-text',                # variante de badge genérico
+                '[class*="savingsPercentage"]', # cualquier clase que contenga el nombre
+                '.s-coupon-highlight-color',    # badge de oferta flash/lightning
+            ]
+            for selector in BADGE_SELECTORS:
+                badge_elem = item.select_one(selector)
+                if badge_elem:
+                    badge_text = badge_elem.get_text(strip=True)
+                    m = re.search(r'(\d+)\s*%', badge_text)
+                    if m:
+                        descuento_badge = int(m.group(1))
+                        break
 
             # Detectar si el precio requiere cupón (el precio real es mayor hasta que se activa).
             # En ese caso no lo contamos como oferta directa para evitar precios engañosos.
             es_cupon = bool(item.select_one('.s-coupon-unclipped, .s-coupon-clipped'))
 
-            # Calcular descuento
-            descuento = 0
+            # Calcular descuento a partir de la comparación de precios
+            descuento_calculado = 0
             if precio_anterior and precio != "N/A":
                 try:
                     precio_num = float(precio.replace('€', '').replace(',', '.').strip())
                     precio_ant_num = float(precio_anterior.replace('€', '').replace(',', '.').strip())
-                    if precio_ant_num > 0:
-                        descuento = ((precio_ant_num - precio_num) / precio_ant_num) * 100
+                    if precio_ant_num > 0 and precio_num < precio_ant_num:
+                        descuento_calculado = ((precio_ant_num - precio_num) / precio_ant_num) * 100
                 except:
-                    descuento = 0
+                    descuento_calculado = 0
 
-            # Si Amazon publica un badge de descuento, usarlo como fuente de verdad.
-            # Si solo hay precio tachado sin badge, el "descuento" puede ser el precio típico
-            # histórico (no una oferta real activa), por lo que se ignora.
+            # Determinar descuento final y si hay oferta real:
+            # 1. Si hay badge oficial → fuente de verdad (más fiable)
+            # 2. Si no hay badge pero hay precio tachado con ≥5% de descuento calculado
+            #    → aceptamos como oferta real (Amazon puede haber cambiado el selector del badge)
+            MIN_DESCUENTO_SIN_BADGE = 5.0
             if descuento_badge > 0:
                 descuento = float(descuento_badge)
-            elif not descuento_badge and precio_anterior:
-                # Sin badge oficial de Amazon → no es una oferta activa confirmada
+            elif descuento_calculado >= MIN_DESCUENTO_SIN_BADGE:
+                descuento = descuento_calculado
+                log.debug("  Badge no encontrado; usando descuento calculado %.0f%% para ASIN %s", descuento, asin)
+            else:
+                # Sin badge ni precio tachado significativo → no es oferta
                 precio_anterior = None
                 descuento = 0
 
