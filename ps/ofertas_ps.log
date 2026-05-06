@@ -27702,3 +27702,107 @@
 06/05/2026 12:15:08 [INFO   ] ============================================================
 06/05/2026 12:15:08 [INFO   ] FIN - 1 oferta publicada en Telegram
 06/05/2026 12:15:08 [INFO   ] ============================================================
+06/05/2026 15:11:26 [INFO   ] ============================================================
+06/05/2026 15:11:26 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+06/05/2026 15:11:26 [INFO   ] ============================================================
+06/05/2026 15:11:26 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+06/05/2026 15:11:26 [INFO   ] Buscando preórdenes: Próximos PS5
+06/05/2026 15:11:28 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+06/05/2026 15:11:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+06/05/2026 15:11:29 [INFO   ]   Encontrados 3 items, verificando si son preórdenes...
+06/05/2026 15:11:29 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+06/05/2026 15:11:29 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+06/05/2026 15:11:29 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+06/05/2026 15:11:29 [INFO   ]   3 items descartados por no tener señales de preorden
+06/05/2026 15:11:29 [INFO   ] Buscando preórdenes: Próximos PS4
+06/05/2026 15:11:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+06/05/2026 15:11:32 [INFO   ]   Encontrados 1 items, verificando si son preórdenes...
+06/05/2026 15:11:32 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+06/05/2026 15:11:32 [INFO   ]   1 items descartados por no tener señales de preorden
+06/05/2026 15:11:32 [INFO   ] No hay candidatos de preórdenes en este ciclo
+06/05/2026 15:11:32 [INFO   ] ============================================================
+06/05/2026 15:11:32 [INFO   ] ============================================================
+06/05/2026 15:11:32 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+06/05/2026 15:11:32 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 06/05/2026 15:11
+06/05/2026 15:11:32 [INFO   ] ============================================================
+06/05/2026 15:11:32 [INFO   ] Historial cargado: 3 ASINs en ventana de 96h (ignorados 0 expirados)
+06/05/2026 15:11:32 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Auriculares gaming, Juegos PS5, Juegos PS5
+06/05/2026 15:11:32 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+06/05/2026 15:11:32 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 0 dias (06/05 09:30)
+06/05/2026 15:11:32 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 74 dias (20/02 23:52)
+06/05/2026 15:11:32 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Auriculares gaming, Juegos PS5, Juegos PS5]
+06/05/2026 15:11:32 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+06/05/2026 15:11:32 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 06/05 09:30 (hace 0 días, faltan ~3 días)
+06/05/2026 15:11:32 [INFO   ] 
+06/05/2026 15:11:32 [INFO   ] --- Categoria: Juegos PS5 ---
+06/05/2026 15:11:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+06/05/2026 15:11:35 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 8s
+06/05/2026 15:11:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+06/05/2026 15:11:46 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 - Reintentando en 14s
+06/05/2026 15:12:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 503 None
+06/05/2026 15:12:05 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps5 | URL: https://www.amazon.es/s?k=juegos+ps5
+06/05/2026 15:12:05 [WARNING]   No se pudo obtener la pagina, saltando categoria
+06/05/2026 15:12:05 [INFO   ] 
+06/05/2026 15:12:05 [INFO   ] --- Categoria: Juegos PS4 ---
+06/05/2026 15:12:08 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 503 None
+06/05/2026 15:12:08 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juegos+ps4 - Reintentando en 6s
+06/05/2026 15:12:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B0FGK4FQR8
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B07TC26XXD
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 76% para ASIN B0FH7FV45C
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B07PC3V9F2
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DBLV5FS8
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B09RG7M1GC
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B01M6578D4
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0BHLH9BSC
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B088218T8T
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B073SCS51T
+06/05/2026 15:12:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0F99XSMYV
+06/05/2026 15:12:18 [INFO   ]   Scraped: 20 productos (11 con oferta, 9 sin descuento)
+06/05/2026 15:12:18 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+06/05/2026 15:12:18 [DEBUG  ]     1. [B0FH7FV45C] NBA 2K26 PS4 | 76% dto | 4 vals | 0 ventas
+06/05/2026 15:12:18 [DEBUG  ]     2. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+06/05/2026 15:12:18 [DEBUG  ]     3. [B07PC3V9F2] Hollow Knight | 30% dto | 4 vals | 0 ventas
+06/05/2026 15:12:18 [DEBUG  ]     4. [B0FGK4FQR8] EA SPORTS FC 26 Standard Edition PS4 | Disco | Vid | 29% dto | 4 vals | 0 ventas
+06/05/2026 15:12:18 [DEBUG  ]     5. [B01M6578D4] Resident Evil 6 | 25% dto | 4 vals | 0 ventas
+06/05/2026 15:12:18 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS4... (76% dto, ASIN: B0FH7FV45C)
+06/05/2026 15:12:18 [INFO   ]   DESCARTADO [titulo similar a reciente] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto)
+06/05/2026 15:12:18 [INFO   ]   ELEGIDO para categoria: Hollow Knight... (30% dto, 4 valoraciones, ASIN: B07PC3V9F2)
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Mandos PS5 ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Mandos PS4 ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Auriculares gaming ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Tarjetas PSN ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Accesorios PS5 ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Categoria: Accesorios PS4 ---
+06/05/2026 15:12:18 [INFO   ]   SALTADA por límite de 3 días para accesorios
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+06/05/2026 15:12:18 [INFO   ]   1. [B07PC3V9F2] Hollow Knight... | 30% dto | cat: Juegos PS4 (videojuego)
+06/05/2026 15:12:18 [INFO   ] 
+06/05/2026 15:12:18 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+06/05/2026 15:12:18 [INFO   ]     Titulo:    Hollow Knight
+06/05/2026 15:12:18 [INFO   ]     Categoria: Juegos PS4 | Descuento: 30%
+06/05/2026 15:12:18 [INFO   ]     Precio:    17,27 € (antes: 24,79 €)
+06/05/2026 15:12:18 [INFO   ]     ASIN:      B07PC3V9F2 | Valoraciones: 4 | Ventas: 0
+06/05/2026 15:12:18 [INFO   ]     URL:       https://www.amazon.es/dp/B07PC3V9F2?tag=juegosenoferta-21
+06/05/2026 15:12:18 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/81KuubwpqoL._AC_UL320_.jpg
+06/05/2026 15:12:18 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+06/05/2026 15:12:19 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1147
+06/05/2026 15:12:19 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+06/05/2026 15:12:19 [DEBUG  ] Historial de categorias actualizado: Juegos PS4, Juegos PS5, Auriculares gaming, Juegos PS5
+06/05/2026 15:12:19 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+06/05/2026 15:12:19 [INFO   ] 
+06/05/2026 15:12:19 [INFO   ] ============================================================
+06/05/2026 15:12:19 [INFO   ] FIN - 1 oferta publicada en Telegram
+06/05/2026 15:12:19 [INFO   ] ============================================================
