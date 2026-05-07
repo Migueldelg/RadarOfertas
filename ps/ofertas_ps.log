@@ -28451,3 +28451,129 @@
 07/05/2026 04:57:15 [INFO   ] ============================================================
 07/05/2026 04:57:15 [INFO   ] FIN - 1 oferta publicada en Telegram
 07/05/2026 04:57:15 [INFO   ] ============================================================
+07/05/2026 08:02:54 [INFO   ] ============================================================
+07/05/2026 08:02:54 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+07/05/2026 08:02:54 [INFO   ] ============================================================
+07/05/2026 08:02:54 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+07/05/2026 08:02:54 [INFO   ] Buscando preórdenes: Próximos PS5
+07/05/2026 08:02:57 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+07/05/2026 08:02:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+07/05/2026 08:02:58 [INFO   ]   Encontrados 3 items, verificando si son preórdenes...
+07/05/2026 08:02:58 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+07/05/2026 08:02:58 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+07/05/2026 08:02:58 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+07/05/2026 08:02:58 [INFO   ]   3 items descartados por no tener señales de preorden
+07/05/2026 08:02:58 [INFO   ] Buscando preórdenes: Próximos PS4
+07/05/2026 08:03:01 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+07/05/2026 08:03:01 [INFO   ]   Encontrados 1 items, verificando si son preórdenes...
+07/05/2026 08:03:01 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+07/05/2026 08:03:01 [INFO   ]   1 items descartados por no tener señales de preorden
+07/05/2026 08:03:01 [INFO   ] No hay candidatos de preórdenes en este ciclo
+07/05/2026 08:03:01 [INFO   ] ============================================================
+07/05/2026 08:03:01 [INFO   ] ============================================================
+07/05/2026 08:03:01 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+07/05/2026 08:03:01 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 07/05/2026 08:03
+07/05/2026 08:03:01 [INFO   ] ============================================================
+07/05/2026 08:03:01 [INFO   ] Historial cargado: 8 ASINs en ventana de 96h (ignorados 0 expirados)
+07/05/2026 08:03:01 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5
+07/05/2026 08:03:01 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+07/05/2026 08:03:01 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 0 dias (06/05 09:30)
+07/05/2026 08:03:01 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 75 dias (20/02 23:52)
+07/05/2026 08:03:01 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5]
+07/05/2026 08:03:01 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+07/05/2026 08:03:01 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 06/05 09:30 (hace 0 días, faltan ~3 días)
+07/05/2026 08:03:01 [INFO   ] 
+07/05/2026 08:03:01 [INFO   ] --- Categoria: Juegos PS5 ---
+07/05/2026 08:03:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 50% para ASIN B0F24Y88V1
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0FSSHFQ9R
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 51% para ASIN B0FJXWB78M
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 76% para ASIN B0FH7FZPSP
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DCPB9J7K
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 36% para ASIN B0D669NGW7
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B0F6D5BS17
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CFVXTMNK
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 41% para ASIN B0D362WFCC
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 36% para ASIN B0DQ5WMN4H
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 27% para ASIN B0DLGNT4V3
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0CNS4MB7R
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0CGHPFJPQ
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0BHLH9BSC
+07/05/2026 08:03:06 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0DCGGTZ99
+07/05/2026 08:03:06 [INFO   ]   Scraped: 20 productos (15 con oferta, 5 sin descuento)
+07/05/2026 08:03:06 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/05/2026 08:03:06 [DEBUG  ]     1. [B0FH7FZPSP] NBA 2K26 PS5 | 76% dto | 5 vals | 0 ventas
+07/05/2026 08:03:06 [DEBUG  ]     2. [B0FJXWB78M] Battlefield 6 Standard Edition PS5 | Videojuegos | | 51% dto | 5 vals | 0 ventas
+07/05/2026 08:03:06 [DEBUG  ]     3. [B0F24Y88V1] F1 25 Standard Edition PS5 | Videojuegos | Castell | 50% dto | 5 vals | 0 ventas
+07/05/2026 08:03:06 [DEBUG  ]     4. [B0D362WFCC] Assassin's Creed Shadows Limited Edition (Exclusiv | 41% dto | 5 vals | 0 ventas
+07/05/2026 08:03:06 [DEBUG  ]     5. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5 | 36% dto | 5 vals | 0 ventas
+07/05/2026 08:03:06 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS5... (76% dto, ASIN: B0FH7FZPSP)
+07/05/2026 08:03:06 [INFO   ]   DESCARTADO [ya publicado en <48h] Battlefield 6 Standard Edition PS5 | Videojue... (51% dto, ASIN: B0FJXWB78M)
+07/05/2026 08:03:06 [INFO   ]   DESCARTADO [titulo similar a reciente] F1 25 Standard Edition PS5 | Videojuegos | Ca... (50% dto)
+07/05/2026 08:03:06 [INFO   ]   DESCARTADO [ya publicado en <48h] Assassin's Creed Shadows Limited Edition (Exc... (41% dto, ASIN: B0D362WFCC)
+07/05/2026 08:03:06 [INFO   ]   ELEGIDO para categoria: Alan Wake 2 Deluxe Edition - PS5... (36% dto, 5 valoraciones, ASIN: B0D669NGW7)
+07/05/2026 08:03:06 [INFO   ] 
+07/05/2026 08:03:06 [INFO   ] --- Categoria: Juegos PS4 ---
+07/05/2026 08:03:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B0FGK4FQR8
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B07TC26XXD
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 76% para ASIN B0FH7FV45C
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B07PC3V9F2
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DBLV5FS8
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B09RG7M1GC
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B0F99XSMYV
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B01M6578D4
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B088218T8T
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 32% para ASIN B07WSXBN1D
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B073SCS51T
+07/05/2026 08:03:11 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0BHLH9BSC
+07/05/2026 08:03:11 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+07/05/2026 08:03:11 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/05/2026 08:03:11 [DEBUG  ]     1. [B0FH7FV45C] NBA 2K26 PS4 | 76% dto | 4 vals | 0 ventas
+07/05/2026 08:03:11 [DEBUG  ]     2. [B0F99XSMYV] Tomb Raider IV-VI Remastered Starring Lara Croft - | 37% dto | 4 vals | 0 ventas
+07/05/2026 08:03:11 [DEBUG  ]     3. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+07/05/2026 08:03:11 [DEBUG  ]     4. [B07WSXBN1D] Need for Speed Heat | 32% dto | 4 vals | 0 ventas
+07/05/2026 08:03:11 [DEBUG  ]     5. [B07PC3V9F2] Hollow Knight | 30% dto | 4 vals | 0 ventas
+07/05/2026 08:03:11 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS4... (76% dto, ASIN: B0FH7FV45C)
+07/05/2026 08:03:11 [INFO   ]   DESCARTADO [ya publicado en <48h] Tomb Raider IV-VI Remastered Starring Lara Cr... (37% dto, ASIN: B0F99XSMYV)
+07/05/2026 08:03:11 [INFO   ]   ELEGIDO para categoria: Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, 4 valoraciones, ASIN: B088218T8T) [marca prioritaria]
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Mandos PS5 ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Mandos PS4 ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Auriculares gaming ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Tarjetas PSN ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Accesorios PS5 ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Categoria: Accesorios PS4 ---
+07/05/2026 08:03:11 [INFO   ]   SALTADA por límite de 3 días para accesorios
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+07/05/2026 08:03:11 [INFO   ]   1. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayS... | 37% dto | cat: Juegos PS4 (videojuego) [marca prio] [cat. reciente]
+07/05/2026 08:03:11 [INFO   ]   2. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5... | 36% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+07/05/2026 08:03:11 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5], publicando la mejor disponible igualmente
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+07/05/2026 08:03:11 [INFO   ]     Titulo:    Ubisoft Assassin's Creed Valhalla, PlayStation 4
+07/05/2026 08:03:11 [INFO   ]     Categoria: Juegos PS4 | Descuento: 37%
+07/05/2026 08:03:11 [INFO   ]     Precio:    15,69 € (antes: 24,79 €)
+07/05/2026 08:03:11 [INFO   ]     ASIN:      B088218T8T | Valoraciones: 4 | Ventas: 0
+07/05/2026 08:03:11 [INFO   ]     URL:       https://www.amazon.es/dp/B088218T8T?tag=juegosenoferta-21
+07/05/2026 08:03:11 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/817XK+M405L._AC_UL320_.jpg
+07/05/2026 08:03:11 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+07/05/2026 08:03:11 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1185
+07/05/2026 08:03:11 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+07/05/2026 08:03:11 [DEBUG  ] Historial de categorias actualizado: Juegos PS4, Juegos PS4, Juegos PS4, Juegos PS5
+07/05/2026 08:03:11 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+07/05/2026 08:03:11 [INFO   ] 
+07/05/2026 08:03:11 [INFO   ] ============================================================
+07/05/2026 08:03:11 [INFO   ] FIN - 1 oferta publicada en Telegram
+07/05/2026 08:03:11 [INFO   ] ============================================================
