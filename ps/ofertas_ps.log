@@ -33536,3 +33536,60 @@
 10/05/2026 14:00:13 [INFO   ] ============================================================
 10/05/2026 14:00:13 [INFO   ] FIN - 1 oferta publicada en Telegram
 10/05/2026 14:00:13 [INFO   ] ============================================================
+10/05/2026 15:30:48 [INFO   ] ============================================================
+10/05/2026 15:30:48 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+10/05/2026 15:30:48 [INFO   ] ============================================================
+10/05/2026 15:30:48 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+10/05/2026 15:30:48 [INFO   ] Buscando preórdenes: Próximos PS5
+10/05/2026 15:30:50 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+10/05/2026 15:30:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 1402
+10/05/2026 15:30:50 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+10/05/2026 15:30:50 [INFO   ] Buscando preórdenes: Próximos PS4
+10/05/2026 15:30:55 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 1406
+10/05/2026 15:30:55 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+10/05/2026 15:30:55 [INFO   ] No hay candidatos de preórdenes en este ciclo
+10/05/2026 15:30:55 [INFO   ] ============================================================
+10/05/2026 15:30:55 [INFO   ] ============================================================
+10/05/2026 15:30:55 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+10/05/2026 15:30:55 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 10/05/2026 15:30
+10/05/2026 15:30:55 [INFO   ] ============================================================
+10/05/2026 15:30:55 [INFO   ] Historial cargado: 34 ASINs en ventana de 96h (ignorados 1 expirados)
+10/05/2026 15:30:55 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS5, Juegos PS4, Juegos PS5, Juegos PS4
+10/05/2026 15:30:55 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+10/05/2026 15:30:55 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 1 dias (09/05 10:32)
+10/05/2026 15:30:55 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 78 dias (20/02 23:52)
+10/05/2026 15:30:55 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS5, Juegos PS4, Juegos PS5, Juegos PS4]
+10/05/2026 15:30:55 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+10/05/2026 15:30:55 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 09/05 10:32 (hace 1 días, faltan ~2 días)
+10/05/2026 15:30:55 [INFO   ] 
+10/05/2026 15:30:55 [INFO   ] --- Categoria: Juegos PS5 ---
+10/05/2026 15:30:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 1360
+10/05/2026 15:30:57 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+10/05/2026 15:30:57 [INFO   ]   No hay productos con descuento en esta categoria
+10/05/2026 15:30:57 [INFO   ] 
+10/05/2026 15:30:57 [INFO   ] --- Categoria: Juegos PS4 ---
+10/05/2026 15:31:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 1361
+10/05/2026 15:31:00 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+10/05/2026 15:31:00 [INFO   ]   No hay productos con descuento en esta categoria
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Mandos PS5 ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Mandos PS4 ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Auriculares gaming ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Tarjetas PSN ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Accesorios PS5 ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] --- Categoria: Accesorios PS4 ---
+10/05/2026 15:31:00 [INFO   ]   SALTADA por límite de 3 días para accesorios
+10/05/2026 15:31:00 [INFO   ] 
+10/05/2026 15:31:00 [INFO   ] ============================================================
+10/05/2026 15:31:00 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+10/05/2026 15:31:00 [INFO   ] ============================================================
