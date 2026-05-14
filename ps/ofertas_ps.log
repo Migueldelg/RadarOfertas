@@ -37914,3 +37914,118 @@
 14/05/2026 13:15:13 [INFO   ] ============================================================
 14/05/2026 13:15:13 [INFO   ] FIN - 1 oferta publicada en Telegram
 14/05/2026 13:15:13 [INFO   ] ============================================================
+14/05/2026 15:41:12 [INFO   ] ============================================================
+14/05/2026 15:41:12 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+14/05/2026 15:41:12 [INFO   ] ============================================================
+14/05/2026 15:41:12 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+14/05/2026 15:41:12 [INFO   ] Buscando preórdenes: Próximos PS5
+14/05/2026 15:41:15 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+14/05/2026 15:41:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+14/05/2026 15:41:16 [INFO   ]   Encontrados 0 items, verificando si son preórdenes...
+14/05/2026 15:41:16 [INFO   ] Buscando preórdenes: Próximos PS4
+14/05/2026 15:41:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+14/05/2026 15:41:21 [INFO   ]   Encontrados 2 items, verificando si son preórdenes...
+14/05/2026 15:41:21 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+14/05/2026 15:41:21 [DEBUG  ]     [DESCARTADO] ASIN B097FM6WLH: Hades Playstation 44,54,5 de 5 estrellas(158)Playstation 4Precio, página del producto43,72 €43,72€En...
+14/05/2026 15:41:21 [INFO   ]   2 items descartados por no tener señales de preorden
+14/05/2026 15:41:21 [INFO   ] No hay candidatos de preórdenes en este ciclo
+14/05/2026 15:41:21 [INFO   ] ============================================================
+14/05/2026 15:41:21 [INFO   ] ============================================================
+14/05/2026 15:41:21 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+14/05/2026 15:41:21 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 14/05/2026 15:41
+14/05/2026 15:41:21 [INFO   ] ============================================================
+14/05/2026 15:41:21 [INFO   ] Historial cargado: 24 ASINs en ventana de 96h (ignorados 2 expirados)
+14/05/2026 15:41:21 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS5, Juegos PS4, Juegos PS5
+14/05/2026 15:41:21 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+14/05/2026 15:41:21 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 2 dias (12/05 10:59)
+14/05/2026 15:41:21 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 82 dias (20/02 23:52)
+14/05/2026 15:41:21 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS5, Juegos PS4, Juegos PS5]
+14/05/2026 15:41:21 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+14/05/2026 15:41:21 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 12/05 10:59 (hace 2 días, faltan ~1 días)
+14/05/2026 15:41:21 [INFO   ] 
+14/05/2026 15:41:21 [INFO   ] --- Categoria: Juegos PS5 ---
+14/05/2026 15:41:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 78% para ASIN B0FH7FZPSP
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 45% para ASIN B0DQDS4CHZ
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B09GSQGJ2F
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DCPB9J7K
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0F6D5BS17
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0CFVXTMNK
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0DKFCHCYZ
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0CGHPFJPQ
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 38% para ASIN B0F8VYSTVM
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 36% para ASIN B0D669NGW7
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0BHLH9BSC
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0GQHVQJTH
+14/05/2026 15:41:25 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0DCGGTZ99
+14/05/2026 15:41:25 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+14/05/2026 15:41:25 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+14/05/2026 15:41:25 [DEBUG  ]     1. [B0FH7FZPSP] NBA 2K26 PS5 | 78% dto | 5 vals | 0 ventas
+14/05/2026 15:41:25 [DEBUG  ]     2. [B0DQDS4CHZ] DOUBLE DRAGON REVIVE - EDICIÓN LIMITADA - PS5 | 45% dto | 5 vals | 0 ventas
+14/05/2026 15:41:25 [DEBUG  ]     3. [B0F8VYSTVM] Mandragora: Whispers of the Witch Tree - PS5 | 38% dto | 5 vals | 0 ventas
+14/05/2026 15:41:25 [DEBUG  ]     4. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5 | 36% dto | 5 vals | 0 ventas
+14/05/2026 15:41:25 [DEBUG  ]     5. [B09GSQGJ2F] Playstation Gran Turismo 7 [PS5] | 31% dto | 4 vals | 0 ventas [MARCA PRIO]
+14/05/2026 15:41:25 [INFO   ]   ELEGIDO para categoria: NBA 2K26 PS5... (78% dto, 5 valoraciones, ASIN: B0FH7FZPSP)
+14/05/2026 15:41:25 [INFO   ] 
+14/05/2026 15:41:25 [INFO   ] --- Categoria: Juegos PS4 ---
+14/05/2026 15:41:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B08DRTYMPG
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 78% para ASIN B0FH7FV45C
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B07TC26XXD
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0DBLV5FS8
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 43% para ASIN B0F99XSMYV
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0D98BDG3S
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B088218T8T
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B07PC3V9F2
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0BHLH9BSC
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B09RG7M1GC
+14/05/2026 15:41:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 35% para ASIN B07SX52M71
+14/05/2026 15:41:28 [INFO   ]   Scraped: 20 productos (11 con oferta, 9 sin descuento)
+14/05/2026 15:41:28 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+14/05/2026 15:41:28 [DEBUG  ]     1. [B0FH7FV45C] NBA 2K26 PS4 | 78% dto | 4 vals | 0 ventas
+14/05/2026 15:41:28 [DEBUG  ]     2. [B0F99XSMYV] Tomb Raider IV-VI Remastered Starring Lara Croft - | 43% dto | 4 vals | 0 ventas
+14/05/2026 15:41:28 [DEBUG  ]     3. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+14/05/2026 15:41:28 [DEBUG  ]     4. [B07SX52M71] LEGO Star Wars: La Saga Skywalker - PlayStation 4 | 35% dto | 4 vals | 0 ventas [MARCA PRIO]
+14/05/2026 15:41:28 [DEBUG  ]     5. [B07PC3V9F2] Hollow Knight | 20% dto | 4 vals | 0 ventas
+14/05/2026 15:41:28 [INFO   ]   ELEGIDO para categoria: NBA 2K26 PS4... (78% dto, 4 valoraciones, ASIN: B0FH7FV45C)
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Mandos PS5 ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Mandos PS4 ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Auriculares gaming ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Tarjetas PSN ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Accesorios PS5 ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Categoria: Accesorios PS4 ---
+14/05/2026 15:41:28 [INFO   ]   SALTADA por límite de 3 días para accesorios
+14/05/2026 15:41:28 [INFO   ] Variantes detectadas: 'NBA 2K26 PS5' ↔ 'NBA 2K26 PS4'
+14/05/2026 15:41:28 [INFO   ] Grupo de variantes: representante 'NBA 2K26 PS5' + 1 variante(s): NBA 2K26 PS4
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+14/05/2026 15:41:28 [INFO   ]   1. [B0FH7FZPSP] NBA 2K26 PS5... | 78% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+14/05/2026 15:41:28 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS4, Juegos PS5, Juegos PS4, Juegos PS5], publicando la mejor disponible igualmente
+14/05/2026 15:41:28 [INFO   ] 
+14/05/2026 15:41:28 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+14/05/2026 15:41:28 [INFO   ]     Titulo:    NBA 2K26 PS5
+14/05/2026 15:41:28 [INFO   ]     Categoria: Juegos PS5 | Descuento: 78%
+14/05/2026 15:41:28 [INFO   ]     Precio:    14,87 € (antes: 66,11 €)
+14/05/2026 15:41:28 [INFO   ]     ASIN:      B0FH7FZPSP | Valoraciones: 5 | Ventas: 0
+14/05/2026 15:41:28 [INFO   ]     URL:       https://www.amazon.es/dp/B0FH7FZPSP?tag=juegosenoferta-21
+14/05/2026 15:41:28 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/817TKzvG-RL._AC_UL320_.jpg
+14/05/2026 15:41:28 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+14/05/2026 15:41:29 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1362
+14/05/2026 15:41:29 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+14/05/2026 15:41:29 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS4, Juegos PS5, Juegos PS4
+14/05/2026 15:41:29 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+14/05/2026 15:41:29 [INFO   ] 
+14/05/2026 15:41:29 [INFO   ] ============================================================
+14/05/2026 15:41:29 [INFO   ] FIN - 1 oferta publicada en Telegram
+14/05/2026 15:41:29 [INFO   ] ============================================================
