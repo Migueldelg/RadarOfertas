@@ -41106,3 +41106,149 @@
 16/05/2026 22:11:57 [INFO   ] ============================================================
 16/05/2026 22:11:57 [INFO   ] FIN - 1 oferta publicada en Telegram
 16/05/2026 22:11:57 [INFO   ] ============================================================
+16/05/2026 23:26:43 [INFO   ] ============================================================
+16/05/2026 23:26:43 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+16/05/2026 23:26:43 [INFO   ] ============================================================
+16/05/2026 23:26:43 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+16/05/2026 23:26:43 [INFO   ] Buscando preórdenes: Próximos PS5
+16/05/2026 23:26:45 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+16/05/2026 23:26:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+16/05/2026 23:26:46 [INFO   ]   Encontrados 8 items, verificando si son preórdenes...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,74,7 de 5 estrellas...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0916ZXRB9: Turtle Beach Recon 70 Camo Ártico PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0BVL17YJV: +2Turtle Beach Recon 70 Lavanda PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox S...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5461M: Turtle Beach Recon 70 Negro Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbox...
+16/05/2026 23:26:46 [DEBUG  ]     [DESCARTADO] ASIN B0CRQ9614T: Tira de luz para PS5 Slim4,04,0 de 5 estrellas(80)Precio, página del producto24,01 €24,01€Añadir a l...
+16/05/2026 23:26:46 [INFO   ]   8 items descartados por no tener señales de preorden
+16/05/2026 23:26:46 [INFO   ] Buscando preórdenes: Próximos PS4
+16/05/2026 23:26:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+16/05/2026 23:26:50 [INFO   ]   Encontrados 4 items, verificando si son preórdenes...
+16/05/2026 23:26:50 [DEBUG  ]     [DESCARTADO] ASIN B0DHSV68YZ: Consola PlayStation5 ProCalificación USK: No recomendada para menores de 6 años4,74,7 de 5 estrellas...
+16/05/2026 23:26:50 [DEBUG  ]     [DESCARTADO] ASIN B0CWS5461M: Turtle Beach Recon 70 Negro Xbox Auriculares Multiplataforma para Juegos for Xbox Series X o S, Xbox...
+16/05/2026 23:26:50 [DEBUG  ]     [DESCARTADO] ASIN B0916ZXRB9: Turtle Beach Recon 70 Camo Ártico PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox...
+16/05/2026 23:26:50 [DEBUG  ]     [DESCARTADO] ASIN B0BVL17YJV: +2Turtle Beach Recon 70 Lavanda PlayStation Auriculares Multiplataforma para Juegos PS5, PS4, Xbox S...
+16/05/2026 23:26:50 [INFO   ]   4 items descartados por no tener señales de preorden
+16/05/2026 23:26:50 [INFO   ] No hay candidatos de preórdenes en este ciclo
+16/05/2026 23:26:50 [INFO   ] ============================================================
+16/05/2026 23:26:50 [INFO   ] ============================================================
+16/05/2026 23:26:50 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+16/05/2026 23:26:50 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 16/05/2026 23:26
+16/05/2026 23:26:50 [INFO   ] ============================================================
+16/05/2026 23:26:50 [INFO   ] Historial cargado: 33 ASINs en ventana de 96h (ignorados 0 expirados)
+16/05/2026 23:26:50 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5
+16/05/2026 23:26:50 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+16/05/2026 23:26:50 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 1 dias (15/05 13:13)
+16/05/2026 23:26:50 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 84 dias (20/02 23:52)
+16/05/2026 23:26:50 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5]
+16/05/2026 23:26:50 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+16/05/2026 23:26:50 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 15/05 13:13 (hace 1 días, faltan ~2 días)
+16/05/2026 23:26:50 [INFO   ] 
+16/05/2026 23:26:50 [INFO   ] --- Categoria: Juegos PS5 ---
+16/05/2026 23:26:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CZTKY8TC
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 78% para ASIN B0FH7FZPSP
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B09GSQGJ2F
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DCPB9J7K
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 45% para ASIN B0DQDS4CHZ
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0F6D5BS17
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0DKFCHCYZ
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 36% para ASIN B0D669NGW7
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 56% para ASIN B0FBWR34PV
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0CFVXTMNK
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0CGHPFJPQ
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0BGPQ4CJ3
+16/05/2026 23:26:55 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0CNS4MB7R
+16/05/2026 23:26:55 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+16/05/2026 23:26:55 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+16/05/2026 23:26:55 [DEBUG  ]     1. [B0FH7FZPSP] NBA 2K26 PS5 | 78% dto | 5 vals | 0 ventas
+16/05/2026 23:26:55 [DEBUG  ]     2. [B0FBWR34PV] Asterix & Obelix - Mission Babylon - PS5 | 56% dto | 5 vals | 0 ventas
+16/05/2026 23:26:55 [DEBUG  ]     3. [B0DQDS4CHZ] Double Dragon: Revive - Edizione Limitata - Gioco  | 45% dto | 5 vals | 0 ventas
+16/05/2026 23:26:55 [DEBUG  ]     4. [B0D669NGW7] Alan Wake 2 Deluxe Edition - PS5 | 36% dto | 5 vals | 0 ventas
+16/05/2026 23:26:55 [DEBUG  ]     5. [B09GSQGJ2F] Playstation Gran Turismo 7 [PS5] | 31% dto | 4 vals | 0 ventas [MARCA PRIO]
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS5... (78% dto, ASIN: B0FH7FZPSP)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Asterix & Obelix - Mission Babylon - PS5... (56% dto, ASIN: B0FBWR34PV)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Double Dragon: Revive - Edizione Limitata - G... (45% dto, ASIN: B0DQDS4CHZ)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Alan Wake 2 Deluxe Edition - PS5... (36% dto, ASIN: B0D669NGW7)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS5]... (31% dto, ASIN: B09GSQGJ2F)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Black Myth: Wukong - PS5... (21% dto, ASIN: B0DKFCHCYZ)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Cyberpunk 2077 Ultimate Edition... (16% dto, ASIN: B0CNS4MB7R)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] PlayStation 5-Ghost of Yotei - Edición Estánd... (13% dto, ASIN: B0F6D5BS17)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS WRC Standard Edition PS5 | Videojue... (11% dto, ASIN: B0CFVXTMNK)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [ya publicado en <48h] Minecraft - PS5... (10% dto, ASIN: B0DCPB9J7K)
+16/05/2026 23:26:55 [INFO   ]   DESCARTADO [titulo similar a reciente] EA SPORTS UFC 5 Standard Edition PS5 | Videoj... (10% dto)
+16/05/2026 23:26:55 [INFO   ]   ELEGIDO para categoria: Dead Space PS5 | Videojuegos | Idioma: Castel... (5% dto, 5 valoraciones, ASIN: B0BGPQ4CJ3)
+16/05/2026 23:26:55 [INFO   ] 
+16/05/2026 23:26:55 [INFO   ] --- Categoria: Juegos PS4 ---
+16/05/2026 23:26:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B0FGK4FQR8
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B07TC26XXD
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 78% para ASIN B0FH7FV45C
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 40% para ASIN B07PC3V9F2
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0D98BDG3S
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0DBLV5FS8
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B088218T8T
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 43% para ASIN B0F99XSMYV
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B09RG7M1GC
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 50% para ASIN B09GSPDV8K
+16/05/2026 23:26:59 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0D6RCBDXF
+16/05/2026 23:26:59 [INFO   ]   Scraped: 20 productos (11 con oferta, 9 sin descuento)
+16/05/2026 23:26:59 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+16/05/2026 23:26:59 [DEBUG  ]     1. [B0FH7FV45C] NBA 2K26 PS4 | 78% dto | 4 vals | 0 ventas
+16/05/2026 23:26:59 [DEBUG  ]     2. [B09GSPDV8K] Playstation Gran Turismo 7 [PS4] | 50% dto | 4 vals | 0 ventas [MARCA PRIO]
+16/05/2026 23:26:59 [DEBUG  ]     3. [B0F99XSMYV] Tomb Raider IV-VI Remastered Starring Lara Croft - | 43% dto | 4 vals | 0 ventas
+16/05/2026 23:26:59 [DEBUG  ]     4. [B07PC3V9F2] Hollow Knight | 40% dto | 4 vals | 0 ventas
+16/05/2026 23:26:59 [DEBUG  ]     5. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS4... (78% dto, ASIN: B0FH7FV45C)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation Gran Turismo 7 [PS4]... (50% dto, ASIN: B09GSPDV8K)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Tomb Raider IV-VI Remastered Starring Lara Cr... (43% dto, ASIN: B0F99XSMYV)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (40% dto, ASIN: B07PC3V9F2)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Sonic X Shadow Generations... (25% dto, ASIN: B0D6RCBDXF)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 25 Standard Edition PS4 | Videoj... (21% dto, ASIN: B0D98BDG3S)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Playstation God of War 3 HITS... (7% dto, ASIN: B07TC26XXD)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS4 | Disco ... (7% dto, ASIN: B0FGK4FQR8)
+16/05/2026 23:26:59 [INFO   ]   DESCARTADO [ya publicado en <48h] Elden Ring – Standard Edition... (6% dto, ASIN: B09RG7M1GC)
+16/05/2026 23:26:59 [INFO   ]   ELEGIDO para categoria: Electronic Arts Star Wars Jedi: Survivor PS4 ... (5% dto, 4 valoraciones, ASIN: B0DBLV5FS8)
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Mandos PS5 ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Mandos PS4 ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Auriculares gaming ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Tarjetas PSN ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Accesorios PS5 ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Categoria: Accesorios PS4 ---
+16/05/2026 23:26:59 [INFO   ]   SALTADA por límite de 3 días para accesorios
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+16/05/2026 23:26:59 [INFO   ]   1. [B0BGPQ4CJ3] Dead Space PS5 | Videojuegos | Idioma: C... | 5% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+16/05/2026 23:26:59 [INFO   ]   2. [B0DBLV5FS8] Electronic Arts Star Wars Jedi: Survivor... | 5% dto | cat: Juegos PS4 (videojuego) [cat. reciente]
+16/05/2026 23:26:59 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS4, Juegos PS4, Juegos PS5, Juegos PS5], publicando la mejor disponible igualmente
+16/05/2026 23:26:59 [INFO   ] 
+16/05/2026 23:26:59 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+16/05/2026 23:26:59 [INFO   ]     Titulo:    Dead Space PS5 | Videojuegos | Idioma: Castellano
+16/05/2026 23:26:59 [INFO   ]     Categoria: Juegos PS5 | Descuento: 5%
+16/05/2026 23:26:59 [INFO   ]     Precio:    15,62 € (antes: 16,52 €)
+16/05/2026 23:26:59 [INFO   ]     ASIN:      B0BGPQ4CJ3 | Valoraciones: 5 | Ventas: 0
+16/05/2026 23:26:59 [INFO   ]     URL:       https://www.amazon.es/dp/B0BGPQ4CJ3?tag=juegosenoferta-21
+16/05/2026 23:26:59 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/714hHWpIP4L._AC_UL320_.jpg
+16/05/2026 23:26:59 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+16/05/2026 23:27:00 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1186
+16/05/2026 23:27:00 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+16/05/2026 23:27:00 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS4, Juegos PS4, Juegos PS5
+16/05/2026 23:27:00 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+16/05/2026 23:27:00 [INFO   ] 
+16/05/2026 23:27:00 [INFO   ] ============================================================
+16/05/2026 23:27:00 [INFO   ] FIN - 1 oferta publicada en Telegram
+16/05/2026 23:27:00 [INFO   ] ============================================================
