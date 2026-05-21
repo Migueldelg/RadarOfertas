@@ -45286,3 +45286,118 @@
 20/05/2026 22:52:47 [INFO   ] ============================================================
 20/05/2026 22:52:47 [INFO   ] FIN - 1 oferta publicada en Telegram
 20/05/2026 22:52:47 [INFO   ] ============================================================
+21/05/2026 01:31:18 [INFO   ] ============================================================
+21/05/2026 01:31:18 [INFO   ] INICIO BÚSQUEDA PRERESERVAS PS4/PS5
+21/05/2026 01:31:18 [INFO   ] ============================================================
+21/05/2026 01:31:18 [INFO   ] Historial cargado: 0 ASINs en ventana de 48h (ignorados 0 expirados)
+21/05/2026 01:31:18 [INFO   ] Buscando preórdenes: Próximos PS5
+21/05/2026 01:31:20 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+21/05/2026 01:31:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5+proximamente HTTP/1.1" 200 None
+21/05/2026 01:31:21 [INFO   ]   Encontrados 4 items, verificando si son preórdenes...
+21/05/2026 01:31:21 [DEBUG  ]     [DESCARTADO] ASIN B0F24LGB3T: Terrifier The Artcade Game Edición Collecionista - PS5Calificación de la PEGI: No recomendada para m...
+21/05/2026 01:31:21 [DEBUG  ]     [DESCARTADO] ASIN B0BKQGYKH3: Call of Duty: Modern Warfare II PS5Calificación de la PEGI: No recomendada para menores de 18 años4,...
+21/05/2026 01:31:21 [DEBUG  ]     [DESCARTADO] ASIN B08D7DX16N: NBA 2K21 Mamba Forever Edition for PlayStation 54,54,5 de 5 estrellas(1,4 mil)PlayStation 5Precio, p...
+21/05/2026 01:31:21 [DEBUG  ]     [DESCARTADO] ASIN B0DN2LBRZW: The Devil Within Satgat (PS5)Calificación de la PEGI: No recomendada para menores de 12 años4,64,6 d...
+21/05/2026 01:31:21 [INFO   ]   4 items descartados por no tener señales de preorden
+21/05/2026 01:31:21 [INFO   ] Buscando preórdenes: Próximos PS4
+21/05/2026 01:31:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4+proximamente HTTP/1.1" 200 None
+21/05/2026 01:31:24 [INFO   ]   Encontrados 1 items, verificando si son preórdenes...
+21/05/2026 01:31:24 [DEBUG  ]     [DESCARTADO] ASIN B01LTI9IEU: Sony The Last Of Us Part II Standard PlayStation 44,64,6 de 5 estrellas(8,4 mil)VideojuegosVer opcio...
+21/05/2026 01:31:24 [INFO   ]   1 items descartados por no tener señales de preorden
+21/05/2026 01:31:24 [INFO   ] No hay candidatos de preórdenes en este ciclo
+21/05/2026 01:31:24 [INFO   ] ============================================================
+21/05/2026 01:31:24 [INFO   ] ============================================================
+21/05/2026 01:31:24 [INFO   ] INICIO - BUSCADOR DE OFERTAS PS4/PS5 | Amazon.es -> Telegram
+21/05/2026 01:31:24 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 21/05/2026 01:31
+21/05/2026 01:31:24 [INFO   ] ============================================================
+21/05/2026 01:31:24 [INFO   ] Historial cargado: 27 ASINs en ventana de 96h (ignorados 1 expirados)
+21/05/2026 01:31:24 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5
+21/05/2026 01:31:24 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+21/05/2026 01:31:24 [DEBUG  ]   Categoria '_accesorios_ultima_pub' con limite semanal: ultima publicacion hace 2 dias (18/05 16:39)
+21/05/2026 01:31:24 [DEBUG  ]   Categoria '_ultima_publicacion_global' con limite semanal: ultima publicacion hace 89 dias (20/02 23:52)
+21/05/2026 01:31:24 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5]
+21/05/2026 01:31:24 [INFO   ] Anti-titulo-similar activo para categorias Juegos PS5, Juegos PS4 (4 titulos recientes guardados)
+21/05/2026 01:31:24 [INFO   ] Límite de 3 días para accesorios: última publicación de accesorio el 18/05 16:39 (hace 2 días, faltan ~1 días)
+21/05/2026 01:31:24 [INFO   ] 
+21/05/2026 01:31:24 [INFO   ] --- Categoria: Juegos PS5 ---
+21/05/2026 01:31:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps5 HTTP/1.1" 200 None
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DCPB9J7K
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0CR433N4R
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0GQHVQJTH
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B0BWYXHTK7
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0CMHKNK31
+21/05/2026 01:31:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0FBX6CCV2
+21/05/2026 01:31:28 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+21/05/2026 01:31:28 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+21/05/2026 01:31:28 [DEBUG  ]     1. [B0CMHKNK31] Silent Hill 2 - PS5 | 21% dto | 0 vals | 0 ventas
+21/05/2026 01:31:28 [DEBUG  ]     2. [B0FBX6CCV2] Ready or Not: Day One Edition - PS5 | 16% dto | 5 vals | 0 ventas
+21/05/2026 01:31:28 [DEBUG  ]     3. [B0GQHVQJTH] Starfield™: Edición Premium – PlayStation 5© [Disc | 14% dto | 0 vals | 0 ventas [MARCA PRIO]
+21/05/2026 01:31:28 [DEBUG  ]     4. [B0DCPB9J7K] Minecraft - PS5 | 10% dto | 0 vals | 0 ventas
+21/05/2026 01:31:28 [DEBUG  ]     5. [B0CR433N4R] Tekken 8 PS5 (Standard Edition) | 9% dto | 5 vals | 0 ventas
+21/05/2026 01:31:28 [INFO   ]   ELEGIDO para categoria: Silent Hill 2 - PS5... (21% dto, 0 valoraciones, ASIN: B0CMHKNK31)
+21/05/2026 01:31:28 [INFO   ] 
+21/05/2026 01:31:28 [INFO   ] --- Categoria: Juegos PS4 ---
+21/05/2026 01:31:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juegos+ps4 HTTP/1.1" 200 None
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0FGK4FQR8
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B07DM6YN7G
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B0D98BDG3S
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 40% para ASIN B07PC3V9F2
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 76% para ASIN B0FH7FV45C
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 37% para ASIN B088218T8T
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0DBLV5FS8
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CD2RBQ68
+21/05/2026 01:31:32 [DEBUG  ]   Badge no encontrado; usando descuento calculado 43% para ASIN B0F99XSMYV
+21/05/2026 01:31:32 [INFO   ]   Scraped: 20 productos (9 con oferta, 11 sin descuento)
+21/05/2026 01:31:32 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+21/05/2026 01:31:32 [DEBUG  ]     1. [B0FH7FV45C] NBA 2K26 PS4 | 76% dto | 4 vals | 0 ventas
+21/05/2026 01:31:32 [DEBUG  ]     2. [B0F99XSMYV] Tomb Raider IV-VI Remastered Starring Lara Croft - | 43% dto | 4 vals | 0 ventas
+21/05/2026 01:31:32 [DEBUG  ]     3. [B07PC3V9F2] Hollow Knight | 40% dto | 4 vals | 0 ventas
+21/05/2026 01:31:32 [DEBUG  ]     4. [B088218T8T] Ubisoft Assassin's Creed Valhalla, PlayStation 4 | 37% dto | 4 vals | 0 ventas [MARCA PRIO]
+21/05/2026 01:31:32 [DEBUG  ]     5. [B0D98BDG3S] EA SPORTS FC 25 Standard Edition PS4 | Videojuegos | 29% dto | 4 vals | 0 ventas
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] NBA 2K26 PS4... (76% dto, ASIN: B0FH7FV45C)
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] Tomb Raider IV-VI Remastered Starring Lara Cr... (43% dto, ASIN: B0F99XSMYV)
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] Hollow Knight... (40% dto, ASIN: B07PC3V9F2)
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] Ubisoft Assassin's Creed Valhalla, PlayStatio... (37% dto, ASIN: B088218T8T)
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 25 Standard Edition PS4 | Videoj... (29% dto, ASIN: B0D98BDG3S)
+21/05/2026 01:31:32 [INFO   ]   DESCARTADO [ya publicado en <48h] EA SPORTS FC 26 Standard Edition PS4 | Disco ... (14% dto, ASIN: B0FGK4FQR8)
+21/05/2026 01:31:32 [INFO   ]   ELEGIDO para categoria: Resident Evil 2 - Edición Estándar... (7% dto, 4 valoraciones, ASIN: B07DM6YN7G)
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Mandos PS5 ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Mandos PS4 ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Auriculares gaming ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Tarjetas PSN ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Accesorios PS5 ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Categoria: Accesorios PS4 ---
+21/05/2026 01:31:32 [INFO   ]   SALTADA por límite de 3 días para accesorios
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+21/05/2026 01:31:32 [INFO   ]   1. [B0CMHKNK31] Silent Hill 2 - PS5... | 21% dto | cat: Juegos PS5 (videojuego) [cat. reciente]
+21/05/2026 01:31:32 [INFO   ]   2. [B07DM6YN7G] Resident Evil 2 - Edición Estándar... | 7% dto | cat: Juegos PS4 (videojuego) [cat. reciente]
+21/05/2026 01:31:32 [INFO   ] Todas las categorias candidatas estan en el historial reciente [Juegos PS4, Juegos PS5, Juegos PS5, Juegos PS5], publicando la mejor disponible igualmente
+21/05/2026 01:31:32 [INFO   ] 
+21/05/2026 01:31:32 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+21/05/2026 01:31:32 [INFO   ]     Titulo:    Silent Hill 2 - PS5
+21/05/2026 01:31:32 [INFO   ]     Categoria: Juegos PS5 | Descuento: 21%
+21/05/2026 01:31:32 [INFO   ]     Precio:    45,45 € (antes: 57,84 €)
+21/05/2026 01:31:32 [INFO   ]     ASIN:      B0CMHKNK31 | Valoraciones: 0 | Ventas: 0
+21/05/2026 01:31:32 [INFO   ]     URL:       https://www.amazon.es/dp/B0CMHKNK31?tag=juegosenoferta-21
+21/05/2026 01:31:32 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71XsCEArGiL._AC_UL320_.jpg
+21/05/2026 01:31:32 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+21/05/2026 01:31:33 [DEBUG  ] https://api.telegram.org:443 "POST /bot8542903683:AAFcIbXqweq8b4Sqo2c7eaKsgkneZcivfio/sendPhoto HTTP/1.1" 200 1155
+21/05/2026 01:31:33 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+21/05/2026 01:31:33 [DEBUG  ] Historial de categorias actualizado: Juegos PS5, Juegos PS4, Juegos PS5, Juegos PS5
+21/05/2026 01:31:33 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+21/05/2026 01:31:33 [INFO   ] 
+21/05/2026 01:31:33 [INFO   ] ============================================================
+21/05/2026 01:31:33 [INFO   ] FIN - 1 oferta publicada en Telegram
+21/05/2026 01:31:33 [INFO   ] ============================================================
