@@ -6,6 +6,27 @@
 
 ---
 
+## Estado Actual (mayo 2026)
+
+### ⚠️ Amazon Creators API — pendiente de elegibilidad
+- La PA API v5 fue **retirada el 15/05/2026**. El nuevo sistema es la **Creators API** (OAuth 2.0).
+- Script de exploración listo: `explorar_paapi.py` (requiere `pip install python-amazon-paapi`)
+- Credenciales v3.2 (EU) configuradas en `.env` como `AMAZON_CLIENT_ID` / `AMAZON_CLIENT_SECRET`
+- **Bloqueante:** la Creators API exige **10 ventas cualificadas en los últimos 30 días**
+- Acción: cuando se alcancen las 10 ventas, ejecutar `source .env && python3 explorar_paapi.py` — si devuelve resultados, migrar el scraping a la API
+
+### ✅ Scraping operativo (fix mayo 2026)
+- Amazon cambió su HTML en ~mar 2026 y eliminó el badge `.savingsPercentage`
+- Fix aplicado en commit `ca69177` (06/05/2026): fallback a comparación `precio_actual vs precio_tachado` cuando no hay badge
+- El fix está verificado localmente (`--dev` funciona) — reactivar workflows de GitHub Actions
+
+### Próximos pasos
+1. **Reactivar GitHub Actions** → lanzar manualmente "Ofertas de Bebé" y "Ofertas PS4/PS5" desde GitHub
+2. **Acumular 10 ventas** → el bot publicando de nuevo generará clics y ventas
+3. **Migrar a Creators API** → cuando `explorar_paapi.py` devuelva resultados sin error 403, sustituir scraping por API en `shared/amazon_ofertas_core.py`
+
+---
+
 ## Resumen Ejecutivo
 
 **Plataforma multi-canal** que busca las mejores ofertas de Amazon.es y las publica en Telegram.
@@ -30,6 +51,8 @@
 ## Estructura de carpetas
 
 ```
+explorar_paapi.py               ← Script de prueba Creators API (ejecutar cuando haya 10 ventas)
+
 shared/
 └── amazon_ofertas_core.py       ← Motor compartido (scraping, Telegram, utilidades)
 
