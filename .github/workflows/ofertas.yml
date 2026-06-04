@@ -2,7 +2,7 @@ name: Ofertas de Bebé
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Cada hora en minuto :00
+    - cron: '0 */3 * * *'  # Cada 3 horas en minuto :00
   workflow_dispatch:          # Ejecución manual para pruebas
 
 permissions:

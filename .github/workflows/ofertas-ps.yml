@@ -2,7 +2,7 @@ name: Ofertas PS4/PS5
 
 on:
   schedule:
-    - cron: '30 * * * *'  # Cada hora en minuto :30
+    - cron: '30 */3 * * *'  # Cada 3 horas en minuto :30
   workflow_dispatch:          # Ejecución manual para pruebas
 
 permissions:

@@ -71,8 +71,8 @@ ps/                             ← 🎮 Canal PS4/PS5 (producción ✅ + Preór
 └── tests/ (100 tests)
 
 .github/workflows/
-├── ofertas.yml                 ← Bebé (cada 30 min)
-└── ofertas-ps.yml              ← PS4/PS5 (cada 30 min)
+├── ofertas.yml                 ← Bebé (cada 3h)
+└── ofertas-ps.yml              ← PS4/PS5 (cada 3h)
 
 switch/                         ← Canal futuro
 viajes/                         ← Canal futuro
@@ -119,7 +119,7 @@ save_posted_prereservas()           # Guardar estado (línea ~143)
 - **Persistencia separada:** Cada una tiene su propio JSON con su propia ventana de deduplicación
   - Ofertas: `posted_ps_deals.json` (ventana 96h)
   - Preórdenes: `posted_ps_prereservas.json` (ventana 48h)
-- **Publicación simultánea permitida:** Ambas pueden publicarse en el mismo ciclo de 30 min
+- **Publicación simultánea permitida:** Ambas pueden publicarse en el mismo ciclo de 3h
 - **Canal compartido:** Se publican en el mismo canal de Telegram, pero sin bloquearse mutuamente
 
 ### Cambios Comunes - Preórdenes
@@ -165,7 +165,7 @@ De todas las mejores:
 
 ## Ejecución
 
-Los bots corre en **GitHub Actions** cada 30 minutos automáticamente.
+Los bots corren en **GitHub Actions** cada 3 horas automáticamente.
 
 ### Lanzamiento manual
 ```bash
