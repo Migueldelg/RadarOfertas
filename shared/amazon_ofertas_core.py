@@ -355,6 +355,8 @@ def send_telegram_message(message, token, chat_id):
     try:
         # Usar data en lugar de json para mayor compatibilidad con Telegram
         response = requests.post(url, data=payload)
+        if not response.ok:
+            log.critical("❌ Respuesta Telegram sendMessage: %s", response.text)
         response.raise_for_status()
         log.info("Mensaje enviado a Telegram correctamente (solo texto)")
         return True
@@ -375,6 +377,8 @@ def send_telegram_photo(photo_url, caption, token, chat_id):
     try:
         # Usar data en lugar de json para mayor compatibilidad con Telegram
         response = requests.post(url, data=payload)
+        if not response.ok:
+            log.warning("⚠️  Respuesta Telegram sendPhoto: %s", response.text)
         response.raise_for_status()
         log.info("Mensaje enviado a Telegram correctamente (con foto)")
         return True
@@ -390,18 +394,19 @@ def send_telegram_photo(photo_url, caption, token, chat_id):
 def format_telegram_message(producto, categoria):
     """Formatea un producto para enviarlo a Telegram."""
     titulo = html.escape(producto['titulo'])
-    precio = producto['precio']
-    precio_anterior = producto.get('precio_anterior')
+    precio = html.escape(producto['precio'])
+    precio_anterior_raw = producto.get('precio_anterior')
+    precio_anterior = html.escape(precio_anterior_raw) if precio_anterior_raw else None
     url = html.escape(producto['url'])  # Escapar URL para HTML válido
     emoji = categoria.get('emoji', '🛍️')
     categoria_nombre = categoria.get('nombre', 'Bebe')
 
     # Calcular descuento si hay precio anterior
     descuento_texto = ""
-    if precio_anterior:
+    if precio_anterior_raw:
         try:
-            precio_num = float(precio.replace('€', '').replace(',', '.').strip())
-            precio_ant_num = float(precio_anterior.replace('€', '').replace(',', '.').strip())
+            precio_num = float(producto['precio'].replace('€', '').replace(',', '.').strip())
+            precio_ant_num = float(precio_anterior_raw.replace('€', '').replace(',', '.').strip())
             descuento = ((precio_ant_num - precio_num) / precio_ant_num) * 100
             descuento_texto = f" (-{descuento:.0f}%)"
         except:
