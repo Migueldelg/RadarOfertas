@@ -30821,3 +30821,73 @@
 01/07/2026 22:15:04 [INFO   ] ============================================================
 01/07/2026 22:15:04 [INFO   ] FIN - 1 oferta publicada en Telegram
 01/07/2026 22:15:04 [INFO   ] ============================================================
+02/07/2026 02:41:50 [INFO   ] ============================================================
+02/07/2026 02:41:50 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+02/07/2026 02:41:50 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 02/07/2026 02:41
+02/07/2026 02:41:50 [INFO   ] ============================================================
+02/07/2026 02:41:50 [INFO   ] Historial cargado: 13 ASINs en ventana de 48h (ignorados 0 expirados)
+02/07/2026 02:41:50 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Toallitas, Juguetes, Biberones, Panales
+02/07/2026 02:41:50 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+02/07/2026 02:41:50 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 4 dias (27/06 16:01)
+02/07/2026 02:41:50 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 2 dias (29/06 17:32)
+02/07/2026 02:41:50 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 3 dias (28/06 19:10)
+02/07/2026 02:41:50 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 3 dias (28/06 02:52)
+02/07/2026 02:41:50 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Toallitas, Juguetes, Biberones, Panales]
+02/07/2026 02:41:50 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+02/07/2026 02:41:50 [INFO   ] 
+02/07/2026 02:41:50 [INFO   ] --- Categoria: Panales ---
+02/07/2026 02:41:54 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+02/07/2026 02:41:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1463
+02/07/2026 02:41:54 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:41:54 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:41:54 [INFO   ] 
+02/07/2026 02:41:54 [INFO   ] --- Categoria: Toallitas ---
+02/07/2026 02:41:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1446
+02/07/2026 02:41:57 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:41:57 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:41:57 [INFO   ] 
+02/07/2026 02:41:57 [INFO   ] --- Categoria: Cremas bebe ---
+02/07/2026 02:42:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 1387
+02/07/2026 02:42:00 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:00 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:00 [INFO   ] 
+02/07/2026 02:42:00 [INFO   ] --- Categoria: Leche en polvo ---
+02/07/2026 02:42:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 1397
+02/07/2026 02:42:02 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:02 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:02 [INFO   ] 
+02/07/2026 02:42:02 [INFO   ] --- Categoria: Chupetes ---
+02/07/2026 02:42:02 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 29/06 17:32 (hace 2 dias, faltan ~5 dias)
+02/07/2026 02:42:02 [INFO   ] 
+02/07/2026 02:42:02 [INFO   ] --- Categoria: Biberones ---
+02/07/2026 02:42:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1441
+02/07/2026 02:42:05 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:05 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:05 [INFO   ] 
+02/07/2026 02:42:05 [INFO   ] --- Categoria: Juguetes ---
+02/07/2026 02:42:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1438
+02/07/2026 02:42:09 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:09 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:09 [INFO   ] 
+02/07/2026 02:42:09 [INFO   ] --- Categoria: Baneras ---
+02/07/2026 02:42:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1455
+02/07/2026 02:42:13 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:13 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:13 [INFO   ] 
+02/07/2026 02:42:13 [INFO   ] --- Categoria: Camaras seguridad ---
+02/07/2026 02:42:13 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/06 16:01 (hace 4 dias, faltan ~3 dias)
+02/07/2026 02:42:13 [INFO   ] 
+02/07/2026 02:42:13 [INFO   ] --- Categoria: Alimentacion ---
+02/07/2026 02:42:16 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 1396
+02/07/2026 02:42:16 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+02/07/2026 02:42:16 [INFO   ]   No hay productos con descuento en esta categoria
+02/07/2026 02:42:16 [INFO   ] 
+02/07/2026 02:42:16 [INFO   ] --- Categoria: Tronas ---
+02/07/2026 02:42:16 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 28/06 19:10 (hace 3 dias, faltan ~4 dias)
+02/07/2026 02:42:16 [INFO   ] 
+02/07/2026 02:42:16 [INFO   ] --- Categoria: Vajilla bebe ---
+02/07/2026 02:42:16 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 28/06 02:52 (hace 3 dias, faltan ~4 dias)
+02/07/2026 02:42:16 [INFO   ] 
+02/07/2026 02:42:16 [INFO   ] ============================================================
+02/07/2026 02:42:16 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+02/07/2026 02:42:16 [INFO   ] ============================================================
