@@ -35818,3 +35818,209 @@
 06/07/2026 22:10:06 [INFO   ] ============================================================
 06/07/2026 22:10:06 [INFO   ] FIN - 1 oferta publicada en Telegram
 06/07/2026 22:10:06 [INFO   ] ============================================================
+07/07/2026 02:31:32 [INFO   ] ============================================================
+07/07/2026 02:31:32 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+07/07/2026 02:31:32 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 07/07/2026 02:31
+07/07/2026 02:31:32 [INFO   ] ============================================================
+07/07/2026 02:31:32 [INFO   ] Historial cargado: 9 ASINs en ventana de 48h (ignorados 0 expirados)
+07/07/2026 02:31:32 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juguetes, Tronas, Panales, Toallitas
+07/07/2026 02:31:32 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+07/07/2026 02:31:32 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 2 dias (04/07 21:53)
+07/07/2026 02:31:32 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 7 dias (29/06 17:32)
+07/07/2026 02:31:32 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 0 dias (06/07 19:48)
+07/07/2026 02:31:32 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 1 dias (05/07 06:35)
+07/07/2026 02:31:32 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juguetes, Tronas, Panales, Toallitas]
+07/07/2026 02:31:32 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+07/07/2026 02:31:32 [INFO   ] 
+07/07/2026 02:31:32 [INFO   ] --- Categoria: Panales ---
+07/07/2026 02:31:36 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+07/07/2026 02:31:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0743HXL9S
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B07C993Z69
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B08CYCV9PQ
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0G3RG1SMJ
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 35% para ASIN B0CCPMFSTQ
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B07YQD4FVL
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CZF7TP6H
+07/07/2026 02:31:37 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0916SLRXT
+07/07/2026 02:31:37 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+07/07/2026 02:31:37 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:31:37 [DEBUG  ]     1. [B0CCPMFSTQ] Dodot Activity Pants Pañal-Braguita Talla 4, 86 Pa | 35% dto | 0 vals | 500 ventas [MARCA PRIO]
+07/07/2026 02:31:37 [DEBUG  ]     2. [B0743HXL9S] Dodot Pañales Bebé-Seco, Talla 5 (11-16 kg), 174 P | 20% dto | 0 vals | 2 ventas [MARCA PRIO]
+07/07/2026 02:31:37 [DEBUG  ]     3. [B07YQD4FVL] Chelino Fashion & Love Pañales infantiles Talla 4  | 19% dto | 0 vals | 400 ventas
+07/07/2026 02:31:37 [DEBUG  ]     4. [B08CYCV9PQ] Huggies Extra Care Pañales para Recién Nacido con  | 18% dto | 0 vals | 100 ventas
+07/07/2026 02:31:37 [DEBUG  ]     5. [B07C993Z69] Huggies Little Movers Pañales para Bebé con Diseño | 16% dto | 0 vals | 500 ventas
+07/07/2026 02:31:37 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Activity Pants Pañal-Braguita Talla 4, ... (35% dto, ASIN: B0CCPMFSTQ)
+07/07/2026 02:31:37 [INFO   ]   ELEGIDO para categoria: Dodot Pañales Bebé-Seco, Talla 5 (11-16 kg), ... (20% dto, 0 valoraciones, ASIN: B0743HXL9S) [marca prioritaria]
+07/07/2026 02:31:37 [INFO   ] 
+07/07/2026 02:31:37 [INFO   ] --- Categoria: Toallitas ---
+07/07/2026 02:31:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:31:42 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B0111AIZ68
+07/07/2026 02:31:42 [DEBUG  ]   Badge no encontrado; usando descuento calculado 35% para ASIN B0GYDSVWS9
+07/07/2026 02:31:42 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B01N5HZ0NQ
+07/07/2026 02:31:42 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B00WE5ZS2E
+07/07/2026 02:31:42 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B09TW72XZQ
+07/07/2026 02:31:43 [DEBUG  ]   Badge no encontrado; usando descuento calculado 43% para ASIN B00J9FM3TI
+07/07/2026 02:31:43 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B09GPJHCQL
+07/07/2026 02:31:43 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B0DP7K72L5
+07/07/2026 02:31:43 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0GCMVN3ZN
+07/07/2026 02:31:43 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B089F1WGF3
+07/07/2026 02:31:43 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+07/07/2026 02:31:43 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:31:43 [DEBUG  ]     1. [B00J9FM3TI] Dodot Sensitive Baby Wipes - Pack of 4 x 56 Wipes  | 43% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:43 [DEBUG  ]     2. [B0GYDSVWS9] Dodot Pure Aqua Nuevo Toallitas con Textura para B | 35% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:43 [DEBUG  ]     3. [B09TW72XZQ] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 28% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:43 [DEBUG  ]     4. [B0GCMVN3ZN] Dodot Pure Aqua Toallitas con Textura Suave para b | 24% dto | 0 vals | 300 ventas [MARCA PRIO]
+07/07/2026 02:31:43 [DEBUG  ]     5. [B0111AIZ68] Huggies Pure Toallitas para Bebé, 99% Agua Pura, 1 | 19% dto | 0 vals | 0 ventas
+07/07/2026 02:31:43 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Sensitive Baby Wipes - Pack of 4 x 56 W... (43% dto, ASIN: B00J9FM3TI)
+07/07/2026 02:31:43 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Pure Aqua Nuevo Toallitas con Textura p... (35% dto, ASIN: B0GYDSVWS9)
+07/07/2026 02:31:43 [INFO   ]   ELEGIDO para categoria: WaterWipes Sensitive+ Newborn & Baby Wipes, T... (28% dto, 0 valoraciones, ASIN: B09TW72XZQ) [marca prioritaria]
+07/07/2026 02:31:43 [INFO   ] 
+07/07/2026 02:31:43 [INFO   ] --- Categoria: Cremas bebe ---
+07/07/2026 02:31:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B00BN8JUCC
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 26% para ASIN B0B5RVR9BL
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 35% para ASIN B09ZFKTSK1
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B0CJ2CQBG8
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B08PFNR7C6
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 26% para ASIN B0B4687YJ3
+07/07/2026 02:31:48 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+07/07/2026 02:31:48 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+07/07/2026 02:31:48 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:31:48 [DEBUG  ]     1. [B09ZFKTSK1] BEPANTHOL Pomada Protectora Culito Bebé Con Pro-Vi | 35% dto | 0 vals | 600 ventas
+07/07/2026 02:31:48 [DEBUG  ]     2. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula, Calma y Protege | 28% dto | 0 vals | 6 ventas
+07/07/2026 02:31:48 [DEBUG  ]     3. [B0CJ2CQBG8] Weleda Crema Pañal de Caléndula (1x 75 ml) (9831EN | 28% dto | 0 vals | 0 ventas
+07/07/2026 02:31:48 [DEBUG  ]     4. [B0B4687YJ3] Naïf Crema de Pañal para Bebés y Niños – 0% perfum | 26% dto | 0 vals | 0 ventas
+07/07/2026 02:31:48 [DEBUG  ]     5. [B0B5RVR9BL] Johnson's Baby Crema protectora para pañal (1x100  | 26% dto | 0 vals | 600 ventas
+07/07/2026 02:31:48 [INFO   ]   ELEGIDO para categoria: BEPANTHOL Pomada Protectora Culito Bebé Con P... (35% dto, 0 valoraciones, ASIN: B09ZFKTSK1)
+07/07/2026 02:31:48 [INFO   ] 
+07/07/2026 02:31:48 [INFO   ] --- Categoria: Leche en polvo ---
+07/07/2026 02:31:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+07/07/2026 02:31:52 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+07/07/2026 02:31:52 [INFO   ]   No hay productos con descuento en esta categoria
+07/07/2026 02:31:52 [INFO   ] 
+07/07/2026 02:31:52 [INFO   ] --- Categoria: Chupetes ---
+07/07/2026 02:31:52 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 7 dias (supera los 7 requeridos)
+07/07/2026 02:31:55 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B09QY9T9HZ
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B09QY9445K
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0FP5JTPX5
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FBWWW4FR
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0DWFP47ST
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FBWXDV6S
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B0FN8FGZ3B
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B0CV7QZF1S
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B0FBWVSL2R
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0FHBNQY9P
+07/07/2026 02:31:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B084688K45
+07/07/2026 02:31:56 [INFO   ]   Scraped: 20 productos (11 con oferta, 9 sin descuento)
+07/07/2026 02:31:56 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:31:56 [DEBUG  ]     1. [B0CV7QZF1S] Chicco PhysioForma Chupete Recién Nacido 0-2 Meses | 29% dto | 0 vals | 50 ventas
+07/07/2026 02:31:56 [DEBUG  ]     2. [B09QY9T9HZ] Suavinex, Chupete recién nacido Zero Zero con Teti | 24% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:56 [DEBUG  ]     3. [B084688K45] MAM Chupete Todo Silicona, 0-3 Meses, con Tetina S | 24% dto | 0 vals | 0 ventas
+07/07/2026 02:31:56 [DEBUG  ]     4. [B09QY9445K] Suavinex, Chupete Recién Nacido Zero Zero con Teti | 23% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:56 [DEBUG  ]     5. [B0DWFP47ST] Suavinex, Chupete Todo Silicona, para Bebés 0/6 Me | 21% dto | 0 vals | 0 ventas [MARCA PRIO]
+07/07/2026 02:31:56 [INFO   ]   ELEGIDO para categoria: Chicco PhysioForma Chupete Recién Nacido 0-2 ... (29% dto, 0 valoraciones, ASIN: B0CV7QZF1S)
+07/07/2026 02:31:56 [INFO   ] 
+07/07/2026 02:31:56 [INFO   ] --- Categoria: Biberones ---
+07/07/2026 02:31:59 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0BWFLY8HV
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0BWFNBJ7C
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0CLS3Z9GH
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0BWFLPZ5G
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B0BWFM6PBN
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 44% para ASIN B0BWFJL62B
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0DBZD9NFD
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B09KCQNCFW
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0BWFLR1Z7
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 32% para ASIN B0CYM1KYW6
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CLRSLDL1
+07/07/2026 02:32:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0BWFMGL3K
+07/07/2026 02:32:00 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+07/07/2026 02:32:00 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:32:00 [DEBUG  ]     1. [B0BWFJL62B] PHILIPS Avent Set de regalo de biberón de cristal  | 44% dto | 0 vals | 200 ventas
+07/07/2026 02:32:00 [DEBUG  ]     2. [B0CYM1KYW6] Tommee Tippee Biberones, set Natural Start recién  | 32% dto | 0 vals | 0 ventas
+07/07/2026 02:32:00 [DEBUG  ]     3. [B0CLS3Z9GH] NUK Perfect Match Set de biberones | +0-6 meses |  | 30% dto | 0 vals | 100 ventas
+07/07/2026 02:32:00 [DEBUG  ]     4. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 25% dto | 0 vals | 100 ventas
+07/07/2026 02:32:00 [DEBUG  ]     5. [B0BWFNBJ7C] Philips Avent Biberón Natural Response: 3 biberone | 25% dto | 0 vals | 700 ventas
+07/07/2026 02:32:00 [INFO   ]   DESCARTADO [ya publicado en <48h] PHILIPS Avent Set de regalo de biberón de cri... (44% dto, ASIN: B0BWFJL62B)
+07/07/2026 02:32:00 [INFO   ]   ELEGIDO para categoria: Tommee Tippee Biberones, set Natural Start re... (32% dto, 0 valoraciones, ASIN: B0CYM1KYW6)
+07/07/2026 02:32:00 [INFO   ] 
+07/07/2026 02:32:00 [INFO   ] --- Categoria: Juguetes ---
+07/07/2026 02:32:04 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B07N1JP56L
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 39% para ASIN B07MPCCDM7
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B01NCUSC7V
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0DJSZSG4M
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B008FY37NU
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0D7PY72XZ
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B079MG7JT6
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0D7ZRS4X9
+07/07/2026 02:32:05 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B08THY7P23
+07/07/2026 02:32:05 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+07/07/2026 02:32:05 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:32:05 [DEBUG  ]     1. [B07MPCCDM7] Baby Einstein, Gimansio de Actividades Musical par | 39% dto | 0 vals | 300 ventas
+07/07/2026 02:32:05 [DEBUG  ]     2. [B0D7PY72XZ] Fisher-Price Capibara Abracitos y jueguecitos Jugu | 30% dto | 0 vals | 100 ventas
+07/07/2026 02:32:05 [DEBUG  ]     3. [B0DJSZSG4M] Fisher-Price Libro de cuentos musical del Monito m | 30% dto | 0 vals | 50 ventas
+07/07/2026 02:32:05 [DEBUG  ]     4. [B07N1JP56L] Fisher-Price Nutria Hora de Dormir - Peluche Music | 19% dto | 0 vals | 1 ventas
+07/07/2026 02:32:05 [DEBUG  ]     5. [B0D7ZRS4X9] Fisher-Price Laugh & Learn Mi primer mando de cons | 14% dto | 0 vals | 50 ventas
+07/07/2026 02:32:05 [INFO   ]   DESCARTADO [ya publicado en <48h] Baby Einstein, Gimansio de Actividades Musica... (39% dto, ASIN: B07MPCCDM7)
+07/07/2026 02:32:05 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Capibara Abracitos y jueguecitos... (30% dto)
+07/07/2026 02:32:05 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Libro de cuentos musical del Mon... (30% dto)
+07/07/2026 02:32:05 [INFO   ]   ELEGIDO para categoria: Fisher-Price Nutria Hora de Dormir - Peluche ... (19% dto, 0 valoraciones, ASIN: B07N1JP56L)
+07/07/2026 02:32:05 [INFO   ] 
+07/07/2026 02:32:05 [INFO   ] --- Categoria: Baneras ---
+07/07/2026 02:32:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B9HQDZ6H
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B2Q2HTW3
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B09Q97DWWJ
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B099K1D44C
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B9HS2YCW
+07/07/2026 02:32:09 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0CPFBCVDZ
+07/07/2026 02:32:09 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+07/07/2026 02:32:09 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/07/2026 02:32:09 [DEBUG  ]     1. [B0CPFBCVDZ] Chicco Cuddle & Bubble Bañera Bebé Ergonómica con  | 31% dto | 0 vals | 0 ventas
+07/07/2026 02:32:09 [DEBUG  ]     2. [B09Q97DWWJ] Babymoov Bañera hinchable evolutiva AQUADOTS | 19% dto | 0 vals | 300 ventas
+07/07/2026 02:32:09 [DEBUG  ]     3. [B099K1D44C] BÉABA, bañera plegable para bebés, ultra compacta, | 16% dto | 0 vals | 100 ventas
+07/07/2026 02:32:09 [DEBUG  ]     4. [B0B9HQDZ6H] Bañera Plegable Bebé Con Asiento De Baño Antidesli | 9% dto | 0 vals | 0 ventas
+07/07/2026 02:32:09 [DEBUG  ]     5. [B0B2Q2HTW3] Bañera Plegable Bebé Con Asiento De Baño Antidesli | 9% dto | 0 vals | 0 ventas
+07/07/2026 02:32:09 [INFO   ]   ELEGIDO para categoria: Chicco Cuddle & Bubble Bañera Bebé Ergonómica... (31% dto, 0 valoraciones, ASIN: B0CPFBCVDZ)
+07/07/2026 02:32:09 [INFO   ] 
+07/07/2026 02:32:09 [INFO   ] --- Categoria: Camaras seguridad ---
+07/07/2026 02:32:09 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 04/07 21:53 (hace 2 dias, faltan ~5 dias)
+07/07/2026 02:32:09 [INFO   ] 
+07/07/2026 02:32:09 [INFO   ] --- Categoria: Alimentacion ---
+07/07/2026 02:32:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+07/07/2026 02:32:13 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+07/07/2026 02:32:13 [INFO   ]   No hay productos con descuento en esta categoria
+07/07/2026 02:32:13 [INFO   ] 
+07/07/2026 02:32:13 [INFO   ] --- Categoria: Tronas ---
+07/07/2026 02:32:13 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 06/07 19:48 (hace 0 dias, faltan ~7 dias)
+07/07/2026 02:32:13 [INFO   ] 
+07/07/2026 02:32:13 [INFO   ] --- Categoria: Vajilla bebe ---
+07/07/2026 02:32:13 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 05/07 06:35 (hace 1 dias, faltan ~6 dias)
+07/07/2026 02:32:13 [INFO   ] 
+07/07/2026 02:32:13 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+07/07/2026 02:32:13 [INFO   ]   1. [B09ZFKTSK1] BEPANTHOL Pomada Protectora Culito Bebé ... | 35% dto | cat: Cremas bebe
+07/07/2026 02:32:13 [INFO   ]   2. [B0CYM1KYW6] Tommee Tippee Biberones, set Natural Sta... | 32% dto | cat: Biberones
+07/07/2026 02:32:13 [INFO   ]   3. [B0CPFBCVDZ] Chicco Cuddle & Bubble Bañera Bebé Ergon... | 31% dto | cat: Baneras
+07/07/2026 02:32:13 [INFO   ]   4. [B0CV7QZF1S] Chicco PhysioForma Chupete Recién Nacido... | 29% dto | cat: Chupetes
+07/07/2026 02:32:13 [INFO   ]   5. [B09TW72XZQ] WaterWipes Sensitive+ Newborn & Baby Wip... | 28% dto | cat: Toallitas [marca prio] [cat. reciente]
+07/07/2026 02:32:13 [INFO   ]   6. [B0743HXL9S] Dodot Pañales Bebé-Seco, Talla 5 (11-16 ... | 20% dto | cat: Panales [marca prio] [cat. reciente]
+07/07/2026 02:32:13 [INFO   ]   7. [B07N1JP56L] Fisher-Price Nutria Hora de Dormir - Pel... | 19% dto | cat: Juguetes [cat. reciente]
+07/07/2026 02:32:13 [INFO   ] 
+07/07/2026 02:32:13 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+07/07/2026 02:32:13 [INFO   ]     Titulo:    BEPANTHOL Pomada Protectora Culito Bebé Con Pro-Vitamina B5 - Crema para Irritaciones y Pañal - Reci...
+07/07/2026 02:32:13 [INFO   ]     Categoria: Cremas bebe | Descuento: 35%
+07/07/2026 02:32:13 [INFO   ]     Precio:    14,86 € (antes: 23,02 €)
+07/07/2026 02:32:13 [INFO   ]     ASIN:      B09ZFKTSK1 | Valoraciones: 0 | Ventas: 600
+07/07/2026 02:32:13 [INFO   ]     URL:       https://www.amazon.es/dp/B09ZFKTSK1?tag=juegosenoferta-21
+07/07/2026 02:32:13 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71I3q7zUovL._AC_UL320_.jpg
+07/07/2026 02:32:13 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+07/07/2026 02:32:14 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1240
+07/07/2026 02:32:14 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+07/07/2026 02:32:14 [DEBUG  ] Historial de categorias actualizado: Cremas bebe, Juguetes, Tronas, Panales
+07/07/2026 02:32:14 [INFO   ] 
+07/07/2026 02:32:14 [INFO   ] ============================================================
+07/07/2026 02:32:14 [INFO   ] FIN - 1 oferta publicada en Telegram
+07/07/2026 02:32:14 [INFO   ] ============================================================
