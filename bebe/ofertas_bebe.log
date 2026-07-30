@@ -62608,3 +62608,156 @@
 30/07/2026 13:46:23 [INFO   ] ============================================================
 30/07/2026 13:46:23 [INFO   ] FIN - 1 oferta publicada en Telegram
 30/07/2026 13:46:23 [INFO   ] ============================================================
+30/07/2026 16:22:12 [INFO   ] ============================================================
+30/07/2026 16:22:12 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+30/07/2026 16:22:12 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 30/07/2026 16:22
+30/07/2026 16:22:12 [INFO   ] ============================================================
+30/07/2026 16:22:12 [INFO   ] Historial cargado: 13 ASINs en ventana de 48h (ignorados 0 expirados)
+30/07/2026 16:22:12 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Cremas bebe, Toallitas, Toallitas, Biberones
+30/07/2026 16:22:12 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+30/07/2026 16:22:12 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 4 dias (26/07 05:54)
+30/07/2026 16:22:12 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 6 dias (23/07 19:08)
+30/07/2026 16:22:12 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 0 dias (29/07 19:04)
+30/07/2026 16:22:12 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 2 dias (27/07 22:03)
+30/07/2026 16:22:12 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Cremas bebe, Toallitas, Toallitas, Biberones]
+30/07/2026 16:22:12 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+30/07/2026 16:22:12 [INFO   ] 
+30/07/2026 16:22:12 [INFO   ] --- Categoria: Panales ---
+30/07/2026 16:22:16 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+30/07/2026 16:22:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B01MUX5MUY
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B07C993Z69
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0G3RG1SMJ
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CZF7TP6H
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B08CYCV9PQ
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B07YQD4FVL
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0916SLRXT
+30/07/2026 16:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B07LGDTXZS
+30/07/2026 16:22:18 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+30/07/2026 16:22:18 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+30/07/2026 16:22:18 [DEBUG  ]     1. [B07YQD4FVL] Chelino Fashion & Love Pañales infantiles Talla 4  | 19% dto | 0 vals | 300 ventas
+30/07/2026 16:22:18 [DEBUG  ]     2. [B07LGDTXZS] DODOT Sensitive - Pañales, 6 A 10 Kg, Blanco, Tall | 18% dto | 0 vals | 50 ventas [MARCA PRIO]
+30/07/2026 16:22:18 [DEBUG  ]     3. [B07C993Z69] Huggies Little Movers Pañales para Bebé con Diseño | 14% dto | 0 vals | 500 ventas
+30/07/2026 16:22:18 [DEBUG  ]     4. [B08CYCV9PQ] Huggies Extra Care Pañales para Recién Nacido con  | 13% dto | 0 vals | 100 ventas
+30/07/2026 16:22:18 [DEBUG  ]     5. [B0916SLRXT] Chelino Nature Pañal Infantil Talla 3 (4-10 kg), 2 | 12% dto | 0 vals | 100 ventas
+30/07/2026 16:22:18 [INFO   ]   DESCARTADO [ya publicado en <48h] Chelino Fashion & Love Pañales infantiles Tal... (19% dto, ASIN: B07YQD4FVL)
+30/07/2026 16:22:18 [INFO   ]   DESCARTADO [ya publicado en <48h] DODOT Sensitive - Pañales, 6 A 10 Kg, Blanco,... (18% dto, ASIN: B07LGDTXZS)
+30/07/2026 16:22:18 [INFO   ]   ELEGIDO para categoria: Huggies Little Movers Pañales para Bebé con D... (14% dto, 0 valoraciones, ASIN: B07C993Z69)
+30/07/2026 16:22:18 [INFO   ] 
+30/07/2026 16:22:18 [INFO   ] --- Categoria: Toallitas ---
+30/07/2026 16:22:22 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:22:22 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 6s
+30/07/2026 16:22:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:22:31 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 17s
+30/07/2026 16:22:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:22:51 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+30/07/2026 16:22:51 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 16:22:51 [INFO   ] 
+30/07/2026 16:22:51 [INFO   ] --- Categoria: Cremas bebe ---
+30/07/2026 16:22:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+30/07/2026 16:22:54 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 7s
+30/07/2026 16:23:03 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+30/07/2026 16:23:03 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 13s
+30/07/2026 16:23:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+30/07/2026 16:23:21 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete | URL: https://www.amazon.es/s?k=crema+bebe+culete
+30/07/2026 16:23:21 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 16:23:21 [INFO   ] 
+30/07/2026 16:23:21 [INFO   ] --- Categoria: Leche en polvo ---
+30/07/2026 16:23:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+30/07/2026 16:23:23 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 8s
+30/07/2026 16:23:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+30/07/2026 16:23:35 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 20s
+30/07/2026 16:23:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+30/07/2026 16:23:57 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe | URL: https://www.amazon.es/s?k=leche+en+polvo+bebe
+30/07/2026 16:23:57 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 16:23:57 [INFO   ] 
+30/07/2026 16:23:57 [INFO   ] --- Categoria: Chupetes ---
+30/07/2026 16:23:57 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 23/07 19:08 (hace 6 dias, faltan ~1 dias)
+30/07/2026 16:23:57 [INFO   ] 
+30/07/2026 16:23:57 [INFO   ] --- Categoria: Biberones ---
+30/07/2026 16:24:01 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0BWFNBJ7C
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0BWFLPZ5G
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B0BWFJL62B
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0DBZD9NFD
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FN8DZZC6
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0BWFLR1Z7
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B0BWFMQMV8
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0BWFMGL3K
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B07J2JQP9N
+30/07/2026 16:24:02 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0D45P95D7
+30/07/2026 16:24:02 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+30/07/2026 16:24:02 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+30/07/2026 16:24:02 [DEBUG  ]     1. [B0BWFJL62B] PHILIPS Avent Set de regalo de biberón de cristal  | 33% dto | 0 vals | 200 ventas
+30/07/2026 16:24:02 [DEBUG  ]     2. [B0BWFMQMV8] Philips Avent Biberón Natural Response: biberón pa | 33% dto | 0 vals | 200 ventas
+30/07/2026 16:24:02 [DEBUG  ]     3. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 25% dto | 0 vals | 100 ventas
+30/07/2026 16:24:02 [DEBUG  ]     4. [B0BWFNBJ7C] Philips Avent Biberón Natural Response: 3 biberone | 25% dto | 0 vals | 700 ventas
+30/07/2026 16:24:02 [DEBUG  ]     5. [B0D45P95D7] Philips Avent Natural Response, set de regalo para | 24% dto | 0 vals | 50 ventas
+30/07/2026 16:24:02 [INFO   ]   DESCARTADO [ya publicado en <48h] PHILIPS Avent Set de regalo de biberón de cri... (33% dto, ASIN: B0BWFJL62B)
+30/07/2026 16:24:02 [INFO   ]   DESCARTADO [ya publicado en <48h] Philips Avent Biberón Natural Response: biber... (33% dto, ASIN: B0BWFMQMV8)
+30/07/2026 16:24:02 [INFO   ]   ELEGIDO para categoria: Philips Avent Set de regalo de biberones para... (25% dto, 0 valoraciones, ASIN: B0BWFLPZ5G)
+30/07/2026 16:24:02 [INFO   ] 
+30/07/2026 16:24:02 [INFO   ] --- Categoria: Juguetes ---
+30/07/2026 16:24:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+30/07/2026 16:24:07 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0DJSZSG4M
+30/07/2026 16:24:07 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B08THWFY5T
+30/07/2026 16:24:07 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0D7ZRS4X9
+30/07/2026 16:24:07 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0DRJWY73C
+30/07/2026 16:24:07 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B09RMZ55DJ
+30/07/2026 16:24:07 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+30/07/2026 16:24:07 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+30/07/2026 16:24:07 [DEBUG  ]     1. [B0DJSZSG4M] Fisher-Price Libro de cuentos musical del Monito m | 30% dto | 0 vals | 50 ventas
+30/07/2026 16:24:07 [DEBUG  ]     2. [B0D7ZRS4X9] Fisher-Price Laugh & Learn Mi primer mando de cons | 14% dto | 0 vals | 50 ventas
+30/07/2026 16:24:07 [DEBUG  ]     3. [B08THWFY5T] VTech-Baby Volante Descubrimientos. Sonajero activ | 11% dto | 0 vals | 50 ventas
+30/07/2026 16:24:07 [DEBUG  ]     4. [B0DRJWY73C] VTech-Baby Reproductor Musical Graba Canta y Baila | 6% dto | 0 vals | 50 ventas
+30/07/2026 16:24:07 [DEBUG  ]     5. [B09RMZ55DJ] VTech-Baby Primeras Canciones Rosa, Libro Interact | 5% dto | 0 vals | 0 ventas
+30/07/2026 16:24:07 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Libro de cuentos musical del Mon... (30% dto)
+30/07/2026 16:24:07 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Laugh & Learn Mi primer mando de... (14% dto)
+30/07/2026 16:24:07 [INFO   ]   ELEGIDO para categoria: VTech-Baby Volante Descubrimientos. Sonajero ... (11% dto, 0 valoraciones, ASIN: B08THWFY5T)
+30/07/2026 16:24:07 [INFO   ] 
+30/07/2026 16:24:07 [INFO   ] --- Categoria: Baneras ---
+30/07/2026 16:24:11 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:24:11 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 7s
+30/07/2026 16:24:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:24:20 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 17s
+30/07/2026 16:24:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 16:24:40 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=bañera+bebe&rh=n%3A1703495031
+30/07/2026 16:24:40 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 16:24:40 [INFO   ] 
+30/07/2026 16:24:40 [INFO   ] --- Categoria: Camaras seguridad ---
+30/07/2026 16:24:40 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 26/07 05:54 (hace 4 dias, faltan ~3 dias)
+30/07/2026 16:24:40 [INFO   ] 
+30/07/2026 16:24:40 [INFO   ] --- Categoria: Alimentacion ---
+30/07/2026 16:24:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+30/07/2026 16:24:43 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 5s
+30/07/2026 16:24:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+30/07/2026 16:24:51 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+30/07/2026 16:24:51 [INFO   ]   No hay productos con descuento en esta categoria
+30/07/2026 16:24:51 [INFO   ] 
+30/07/2026 16:24:51 [INFO   ] --- Categoria: Tronas ---
+30/07/2026 16:24:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 29/07 19:04 (hace 0 dias, faltan ~7 dias)
+30/07/2026 16:24:51 [INFO   ] 
+30/07/2026 16:24:51 [INFO   ] --- Categoria: Vajilla bebe ---
+30/07/2026 16:24:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/07 22:03 (hace 2 dias, faltan ~5 dias)
+30/07/2026 16:24:51 [INFO   ] 
+30/07/2026 16:24:51 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+30/07/2026 16:24:51 [INFO   ]   1. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones... | 25% dto | cat: Biberones [cat. reciente]
+30/07/2026 16:24:51 [INFO   ]   2. [B07C993Z69] Huggies Little Movers Pañales para Bebé ... | 14% dto | cat: Panales
+30/07/2026 16:24:51 [INFO   ]   3. [B08THWFY5T] VTech-Baby Volante Descubrimientos. Sona... | 11% dto | cat: Juguetes
+30/07/2026 16:24:51 [INFO   ] Anti-repeticion: la #1 global (Philips Avent Set de regalo de bibe) fue descartada porque su categoria 'Biberones' aparece en las recientes [Cremas bebe, Toallitas, Toallitas, Biberones]. Se elige la siguiente valida.
+30/07/2026 16:24:51 [INFO   ] 
+30/07/2026 16:24:51 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+30/07/2026 16:24:51 [INFO   ]     Titulo:    Huggies Little Movers Pañales para Bebé con Diseños Disney Talla 4 (7-18 kg), Comodidad para la Piel...
+30/07/2026 16:24:51 [INFO   ]     Categoria: Panales | Descuento: 14%
+30/07/2026 16:24:51 [INFO   ]     Precio:    35,34 € (antes: 41,31 €)
+30/07/2026 16:24:51 [INFO   ]     ASIN:      B07C993Z69 | Valoraciones: 0 | Ventas: 500
+30/07/2026 16:24:51 [INFO   ]     URL:       https://www.amazon.es/dp/B07C993Z69?tag=juegosenoferta-21
+30/07/2026 16:24:51 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/712mgUzbMLL._AC_UL320_.jpg
+30/07/2026 16:24:51 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+30/07/2026 16:24:52 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1242
+30/07/2026 16:24:52 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+30/07/2026 16:24:52 [DEBUG  ] Historial de categorias actualizado: Panales, Cremas bebe, Toallitas, Toallitas
+30/07/2026 16:24:52 [INFO   ] 
+30/07/2026 16:24:52 [INFO   ] ============================================================
+30/07/2026 16:24:52 [INFO   ] FIN - 1 oferta publicada en Telegram
+30/07/2026 16:24:52 [INFO   ] ============================================================
