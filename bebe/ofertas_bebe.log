@@ -62931,3 +62931,153 @@
 30/07/2026 19:18:26 [INFO   ] ============================================================
 30/07/2026 19:18:26 [INFO   ] FIN - 1 oferta publicada en Telegram
 30/07/2026 19:18:26 [INFO   ] ============================================================
+30/07/2026 22:07:44 [INFO   ] ============================================================
+30/07/2026 22:07:44 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+30/07/2026 22:07:44 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 30/07/2026 22:07
+30/07/2026 22:07:44 [INFO   ] ============================================================
+30/07/2026 22:07:44 [INFO   ] Historial cargado: 12 ASINs en ventana de 48h (ignorados 2 expirados)
+30/07/2026 22:07:44 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Baneras, Panales, Cremas bebe, Toallitas
+30/07/2026 22:07:44 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+30/07/2026 22:07:44 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 4 dias (26/07 05:54)
+30/07/2026 22:07:44 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 7 dias (23/07 19:08)
+30/07/2026 22:07:44 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 1 dias (29/07 19:04)
+30/07/2026 22:07:44 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 3 dias (27/07 22:03)
+30/07/2026 22:07:44 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Baneras, Panales, Cremas bebe, Toallitas]
+30/07/2026 22:07:44 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+30/07/2026 22:07:44 [INFO   ] 
+30/07/2026 22:07:44 [INFO   ] --- Categoria: Panales ---
+30/07/2026 22:07:46 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+30/07/2026 22:07:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:07:47 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 9s
+30/07/2026 22:07:59 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:07:59 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 11s
+30/07/2026 22:08:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:08:13 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+30/07/2026 22:08:13 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:08:13 [INFO   ] 
+30/07/2026 22:08:13 [INFO   ] --- Categoria: Toallitas ---
+30/07/2026 22:08:16 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:08:16 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 9s
+30/07/2026 22:08:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:08:28 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 15s
+30/07/2026 22:08:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:08:47 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+30/07/2026 22:08:47 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:08:47 [INFO   ] 
+30/07/2026 22:08:47 [INFO   ] --- Categoria: Cremas bebe ---
+30/07/2026 22:08:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+30/07/2026 22:08:51 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B00BN8JUCC
+30/07/2026 22:08:51 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B0B5RVR9BL
+30/07/2026 22:08:51 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B075HM1M71
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B0CJ2CQBG8
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B09ZFKTSK1
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CN2NR2LH
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0FN48MP5Y
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B08PFNR7C6
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0BT2WHHPV
+30/07/2026 22:08:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B000YOFP3O
+30/07/2026 22:08:52 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+30/07/2026 22:08:52 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+30/07/2026 22:08:52 [DEBUG  ]     1. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g | Ayuda a | 33% dto | 0 vals | 500 ventas
+30/07/2026 22:08:52 [DEBUG  ]     2. [B000YOFP3O] Weleda - Leche Corporal de Caléndula para Bebé, Hi | 25% dto | 0 vals | 1 ventas
+30/07/2026 22:08:52 [DEBUG  ]     3. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 23% dto | 0 vals | 400 ventas
+30/07/2026 22:08:52 [DEBUG  ]     4. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 20% dto | 0 vals | 200 ventas
+30/07/2026 22:08:52 [DEBUG  ]     5. [B0CJ2CQBG8] Weleda Crema Pañal de Caléndula (1x 75 ml) (9831EN | 18% dto | 0 vals | 0 ventas
+30/07/2026 22:08:52 [INFO   ]   ELEGIDO para categoria: Bepanthol Pomada Protectora Bebé 2x100 g | Ay... (33% dto, 0 valoraciones, ASIN: B09ZFKTSK1)
+30/07/2026 22:08:52 [INFO   ] 
+30/07/2026 22:08:52 [INFO   ] --- Categoria: Leche en polvo ---
+30/07/2026 22:08:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+30/07/2026 22:08:56 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 9s
+30/07/2026 22:09:08 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+30/07/2026 22:09:08 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 19s
+30/07/2026 22:09:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+30/07/2026 22:09:33 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+30/07/2026 22:09:33 [INFO   ]   No hay productos con descuento en esta categoria
+30/07/2026 22:09:33 [INFO   ] 
+30/07/2026 22:09:33 [INFO   ] --- Categoria: Chupetes ---
+30/07/2026 22:09:33 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 7 dias (supera los 7 requeridos)
+30/07/2026 22:09:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:09:35 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 6s
+30/07/2026 22:09:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:09:45 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 13s
+30/07/2026 22:10:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:02 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031
+30/07/2026 22:10:02 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:10:02 [INFO   ] 
+30/07/2026 22:10:02 [INFO   ] --- Categoria: Biberones ---
+30/07/2026 22:10:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:06 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 6s
+30/07/2026 22:10:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:15 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 12s
+30/07/2026 22:10:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:30 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+30/07/2026 22:10:30 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:10:30 [INFO   ] 
+30/07/2026 22:10:30 [INFO   ] --- Categoria: Juguetes ---
+30/07/2026 22:10:33 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+30/07/2026 22:10:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0DJSZSG4M
+30/07/2026 22:10:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B08THWFY5T
+30/07/2026 22:10:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0D7ZRS4X9
+30/07/2026 22:10:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0DRJWY73C
+30/07/2026 22:10:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B09RMZ55DJ
+30/07/2026 22:10:34 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+30/07/2026 22:10:34 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+30/07/2026 22:10:34 [DEBUG  ]     1. [B0DJSZSG4M] Fisher-Price Libro de cuentos musical del Monito m | 30% dto | 0 vals | 50 ventas
+30/07/2026 22:10:34 [DEBUG  ]     2. [B0D7ZRS4X9] Fisher-Price Laugh & Learn Mi primer mando de cons | 14% dto | 0 vals | 50 ventas
+30/07/2026 22:10:34 [DEBUG  ]     3. [B08THWFY5T] VTech-Baby Volante Descubrimientos. Sonajero activ | 11% dto | 0 vals | 50 ventas
+30/07/2026 22:10:34 [DEBUG  ]     4. [B0DRJWY73C] VTech-Baby Reproductor Musical Graba Canta y Baila | 6% dto | 0 vals | 50 ventas
+30/07/2026 22:10:34 [DEBUG  ]     5. [B09RMZ55DJ] VTech-Baby Primeras Canciones Rosa, Libro Interact | 5% dto | 0 vals | 0 ventas
+30/07/2026 22:10:34 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Libro de cuentos musical del Mon... (30% dto)
+30/07/2026 22:10:34 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Laugh & Learn Mi primer mando de... (14% dto)
+30/07/2026 22:10:34 [INFO   ]   ELEGIDO para categoria: VTech-Baby Volante Descubrimientos. Sonajero ... (11% dto, 0 valoraciones, ASIN: B08THWFY5T)
+30/07/2026 22:10:34 [INFO   ] 
+30/07/2026 22:10:34 [INFO   ] --- Categoria: Baneras ---
+30/07/2026 22:10:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:37 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 7s
+30/07/2026 22:10:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:10:47 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 17s
+30/07/2026 22:11:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+30/07/2026 22:11:07 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=bañera+bebe&rh=n%3A1703495031
+30/07/2026 22:11:07 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:11:07 [INFO   ] 
+30/07/2026 22:11:07 [INFO   ] --- Categoria: Camaras seguridad ---
+30/07/2026 22:11:07 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 26/07 05:54 (hace 4 dias, faltan ~3 dias)
+30/07/2026 22:11:07 [INFO   ] 
+30/07/2026 22:11:07 [INFO   ] --- Categoria: Alimentacion ---
+30/07/2026 22:11:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+30/07/2026 22:11:09 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 8s
+30/07/2026 22:11:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+30/07/2026 22:11:20 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 15s
+30/07/2026 22:11:38 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+30/07/2026 22:11:38 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla | URL: https://www.amazon.es/s?k=potitos+bebe+papilla
+30/07/2026 22:11:38 [WARNING]   No se pudo obtener la pagina, saltando categoria
+30/07/2026 22:11:38 [INFO   ] 
+30/07/2026 22:11:38 [INFO   ] --- Categoria: Tronas ---
+30/07/2026 22:11:38 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 29/07 19:04 (hace 1 dias, faltan ~6 dias)
+30/07/2026 22:11:38 [INFO   ] 
+30/07/2026 22:11:38 [INFO   ] --- Categoria: Vajilla bebe ---
+30/07/2026 22:11:38 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 27/07 22:03 (hace 3 dias, faltan ~4 dias)
+30/07/2026 22:11:38 [INFO   ] 
+30/07/2026 22:11:38 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+30/07/2026 22:11:38 [INFO   ]   1. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g... | 33% dto | cat: Cremas bebe [cat. reciente]
+30/07/2026 22:11:38 [INFO   ]   2. [B08THWFY5T] VTech-Baby Volante Descubrimientos. Sona... | 11% dto | cat: Juguetes
+30/07/2026 22:11:38 [INFO   ] Anti-repeticion: la #1 global (Bepanthol Pomada Protectora Bebé 2x) fue descartada porque su categoria 'Cremas bebe' aparece en las recientes [Baneras, Panales, Cremas bebe, Toallitas]. Se elige la siguiente valida.
+30/07/2026 22:11:38 [INFO   ] 
+30/07/2026 22:11:38 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+30/07/2026 22:11:38 [INFO   ]     Titulo:    VTech-Baby Volante Descubrimientos. Sonajero activity interactivo para bebé +3 meses.
+30/07/2026 22:11:38 [INFO   ]     Categoria: Juguetes | Descuento: 11%
+30/07/2026 22:11:38 [INFO   ]     Precio:    14,01 € (antes: 15,69 €)
+30/07/2026 22:11:38 [INFO   ]     ASIN:      B08THWFY5T | Valoraciones: 0 | Ventas: 50
+30/07/2026 22:11:38 [INFO   ]     URL:       https://www.amazon.es/dp/B08THWFY5T?tag=juegosenoferta-21
+30/07/2026 22:11:38 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71GjY29amQL._AC_UL320_.jpg
+30/07/2026 22:11:38 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+30/07/2026 22:11:39 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1214
+30/07/2026 22:11:39 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+30/07/2026 22:11:39 [DEBUG  ] Historial de categorias actualizado: Juguetes, Baneras, Panales, Cremas bebe
+30/07/2026 22:11:39 [DEBUG  ] Titulo guardado en anti-similitud (total: 4)
+30/07/2026 22:11:39 [INFO   ] 
+30/07/2026 22:11:39 [INFO   ] ============================================================
+30/07/2026 22:11:39 [INFO   ] FIN - 1 oferta publicada en Telegram
+30/07/2026 22:11:39 [INFO   ] ============================================================
