@@ -73652,3 +73652,161 @@
 09/08/2026 09:37:44 [INFO   ] ============================================================
 09/08/2026 09:37:44 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 09/08/2026 09:37:44 [INFO   ] ============================================================
+09/08/2026 12:36:35 [INFO   ] ============================================================
+09/08/2026 12:36:35 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+09/08/2026 12:36:35 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 09/08/2026 12:36
+09/08/2026 12:36:35 [INFO   ] ============================================================
+09/08/2026 12:36:35 [INFO   ] Historial cargado: 13 ASINs en ventana de 48h (ignorados 1 expirados)
+09/08/2026 12:36:35 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Toallitas, Biberones, Panales, Toallitas
+09/08/2026 12:36:35 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+09/08/2026 12:36:35 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 6 dias (02/08 15:56)
+09/08/2026 12:36:35 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 8 dias (31/07 19:15)
+09/08/2026 12:36:35 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 3 dias (06/08 08:26)
+09/08/2026 12:36:35 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 5 dias (04/08 05:43)
+09/08/2026 12:36:35 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Toallitas, Biberones, Panales, Toallitas]
+09/08/2026 12:36:35 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+09/08/2026 12:36:35 [INFO   ] 
+09/08/2026 12:36:35 [INFO   ] --- Categoria: Panales ---
+09/08/2026 12:36:39 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+09/08/2026 12:36:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0976ZL8Z9
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B01MUX5MUY
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B07C993Z69
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0B5LTHCGY
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CZF7TP6H
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B07YQD4FVL
+09/08/2026 12:36:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0916SLRXT
+09/08/2026 12:36:40 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+09/08/2026 12:36:40 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+09/08/2026 12:36:40 [DEBUG  ]     1. [B0976ZL8Z9] Dodot Pañales Bebé Sensitive Talla 2, 80 Pañales,  | 24% dto | 0 vals | 900 ventas [MARCA PRIO]
+09/08/2026 12:36:40 [DEBUG  ]     2. [B07YQD4FVL] Chelino Fashion & Love Pañales infantiles Talla 4  | 19% dto | 0 vals | 600 ventas
+09/08/2026 12:36:40 [DEBUG  ]     3. [B0916SLRXT] Chelino Nature Pañal Infantil Talla 3 (4-10 kg), 2 | 12% dto | 0 vals | 200 ventas
+09/08/2026 12:36:40 [DEBUG  ]     4. [B07C993Z69] Huggies Little Movers Pañales para Bebé con Diseño | 12% dto | 0 vals | 400 ventas
+09/08/2026 12:36:40 [DEBUG  ]     5. [B01MUX5MUY] Chelino Pañal infantil Talla 3 (4-10kg), 36 Unidad | 7% dto | 0 vals | 1 ventas
+09/08/2026 12:36:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Pañales Bebé Sensitive Talla 2, 80 Paña... (24% dto, ASIN: B0976ZL8Z9)
+09/08/2026 12:36:40 [INFO   ]   ELEGIDO para categoria: Chelino Fashion & Love Pañales infantiles Tal... (19% dto, 0 valoraciones, ASIN: B07YQD4FVL)
+09/08/2026 12:36:40 [INFO   ] 
+09/08/2026 12:36:40 [INFO   ] --- Categoria: Toallitas ---
+09/08/2026 12:36:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:36:43 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 9s
+09/08/2026 12:36:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:36:56 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 19s
+09/08/2026 12:37:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:37:19 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+09/08/2026 12:37:19 [WARNING]   No se pudo obtener la pagina, saltando categoria
+09/08/2026 12:37:19 [INFO   ] 
+09/08/2026 12:37:19 [INFO   ] --- Categoria: Cremas bebe ---
+09/08/2026 12:37:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B00BN8JUCC
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B075HM1M71
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B0B5RVR9BL
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CN2NR2LH
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0CJ2CQBG8
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B09ZFKTSK1
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 22% para ASIN B08PFNR7C6
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0FN48MP5Y
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 51% para ASIN B07N7V348R
+09/08/2026 12:37:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0D151X9LK
+09/08/2026 12:37:24 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+09/08/2026 12:37:24 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+09/08/2026 12:37:24 [DEBUG  ]     1. [B07N7V348R] Mustela Bã‰Bã‰ Liniment Toilette Du Siã¨Ge 750 Ml  | 51% dto | 0 vals | 0 ventas [MARCA PRIO]
+09/08/2026 12:37:24 [DEBUG  ]     2. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g | Ayuda a | 33% dto | 0 vals | 700 ventas
+09/08/2026 12:37:24 [DEBUG  ]     3. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 23% dto | 0 vals | 500 ventas
+09/08/2026 12:37:24 [DEBUG  ]     4. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 22% dto | 0 vals | 300 ventas
+09/08/2026 12:37:24 [DEBUG  ]     5. [B075HM1M71] Bebé Crema Bálsamo para Cambio de Pañal - Especial | 12% dto | 0 vals | 0 ventas
+09/08/2026 12:37:24 [INFO   ]   ELEGIDO para categoria: Mustela Bã‰Bã‰ Liniment Toilette Du Siã¨Ge 75... (51% dto, 0 valoraciones, ASIN: B07N7V348R) [marca prioritaria]
+09/08/2026 12:37:24 [INFO   ] 
+09/08/2026 12:37:24 [INFO   ] --- Categoria: Leche en polvo ---
+09/08/2026 12:37:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+09/08/2026 12:37:27 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 9s
+09/08/2026 12:37:38 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+09/08/2026 12:37:39 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+09/08/2026 12:37:39 [INFO   ]   No hay productos con descuento en esta categoria
+09/08/2026 12:37:39 [INFO   ] 
+09/08/2026 12:37:39 [INFO   ] --- Categoria: Chupetes ---
+09/08/2026 12:37:39 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 8 dias (supera los 7 requeridos)
+09/08/2026 12:37:42 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:37:42 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 7s
+09/08/2026 12:37:52 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0DWFRVJQV
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0BZJHM4G3
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B0FP5Q5PLZ
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0FBWWW4FR
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0FHBNQY9P
+09/08/2026 12:37:53 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B084688K45
+09/08/2026 12:37:53 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+09/08/2026 12:37:53 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+09/08/2026 12:37:53 [DEBUG  ]     1. [B084688K45] MAM Chupete Comfort para Recién Nacidos 0-3 Meses, | 23% dto | 0 vals | 0 ventas
+09/08/2026 12:37:53 [DEBUG  ]     2. [B0FP5Q5PLZ] NUK First Choice Day & Night Chupete para bebé | 0 | 19% dto | 0 vals | 100 ventas
+09/08/2026 12:37:53 [DEBUG  ]     3. [B0DWFRVJQV] Suavinex, Chupete Todo Silicona, para Bebés 6/18 M | 10% dto | 0 vals | 0 ventas [MARCA PRIO]
+09/08/2026 12:37:53 [DEBUG  ]     4. [B0FHBNQY9P] Philips Avent chupetes Soothie: chupete anatómico, | 9% dto | 0 vals | 200 ventas
+09/08/2026 12:37:53 [DEBUG  ]     5. [B0BZJHM4G3] NUK Signature Day & Night chupete | 6-18 meses | C | 8% dto | 0 vals | 0 ventas
+09/08/2026 12:37:53 [INFO   ]   ELEGIDO para categoria: MAM Chupete Comfort para Recién Nacidos 0-3 M... (23% dto, 0 valoraciones, ASIN: B084688K45)
+09/08/2026 12:37:53 [INFO   ] 
+09/08/2026 12:37:53 [INFO   ] --- Categoria: Biberones ---
+09/08/2026 12:37:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:37:57 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 5s
+09/08/2026 12:38:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:38:05 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 18s
+09/08/2026 12:38:26 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:38:26 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+09/08/2026 12:38:26 [WARNING]   No se pudo obtener la pagina, saltando categoria
+09/08/2026 12:38:26 [INFO   ] 
+09/08/2026 12:38:26 [INFO   ] --- Categoria: Juguetes ---
+09/08/2026 12:38:29 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:38:29 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 10s
+09/08/2026 12:38:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:38:43 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 12s
+09/08/2026 12:38:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:38:57 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031
+09/08/2026 12:38:57 [WARNING]   No se pudo obtener la pagina, saltando categoria
+09/08/2026 12:38:57 [INFO   ] 
+09/08/2026 12:38:57 [INFO   ] --- Categoria: Baneras ---
+09/08/2026 12:39:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:39:00 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 9s
+09/08/2026 12:39:12 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:39:12 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 19s
+09/08/2026 12:39:33 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+09/08/2026 12:39:33 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=bañera+bebe&rh=n%3A1703495031
+09/08/2026 12:39:33 [WARNING]   No se pudo obtener la pagina, saltando categoria
+09/08/2026 12:39:33 [INFO   ] 
+09/08/2026 12:39:33 [INFO   ] --- Categoria: Camaras seguridad ---
+09/08/2026 12:39:33 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 02/08 15:56 (hace 6 dias, faltan ~1 dias)
+09/08/2026 12:39:33 [INFO   ] 
+09/08/2026 12:39:33 [INFO   ] --- Categoria: Alimentacion ---
+09/08/2026 12:39:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+09/08/2026 12:39:36 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 9s
+09/08/2026 12:39:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+09/08/2026 12:39:48 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 19s
+09/08/2026 12:40:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+09/08/2026 12:40:10 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla | URL: https://www.amazon.es/s?k=potitos+bebe+papilla
+09/08/2026 12:40:10 [WARNING]   No se pudo obtener la pagina, saltando categoria
+09/08/2026 12:40:10 [INFO   ] 
+09/08/2026 12:40:10 [INFO   ] --- Categoria: Tronas ---
+09/08/2026 12:40:10 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 06/08 08:26 (hace 3 dias, faltan ~4 dias)
+09/08/2026 12:40:10 [INFO   ] 
+09/08/2026 12:40:10 [INFO   ] --- Categoria: Vajilla bebe ---
+09/08/2026 12:40:10 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 04/08 05:43 (hace 5 dias, faltan ~2 dias)
+09/08/2026 12:40:10 [INFO   ] 
+09/08/2026 12:40:10 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+09/08/2026 12:40:10 [INFO   ]   1. [B07N7V348R] Mustela Bã‰Bã‰ Liniment Toilette Du Siã¨... | 51% dto | cat: Cremas bebe [marca prio]
+09/08/2026 12:40:10 [INFO   ]   2. [B084688K45] MAM Chupete Comfort para Recién Nacidos ... | 23% dto | cat: Chupetes
+09/08/2026 12:40:10 [INFO   ]   3. [B07YQD4FVL] Chelino Fashion & Love Pañales infantile... | 19% dto | cat: Panales [cat. reciente]
+09/08/2026 12:40:10 [INFO   ] 
+09/08/2026 12:40:10 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+09/08/2026 12:40:10 [INFO   ]     Titulo:    Mustela Bã‰Bã‰ Liniment Toilette Du Siã¨Ge 750 Ml 750 ml
+09/08/2026 12:40:10 [INFO   ]     Categoria: Cremas bebe | Descuento: 51%
+09/08/2026 12:40:10 [INFO   ]     Precio:    8,49 € (antes: 17,24 €)
+09/08/2026 12:40:10 [INFO   ]     ASIN:      B07N7V348R | Valoraciones: 0 | Ventas: 0
+09/08/2026 12:40:10 [INFO   ]     URL:       https://www.amazon.es/dp/B07N7V348R?tag=juegosenoferta-21
+09/08/2026 12:40:10 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/41lFqTIlBIL._AC_UL320_.jpg
+09/08/2026 12:40:10 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+09/08/2026 12:40:11 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1209
+09/08/2026 12:40:11 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+09/08/2026 12:40:11 [DEBUG  ] Historial de categorias actualizado: Cremas bebe, Toallitas, Biberones, Panales
+09/08/2026 12:40:11 [INFO   ] 
+09/08/2026 12:40:11 [INFO   ] ============================================================
+09/08/2026 12:40:11 [INFO   ] FIN - 1 oferta publicada en Telegram
+09/08/2026 12:40:11 [INFO   ] ============================================================
