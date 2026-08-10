@@ -74696,3 +74696,135 @@
 10/08/2026 18:47:43 [INFO   ] ============================================================
 10/08/2026 18:47:43 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 10/08/2026 18:47:43 [INFO   ] ============================================================
+10/08/2026 21:34:59 [INFO   ] ============================================================
+10/08/2026 21:34:59 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+10/08/2026 21:34:59 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 10/08/2026 21:34
+10/08/2026 21:34:59 [INFO   ] ============================================================
+10/08/2026 21:34:59 [INFO   ] Historial cargado: 6 ASINs en ventana de 48h (ignorados 2 expirados)
+10/08/2026 21:34:59 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Camaras seguridad, Juguetes, Cremas bebe, Toallitas
+10/08/2026 21:34:59 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+10/08/2026 21:34:59 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 0 dias (10/08 15:59)
+10/08/2026 21:34:59 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 10 dias (31/07 19:15)
+10/08/2026 21:34:59 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 4 dias (06/08 08:26)
+10/08/2026 21:34:59 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 6 dias (04/08 05:43)
+10/08/2026 21:34:59 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Camaras seguridad, Juguetes, Cremas bebe, Toallitas]
+10/08/2026 21:34:59 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+10/08/2026 21:34:59 [INFO   ] 
+10/08/2026 21:34:59 [INFO   ] --- Categoria: Panales ---
+10/08/2026 21:35:03 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+10/08/2026 21:35:03 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:35:03 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 5s
+10/08/2026 21:35:12 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:35:12 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 16s
+10/08/2026 21:35:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:35:31 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+10/08/2026 21:35:31 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:35:31 [INFO   ] 
+10/08/2026 21:35:31 [INFO   ] --- Categoria: Toallitas ---
+10/08/2026 21:35:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:35:34 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 9s
+10/08/2026 21:35:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:35:45 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 17s
+10/08/2026 21:36:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:36:06 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+10/08/2026 21:36:06 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:36:06 [INFO   ] 
+10/08/2026 21:36:06 [INFO   ] --- Categoria: Cremas bebe ---
+10/08/2026 21:36:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+10/08/2026 21:36:10 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 8s
+10/08/2026 21:36:22 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+10/08/2026 21:36:22 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 11s
+10/08/2026 21:36:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+10/08/2026 21:36:37 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete | URL: https://www.amazon.es/s?k=crema+bebe+culete
+10/08/2026 21:36:37 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:36:37 [INFO   ] 
+10/08/2026 21:36:37 [INFO   ] --- Categoria: Leche en polvo ---
+10/08/2026 21:36:41 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+10/08/2026 21:36:41 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 10s
+10/08/2026 21:36:53 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+10/08/2026 21:36:53 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 19s
+10/08/2026 21:37:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+10/08/2026 21:37:15 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe | URL: https://www.amazon.es/s?k=leche+en+polvo+bebe
+10/08/2026 21:37:15 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:37:15 [INFO   ] 
+10/08/2026 21:37:15 [INFO   ] --- Categoria: Chupetes ---
+10/08/2026 21:37:15 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 10 dias (supera los 7 requeridos)
+10/08/2026 21:37:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:37:18 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 5s
+10/08/2026 21:37:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:37:25 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 15s
+10/08/2026 21:37:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:37:43 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031
+10/08/2026 21:37:43 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:37:43 [INFO   ] 
+10/08/2026 21:37:43 [INFO   ] --- Categoria: Biberones ---
+10/08/2026 21:37:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:37:46 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 8s
+10/08/2026 21:37:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:37:58 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 14s
+10/08/2026 21:38:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:38:14 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+10/08/2026 21:38:14 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:38:14 [INFO   ] 
+10/08/2026 21:38:14 [INFO   ] --- Categoria: Juguetes ---
+10/08/2026 21:38:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:38:17 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 9s
+10/08/2026 21:38:29 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:38:29 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 14s
+10/08/2026 21:38:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+10/08/2026 21:38:46 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031
+10/08/2026 21:38:46 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:38:46 [INFO   ] 
+10/08/2026 21:38:46 [INFO   ] --- Categoria: Baneras ---
+10/08/2026 21:38:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B9HQDZ6H
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0BP5NGCYR
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B099K1D44C
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B09Q97DWWJ
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0BZZS1C9R
+10/08/2026 21:38:50 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B0GYZKQBPP
+10/08/2026 21:38:50 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+10/08/2026 21:38:50 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+10/08/2026 21:38:50 [DEBUG  ]     1. [B099K1D44C] BÉABA, bañera plegable para bebés, ultra compacta, | 18% dto | 0 vals | 100 ventas
+10/08/2026 21:38:50 [DEBUG  ]     2. [B0GYZKQBPP] BÉABA, Bañera Plegable para Bebé, Ultra Compacta,  | 18% dto | 0 vals | 0 ventas
+10/08/2026 21:38:50 [DEBUG  ]     3. [B0BZZS1C9R] Bañera Plegable Bebé Con Cojín De Baño Antidesliza | 10% dto | 0 vals | 0 ventas
+10/08/2026 21:38:50 [DEBUG  ]     4. [B0B9HQDZ6H] Bañera Plegable Bebé Con Asiento De Baño Antidesli | 9% dto | 0 vals | 0 ventas
+10/08/2026 21:38:50 [DEBUG  ]     5. [B0BP5NGCYR] Bañera Plegable Bebé Con Asiento De Baño Antidesli | 9% dto | 0 vals | 0 ventas
+10/08/2026 21:38:50 [INFO   ]   ELEGIDO para categoria: BÉABA, bañera plegable para bebés, ultra comp... (18% dto, 0 valoraciones, ASIN: B099K1D44C)
+10/08/2026 21:38:50 [INFO   ] 
+10/08/2026 21:38:50 [INFO   ] --- Categoria: Camaras seguridad ---
+10/08/2026 21:38:50 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 10/08 15:59 (hace 0 dias, faltan ~7 dias)
+10/08/2026 21:38:50 [INFO   ] 
+10/08/2026 21:38:50 [INFO   ] --- Categoria: Alimentacion ---
+10/08/2026 21:38:53 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+10/08/2026 21:38:53 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 10s
+10/08/2026 21:39:06 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+10/08/2026 21:39:06 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 11s
+10/08/2026 21:39:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+10/08/2026 21:39:20 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla | URL: https://www.amazon.es/s?k=potitos+bebe+papilla
+10/08/2026 21:39:20 [WARNING]   No se pudo obtener la pagina, saltando categoria
+10/08/2026 21:39:20 [INFO   ] 
+10/08/2026 21:39:20 [INFO   ] --- Categoria: Tronas ---
+10/08/2026 21:39:20 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 06/08 08:26 (hace 4 dias, faltan ~3 dias)
+10/08/2026 21:39:20 [INFO   ] 
+10/08/2026 21:39:20 [INFO   ] --- Categoria: Vajilla bebe ---
+10/08/2026 21:39:20 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 04/08 05:43 (hace 6 dias, faltan ~1 dias)
+10/08/2026 21:39:20 [INFO   ] 
+10/08/2026 21:39:20 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+10/08/2026 21:39:20 [INFO   ]   1. [B099K1D44C] BÉABA, bañera plegable para bebés, ultra... | 18% dto | cat: Baneras
+10/08/2026 21:39:20 [INFO   ] 
+10/08/2026 21:39:20 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+10/08/2026 21:39:20 [INFO   ]     Titulo:    BÉABA, bañera plegable para bebés, ultra compacta, elegante y moderna, práctico almacenamiento, espa...
+10/08/2026 21:39:20 [INFO   ]     Categoria: Baneras | Descuento: 18%
+10/08/2026 21:39:20 [INFO   ]     Precio:    33,06 € (antes: 40,50 €)
+10/08/2026 21:39:20 [INFO   ]     ASIN:      B099K1D44C | Valoraciones: 0 | Ventas: 100
+10/08/2026 21:39:20 [INFO   ]     URL:       https://www.amazon.es/dp/B099K1D44C?tag=juegosenoferta-21
+10/08/2026 21:39:20 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/51GcmQlLi7L._AC_UL320_.jpg
+10/08/2026 21:39:20 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+10/08/2026 21:39:21 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1246
+10/08/2026 21:39:21 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+10/08/2026 21:39:21 [DEBUG  ] Historial de categorias actualizado: Baneras, Camaras seguridad, Juguetes, Cremas bebe
+10/08/2026 21:39:21 [INFO   ] 
+10/08/2026 21:39:21 [INFO   ] ============================================================
+10/08/2026 21:39:21 [INFO   ] FIN - 1 oferta publicada en Telegram
+10/08/2026 21:39:21 [INFO   ] ============================================================
