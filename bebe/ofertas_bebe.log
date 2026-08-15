@@ -80368,3 +80368,135 @@
 15/08/2026 15:17:03 [INFO   ] ============================================================
 15/08/2026 15:17:03 [INFO   ] FIN - 1 oferta publicada en Telegram
 15/08/2026 15:17:03 [INFO   ] ============================================================
+15/08/2026 18:18:54 [INFO   ] ============================================================
+15/08/2026 18:18:54 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+15/08/2026 18:18:54 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 15/08/2026 18:18
+15/08/2026 18:18:54 [INFO   ] ============================================================
+15/08/2026 18:18:54 [INFO   ] Historial cargado: 10 ASINs en ventana de 48h (ignorados 1 expirados)
+15/08/2026 18:18:54 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Toallitas, Toallitas, Toallitas, Biberones
+15/08/2026 18:18:54 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+15/08/2026 18:18:54 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 5 dias (10/08 15:59)
+15/08/2026 18:18:54 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 4 dias (11/08 12:50)
+15/08/2026 18:18:54 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 2 dias (13/08 15:56)
+15/08/2026 18:18:54 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 4 dias (11/08 06:58)
+15/08/2026 18:18:54 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Toallitas, Toallitas, Toallitas, Biberones]
+15/08/2026 18:18:54 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+15/08/2026 18:18:54 [INFO   ] 
+15/08/2026 18:18:54 [INFO   ] --- Categoria: Panales ---
+15/08/2026 18:18:56 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+15/08/2026 18:18:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:18:56 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 8s
+15/08/2026 18:19:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:19:07 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 19s
+15/08/2026 18:19:29 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:19:29 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+15/08/2026 18:19:29 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/08/2026 18:19:29 [INFO   ] 
+15/08/2026 18:19:29 [INFO   ] --- Categoria: Toallitas ---
+15/08/2026 18:19:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:19:32 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 9s
+15/08/2026 18:19:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:19:43 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 19s
+15/08/2026 18:20:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:05 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+15/08/2026 18:20:05 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/08/2026 18:20:05 [INFO   ] 
+15/08/2026 18:20:05 [INFO   ] --- Categoria: Cremas bebe ---
+15/08/2026 18:20:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B00BN8JUCC
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B0B5RVR9BL
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B075HM1M71
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B0CJ2CQBG8
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CN2NR2LH
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B09ZFKTSK1
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B08PFNR7C6
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+15/08/2026 18:20:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B0CH2GM7LQ
+15/08/2026 18:20:10 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+15/08/2026 18:20:10 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+15/08/2026 18:20:10 [DEBUG  ]     1. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g | Ayuda a | 33% dto | 0 vals | 600 ventas
+15/08/2026 18:20:10 [DEBUG  ]     2. [B0CH2GM7LQ] Natessance Liniment oléo-calcaire Soin BIO pour le | 28% dto | 0 vals | 0 ventas
+15/08/2026 18:20:10 [DEBUG  ]     3. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 23% dto | 0 vals | 300 ventas
+15/08/2026 18:20:10 [DEBUG  ]     4. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 23% dto | 0 vals | 500 ventas
+15/08/2026 18:20:10 [DEBUG  ]     5. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula Bebé Piel Sensib | 23% dto | 0 vals | 4 ventas
+15/08/2026 18:20:10 [INFO   ]   DESCARTADO [ya publicado en <48h] Bepanthol Pomada Protectora Bebé 2x100 g | Ay... (33% dto, ASIN: B09ZFKTSK1)
+15/08/2026 18:20:10 [INFO   ]   ELEGIDO para categoria: Natessance Liniment oléo-calcaire Soin BIO po... (28% dto, 0 valoraciones, ASIN: B0CH2GM7LQ)
+15/08/2026 18:20:10 [INFO   ] 
+15/08/2026 18:20:10 [INFO   ] --- Categoria: Leche en polvo ---
+15/08/2026 18:20:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+15/08/2026 18:20:14 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+15/08/2026 18:20:14 [INFO   ]   No hay productos con descuento en esta categoria
+15/08/2026 18:20:14 [INFO   ] 
+15/08/2026 18:20:14 [INFO   ] --- Categoria: Chupetes ---
+15/08/2026 18:20:14 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 11/08 12:50 (hace 4 dias, faltan ~3 dias)
+15/08/2026 18:20:14 [INFO   ] 
+15/08/2026 18:20:14 [INFO   ] --- Categoria: Biberones ---
+15/08/2026 18:20:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:18 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 6s
+15/08/2026 18:20:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:28 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 10s
+15/08/2026 18:20:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:40 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+15/08/2026 18:20:40 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/08/2026 18:20:40 [INFO   ] 
+15/08/2026 18:20:40 [INFO   ] --- Categoria: Juguetes ---
+15/08/2026 18:20:43 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:43 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 10s
+15/08/2026 18:20:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:20:56 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 13s
+15/08/2026 18:21:12 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+15/08/2026 18:21:13 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B08THWFY5T
+15/08/2026 18:21:13 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0D7ZRS4X9
+15/08/2026 18:21:13 [DEBUG  ]   Badge no encontrado; usando descuento calculado 27% para ASIN B0DSG6WGSX
+15/08/2026 18:21:13 [DEBUG  ]   Badge no encontrado; usando descuento calculado 6% para ASIN B0DJSZSG4M
+15/08/2026 18:21:13 [INFO   ]   Scraped: 20 productos (4 con oferta, 16 sin descuento)
+15/08/2026 18:21:13 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+15/08/2026 18:21:13 [DEBUG  ]     1. [B0DSG6WGSX] VTech-Baby Iglú Proyector Peluchito Pingüino, Jugu | 27% dto | 0 vals | 0 ventas
+15/08/2026 18:21:13 [DEBUG  ]     2. [B0D7ZRS4X9] Fisher-Price Laugh & Learn Mi primer mando de cons | 14% dto | 0 vals | 50 ventas
+15/08/2026 18:21:13 [DEBUG  ]     3. [B08THWFY5T] VTech-Baby Volante Descubrimientos. Sonajero activ | 11% dto | 0 vals | 100 ventas
+15/08/2026 18:21:13 [DEBUG  ]     4. [B0DJSZSG4M] Fisher-Price Libro de cuentos musical del Monito m | 6% dto | 0 vals | 50 ventas
+15/08/2026 18:21:13 [INFO   ]   ELEGIDO para categoria: VTech-Baby Iglú Proyector Peluchito Pingüino,... (27% dto, 0 valoraciones, ASIN: B0DSG6WGSX)
+15/08/2026 18:21:13 [INFO   ] 
+15/08/2026 18:21:13 [INFO   ] --- Categoria: Baneras ---
+15/08/2026 18:21:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:21:17 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 7s
+15/08/2026 18:21:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:21:27 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 17s
+15/08/2026 18:21:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+15/08/2026 18:21:47 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=bañera+bebe&rh=n%3A1703495031
+15/08/2026 18:21:47 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/08/2026 18:21:47 [INFO   ] 
+15/08/2026 18:21:47 [INFO   ] --- Categoria: Camaras seguridad ---
+15/08/2026 18:21:47 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 10/08 15:59 (hace 5 dias, faltan ~2 dias)
+15/08/2026 18:21:47 [INFO   ] 
+15/08/2026 18:21:47 [INFO   ] --- Categoria: Alimentacion ---
+15/08/2026 18:21:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+15/08/2026 18:21:51 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+15/08/2026 18:21:51 [INFO   ]   No hay productos con descuento en esta categoria
+15/08/2026 18:21:51 [INFO   ] 
+15/08/2026 18:21:51 [INFO   ] --- Categoria: Tronas ---
+15/08/2026 18:21:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 13/08 15:56 (hace 2 dias, faltan ~5 dias)
+15/08/2026 18:21:51 [INFO   ] 
+15/08/2026 18:21:51 [INFO   ] --- Categoria: Vajilla bebe ---
+15/08/2026 18:21:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 11/08 06:58 (hace 4 dias, faltan ~3 dias)
+15/08/2026 18:21:51 [INFO   ] 
+15/08/2026 18:21:51 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+15/08/2026 18:21:51 [INFO   ]   1. [B0CH2GM7LQ] Natessance Liniment oléo-calcaire Soin B... | 28% dto | cat: Cremas bebe
+15/08/2026 18:21:51 [INFO   ]   2. [B0DSG6WGSX] VTech-Baby Iglú Proyector Peluchito Ping... | 27% dto | cat: Juguetes
+15/08/2026 18:21:51 [INFO   ] 
+15/08/2026 18:21:51 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+15/08/2026 18:21:51 [INFO   ]     Titulo:    Natessance Liniment oléo-calcaire Soin BIO pour le change Flacon de 500 ml (Paquete de 2)
+15/08/2026 18:21:51 [INFO   ]     Categoria: Cremas bebe | Descuento: 28%
+15/08/2026 18:21:51 [INFO   ]     Precio:    11,20 € (antes: 15,50 €)
+15/08/2026 18:21:51 [INFO   ]     ASIN:      B0CH2GM7LQ | Valoraciones: 0 | Ventas: 0
+15/08/2026 18:21:51 [INFO   ]     URL:       https://www.amazon.es/dp/B0CH2GM7LQ?tag=juegosenoferta-21
+15/08/2026 18:21:51 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71oW+bPNbrL._AC_UL320_.jpg
+15/08/2026 18:21:51 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+15/08/2026 18:21:52 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1221
+15/08/2026 18:21:52 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+15/08/2026 18:21:52 [DEBUG  ] Historial de categorias actualizado: Cremas bebe, Toallitas, Toallitas, Toallitas
+15/08/2026 18:21:52 [INFO   ] 
+15/08/2026 18:21:52 [INFO   ] ============================================================
+15/08/2026 18:21:52 [INFO   ] FIN - 1 oferta publicada en Telegram
+15/08/2026 18:21:52 [INFO   ] ============================================================
