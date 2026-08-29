@@ -94574,3 +94574,200 @@
 29/08/2026 05:10:27 [INFO   ] ============================================================
 29/08/2026 05:10:27 [INFO   ] FIN - 1 oferta publicada en Telegram
 29/08/2026 05:10:27 [INFO   ] ============================================================
+29/08/2026 12:06:10 [INFO   ] ============================================================
+29/08/2026 12:06:10 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+29/08/2026 12:06:10 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 29/08/2026 12:06
+29/08/2026 12:06:10 [INFO   ] ============================================================
+29/08/2026 12:06:10 [INFO   ] Historial cargado: 2 ASINs en ventana de 48h (ignorados 0 expirados)
+29/08/2026 12:06:10 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Panales, Toallitas, Baneras, Toallitas
+29/08/2026 12:06:10 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+29/08/2026 12:06:10 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 4 dias (25/08 00:54)
+29/08/2026 12:06:10 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 3 dias (25/08 15:36)
+29/08/2026 12:06:10 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 8 dias (20/08 18:29)
+29/08/2026 12:06:10 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 3 dias (25/08 21:22)
+29/08/2026 12:06:10 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Panales, Toallitas, Baneras, Toallitas]
+29/08/2026 12:06:10 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+29/08/2026 12:06:10 [INFO   ] 
+29/08/2026 12:06:10 [INFO   ] --- Categoria: Panales ---
+29/08/2026 12:06:13 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+29/08/2026 12:06:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+29/08/2026 12:06:13 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 5s
+29/08/2026 12:06:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+29/08/2026 12:06:21 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 12s
+29/08/2026 12:06:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+29/08/2026 12:06:36 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+29/08/2026 12:06:36 [WARNING]   No se pudo obtener la pagina, saltando categoria
+29/08/2026 12:06:36 [INFO   ] 
+29/08/2026 12:06:36 [INFO   ] --- Categoria: Toallitas ---
+29/08/2026 12:06:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 40% para ASIN B09GPJHCQL
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B0111AIZ68
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 34% para ASIN B0CWVKTZQW
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B08MXSBRSB
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 32% para ASIN B08MXT5VDK
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 43% para ASIN B00J9FM3TI
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0GCMVN3ZN
+29/08/2026 12:06:40 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B089F1WGF3
+29/08/2026 12:06:40 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+29/08/2026 12:06:40 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:06:40 [DEBUG  ]     1. [B00J9FM3TI] Dodot Sensitive Baby Wipes - Pack of 4 x 56 Wipes  | 43% dto | 0 vals | 0 ventas [MARCA PRIO]
+29/08/2026 12:06:40 [DEBUG  ]     2. [B09GPJHCQL] Dodot Toallitas Bebé Pure Aqua, 864 Toallitas (18  | 40% dto | 0 vals | 0 ventas [MARCA PRIO]
+29/08/2026 12:06:40 [DEBUG  ]     3. [B0CWVKTZQW] Chicco Toallitas Multiuso Para Bebés Con Clip - Si | 34% dto | 0 vals | 0 ventas
+29/08/2026 12:06:40 [DEBUG  ]     4. [B08MXT5VDK] WaterWipes Sensitive+ Newborn & Baby Wipes, 9 Paqu | 32% dto | 0 vals | 0 ventas [MARCA PRIO]
+29/08/2026 12:06:40 [DEBUG  ]     5. [B089F1WGF3] Suavinex, Pack 14 x 60 (840) Toallitas Húmedas Der | 31% dto | 0 vals | 0 ventas [MARCA PRIO]
+29/08/2026 12:06:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Sensitive Baby Wipes - Pack of 4 x 56 W... (43% dto, ASIN: B00J9FM3TI)
+29/08/2026 12:06:40 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Toallitas Bebé Pure Aqua, 864 Toallitas... (40% dto, ASIN: B09GPJHCQL)
+29/08/2026 12:06:40 [INFO   ]   ELEGIDO para categoria: Chicco Toallitas Multiuso Para Bebés Con Clip... (34% dto, 0 valoraciones, ASIN: B0CWVKTZQW)
+29/08/2026 12:06:40 [INFO   ] 
+29/08/2026 12:06:40 [INFO   ] --- Categoria: Cremas bebe ---
+29/08/2026 12:06:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B00BN8JUCC
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 23% para ASIN B0B5RVR9BL
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B009M4MKDU
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0H1N59FC7
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0CJ2CQBG8
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B08PFNR7C6
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0F5HW5WPL
+29/08/2026 12:06:45 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B07H98NP4F
+29/08/2026 12:06:45 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+29/08/2026 12:06:45 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:06:45 [DEBUG  ]     1. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 30% dto | 0 vals | 300 ventas
+29/08/2026 12:06:45 [DEBUG  ]     2. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 23% dto | 0 vals | 600 ventas
+29/08/2026 12:06:45 [DEBUG  ]     3. [B0F5HW5WPL] Mitosyl, Pomada Protectora, Crema de Pañal Bebé, P | 13% dto | 0 vals | 0 ventas
+29/08/2026 12:06:45 [DEBUG  ]     4. [B009M4MKDU] Mitosyl pomada protectora, crema pañal suave, aliv | 13% dto | 0 vals | 0 ventas
+29/08/2026 12:06:45 [DEBUG  ]     5. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula Bebé Piel Sensib | 11% dto | 0 vals | 4 ventas
+29/08/2026 12:06:45 [INFO   ]   ELEGIDO para categoria: Mitosyl pomada protectora, crema pañal suave,... (30% dto, 0 valoraciones, ASIN: B08PFNR7C6)
+29/08/2026 12:06:45 [INFO   ] 
+29/08/2026 12:06:45 [INFO   ] --- Categoria: Leche en polvo ---
+29/08/2026 12:06:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+29/08/2026 12:06:49 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+29/08/2026 12:06:49 [INFO   ]   No hay productos con descuento en esta categoria
+29/08/2026 12:06:49 [INFO   ] 
+29/08/2026 12:06:49 [INFO   ] --- Categoria: Chupetes ---
+29/08/2026 12:06:49 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 25/08 15:36 (hace 3 dias, faltan ~4 dias)
+29/08/2026 12:06:49 [INFO   ] 
+29/08/2026 12:06:49 [INFO   ] --- Categoria: Biberones ---
+29/08/2026 12:06:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 22% para ASIN B015G74IM2
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0CLRRYGCW
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0BWFLPZ5G
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0FZKP272F
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0DBV82D7R
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0CLRSL2HD
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0FZKRPYTW
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0D45P95D7
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0D31RFGFQ
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FN8DZZC6
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0FZKW43VL
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0CLRT7NT3
+29/08/2026 12:06:52 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B0FN8F68QK
+29/08/2026 12:06:52 [INFO   ]   Scraped: 20 productos (13 con oferta, 7 sin descuento)
+29/08/2026 12:06:52 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:06:52 [DEBUG  ]     1. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 31% dto | 0 vals | 200 ventas
+29/08/2026 12:06:52 [DEBUG  ]     2. [B0D45P95D7] Philips Avent Natural Response, set de regalo para | 30% dto | 0 vals | 200 ventas
+29/08/2026 12:06:52 [DEBUG  ]     3. [B0CLRRYGCW] NUK Perfect Match Start Set de Biberones para Reci | 30% dto | 0 vals | 50 ventas
+29/08/2026 12:06:52 [DEBUG  ]     4. [B0CLRSL2HD] Set de biberones Perfect Match de NUK | +3 meses | | 30% dto | 0 vals | 400 ventas
+29/08/2026 12:06:52 [DEBUG  ]     5. [B0CLRT7NT3] NUK Perfect Match Set de biberones de cristal | +3 | 30% dto | 0 vals | 100 ventas
+29/08/2026 12:06:52 [INFO   ]   ELEGIDO para categoria: Philips Avent Set de regalo de biberones para... (31% dto, 0 valoraciones, ASIN: B0BWFLPZ5G)
+29/08/2026 12:06:52 [INFO   ] 
+29/08/2026 12:06:52 [INFO   ] --- Categoria: Juguetes ---
+29/08/2026 12:06:55 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B09F3KH6MK
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 51% para ASIN B0G44N1FPJ
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B07CY2726F
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FGDP22YB
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0BZT99N2D
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B09HTWJN35
+29/08/2026 12:06:56 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B0D7ZRS4X9
+29/08/2026 12:06:56 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+29/08/2026 12:06:56 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:06:56 [DEBUG  ]     1. [B0G44N1FPJ] Fisher-Price Laugh & Learn Tablet Stages Inteligen | 51% dto | 0 vals | 0 ventas
+29/08/2026 12:06:56 [DEBUG  ]     2. [B07CY2726F] Playgro Libro de Baño, Con Sonidos, A partir de lo | 28% dto | 0 vals | 50 ventas
+29/08/2026 12:06:56 [DEBUG  ]     3. [B0FGDP22YB] Fisher-Price Gimnasio Piano Kick & Play para Bebé, | 20% dto | 0 vals | 50 ventas
+29/08/2026 12:06:56 [DEBUG  ]     4. [B0D7ZRS4X9] Fisher-Price Laugh & Learn Mi primer mando de cons | 18% dto | 0 vals | 50 ventas
+29/08/2026 12:06:56 [DEBUG  ]     5. [B0BZT99N2D] Baby Einstein, Saltador de actividades educativo y | 16% dto | 0 vals | 0 ventas
+29/08/2026 12:06:56 [INFO   ]   DESCARTADO [titulo similar a reciente] Fisher-Price Laugh & Learn Tablet Stages Inte... (51% dto)
+29/08/2026 12:06:56 [INFO   ]   ELEGIDO para categoria: Playgro Libro de Baño, Con Sonidos, A partir ... (28% dto, 0 valoraciones, ASIN: B07CY2726F)
+29/08/2026 12:06:56 [INFO   ] 
+29/08/2026 12:06:56 [INFO   ] --- Categoria: Baneras ---
+29/08/2026 12:07:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0FNDP5D1M
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B9HQDZ6H
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0DQVGV639
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B099K1D44C
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B09F9XTW8V
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0G441DD61
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0CPFBCVDZ
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0BSLP8QVS
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B09Q97DWWJ
+29/08/2026 12:07:00 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B01MZF8Q5N
+29/08/2026 12:07:00 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+29/08/2026 12:07:00 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:07:00 [DEBUG  ]     1. [B0CPFBCVDZ] Chicco Cuddle & Bubble Bañera Bebé Ergonómica con  | 31% dto | 0 vals | 0 ventas
+29/08/2026 12:07:00 [DEBUG  ]     2. [B01MZF8Q5N] Star Ibaby - Bañera Plegable Bebe Aqua, Plegado ul | 31% dto | 0 vals | 0 ventas
+29/08/2026 12:07:00 [DEBUG  ]     3. [B099K1D44C] BÉABA, bañera plegable para bebés, ultra compacta, | 29% dto | 0 vals | 50 ventas
+29/08/2026 12:07:00 [DEBUG  ]     4. [B0BSLP8QVS] Bebeconfort Dolphy, Bañera Cambiador Bebé 2 en 1,  | 20% dto | 0 vals | 0 ventas
+29/08/2026 12:07:00 [DEBUG  ]     5. [B09F9XTW8V] Twistshake Bañera Plegable de Bebé y Recién Nacido | 15% dto | 0 vals | 0 ventas
+29/08/2026 12:07:00 [INFO   ]   ELEGIDO para categoria: Chicco Cuddle & Bubble Bañera Bebé Ergonómica... (31% dto, 0 valoraciones, ASIN: B0CPFBCVDZ)
+29/08/2026 12:07:00 [INFO   ] 
+29/08/2026 12:07:00 [INFO   ] --- Categoria: Camaras seguridad ---
+29/08/2026 12:07:00 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 25/08 00:54 (hace 4 dias, faltan ~3 dias)
+29/08/2026 12:07:00 [INFO   ] 
+29/08/2026 12:07:00 [INFO   ] --- Categoria: Alimentacion ---
+29/08/2026 12:07:04 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+29/08/2026 12:07:05 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+29/08/2026 12:07:05 [INFO   ]   No hay productos con descuento en esta categoria
+29/08/2026 12:07:05 [INFO   ] 
+29/08/2026 12:07:05 [INFO   ] --- Categoria: Tronas ---
+29/08/2026 12:07:05 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 8 dias (supera los 7 requeridos)
+29/08/2026 12:07:09 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=trona+bebe HTTP/1.1" 200 None
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0H5K3WL2F
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 26% para ASIN B08Q16W514
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B08MBF2WTM
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B0DDPRML5J
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0H5K56JCZ
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0GFF15Q1S
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0DVSV2N96
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0H5K41NVT
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0DZXNH81V
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 35% para ASIN B07ZWKYZBG
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0H1RGGF7D
+29/08/2026 12:07:10 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B0CKHP854R
+29/08/2026 12:07:10 [INFO   ]   Scraped: 20 productos (12 con oferta, 8 sin descuento)
+29/08/2026 12:07:10 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+29/08/2026 12:07:10 [DEBUG  ]     1. [B07ZWKYZBG] Babify Trona de Viaje Portatil Universal Animals - | 35% dto | 0 vals | 0 ventas
+29/08/2026 12:07:10 [DEBUG  ]     2. [B0CKHP854R] hauck Beta+ Trona Evolutiva Madera con Certificado | 33% dto | 0 vals | 0 ventas
+29/08/2026 12:07:10 [DEBUG  ]     3. [B0DDPRML5J] Kinderkraft ENOCK Trona bebé de Madera + Hamaca Be | 33% dto | 0 vals | 0 ventas
+29/08/2026 12:07:10 [DEBUG  ]     4. [B08Q16W514] kk Kinderkraft Trona Bebé de Madera ENOCK, Evoluti | 26% dto | 0 vals | 0 ventas
+29/08/2026 12:07:10 [DEBUG  ]     5. [B0DZXNH81V] Bebeconfort Avista 2, Trona 4 en 1, Trona de Bebé  | 20% dto | 0 vals | 0 ventas
+29/08/2026 12:07:10 [INFO   ]   ELEGIDO para categoria: Babify Trona de Viaje Portatil Universal Anim... (35% dto, 0 valoraciones, ASIN: B07ZWKYZBG)
+29/08/2026 12:07:10 [INFO   ] 
+29/08/2026 12:07:10 [INFO   ] --- Categoria: Vajilla bebe ---
+29/08/2026 12:07:10 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 25/08 21:22 (hace 3 dias, faltan ~4 dias)
+29/08/2026 12:07:10 [INFO   ] 
+29/08/2026 12:07:10 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+29/08/2026 12:07:10 [INFO   ]   1. [B07ZWKYZBG] Babify Trona de Viaje Portatil Universal... | 35% dto | cat: Tronas
+29/08/2026 12:07:10 [INFO   ]   2. [B0CWVKTZQW] Chicco Toallitas Multiuso Para Bebés Con... | 34% dto | cat: Toallitas [cat. reciente]
+29/08/2026 12:07:10 [INFO   ]   3. [B0CPFBCVDZ] Chicco Cuddle & Bubble Bañera Bebé Ergon... | 31% dto | cat: Baneras [cat. reciente]
+29/08/2026 12:07:10 [INFO   ]   4. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones... | 31% dto | cat: Biberones
+29/08/2026 12:07:10 [INFO   ]   5. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal s... | 30% dto | cat: Cremas bebe
+29/08/2026 12:07:10 [INFO   ]   6. [B07CY2726F] Playgro Libro de Baño, Con Sonidos, A pa... | 28% dto | cat: Juguetes
+29/08/2026 12:07:10 [INFO   ] 
+29/08/2026 12:07:10 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+29/08/2026 12:07:10 [INFO   ]     Titulo:    Babify Trona de Viaje Portatil Universal Animals - De 6 a 36 meses
+29/08/2026 12:07:10 [INFO   ]     Categoria: Tronas | Descuento: 35%
+29/08/2026 12:07:10 [INFO   ]     Precio:    15,70 € (antes: 24,12 €)
+29/08/2026 12:07:10 [INFO   ]     ASIN:      B07ZWKYZBG | Valoraciones: 0 | Ventas: 0
+29/08/2026 12:07:10 [INFO   ]     URL:       https://www.amazon.es/dp/B07ZWKYZBG?tag=juegosenoferta-21
+29/08/2026 12:07:10 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/51E4wnQT53L._AC_UL320_.jpg
+29/08/2026 12:07:10 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+29/08/2026 12:07:10 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1190
+29/08/2026 12:07:10 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+29/08/2026 12:07:10 [DEBUG  ] Historial de categorias actualizado: Tronas, Panales, Toallitas, Baneras
+29/08/2026 12:07:10 [DEBUG  ] Timestamp de limite semanal actualizado para categoria 'Tronas'
+29/08/2026 12:07:10 [INFO   ] 
+29/08/2026 12:07:10 [INFO   ] ============================================================
+29/08/2026 12:07:10 [INFO   ] FIN - 1 oferta publicada en Telegram
+29/08/2026 12:07:10 [INFO   ] ============================================================
