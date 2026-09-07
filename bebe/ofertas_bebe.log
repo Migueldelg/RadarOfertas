@@ -101532,3 +101532,173 @@
 06/09/2026 22:38:15 [INFO   ] ============================================================
 06/09/2026 22:38:15 [INFO   ] FIN - 1 oferta publicada en Telegram
 06/09/2026 22:38:15 [INFO   ] ============================================================
+07/09/2026 02:20:15 [INFO   ] ============================================================
+07/09/2026 02:20:15 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+07/09/2026 02:20:15 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 07/09/2026 02:20
+07/09/2026 02:20:15 [INFO   ] ============================================================
+07/09/2026 02:20:15 [INFO   ] Historial cargado: 11 ASINs en ventana de 48h (ignorados 1 expirados)
+07/09/2026 02:20:15 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juguetes, Biberones, Toallitas, Toallitas
+07/09/2026 02:20:15 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+07/09/2026 02:20:15 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 5 dias (01/09 22:58)
+07/09/2026 02:20:15 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 4 dias (02/09 07:31)
+07/09/2026 02:20:15 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 1 dias (05/09 19:48)
+07/09/2026 02:20:15 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 12 dias (25/08 21:22)
+07/09/2026 02:20:15 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juguetes, Biberones, Toallitas, Toallitas]
+07/09/2026 02:20:15 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+07/09/2026 02:20:15 [INFO   ] 
+07/09/2026 02:20:15 [INFO   ] --- Categoria: Panales ---
+07/09/2026 02:20:19 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+07/09/2026 02:20:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:20:19 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 9s
+07/09/2026 02:20:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:20:32 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 15s
+07/09/2026 02:20:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:20:50 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+07/09/2026 02:20:50 [WARNING]   No se pudo obtener la pagina, saltando categoria
+07/09/2026 02:20:50 [INFO   ] 
+07/09/2026 02:20:50 [INFO   ] --- Categoria: Toallitas ---
+07/09/2026 02:20:54 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:20:54 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 7s
+07/09/2026 02:21:04 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:21:04 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 17s
+07/09/2026 02:21:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+07/09/2026 02:21:25 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+07/09/2026 02:21:25 [WARNING]   No se pudo obtener la pagina, saltando categoria
+07/09/2026 02:21:25 [INFO   ] 
+07/09/2026 02:21:25 [INFO   ] --- Categoria: Cremas bebe ---
+07/09/2026 02:21:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+07/09/2026 02:21:27 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 5s
+07/09/2026 02:21:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+07/09/2026 02:21:36 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 19s
+07/09/2026 02:21:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+07/09/2026 02:21:58 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete | URL: https://www.amazon.es/s?k=crema+bebe+culete
+07/09/2026 02:21:58 [WARNING]   No se pudo obtener la pagina, saltando categoria
+07/09/2026 02:21:58 [INFO   ] 
+07/09/2026 02:21:58 [INFO   ] --- Categoria: Leche en polvo ---
+07/09/2026 02:22:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+07/09/2026 02:22:02 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 7s
+07/09/2026 02:22:11 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+07/09/2026 02:22:12 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+07/09/2026 02:22:12 [INFO   ]   No hay productos con descuento en esta categoria
+07/09/2026 02:22:12 [INFO   ] 
+07/09/2026 02:22:12 [INFO   ] --- Categoria: Chupetes ---
+07/09/2026 02:22:12 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 02/09 07:31 (hace 4 dias, faltan ~3 dias)
+07/09/2026 02:22:12 [INFO   ] 
+07/09/2026 02:22:12 [INFO   ] --- Categoria: Biberones ---
+07/09/2026 02:22:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 25% para ASIN B0BWFLPZ5G
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 30% para ASIN B0CLS3Z9GH
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0CPKV9MJF
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B09KCQNCFW
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0BWFJL62B
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FN8DZZC6
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 8% para ASIN B0DBZD9NFD
+07/09/2026 02:22:15 [DEBUG  ]   Badge no encontrado; usando descuento calculado 50% para ASIN B09RPYKTZV
+07/09/2026 02:22:15 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+07/09/2026 02:22:15 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/09/2026 02:22:15 [DEBUG  ]     1. [B09RPYKTZV] Chicco NaturalFeeling Biberón Anticólicos 2+ Meses | 50% dto | 0 vals | 100 ventas
+07/09/2026 02:22:15 [DEBUG  ]     2. [B0BWFJL62B] PHILIPS Avent Set de regalo de biberón de cristal  | 31% dto | 0 vals | 200 ventas
+07/09/2026 02:22:15 [DEBUG  ]     3. [B0CLS3Z9GH] NUK PM STARTER SET DISNEY MICKEY 2023 | 30% dto | 0 vals | 0 ventas
+07/09/2026 02:22:15 [DEBUG  ]     4. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 25% dto | 0 vals | 200 ventas
+07/09/2026 02:22:15 [DEBUG  ]     5. [B0CPKV9MJF] Suavinex, Set Zero Zero: Biberón Anticólico 180 ml | 24% dto | 0 vals | 200 ventas [MARCA PRIO]
+07/09/2026 02:22:15 [INFO   ]   DESCARTADO [ya publicado en <48h] Chicco NaturalFeeling Biberón Anticólicos 2+ ... (50% dto, ASIN: B09RPYKTZV)
+07/09/2026 02:22:15 [INFO   ]   DESCARTADO [ya publicado en <48h] PHILIPS Avent Set de regalo de biberón de cri... (31% dto, ASIN: B0BWFJL62B)
+07/09/2026 02:22:15 [INFO   ]   ELEGIDO para categoria: NUK PM STARTER SET DISNEY MICKEY 2023... (30% dto, 0 valoraciones, ASIN: B0CLS3Z9GH)
+07/09/2026 02:22:15 [INFO   ] 
+07/09/2026 02:22:15 [INFO   ] --- Categoria: Juguetes ---
+07/09/2026 02:22:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 27% para ASIN B07N1JP56L
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B01NCUSC7V
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0DY8YCFYH
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0CFZX62BY
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0D1VV1QP2
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B09F3KH6MK
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B008FY37NU
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B06XSG67BY
+07/09/2026 02:22:19 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B08BYLMK7C
+07/09/2026 02:22:19 [INFO   ]   Scraped: 20 productos (8 con oferta, 12 sin descuento)
+07/09/2026 02:22:19 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/09/2026 02:22:19 [DEBUG  ]     1. [B06XSG67BY] VTech-Baby HIPO mordedor Hipopótamo de peluche mus | 21% dto | 0 vals | 50 ventas
+07/09/2026 02:22:19 [DEBUG  ]     2. [B01NCUSC7V] Fisher-Price Bloques Infantiles, Juguete para bebé | 20% dto | 0 vals | 600 ventas
+07/09/2026 02:22:19 [DEBUG  ]     3. [B08BYLMK7C] Proyector de Galaxias y Estrellas Real 15 Temas, J | 19% dto | 0 vals | 800 ventas
+07/09/2026 02:22:19 [DEBUG  ]     4. [B008FY37NU] Set de Regalo Award Bebé Desde el Nacimiento | Ába | 16% dto | 0 vals | 0 ventas
+07/09/2026 02:22:19 [DEBUG  ]     5. [B09F3KH6MK] Fehn Juguete de actividades Pulpo – Para colgar |  | 14% dto | 0 vals | 100 ventas
+07/09/2026 02:22:19 [INFO   ]   ELEGIDO para categoria: VTech-Baby HIPO mordedor Hipopótamo de peluch... (21% dto, 0 valoraciones, ASIN: B06XSG67BY)
+07/09/2026 02:22:19 [INFO   ] 
+07/09/2026 02:22:19 [INFO   ] --- Categoria: Baneras ---
+07/09/2026 02:22:23 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+07/09/2026 02:22:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B0B9HQDZ6H
+07/09/2026 02:22:24 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B0GL1WN7LN
+07/09/2026 02:22:24 [INFO   ]   Scraped: 20 productos (2 con oferta, 18 sin descuento)
+07/09/2026 02:22:24 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/09/2026 02:22:24 [DEBUG  ]     1. [B0GL1WN7LN] Orzbow Bañera Bebe Plegable con Pegatina de Temper | 18% dto | 0 vals | 100 ventas
+07/09/2026 02:22:24 [DEBUG  ]     2. [B0B9HQDZ6H] Bañera Plegable Bebé Con Asiento De Baño Antidesli | 9% dto | 0 vals | 50 ventas
+07/09/2026 02:22:24 [INFO   ]   ELEGIDO para categoria: Orzbow Bañera Bebe Plegable con Pegatina de T... (18% dto, 0 valoraciones, ASIN: B0GL1WN7LN)
+07/09/2026 02:22:24 [INFO   ] 
+07/09/2026 02:22:24 [INFO   ] --- Categoria: Camaras seguridad ---
+07/09/2026 02:22:24 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 01/09 22:58 (hace 5 dias, faltan ~2 dias)
+07/09/2026 02:22:24 [INFO   ] 
+07/09/2026 02:22:24 [INFO   ] --- Categoria: Alimentacion ---
+07/09/2026 02:22:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B09G3DW3KS
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0D1G6PMBX
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 29% para ASIN B018GFI8LS
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B07RRDTDTL
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B01LZPE1LA
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0CX1YN5Y7
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B018GFKDUM
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 27% para ASIN B09QXBKY8S
+07/09/2026 02:22:29 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0G1P29NQF
+07/09/2026 02:22:29 [INFO   ]   Scraped: 20 productos (9 con oferta, 11 sin descuento)
+07/09/2026 02:22:29 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/09/2026 02:22:29 [DEBUG  ]     1. [B018GFI8LS] Smileat - Tarrito infantil de Verduras con Merluza | 29% dto | 0 vals | 1 ventas
+07/09/2026 02:22:29 [DEBUG  ]     2. [B09QXBKY8S] Smileat - Tarrito de Ca-Chi-Tos de Arroz Integral, | 27% dto | 0 vals | 800 ventas
+07/09/2026 02:22:29 [DEBUG  ]     3. [B09G3DW3KS] Smileat - Tarrito de Frutas Ecológicas con Pera, C | 21% dto | 0 vals | 900 ventas
+07/09/2026 02:22:29 [DEBUG  ]     4. [B0G1P29NQF] Smileat - Tarrito de Frutas Ecológicas con Pera, C | 21% dto | 0 vals | 0 ventas
+07/09/2026 02:22:29 [DEBUG  ]     5. [B07RRDTDTL] Smileat - Tarrito de Frutas Ecológicas con Pera y  | 17% dto | 0 vals | 500 ventas
+07/09/2026 02:22:29 [INFO   ]   DESCARTADO [ya publicado en <48h] Smileat - Tarrito infantil de Verduras con Me... (29% dto, ASIN: B018GFI8LS)
+07/09/2026 02:22:29 [INFO   ]   ELEGIDO para categoria: Smileat - Tarrito de Ca-Chi-Tos de Arroz Inte... (27% dto, 0 valoraciones, ASIN: B09QXBKY8S)
+07/09/2026 02:22:29 [INFO   ] 
+07/09/2026 02:22:29 [INFO   ] --- Categoria: Tronas ---
+07/09/2026 02:22:29 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 05/09 19:48 (hace 1 dias, faltan ~6 dias)
+07/09/2026 02:22:29 [INFO   ] 
+07/09/2026 02:22:29 [INFO   ] --- Categoria: Vajilla bebe ---
+07/09/2026 02:22:29 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 12 dias (supera los 7 requeridos)
+07/09/2026 02:22:33 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=platos+cubiertos+vasos+bebe HTTP/1.1" 200 None
+07/09/2026 02:22:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0D2NPGXJL
+07/09/2026 02:22:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B0FZRJ7H3Z
+07/09/2026 02:22:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0BL7J842P
+07/09/2026 02:22:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CQBXD8BP
+07/09/2026 02:22:34 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B0FQHRGRFM
+07/09/2026 02:22:34 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+07/09/2026 02:22:34 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+07/09/2026 02:22:34 [DEBUG  ]     1. [B0FZRJ7H3Z] PandaEar Juego de Alimentación para Bebé 6 en 1 de | 20% dto | 0 vals | 300 ventas
+07/09/2026 02:22:34 [DEBUG  ]     2. [B0FQHRGRFM] PandaEar Pack De 2 Platos De Acero Inoxidable Para | 18% dto | 0 vals | 50 ventas
+07/09/2026 02:22:34 [DEBUG  ]     3. [B0BL7J842P] LÄSSIG Juego de vajilla infantil (plato, bol, taza | 15% dto | 0 vals | 50 ventas
+07/09/2026 02:22:34 [DEBUG  ]     4. [B0D2NPGXJL] Cubiertos Bebe,Juego de 12 Piezas Platos Bebe con  | 5% dto | 0 vals | 300 ventas
+07/09/2026 02:22:34 [DEBUG  ]     5. [B0CQBXD8BP] Cubiertos Bebe,Juego de 12 Piezas Platos Bebe con  | 5% dto | 0 vals | 200 ventas
+07/09/2026 02:22:34 [INFO   ]   ELEGIDO para categoria: PandaEar Juego de Alimentación para Bebé 6 en... (20% dto, 0 valoraciones, ASIN: B0FZRJ7H3Z)
+07/09/2026 02:22:34 [INFO   ] 
+07/09/2026 02:22:34 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+07/09/2026 02:22:34 [INFO   ]   1. [B0CLS3Z9GH] NUK PM STARTER SET DISNEY MICKEY 2023... | 30% dto | cat: Biberones [cat. reciente]
+07/09/2026 02:22:34 [INFO   ]   2. [B09QXBKY8S] Smileat - Tarrito de Ca-Chi-Tos de Arroz... | 27% dto | cat: Alimentacion
+07/09/2026 02:22:34 [INFO   ]   3. [B06XSG67BY] VTech-Baby HIPO mordedor Hipopótamo de p... | 21% dto | cat: Juguetes [cat. reciente]
+07/09/2026 02:22:34 [INFO   ]   4. [B0FZRJ7H3Z] PandaEar Juego de Alimentación para Bebé... | 20% dto | cat: Vajilla bebe
+07/09/2026 02:22:34 [INFO   ]   5. [B0GL1WN7LN] Orzbow Bañera Bebe Plegable con Pegatina... | 18% dto | cat: Baneras
+07/09/2026 02:22:34 [INFO   ] Anti-repeticion: la #1 global (NUK PM STARTER SET DISNEY MICKEY 20) fue descartada porque su categoria 'Biberones' aparece en las recientes [Juguetes, Biberones, Toallitas, Toallitas]. Se elige la siguiente valida.
+07/09/2026 02:22:34 [INFO   ] 
+07/09/2026 02:22:34 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+07/09/2026 02:22:34 [INFO   ]     Titulo:    Smileat - Tarrito de Ca-Chi-Tos de Arroz Integral, Salmón y Guisantes - Ecológico, Sin Azúcar Añadid...
+07/09/2026 02:22:34 [INFO   ]     Categoria: Alimentacion | Descuento: 27%
+07/09/2026 02:22:34 [INFO   ]     Precio:    2,05 € (antes: 2,79 €)
+07/09/2026 02:22:34 [INFO   ]     ASIN:      B09QXBKY8S | Valoraciones: 0 | Ventas: 800
+07/09/2026 02:22:35 [INFO   ]     URL:       https://www.amazon.es/dp/B09QXBKY8S?tag=juegosenoferta-21
+07/09/2026 02:22:35 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71FtbC2293L._AC_UL320_.jpg
+07/09/2026 02:22:35 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+07/09/2026 02:22:35 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1252
+07/09/2026 02:22:35 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+07/09/2026 02:22:35 [DEBUG  ] Historial de categorias actualizado: Alimentacion, Juguetes, Biberones, Toallitas
+07/09/2026 02:22:35 [INFO   ] 
+07/09/2026 02:22:35 [INFO   ] ============================================================
+07/09/2026 02:22:35 [INFO   ] FIN - 1 oferta publicada en Telegram
+07/09/2026 02:22:35 [INFO   ] ============================================================
