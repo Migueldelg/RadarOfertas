@@ -109276,3 +109276,163 @@
 17/09/2026 08:17:49 [INFO   ] ============================================================
 17/09/2026 08:17:49 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
 17/09/2026 08:17:49 [INFO   ] ============================================================
+17/09/2026 14:01:47 [INFO   ] ============================================================
+17/09/2026 14:01:47 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+17/09/2026 14:01:47 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 17/09/2026 14:01
+17/09/2026 14:01:47 [INFO   ] ============================================================
+17/09/2026 14:01:47 [INFO   ] Historial cargado: 6 ASINs en ventana de 48h (ignorados 2 expirados)
+17/09/2026 14:01:47 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Juguetes, Camaras seguridad, Chupetes, Cremas bebe
+17/09/2026 14:01:47 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+17/09/2026 14:01:47 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 0 dias (16/09 18:37)
+17/09/2026 14:01:47 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 1 dias (16/09 08:13)
+17/09/2026 14:01:47 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 4 dias (13/09 07:57)
+17/09/2026 14:01:47 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 2 dias (15/09 02:58)
+17/09/2026 14:01:47 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Juguetes, Camaras seguridad, Chupetes, Cremas bebe]
+17/09/2026 14:01:47 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+17/09/2026 14:01:47 [INFO   ] 
+17/09/2026 14:01:47 [INFO   ] --- Categoria: Panales ---
+17/09/2026 14:01:51 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+17/09/2026 14:01:52 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:01:52 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 7s
+17/09/2026 14:02:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:02:02 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 19s
+17/09/2026 14:02:24 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:02:24 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+17/09/2026 14:02:24 [WARNING]   No se pudo obtener la pagina, saltando categoria
+17/09/2026 14:02:24 [INFO   ] 
+17/09/2026 14:02:24 [INFO   ] --- Categoria: Toallitas ---
+17/09/2026 14:02:28 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:02:28 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 9s
+17/09/2026 14:02:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:02:40 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 16s
+17/09/2026 14:03:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+17/09/2026 14:03:00 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031
+17/09/2026 14:03:00 [WARNING]   No se pudo obtener la pagina, saltando categoria
+17/09/2026 14:03:00 [INFO   ] 
+17/09/2026 14:03:00 [INFO   ] --- Categoria: Cremas bebe ---
+17/09/2026 14:03:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+17/09/2026 14:03:02 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 9s
+17/09/2026 14:03:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B00BN8JUCC
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0CJ2CQBG8
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 34% para ASIN B0B5RVR9BL
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B08PFNR7C6
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B09ZFKTSK1
+17/09/2026 14:03:16 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B07N7R1644
+17/09/2026 14:03:16 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+17/09/2026 14:03:16 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+17/09/2026 14:03:16 [DEBUG  ]     1. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 34% dto | 0 vals | 0 ventas
+17/09/2026 14:03:16 [DEBUG  ]     2. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g | 16% dto | 0 vals | 0 ventas
+17/09/2026 14:03:16 [DEBUG  ]     3. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 13% dto | 0 vals | 0 ventas
+17/09/2026 14:03:16 [DEBUG  ]     4. [B0CJ2CQBG8] Weleda Crema Pañal de Caléndula (1x 75 ml) (9831EN | 11% dto | 0 vals | 0 ventas
+17/09/2026 14:03:16 [DEBUG  ]     5. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula Bebé Piel Sensib | 11% dto | 0 vals | 0 ventas
+17/09/2026 14:03:16 [INFO   ]   DESCARTADO [ya publicado en <48h] Johnson's Baby Crema para pañal protectora, P... (34% dto, ASIN: B0B5RVR9BL)
+17/09/2026 14:03:16 [INFO   ]   ELEGIDO para categoria: Bepanthol Pomada Protectora Bebé 2x100 g... (16% dto, 0 valoraciones, ASIN: B09ZFKTSK1)
+17/09/2026 14:03:16 [INFO   ] 
+17/09/2026 14:03:16 [INFO   ] --- Categoria: Leche en polvo ---
+17/09/2026 14:03:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+17/09/2026 14:03:21 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+17/09/2026 14:03:21 [INFO   ]   No hay productos con descuento en esta categoria
+17/09/2026 14:03:21 [INFO   ] 
+17/09/2026 14:03:21 [INFO   ] --- Categoria: Chupetes ---
+17/09/2026 14:03:21 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 16/09 08:13 (hace 1 dias, faltan ~6 dias)
+17/09/2026 14:03:21 [INFO   ] 
+17/09/2026 14:03:21 [INFO   ] --- Categoria: Biberones ---
+17/09/2026 14:03:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0BWFLPZ5G
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0CPKV9MJF
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B09KCQNCFW
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 36% para ASIN B0BWFJL62B
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0BQPMB68W
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 18% para ASIN B07L3XV977
+17/09/2026 14:03:26 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0DBZD9NFD
+17/09/2026 14:03:26 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+17/09/2026 14:03:26 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+17/09/2026 14:03:26 [DEBUG  ]     1. [B0BWFJL62B] PHILIPS Avent Set de regalo de biberón de cristal  | 36% dto | 0 vals | 200 ventas
+17/09/2026 14:03:26 [DEBUG  ]     2. [B0BWFLPZ5G] Philips Avent Set de regalo de biberones para reci | 31% dto | 0 vals | 200 ventas
+17/09/2026 14:03:26 [DEBUG  ]     3. [B07L3XV977] Suavinex, Biberón Anticólico Zero Zero, con Tetina | 18% dto | 0 vals | 600 ventas [MARCA PRIO]
+17/09/2026 14:03:26 [DEBUG  ]     4. [B09KCQNCFW] Suavinex, Set Zero Zero: Biberón Anticólico 180 ml | 17% dto | 0 vals | 0 ventas [MARCA PRIO]
+17/09/2026 14:03:26 [DEBUG  ]     5. [B0BQPMB68W] Dr. Brown's Pack de 2 Biberones Anticólicos Boca A | 16% dto | 0 vals | 0 ventas
+17/09/2026 14:03:26 [INFO   ]   ELEGIDO para categoria: PHILIPS Avent Set de regalo de biberón de cri... (36% dto, 0 valoraciones, ASIN: B0BWFJL62B)
+17/09/2026 14:03:26 [INFO   ] 
+17/09/2026 14:03:26 [INFO   ] --- Categoria: Juguetes ---
+17/09/2026 14:03:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 20% para ASIN B01NCUSC7V
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0CFX5H5MJ
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B0DF7G15MC
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 12% para ASIN B0F2HRNW75
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B07N1JP56L
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0CYP7CTB5
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0H7519649
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0B3J9ZT5T
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B0D89W954H
+17/09/2026 14:03:31 [DEBUG  ]   Badge no encontrado; usando descuento calculado 9% para ASIN B09F3KH6MK
+17/09/2026 14:03:31 [INFO   ]   Scraped: 20 productos (10 con oferta, 10 sin descuento)
+17/09/2026 14:03:31 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+17/09/2026 14:03:31 [DEBUG  ]     1. [B0H7519649] IEEILULU 6 en 1 Juguetes Montessori para bebé, Jug | 21% dto | 0 vals | 0 ventas
+17/09/2026 14:03:31 [DEBUG  ]     2. [B01NCUSC7V] Fisher-Price Bloques para Bebé, Juguete para Bebés | 20% dto | 0 vals | 0 ventas
+17/09/2026 14:03:31 [DEBUG  ]     3. [B07N1JP56L] Fisher-Price Peluche Nutria para Bebés Snoogle & S | 16% dto | 0 vals | 0 ventas
+17/09/2026 14:03:31 [DEBUG  ]     4. [B0DF7G15MC] URMYWO Juguete Bebé 0-12 Meses, Libro con Espejo y | 16% dto | 0 vals | 0 ventas
+17/09/2026 14:03:31 [DEBUG  ]     5. [B0CYP7CTB5] hahaland Libro Bebe Juguetes Bebes 0 3 6 Meses, Li | 15% dto | 0 vals | 0 ventas
+17/09/2026 14:03:31 [INFO   ]   ELEGIDO para categoria: IEEILULU 6 en 1 Juguetes Montessori para bebé... (21% dto, 0 valoraciones, ASIN: B0H7519649)
+17/09/2026 14:03:31 [INFO   ] 
+17/09/2026 14:03:31 [INFO   ] --- Categoria: Baneras ---
+17/09/2026 14:03:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+17/09/2026 14:03:36 [DEBUG  ]   Badge no encontrado; usando descuento calculado 15% para ASIN B0FQVVYGLX
+17/09/2026 14:03:36 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B0GL1WN7LN
+17/09/2026 14:03:36 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0GYMHTG1C
+17/09/2026 14:03:36 [INFO   ]   Scraped: 20 productos (3 con oferta, 17 sin descuento)
+17/09/2026 14:03:36 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+17/09/2026 14:03:36 [DEBUG  ]     1. [B0FQVVYGLX] Moby-System Bañera Bebé Plegable con Termómetro LC | 15% dto | 0 vals | 0 ventas
+17/09/2026 14:03:36 [DEBUG  ]     2. [B0GYMHTG1C] toral Bañera bebe plegable con cambiador y patas r | 14% dto | 0 vals | 50 ventas
+17/09/2026 14:03:36 [DEBUG  ]     3. [B0GL1WN7LN] Orzbow Bañera Plegable Bebé, Blanco | 13% dto | 0 vals | 0 ventas
+17/09/2026 14:03:36 [INFO   ]   ELEGIDO para categoria: Moby-System Bañera Bebé Plegable con Termómet... (15% dto, 0 valoraciones, ASIN: B0FQVVYGLX)
+17/09/2026 14:03:36 [INFO   ] 
+17/09/2026 14:03:36 [INFO   ] --- Categoria: Camaras seguridad ---
+17/09/2026 14:03:36 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 16/09 18:37 (hace 0 dias, faltan ~7 dias)
+17/09/2026 14:03:36 [INFO   ] 
+17/09/2026 14:03:36 [INFO   ] --- Categoria: Alimentacion ---
+17/09/2026 14:03:38 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+17/09/2026 14:03:39 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B09G3DW3KS
+17/09/2026 14:03:39 [DEBUG  ]   Badge no encontrado; usando descuento calculado 26% para ASIN B018GFI8LS
+17/09/2026 14:03:39 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B07RRDTDTL
+17/09/2026 14:03:39 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0FWS66RF5
+17/09/2026 14:03:39 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B0G1P29NQF
+17/09/2026 14:03:39 [INFO   ]   Scraped: 20 productos (5 con oferta, 15 sin descuento)
+17/09/2026 14:03:39 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+17/09/2026 14:03:39 [DEBUG  ]     1. [B018GFI8LS] Smileat Tarrito Ecológico de Verduras con Merluza, | 26% dto | 0 vals | 0 ventas
+17/09/2026 14:03:39 [DEBUG  ]     2. [B09G3DW3KS] Smileat - Tarrito de Frutas Ecológicas con Pera, C | 21% dto | 0 vals | 900 ventas
+17/09/2026 14:03:39 [DEBUG  ]     3. [B0G1P29NQF] Smileat - Tarrito de Frutas Ecológicas con Pera, C | 21% dto | 0 vals | 0 ventas
+17/09/2026 14:03:39 [DEBUG  ]     4. [B07RRDTDTL] Smileat - Tarrito de Frutas con Pera y Manzana par | 17% dto | 0 vals | 500 ventas
+17/09/2026 14:03:39 [DEBUG  ]     5. [B0FWS66RF5] Nestlé Bolsitas Manzana Fresa Plátano Avena +6 mes | 5% dto | 0 vals | 0 ventas
+17/09/2026 14:03:39 [INFO   ]   ELEGIDO para categoria: Smileat Tarrito Ecológico de Verduras con Mer... (26% dto, 0 valoraciones, ASIN: B018GFI8LS)
+17/09/2026 14:03:39 [INFO   ] 
+17/09/2026 14:03:39 [INFO   ] --- Categoria: Tronas ---
+17/09/2026 14:03:39 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 13/09 07:57 (hace 4 dias, faltan ~3 dias)
+17/09/2026 14:03:39 [INFO   ] 
+17/09/2026 14:03:39 [INFO   ] --- Categoria: Vajilla bebe ---
+17/09/2026 14:03:39 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 15/09 02:58 (hace 2 dias, faltan ~5 dias)
+17/09/2026 14:03:39 [INFO   ] 
+17/09/2026 14:03:39 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+17/09/2026 14:03:39 [INFO   ]   1. [B0BWFJL62B] PHILIPS Avent Set de regalo de biberón d... | 36% dto | cat: Biberones
+17/09/2026 14:03:39 [INFO   ]   2. [B018GFI8LS] Smileat Tarrito Ecológico de Verduras co... | 26% dto | cat: Alimentacion
+17/09/2026 14:03:39 [INFO   ]   3. [B0H7519649] IEEILULU 6 en 1 Juguetes Montessori para... | 21% dto | cat: Juguetes [cat. reciente]
+17/09/2026 14:03:39 [INFO   ]   4. [B09ZFKTSK1] Bepanthol Pomada Protectora Bebé 2x100 g... | 16% dto | cat: Cremas bebe [cat. reciente]
+17/09/2026 14:03:39 [INFO   ]   5. [B0FQVVYGLX] Moby-System Bañera Bebé Plegable con Ter... | 15% dto | cat: Baneras
+17/09/2026 14:03:39 [INFO   ] 
+17/09/2026 14:03:39 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+17/09/2026 14:03:39 [INFO   ]     Titulo:    PHILIPS Avent Set de regalo de biberón de cristal para recién nacidos: 3 biberones, chupete ultra so...
+17/09/2026 14:03:39 [INFO   ]     Categoria: Biberones | Descuento: 36%
+17/09/2026 14:03:39 [INFO   ]     Precio:    29,00 € (antes: 44,99 €)
+17/09/2026 14:03:39 [INFO   ]     ASIN:      B0BWFJL62B | Valoraciones: 0 | Ventas: 200
+17/09/2026 14:03:39 [INFO   ]     URL:       https://www.amazon.es/dp/B0BWFJL62B?tag=juegosenoferta-21
+17/09/2026 14:03:39 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71A-6eDeTtL._AC_UL320_.jpg
+17/09/2026 14:03:39 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+17/09/2026 14:03:40 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1239
+17/09/2026 14:03:40 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+17/09/2026 14:03:40 [DEBUG  ] Historial de categorias actualizado: Biberones, Juguetes, Camaras seguridad, Chupetes
+17/09/2026 14:03:40 [INFO   ] 
+17/09/2026 14:03:40 [INFO   ] ============================================================
+17/09/2026 14:03:40 [INFO   ] FIN - 1 oferta publicada en Telegram
+17/09/2026 14:03:40 [INFO   ] ============================================================
