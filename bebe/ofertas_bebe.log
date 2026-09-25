@@ -115611,3 +115611,141 @@
 25/09/2026 19:04:43 [INFO   ] ============================================================
 25/09/2026 19:04:43 [INFO   ] FIN - 1 oferta publicada en Telegram
 25/09/2026 19:04:43 [INFO   ] ============================================================
+25/09/2026 23:44:38 [INFO   ] ============================================================
+25/09/2026 23:44:38 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+25/09/2026 23:44:38 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 25/09/2026 23:44
+25/09/2026 23:44:38 [INFO   ] ============================================================
+25/09/2026 23:44:38 [INFO   ] Historial cargado: 9 ASINs en ventana de 48h (ignorados 1 expirados)
+25/09/2026 23:44:38 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Toallitas, Biberones, Juguetes, Alimentacion
+25/09/2026 23:44:38 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+25/09/2026 23:44:38 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 2 dias (23/09 18:46)
+25/09/2026 23:44:38 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 2 dias (23/09 23:24)
+25/09/2026 23:44:38 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 5 dias (20/09 08:13)
+25/09/2026 23:44:38 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 3 dias (22/09 08:10)
+25/09/2026 23:44:38 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Toallitas, Biberones, Juguetes, Alimentacion]
+25/09/2026 23:44:38 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+25/09/2026 23:44:38 [INFO   ] 
+25/09/2026 23:44:38 [INFO   ] --- Categoria: Panales ---
+25/09/2026 23:44:42 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+25/09/2026 23:44:42 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:44:42 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 9s
+25/09/2026 23:44:55 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:44:55 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 17s
+25/09/2026 23:45:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:45:14 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+25/09/2026 23:45:14 [WARNING]   No se pudo obtener la pagina, saltando categoria
+25/09/2026 23:45:14 [INFO   ] 
+25/09/2026 23:45:14 [INFO   ] --- Categoria: Toallitas ---
+25/09/2026 23:45:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B08MXSBRSB
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 33% para ASIN B08ZMYG9RC
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 16% para ASIN B00WE5ZS2E
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 14% para ASIN B0GCMVN3ZN
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 13% para ASIN B08MXVJTC8
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 17% para ASIN B0CQM6JWQV
+25/09/2026 23:45:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B0DP7K72L5
+25/09/2026 23:45:18 [INFO   ]   Scraped: 20 productos (7 con oferta, 13 sin descuento)
+25/09/2026 23:45:18 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+25/09/2026 23:45:18 [DEBUG  ]     1. [B08ZMYG9RC] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 33% dto | 0 vals | 0 ventas [MARCA PRIO]
+25/09/2026 23:45:18 [DEBUG  ]     2. [B08MXSBRSB] WaterWipes Sensitive+ Newborn & Baby Wipes, Toalli | 31% dto | 0 vals | 0 ventas [MARCA PRIO]
+25/09/2026 23:45:18 [DEBUG  ]     3. [B0CQM6JWQV] Dodot Toallitas Aqua Pure para Bebé, 1.296 Toallit | 17% dto | 0 vals | 0 ventas [MARCA PRIO]
+25/09/2026 23:45:18 [DEBUG  ]     4. [B00WE5ZS2E] Huggies Natural Care Toallitas para Bebé, Aloe Ver | 16% dto | 0 vals | 0 ventas
+25/09/2026 23:45:18 [DEBUG  ]     5. [B0GCMVN3ZN] Dodot Pure Aqua Toallitas con Textura Suave para b | 14% dto | 0 vals | 5 ventas [MARCA PRIO]
+25/09/2026 23:45:18 [INFO   ]   DESCARTADO [ya publicado en <48h] WaterWipes Sensitive+ Newborn & Baby Wipes, T... (33% dto, ASIN: B08ZMYG9RC)
+25/09/2026 23:45:18 [INFO   ]   DESCARTADO [ya publicado en <48h] WaterWipes Sensitive+ Newborn & Baby Wipes, T... (31% dto, ASIN: B08MXSBRSB)
+25/09/2026 23:45:18 [INFO   ]   ELEGIDO para categoria: Dodot Toallitas Aqua Pure para Bebé, 1.296 To... (17% dto, 0 valoraciones, ASIN: B0CQM6JWQV) [marca prioritaria]
+25/09/2026 23:45:18 [INFO   ] 
+25/09/2026 23:45:18 [INFO   ] --- Categoria: Cremas bebe ---
+25/09/2026 23:45:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 None
+25/09/2026 23:45:22 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 7s
+25/09/2026 23:45:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 None
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B00BN8JUCC
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 34% para ASIN B0B5RVR9BL
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0CJ2CQBG8
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 5% para ASIN B0H3WXRSZR
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 22% para ASIN B08PFNR7C6
+25/09/2026 23:45:33 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B075HLK1LV
+25/09/2026 23:45:33 [INFO   ]   Scraped: 20 productos (6 con oferta, 14 sin descuento)
+25/09/2026 23:45:33 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+25/09/2026 23:45:33 [DEBUG  ]     1. [B0B5RVR9BL] Johnson's Baby Crema para pañal protectora, Para P | 34% dto | 0 vals | 0 ventas
+25/09/2026 23:45:33 [DEBUG  ]     2. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal suave, aliv | 22% dto | 0 vals | 0 ventas
+25/09/2026 23:45:33 [DEBUG  ]     3. [B00BN8JUCC] Weleda - Crema Pañal de Caléndula Bebé Piel Sensib | 11% dto | 0 vals | 0 ventas
+25/09/2026 23:45:33 [DEBUG  ]     4. [B0CJ2CQBG8] Weleda Crema Pañal de Caléndula (1x 75 ml) (9831EN | 11% dto | 0 vals | 0 ventas
+25/09/2026 23:45:33 [DEBUG  ]     5. [B075HLK1LV] Instituto Español loción Bebé 300 ml | 7% dto | 0 vals | 200 ventas
+25/09/2026 23:45:33 [INFO   ]   DESCARTADO [ya publicado en <48h] Johnson's Baby Crema para pañal protectora, P... (34% dto, ASIN: B0B5RVR9BL)
+25/09/2026 23:45:33 [INFO   ]   ELEGIDO para categoria: Mitosyl pomada protectora, crema pañal suave,... (22% dto, 0 valoraciones, ASIN: B08PFNR7C6)
+25/09/2026 23:45:33 [INFO   ] 
+25/09/2026 23:45:33 [INFO   ] --- Categoria: Leche en polvo ---
+25/09/2026 23:45:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+25/09/2026 23:45:36 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 6s
+25/09/2026 23:45:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 None
+25/09/2026 23:45:44 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 16s
+25/09/2026 23:46:03 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 None
+25/09/2026 23:46:04 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+25/09/2026 23:46:04 [INFO   ]   No hay productos con descuento en esta categoria
+25/09/2026 23:46:04 [INFO   ] 
+25/09/2026 23:46:04 [INFO   ] --- Categoria: Chupetes ---
+25/09/2026 23:46:04 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 23/09 23:24 (hace 2 dias, faltan ~5 dias)
+25/09/2026 23:46:04 [INFO   ] 
+25/09/2026 23:46:04 [INFO   ] --- Categoria: Biberones ---
+25/09/2026 23:46:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:46:07 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 5s
+25/09/2026 23:46:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:46:15 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 17s
+25/09/2026 23:46:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:46:35 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+25/09/2026 23:46:35 [WARNING]   No se pudo obtener la pagina, saltando categoria
+25/09/2026 23:46:35 [INFO   ] 
+25/09/2026 23:46:35 [INFO   ] --- Categoria: Juguetes ---
+25/09/2026 23:46:39 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:46:39 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 5s
+25/09/2026 23:46:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:46:48 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 14s
+25/09/2026 23:47:04 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:47:04 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031
+25/09/2026 23:47:04 [WARNING]   No se pudo obtener la pagina, saltando categoria
+25/09/2026 23:47:04 [INFO   ] 
+25/09/2026 23:47:04 [INFO   ] --- Categoria: Baneras ---
+25/09/2026 23:47:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:47:07 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 8s
+25/09/2026 23:47:19 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:47:19 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 14s
+25/09/2026 23:47:35 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 None
+25/09/2026 23:47:35 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=bañera+bebe&rh=n%3A1703495031
+25/09/2026 23:47:35 [WARNING]   No se pudo obtener la pagina, saltando categoria
+25/09/2026 23:47:35 [INFO   ] 
+25/09/2026 23:47:35 [INFO   ] --- Categoria: Camaras seguridad ---
+25/09/2026 23:47:35 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 23/09 18:46 (hace 2 dias, faltan ~5 dias)
+25/09/2026 23:47:35 [INFO   ] 
+25/09/2026 23:47:35 [INFO   ] --- Categoria: Alimentacion ---
+25/09/2026 23:47:39 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 None
+25/09/2026 23:47:39 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 8s
+25/09/2026 23:47:50 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 None
+25/09/2026 23:47:51 [INFO   ]   Scraped: 20 productos (0 con oferta, 20 sin descuento)
+25/09/2026 23:47:51 [INFO   ]   No hay productos con descuento en esta categoria
+25/09/2026 23:47:51 [INFO   ] 
+25/09/2026 23:47:51 [INFO   ] --- Categoria: Tronas ---
+25/09/2026 23:47:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 20/09 08:13 (hace 5 dias, faltan ~2 dias)
+25/09/2026 23:47:51 [INFO   ] 
+25/09/2026 23:47:51 [INFO   ] --- Categoria: Vajilla bebe ---
+25/09/2026 23:47:51 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 22/09 08:10 (hace 3 dias, faltan ~4 dias)
+25/09/2026 23:47:51 [INFO   ] 
+25/09/2026 23:47:51 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+25/09/2026 23:47:51 [INFO   ]   1. [B08PFNR7C6] Mitosyl pomada protectora, crema pañal s... | 22% dto | cat: Cremas bebe
+25/09/2026 23:47:51 [INFO   ]   2. [B0CQM6JWQV] Dodot Toallitas Aqua Pure para Bebé, 1.2... | 17% dto | cat: Toallitas [marca prio] [cat. reciente]
+25/09/2026 23:47:51 [INFO   ] 
+25/09/2026 23:47:51 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+25/09/2026 23:47:51 [INFO   ]     Titulo:    Mitosyl pomada protectora, crema pañal suave, alivio irritaciones, 290 gr
+25/09/2026 23:47:51 [INFO   ]     Categoria: Cremas bebe | Descuento: 22%
+25/09/2026 23:47:51 [INFO   ]     Precio:    24,24 € (antes: 30,98 €)
+25/09/2026 23:47:51 [INFO   ]     ASIN:      B08PFNR7C6 | Valoraciones: 0 | Ventas: 0
+25/09/2026 23:47:51 [INFO   ]     URL:       https://www.amazon.es/dp/B08PFNR7C6?tag=juegosenoferta-21
+25/09/2026 23:47:51 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/71k2TDZVSvL._AC_UL320_.jpg
+25/09/2026 23:47:51 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+25/09/2026 23:47:52 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1205
+25/09/2026 23:47:52 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+25/09/2026 23:47:52 [DEBUG  ] Historial de categorias actualizado: Cremas bebe, Toallitas, Biberones, Juguetes
+25/09/2026 23:47:52 [INFO   ] 
+25/09/2026 23:47:52 [INFO   ] ============================================================
+25/09/2026 23:47:52 [INFO   ] FIN - 1 oferta publicada en Telegram
+25/09/2026 23:47:52 [INFO   ] ============================================================
