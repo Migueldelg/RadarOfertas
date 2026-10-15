@@ -128189,3 +128189,85 @@
 15/10/2026 07:55:26 [INFO   ] ============================================================
 15/10/2026 07:55:26 [INFO   ] FIN - 1 oferta publicada en Telegram
 15/10/2026 07:55:26 [INFO   ] ============================================================
+15/10/2026 13:50:25 [INFO   ] ============================================================
+15/10/2026 13:50:25 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+15/10/2026 13:50:25 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 15/10/2026 13:50
+15/10/2026 13:50:25 [INFO   ] ============================================================
+15/10/2026 13:50:25 [INFO   ] Historial cargado: 4 ASINs en ventana de 48h (ignorados 1 expirados)
+15/10/2026 13:50:25 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Toallitas, Panales, Biberones, Toallitas
+15/10/2026 13:50:25 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+15/10/2026 13:50:25 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 7 dias (08/10 00:40)
+15/10/2026 13:50:25 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 14 dias (01/10 03:35)
+15/10/2026 13:50:25 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 7 dias (07/10 18:17)
+15/10/2026 13:50:25 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 23 dias (22/09 08:10)
+15/10/2026 13:50:25 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Toallitas, Panales, Biberones, Toallitas]
+15/10/2026 13:50:25 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+15/10/2026 13:50:25 [INFO   ] 
+15/10/2026 13:50:25 [INFO   ] --- Categoria: Panales ---
+15/10/2026 13:50:27 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+15/10/2026 13:50:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1456
+15/10/2026 13:50:27 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:27 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:27 [INFO   ] 
+15/10/2026 13:50:27 [INFO   ] --- Categoria: Toallitas ---
+15/10/2026 13:50:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1439
+15/10/2026 13:50:31 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:31 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:31 [INFO   ] 
+15/10/2026 13:50:31 [INFO   ] --- Categoria: Cremas bebe ---
+15/10/2026 13:50:34 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 1380
+15/10/2026 13:50:34 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:34 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:34 [INFO   ] 
+15/10/2026 13:50:34 [INFO   ] --- Categoria: Leche en polvo ---
+15/10/2026 13:50:37 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 1394
+15/10/2026 13:50:37 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:37 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:37 [INFO   ] 
+15/10/2026 13:50:37 [INFO   ] --- Categoria: Chupetes ---
+15/10/2026 13:50:37 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 14 dias (supera los 7 requeridos)
+15/10/2026 13:50:40 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1435
+15/10/2026 13:50:40 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:40 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:40 [INFO   ] 
+15/10/2026 13:50:40 [INFO   ] --- Categoria: Biberones ---
+15/10/2026 13:50:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1442
+15/10/2026 13:50:44 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:44 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:44 [INFO   ] 
+15/10/2026 13:50:44 [INFO   ] --- Categoria: Juguetes ---
+15/10/2026 13:50:46 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1443
+15/10/2026 13:50:46 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:46 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:46 [INFO   ] 
+15/10/2026 13:50:46 [INFO   ] --- Categoria: Baneras ---
+15/10/2026 13:50:49 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1459
+15/10/2026 13:50:49 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:49 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:49 [INFO   ] 
+15/10/2026 13:50:49 [INFO   ] --- Categoria: Camaras seguridad ---
+15/10/2026 13:50:49 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 7 dias (supera los 7 requeridos)
+15/10/2026 13:50:52 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=camara+vigilancia+bebe HTTP/1.1" 200 1391
+15/10/2026 13:50:52 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:52 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:52 [INFO   ] 
+15/10/2026 13:50:52 [INFO   ] --- Categoria: Alimentacion ---
+15/10/2026 13:50:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 1392
+15/10/2026 13:50:56 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:56 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:56 [INFO   ] 
+15/10/2026 13:50:56 [INFO   ] --- Categoria: Tronas ---
+15/10/2026 13:50:56 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 7 dias (supera los 7 requeridos)
+15/10/2026 13:50:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=trona+bebe HTTP/1.1" 200 1359
+15/10/2026 13:50:58 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:50:58 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:50:58 [INFO   ] 
+15/10/2026 13:50:58 [INFO   ] --- Categoria: Vajilla bebe ---
+15/10/2026 13:50:58 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 23 dias (supera los 7 requeridos)
+15/10/2026 13:51:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=platos+cubiertos+vasos+bebe HTTP/1.1" 200 1416
+15/10/2026 13:51:02 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+15/10/2026 13:51:02 [INFO   ]   No hay productos con descuento en esta categoria
+15/10/2026 13:51:02 [INFO   ] 
+15/10/2026 13:51:02 [INFO   ] ============================================================
+15/10/2026 13:51:02 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+15/10/2026 13:51:02 [INFO   ] ============================================================
