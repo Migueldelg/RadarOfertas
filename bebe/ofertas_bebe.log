@@ -138241,3 +138241,76 @@
 26/10/2026 22:11:03 [INFO   ] ============================================================
 26/10/2026 22:11:03 [INFO   ] FIN - 1 oferta publicada en Telegram
 26/10/2026 22:11:03 [INFO   ] ============================================================
+27/10/2026 03:16:55 [INFO   ] ============================================================
+27/10/2026 03:16:55 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+27/10/2026 03:16:55 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 27/10/2026 03:16
+27/10/2026 03:16:55 [INFO   ] ============================================================
+27/10/2026 03:16:55 [INFO   ] Historial cargado: 7 ASINs en ventana de 48h (ignorados 1 expirados)
+27/10/2026 03:16:55 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Biberones, Baneras, Panales, Cremas bebe
+27/10/2026 03:16:55 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+27/10/2026 03:16:55 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 3 dias (23/10 18:50)
+27/10/2026 03:16:55 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 2 dias (24/10 13:02)
+27/10/2026 03:16:55 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 2 dias (24/10 22:49)
+27/10/2026 03:16:55 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 34 dias (22/09 08:10)
+27/10/2026 03:16:55 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Biberones, Baneras, Panales, Cremas bebe]
+27/10/2026 03:16:55 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+27/10/2026 03:16:55 [INFO   ] 
+27/10/2026 03:16:55 [INFO   ] --- Categoria: Panales ---
+27/10/2026 03:16:58 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+27/10/2026 03:16:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1465
+27/10/2026 03:16:58 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:16:58 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:16:58 [INFO   ] 
+27/10/2026 03:16:58 [INFO   ] --- Categoria: Toallitas ---
+27/10/2026 03:17:02 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1444
+27/10/2026 03:17:02 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:02 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:02 [INFO   ] 
+27/10/2026 03:17:02 [INFO   ] --- Categoria: Cremas bebe ---
+27/10/2026 03:17:05 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 200 1384
+27/10/2026 03:17:05 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:05 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:05 [INFO   ] 
+27/10/2026 03:17:05 [INFO   ] --- Categoria: Leche en polvo ---
+27/10/2026 03:17:07 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 200 1398
+27/10/2026 03:17:07 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:07 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:07 [INFO   ] 
+27/10/2026 03:17:07 [INFO   ] --- Categoria: Chupetes ---
+27/10/2026 03:17:07 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 24/10 13:02 (hace 2 dias, faltan ~5 dias)
+27/10/2026 03:17:07 [INFO   ] 
+27/10/2026 03:17:07 [INFO   ] --- Categoria: Biberones ---
+27/10/2026 03:17:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1444
+27/10/2026 03:17:10 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:10 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:10 [INFO   ] 
+27/10/2026 03:17:10 [INFO   ] --- Categoria: Juguetes ---
+27/10/2026 03:17:13 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1442
+27/10/2026 03:17:13 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:13 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:13 [INFO   ] 
+27/10/2026 03:17:13 [INFO   ] --- Categoria: Baneras ---
+27/10/2026 03:17:15 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 1456
+27/10/2026 03:17:15 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:15 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:15 [INFO   ] 
+27/10/2026 03:17:15 [INFO   ] --- Categoria: Camaras seguridad ---
+27/10/2026 03:17:15 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 23/10 18:50 (hace 3 dias, faltan ~4 dias)
+27/10/2026 03:17:15 [INFO   ] 
+27/10/2026 03:17:15 [INFO   ] --- Categoria: Alimentacion ---
+27/10/2026 03:17:18 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 200 1394
+27/10/2026 03:17:18 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:18 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:18 [INFO   ] 
+27/10/2026 03:17:18 [INFO   ] --- Categoria: Tronas ---
+27/10/2026 03:17:18 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 24/10 22:49 (hace 2 dias, faltan ~5 dias)
+27/10/2026 03:17:18 [INFO   ] 
+27/10/2026 03:17:18 [INFO   ] --- Categoria: Vajilla bebe ---
+27/10/2026 03:17:18 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 34 dias (supera los 7 requeridos)
+27/10/2026 03:17:20 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=platos+cubiertos+vasos+bebe HTTP/1.1" 200 1416
+27/10/2026 03:17:20 [INFO   ]   Scraped: 0 productos (0 con oferta, 0 sin descuento)
+27/10/2026 03:17:20 [INFO   ]   No hay productos con descuento en esta categoria
+27/10/2026 03:17:20 [INFO   ] 
+27/10/2026 03:17:20 [INFO   ] ============================================================
+27/10/2026 03:17:20 [INFO   ] RESULTADO: No hay ofertas nuevas para publicar en este ciclo
+27/10/2026 03:17:20 [INFO   ] ============================================================
