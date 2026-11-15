@@ -148586,3 +148586,159 @@
 15/11/2026 10:20:49 [INFO   ] ============================================================
 15/11/2026 10:20:49 [INFO   ] FIN - 1 oferta publicada en Telegram
 15/11/2026 10:20:49 [INFO   ] ============================================================
+15/11/2026 18:21:11 [INFO   ] ============================================================
+15/11/2026 18:21:11 [INFO   ] INICIO - BUSCADOR DE OFERTAS DE BEBE | Amazon.es -> Telegram
+15/11/2026 18:21:11 [INFO   ] Tag de afiliado: juegosenoferta-21 | Hora: 15/11/2026 18:21
+15/11/2026 18:21:11 [INFO   ] ============================================================
+15/11/2026 18:21:11 [INFO   ] Historial cargado: 5 ASINs en ventana de 48h (ignorados 1 expirados)
+15/11/2026 18:21:11 [INFO   ] Ultimas categorias publicadas (anti-repeticion): Panales, Toallitas, Baneras, Camaras seguridad
+15/11/2026 18:21:11 [DEBUG  ] Ultimos titulos guardados para anti-similitud: 4 titulos
+15/11/2026 18:21:11 [DEBUG  ]   Categoria 'Camaras seguridad' con limite semanal: ultima publicacion hace 1 dias (14/11 12:50)
+15/11/2026 18:21:11 [DEBUG  ]   Categoria 'Chupetes' con limite semanal: ultima publicacion hace 7 dias (07/11 21:19)
+15/11/2026 18:21:11 [DEBUG  ]   Categoria 'Tronas' con limite semanal: ultima publicacion hace 14 dias (31/10 23:54)
+15/11/2026 18:21:11 [DEBUG  ]   Categoria 'Vajilla bebe' con limite semanal: ultima publicacion hace 5 dias (09/11 21:53)
+15/11/2026 18:21:11 [INFO   ] Anti-repeticion de categoria: se evitaran las ultimas 4 categorias [Panales, Toallitas, Baneras, Camaras seguridad]
+15/11/2026 18:21:11 [INFO   ] Anti-titulo-similar activo para categorias Chupetes, Juguetes (4 titulos recientes guardados)
+15/11/2026 18:21:11 [INFO   ] 
+15/11/2026 18:21:11 [INFO   ] --- Categoria: Panales ---
+15/11/2026 18:21:14 [DEBUG  ] Starting new HTTPS connection (1): www.amazon.es:443
+15/11/2026 18:21:14 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:21:14 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 8s
+15/11/2026 18:21:25 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:21:25 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 - Reintentando en 17s
+15/11/2026 18:21:45 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:21:45 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=pa%C3%B1ales+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=pañales+bebe&rh=n%3A1703495031
+15/11/2026 18:21:45 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:21:45 [INFO   ] 
+15/11/2026 18:21:45 [INFO   ] --- Categoria: Toallitas ---
+15/11/2026 18:21:47 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:21:47 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 7s
+15/11/2026 18:21:56 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:21:56 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=toallitas+bebe&rh=n%3A1703495031 - Reintentando en 17s
+15/11/2026 18:22:17 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=toallitas+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 26% para ASIN B09GPJHCQL
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 40% para ASIN B0DP7K72L5
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 24% para ASIN B0111AIZ68
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B082N3CB8G
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 27% para ASIN B08MXT5VDK
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 21% para ASIN B08ZMYG9RC
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 19% para ASIN B085LQQ6MT
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 28% para ASIN B09TW72XZQ
+15/11/2026 18:22:18 [DEBUG  ]   Badge no encontrado; usando descuento calculado 10% para ASIN B0BLP9KBCH
+15/11/2026 18:22:18 [INFO   ]   Scraped: 20 productos (9 con oferta, 11 sin descuento)
+15/11/2026 18:22:18 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+15/11/2026 18:22:18 [DEBUG  ]     1. [B0DP7K72L5] Dodot Toallitas Pure Aqua Para Bebé, 1152 Toallita | 40% dto | 0 vals | 0 ventas [MARCA PRIO]
+15/11/2026 18:22:18 [DEBUG  ]     2. [B082N3CB8G] Dodot Toallitas Bebé Sensitive, 840 Toallitas (15  | 28% dto | 0 vals | 0 ventas [MARCA PRIO]
+15/11/2026 18:22:18 [DEBUG  ]     3. [B09TW72XZQ] WaterWipes Sensitive+ Newborn & Baby Wipes, 6 Paqu | 28% dto | 0 vals | 0 ventas [MARCA PRIO]
+15/11/2026 18:22:18 [DEBUG  ]     4. [B08MXT5VDK] WaterWipes Sensitive+ Newborn & Baby Wipes, 9 Paqu | 27% dto | 0 vals | 0 ventas [MARCA PRIO]
+15/11/2026 18:22:18 [DEBUG  ]     5. [B09GPJHCQL] Dodot Toallitas Bebé Pure Aqua, 864 Toallitas (18  | 26% dto | 0 vals | 0 ventas [MARCA PRIO]
+15/11/2026 18:22:18 [INFO   ]   DESCARTADO [ya publicado en <48h] Dodot Toallitas Pure Aqua Para Bebé, 1152 Toa... (40% dto, ASIN: B0DP7K72L5)
+15/11/2026 18:22:18 [INFO   ]   ELEGIDO para categoria: Dodot Toallitas Bebé Sensitive, 840 Toallitas... (28% dto, 0 valoraciones, ASIN: B082N3CB8G) [marca prioritaria]
+15/11/2026 18:22:18 [INFO   ] 
+15/11/2026 18:22:18 [INFO   ] --- Categoria: Cremas bebe ---
+15/11/2026 18:22:21 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 1997
+15/11/2026 18:22:21 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 9s
+15/11/2026 18:22:32 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 1997
+15/11/2026 18:22:32 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete - Reintentando en 12s
+15/11/2026 18:22:48 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=crema+bebe+culete HTTP/1.1" 503 1997
+15/11/2026 18:22:48 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=crema+bebe+culete | URL: https://www.amazon.es/s?k=crema+bebe+culete
+15/11/2026 18:22:48 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:22:48 [INFO   ] 
+15/11/2026 18:22:48 [INFO   ] --- Categoria: Leche en polvo ---
+15/11/2026 18:22:51 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 1997
+15/11/2026 18:22:51 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 6s
+15/11/2026 18:23:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 1997
+15/11/2026 18:23:00 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe - Reintentando en 20s
+15/11/2026 18:23:24 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=leche+en+polvo+bebe HTTP/1.1" 503 1997
+15/11/2026 18:23:24 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=leche+en+polvo+bebe | URL: https://www.amazon.es/s?k=leche+en+polvo+bebe
+15/11/2026 18:23:24 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:23:24 [INFO   ] 
+15/11/2026 18:23:24 [INFO   ] --- Categoria: Chupetes ---
+15/11/2026 18:23:24 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 7 dias (supera los 7 requeridos)
+15/11/2026 18:23:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:23:27 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 6s
+15/11/2026 18:23:36 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:23:36 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 - Reintentando en 16s
+15/11/2026 18:23:55 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=chupetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:23:55 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=chupetes+bebe&rh=n%3A1703495031
+15/11/2026 18:23:55 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:23:55 [INFO   ] 
+15/11/2026 18:23:55 [INFO   ] --- Categoria: Biberones ---
+15/11/2026 18:23:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:23:57 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 8s
+15/11/2026 18:24:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:24:10 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 - Reintentando en 16s
+15/11/2026 18:24:29 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=biberones+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:24:29 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=biberones+bebe&rh=n%3A1703495031
+15/11/2026 18:24:29 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:24:29 [INFO   ] 
+15/11/2026 18:24:29 [INFO   ] --- Categoria: Juguetes ---
+15/11/2026 18:24:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:24:31 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 9s
+15/11/2026 18:24:44 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:24:44 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 - Reintentando en 10s
+15/11/2026 18:24:57 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=juguetes+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:24:57 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031 | URL: https://www.amazon.es/s?k=juguetes+bebe&rh=n%3A1703495031
+15/11/2026 18:24:57 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:24:57 [INFO   ] 
+15/11/2026 18:24:57 [INFO   ] --- Categoria: Baneras ---
+15/11/2026 18:25:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:25:00 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 8s
+15/11/2026 18:25:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 503 1997
+15/11/2026 18:25:10 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 - Reintentando en 13s
+15/11/2026 18:25:27 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=ba%C3%B1era+bebe&rh=n%3A1703495031 HTTP/1.1" 200 None
+15/11/2026 18:25:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 31% para ASIN B0CPFBCVDZ
+15/11/2026 18:25:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0GR1LLCXD
+15/11/2026 18:25:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 7% para ASIN B09F9XTW8V
+15/11/2026 18:25:28 [DEBUG  ]   Badge no encontrado; usando descuento calculado 11% para ASIN B0GR17VLBW
+15/11/2026 18:25:28 [INFO   ]   Scraped: 20 productos (2 con oferta, 18 sin descuento)
+15/11/2026 18:25:28 [DEBUG  ]   Top candidatos antes de filtros anti-duplicacion:
+15/11/2026 18:25:28 [DEBUG  ]     1. [B0CPFBCVDZ] Chicco Cuddle & Bubble Bañera Bebé Ergonómica con  | 31% dto | 0 vals | 0 ventas
+15/11/2026 18:25:28 [DEBUG  ]     2. [B09F9XTW8V] Twistshake Bañera Plegable de Bebé y Recién Nacido | 7% dto | 0 vals | 50 ventas
+15/11/2026 18:25:28 [INFO   ]   DESCARTADO [ya publicado en <48h] Chicco Cuddle & Bubble Bañera Bebé Ergonómica... (31% dto, ASIN: B0CPFBCVDZ)
+15/11/2026 18:25:28 [INFO   ]   ELEGIDO para categoria: Twistshake Bañera Plegable de Bebé y Recién N... (7% dto, 0 valoraciones, ASIN: B09F9XTW8V)
+15/11/2026 18:25:28 [INFO   ] 
+15/11/2026 18:25:28 [INFO   ] --- Categoria: Camaras seguridad ---
+15/11/2026 18:25:28 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 14/11 12:50 (hace 1 dias, faltan ~6 dias)
+15/11/2026 18:25:28 [INFO   ] 
+15/11/2026 18:25:28 [INFO   ] --- Categoria: Alimentacion ---
+15/11/2026 18:25:31 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 1997
+15/11/2026 18:25:31 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 7s
+15/11/2026 18:25:42 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 1997
+15/11/2026 18:25:42 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla - Reintentando en 12s
+15/11/2026 18:25:58 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=potitos+bebe+papilla HTTP/1.1" 503 1997
+15/11/2026 18:25:58 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=potitos+bebe+papilla | URL: https://www.amazon.es/s?k=potitos+bebe+papilla
+15/11/2026 18:25:58 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:25:58 [INFO   ] 
+15/11/2026 18:25:58 [INFO   ] --- Categoria: Tronas ---
+15/11/2026 18:25:58 [DEBUG  ]   Limite semanal OK: ultima publicacion hace 14 dias (supera los 7 requeridos)
+15/11/2026 18:26:00 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=trona+bebe HTTP/1.1" 503 1997
+15/11/2026 18:26:00 [WARNING] Error al obtener pagina (intento 1/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=trona+bebe - Reintentando en 7s
+15/11/2026 18:26:10 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=trona+bebe HTTP/1.1" 503 1997
+15/11/2026 18:26:10 [WARNING] Error al obtener pagina (intento 2/3): 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=trona+bebe - Reintentando en 18s
+15/11/2026 18:26:30 [DEBUG  ] https://www.amazon.es:443 "GET /s?k=trona+bebe HTTP/1.1" 503 1997
+15/11/2026 18:26:30 [ERROR  ] Fallo definitivo al obtener pagina tras 3 intentos: 503 Server Error: Service Unavailable for url: https://www.amazon.es/s?k=trona+bebe | URL: https://www.amazon.es/s?k=trona+bebe
+15/11/2026 18:26:30 [WARNING]   No se pudo obtener la pagina, saltando categoria
+15/11/2026 18:26:30 [INFO   ] 
+15/11/2026 18:26:30 [INFO   ] --- Categoria: Vajilla bebe ---
+15/11/2026 18:26:30 [INFO   ]   SALTADA por limite semanal: ultima publicacion el 09/11 21:53 (hace 5 dias, faltan ~2 dias)
+15/11/2026 18:26:30 [INFO   ] 
+15/11/2026 18:26:30 [INFO   ] --- Seleccion global (ranking de mejores por categoria) ---
+15/11/2026 18:26:30 [INFO   ]   1. [B082N3CB8G] Dodot Toallitas Bebé Sensitive, 840 Toal... | 28% dto | cat: Toallitas [marca prio] [cat. reciente]
+15/11/2026 18:26:30 [INFO   ]   2. [B09F9XTW8V] Twistshake Bañera Plegable de Bebé y Rec... | 7% dto | cat: Baneras [cat. reciente]
+15/11/2026 18:26:30 [INFO   ] 
+15/11/2026 18:26:30 [INFO   ] >>> OFERTA SELECCIONADA PARA PUBLICAR:
+15/11/2026 18:26:30 [INFO   ]     Titulo:    Dodot Toallitas Bebé Sensitive, 840 Toallitas (15 Packs x 56 uds) (El empaque puede variar)
+15/11/2026 18:26:30 [INFO   ]     Categoria: Toallitas | Descuento: 28%
+15/11/2026 18:26:30 [INFO   ]     Precio:    19,83 € (antes: 27,68 €)
+15/11/2026 18:26:30 [INFO   ]     ASIN:      B082N3CB8G | Valoraciones: 0 | Ventas: 0
+15/11/2026 18:26:30 [INFO   ]     URL:       https://www.amazon.es/dp/B082N3CB8G?tag=juegosenoferta-21
+15/11/2026 18:26:30 [DEBUG  ]     Enviando con foto: https://m.media-amazon.com/images/I/81V+faKIDiL._AC_UL320_.jpg
+15/11/2026 18:26:30 [DEBUG  ] Starting new HTTPS connection (1): api.telegram.org:443
+15/11/2026 18:26:31 [DEBUG  ] https://api.telegram.org:443 "POST /bot8309205336:AAFhfeYUrhteimgv7GMHpxwEDKwl3zmGnuU/sendPhoto HTTP/1.1" 200 1221
+15/11/2026 18:26:31 [INFO   ] Mensaje enviado a Telegram correctamente (con foto)
+15/11/2026 18:26:31 [DEBUG  ] Historial de categorias actualizado: Toallitas, Panales, Toallitas, Baneras
+15/11/2026 18:26:31 [INFO   ] 
+15/11/2026 18:26:31 [INFO   ] ============================================================
+15/11/2026 18:26:31 [INFO   ] FIN - 1 oferta publicada en Telegram
+15/11/2026 18:26:31 [INFO   ] ============================================================
